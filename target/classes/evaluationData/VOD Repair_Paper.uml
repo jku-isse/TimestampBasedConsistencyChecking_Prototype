@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NuIL6kXWEee6P4AGk_WLrg" name="VOD Paper">
+  <packagedElement xmi:type="uml:Package" xmi:id="_NuIL60XWEee6P4AGk_WLrg" name="Use Case View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NuIL7EXWEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NuIL7UXWEee6P4AGk_WLrg" name="User">
+      <ownedAttribute xmi:id="_NuIL7kXWEee6P4AGk_WLrg" name="_display" visibility="public" type="_NuIL8UXWEee6P4AGk_WLrg" isUnique="false" association="_NuIMBEXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NuIL70XWEee6P4AGk_WLrg" name="login"/>
+      <ownedOperation xmi:id="_NuIL8EXWEee6P4AGk_WLrg" name="logout"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NuIL8UXWEee6P4AGk_WLrg" name="Display">
+      <ownedAttribute xmi:id="_NuIL8kXWEee6P4AGk_WLrg" name="_streamer" visibility="public" type="_NuIL90XWEee6P4AGk_WLrg" isUnique="false" association="_NuIMBkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NuIL80XWEee6P4AGk_WLrg" name="select" visibility="public"/>
+      <ownedOperation xmi:id="_NuIL9EXWEee6P4AGk_WLrg" name="play" visibility="public"/>
+      <ownedOperation xmi:id="_NuIL9UXWEee6P4AGk_WLrg" name="stop" visibility="public"/>
+      <ownedOperation xmi:id="_NuIL9kXWEee6P4AGk_WLrg" name="draw" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NuIL90XWEee6P4AGk_WLrg" name="Streamer">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_NuIL-EXWEee6P4AGk_WLrg" name="State/Activity Model">
+        <ownedTrigger xmi:id="_NuIL-UXWEee6P4AGk_WLrg" name="stream"/>
+        <region xmi:id="_NuIL-kXWEee6P4AGk_WLrg">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_NuIL-0XWEee6P4AGk_WLrg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_NuIL_EXWEee6P4AGk_WLrg" name="waiting"/>
+          <subvertex xmi:type="uml:State" xmi:id="_NuIL_UXWEee6P4AGk_WLrg" name="playing"/>
+          <transition xmi:id="_NuIL_kXWEee6P4AGk_WLrg" name="stream" source="_NuIL_EXWEee6P4AGk_WLrg" target="_NuIL_UXWEee6P4AGk_WLrg"/>
+          <transition xmi:id="_NuIL_0XWEee6P4AGk_WLrg" name="connect" source="_NuIL-0XWEee6P4AGk_WLrg" target="_NuIL_EXWEee6P4AGk_WLrg"/>
+          <transition xmi:id="_NuIMAEXWEee6P4AGk_WLrg" name="pause" source="_NuIL_UXWEee6P4AGk_WLrg" target="_NuIL_EXWEee6P4AGk_WLrg"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_NuIMAUXWEee6P4AGk_WLrg" name="connect" visibility="public"/>
+      <ownedOperation xmi:id="_NuIMAkXWEee6P4AGk_WLrg" name="stream" visibility="public"/>
+      <ownedOperation xmi:id="_NuIMA0XWEee6P4AGk_WLrg" name="wait" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NuIMBEXWEee6P4AGk_WLrg" memberEnd="_NuIL7kXWEee6P4AGk_WLrg _NuIMBUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NuIMBUXWEee6P4AGk_WLrg" name="_user" visibility="public" type="_NuIL7UXWEee6P4AGk_WLrg" isUnique="false" association="_NuIMBEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NuIMBkXWEee6P4AGk_WLrg" name="use" memberEnd="_NuIL8kXWEee6P4AGk_WLrg _NuIMB0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NuIMB0XWEee6P4AGk_WLrg" name="_display" visibility="public" type="_NuIL8UXWEee6P4AGk_WLrg" isUnique="false" association="_NuIMBkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NuIMCEXWEee6P4AGk_WLrg" name="NewDiagram2_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NuIMCUXWEee6P4AGk_WLrg" name="Sequence Diagram">
+        <ownedConnector xmi:id="_NuIMCkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NuIMC0XWEee6P4AGk_WLrg" role="_NuIMKEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NuIMDEXWEee6P4AGk_WLrg" role="_NuIMKUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NuIMDUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NuIMDkXWEee6P4AGk_WLrg" role="_NuIMKUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NuIMD0XWEee6P4AGk_WLrg" role="_NuIMKkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NuIMEEXWEee6P4AGk_WLrg" name="u" represents="_NuIMKEXWEee6P4AGk_WLrg" coveredBy="_NuIMFEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NuIMEUXWEee6P4AGk_WLrg" name="d" represents="_NuIMKUXWEee6P4AGk_WLrg" coveredBy="_NuIMFUXWEee6P4AGk_WLrg _NuIMFkXWEee6P4AGk_WLrg _NuIMF0XWEee6P4AGk_WLrg _NuIMI0XWEee6P4AGk_WLrg _NuIMGkXWEee6P4AGk_WLrg _NuIMH0XWEee6P4AGk_WLrg _NuIMIEXWEee6P4AGk_WLrg _NuIMIUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NuIMEkXWEee6P4AGk_WLrg" name="s" represents="_NuIMKkXWEee6P4AGk_WLrg" coveredBy="_NuIMGEXWEee6P4AGk_WLrg _NuIMGUXWEee6P4AGk_WLrg _NuIMIkXWEee6P4AGk_WLrg _NuIMG0XWEee6P4AGk_WLrg _NuIMHEXWEee6P4AGk_WLrg _NuIMHUXWEee6P4AGk_WLrg _NuIMHkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NuIME0XWEee6P4AGk_WLrg" name="Hello" represents="_NuIMK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMFEXWEee6P4AGk_WLrg" covered="_NuIMEEXWEee6P4AGk_WLrg" event="_NuIMLEXWEee6P4AGk_WLrg" message="_NuIMJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMFUXWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" event="_NuIMLkXWEee6P4AGk_WLrg" message="_NuIMJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NuIMFkXWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" start="_NuIMFUXWEee6P4AGk_WLrg" finish="_NuIMI0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMF0XWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" event="_NuIML0XWEee6P4AGk_WLrg" message="_NuIMJUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMGEXWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" event="_NuIMMUXWEee6P4AGk_WLrg" message="_NuIMJUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NuIMGUXWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" start="_NuIMGEXWEee6P4AGk_WLrg" finish="_NuIMIkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMGkXWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" event="_NuIMNUXWEee6P4AGk_WLrg" message="_NuIMJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMG0XWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" event="_NuIMQUXWEee6P4AGk_WLrg" message="_NuIMJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NuIMHEXWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" start="_NuIMG0XWEee6P4AGk_WLrg" finish="_NuIMHUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NuIMHUXWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" event="_NuIMLkXWEee6P4AGk_WLrg" execution="_NuIMHEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMHkXWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" event="_NuIMQkXWEee6P4AGk_WLrg" message="_NuIMJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NuIMH0XWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" event="_NuIMQ0XWEee6P4AGk_WLrg" message="_NuIMJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NuIMIEXWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" start="_NuIMH0XWEee6P4AGk_WLrg" finish="_NuIMIUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NuIMIUXWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" event="_NuIMLkXWEee6P4AGk_WLrg" execution="_NuIMIEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NuIMIkXWEee6P4AGk_WLrg" covered="_NuIMEkXWEee6P4AGk_WLrg" event="_NuIMMUXWEee6P4AGk_WLrg" execution="_NuIMGUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NuIMI0XWEee6P4AGk_WLrg" covered="_NuIMEUXWEee6P4AGk_WLrg" event="_NuIMNEXWEee6P4AGk_WLrg" execution="_NuIMFkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NuIMJEXWEee6P4AGk_WLrg" name="select" receiveEvent="_NuIMFUXWEee6P4AGk_WLrg" sendEvent="_NuIMFEXWEee6P4AGk_WLrg" connector="_NuIMCkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NuIMJUXWEee6P4AGk_WLrg" name="connect" receiveEvent="_NuIMGEXWEee6P4AGk_WLrg" sendEvent="_NuIMF0XWEee6P4AGk_WLrg" connector="_NuIMDUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NuIMJkXWEee6P4AGk_WLrg" name="play" messageSort="asynchCall" receiveEvent="_NuIMG0XWEee6P4AGk_WLrg" sendEvent="_NuIMGkXWEee6P4AGk_WLrg" connector="_NuIMDUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NuIMJ0XWEee6P4AGk_WLrg" name="show" messageSort="asynchCall" receiveEvent="_NuIMH0XWEee6P4AGk_WLrg" sendEvent="_NuIMHkXWEee6P4AGk_WLrg" connector="_NuIMDUXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NuIMKEXWEee6P4AGk_WLrg" name="u" type="_NuIL7UXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NuIMKUXWEee6P4AGk_WLrg" name="d" type="_NuIL8UXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NuIMKkXWEee6P4AGk_WLrg" name="s" type="_NuIL90XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NuIMK0XWEee6P4AGk_WLrg" name="Hello" type="_NuIL90XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMLEXWEee6P4AGk_WLrg" operation="_NuIL80XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMLUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMLkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIML0XWEee6P4AGk_WLrg" operation="_NuIMAUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMMEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMMUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMMkXWEee6P4AGk_WLrg" operation="_NuIL9EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMM0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMNEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMNUXWEee6P4AGk_WLrg" operation="_NuIMAkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMNkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMN0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMOEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMOUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMOkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMO0XWEee6P4AGk_WLrg" operation="_NuIL9UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMPEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMPUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMPkXWEee6P4AGk_WLrg" operation="_NuIMA0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMP0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NuIMQEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMQUXWEee6P4AGk_WLrg" name="ReceiveOperationEvent1" operation="_NuIMAkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NuIMQkXWEee6P4AGk_WLrg" name="SendOperationEvent1" operation="_NuIL9kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NuIMQ0XWEee6P4AGk_WLrg" name="ReceiveOperationEvent2" operation="_NuIL9kXWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NuIMREXWEee6P4AGk_WLrg" name="Component View" clientDependency="_NuIMRUXWEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NuIMRUXWEee6P4AGk_WLrg" supplier="_NuIL7EXWEee6P4AGk_WLrg" client="_NuIMREXWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NuIMRkXWEee6P4AGk_WLrg" name="Deployment View"/>
+  <profileApplication xmi:id="_NuIMR0XWEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_NuIMSEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NshBeUXWEee6P4AGk_WLrg" name="Curriculum Planner">
+  <packageImport xmi:id="_NshBekXWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_NshBe0XWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="RoseAnalysisDatatypes.uml#_NtyLn0XWEee6P4AGk_WLrg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NshBfEXWEee6P4AGk_WLrg" name="Use Case View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NshBfUXWEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBfkXWEee6P4AGk_WLrg" name="Person">
+      <ownedComment xmi:id="_NshBf0XWEee6P4AGk_WLrg" annotatedElement="_NshBfkXWEee6P4AGk_WLrg">
+        <body>A CS related person</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshBgEXWEee6P4AGk_WLrg" name="Name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshBgUXWEee6P4AGk_WLrg" name="UserID" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshBgkXWEee6P4AGk_WLrg" name="Password" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshBg0XWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCM0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBhEXWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBhUXWEee6P4AGk_WLrg" name="_authentication" visibility="public" type="_NshCAkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCREXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBhkXWEee6P4AGk_WLrg" name="_curriculum" visibility="public" type="_NshBz0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCSEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBh0XWEee6P4AGk_WLrg" name="_uI" visibility="public" type="_NshCEkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCSUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBiEXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCT0XWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshBiUXWEee6P4AGk_WLrg" name="goodbye" visibility="public"/>
+      <ownedOperation xmi:id="_NshBikXWEee6P4AGk_WLrg" name="viewCurriculum" visibility="public"/>
+      <ownedOperation xmi:id="_NshBi0XWEee6P4AGk_WLrg" name="viewTranscript" visibility="public"/>
+      <ownedOperation xmi:id="_NshBjEXWEee6P4AGk_WLrg" name="viewGradRequirements" visibility="public"/>
+      <ownedOperation xmi:id="_NshBjUXWEee6P4AGk_WLrg" name="viewGPAs" visibility="public"/>
+      <ownedOperation xmi:id="_NshBjkXWEee6P4AGk_WLrg" name="viewRecommendedSchedule" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBj0XWEee6P4AGk_WLrg" name="Student">
+      <ownedComment xmi:id="_NshBkEXWEee6P4AGk_WLrg" annotatedElement="_NshBj0XWEee6P4AGk_WLrg">
+        <body>A CS student</body>
+      </ownedComment>
+      <generalization xmi:id="_NshBkUXWEee6P4AGk_WLrg" general="_NshBfkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBkkXWEee6P4AGk_WLrg" name="Student ID" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshBk0XWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCMEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBlEXWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCNEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBlUXWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCNkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBlkXWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCOEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBl0XWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCOUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBmEXWEee6P4AGk_WLrg" name="_studentUI" visibility="public" type="_NshCHEXWEee6P4AGk_WLrg" isUnique="false" association="_NshCS0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBmUXWEee6P4AGk_WLrg" name="Advisor">
+      <ownedComment xmi:id="_NshBmkXWEee6P4AGk_WLrg" annotatedElement="_NshBmUXWEee6P4AGk_WLrg">
+        <body>Driver</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshBm0XWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCMUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBnEXWEee6P4AGk_WLrg" name="_updateCurriculum" visibility="public" type="_NshBuUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCMkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBnUXWEee6P4AGk_WLrg" name="_viewCurriculum" visibility="public" type="_NshBrkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCNUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBnkXWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCOUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBn0XWEee6P4AGk_WLrg" name="_substitute" visibility="public" type="_NshB30XWEee6P4AGk_WLrg" isUnique="false" association="_NshCOkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBoEXWEee6P4AGk_WLrg" name="_group" visibility="public" type="_NshB5UXWEee6P4AGk_WLrg" isUnique="false" association="_NshCO0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBoUXWEee6P4AGk_WLrg" name="_studentRecordDB" visibility="public" type="_NshB6EXWEee6P4AGk_WLrg" isUnique="false" association="_NshCPEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBokXWEee6P4AGk_WLrg" name="_transcript" visibility="public" type="_NshB8kXWEee6P4AGk_WLrg" isUnique="false" association="_NshCP0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBo0XWEee6P4AGk_WLrg" name="_transcript" visibility="public" type="_NshB8kXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBpEXWEee6P4AGk_WLrg" name="_requirements" visibility="public" type="_NshB-0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCQUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBpUXWEee6P4AGk_WLrg" name="_recordView" visibility="public" type="_NshB_kXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQ0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBpkXWEee6P4AGk_WLrg" name="_admin" visibility="public" type="_NshCB0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCR0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBp0XWEee6P4AGk_WLrg" name="_curriculumDB" visibility="public" type="_NshCJUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCTkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBqEXWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCT0XWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshBqUXWEee6P4AGk_WLrg" name="checkRequirements" visibility="public"/>
+      <ownedOperation xmi:id="_NshBqkXWEee6P4AGk_WLrg" name="getCurriculum" visibility="public"/>
+      <ownedOperation xmi:id="_NshBq0XWEee6P4AGk_WLrg" name="getTranscript" visibility="public"/>
+      <ownedOperation xmi:id="_NshBrEXWEee6P4AGk_WLrg" name="getGPA" visibility="public"/>
+      <ownedOperation xmi:id="_NshBrUXWEee6P4AGk_WLrg" name="writeCurriculum" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBrkXWEee6P4AGk_WLrg" name="ViewCurriculum" clientDependency="_NshBuEXWEee6P4AGk_WLrg">
+      <ownedComment xmi:id="_NshBr0XWEee6P4AGk_WLrg" annotatedElement="_NshBrkXWEee6P4AGk_WLrg">
+        <body>abstract class that tells the curriculum class to show the curriculum</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshBsEXWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCMEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBsUXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCMUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBskXWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCM0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBs0XWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCNEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBtEXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCNUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBtUXWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCOEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBtkXWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshBt0XWEee6P4AGk_WLrg" name="ShowCurriculum" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NshBuEXWEee6P4AGk_WLrg" supplier="_NshBz0XWEee6P4AGk_WLrg" client="_NshBrkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBuUXWEee6P4AGk_WLrg" name="UpdateCurriculum" clientDependency="_NshBw0XWEee6P4AGk_WLrg _NshBxEXWEee6P4AGk_WLrg">
+      <ownedComment xmi:id="_NshBukXWEee6P4AGk_WLrg" annotatedElement="_NshBuUXWEee6P4AGk_WLrg">
+        <body>Presents the advisor with options on how to change the curriculum.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshBu0XWEee6P4AGk_WLrg" name="Course" visibility="private" type="_NshBxUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBvEXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCMkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshBvUXWEee6P4AGk_WLrg" name="AddCourse" visibility="public"/>
+      <ownedOperation xmi:id="_NshBvkXWEee6P4AGk_WLrg" name="DeleteCourse" visibility="public"/>
+      <ownedOperation xmi:id="_NshBv0XWEee6P4AGk_WLrg" name="EditCourse" visibility="public"/>
+      <ownedOperation xmi:id="_NshBwEXWEee6P4AGk_WLrg" name="FindCourse" visibility="public">
+        <ownedParameter xmi:id="_NshBwUXWEee6P4AGk_WLrg" type="_NshBxUXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NshBwkXWEee6P4AGk_WLrg" name="CourseNumber" direction="inout">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NshBw0XWEee6P4AGk_WLrg" supplier="_NshBxUXWEee6P4AGk_WLrg" client="_NshBuUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NshBxEXWEee6P4AGk_WLrg" supplier="_NshBz0XWEee6P4AGk_WLrg" client="_NshBuUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBxUXWEee6P4AGk_WLrg" name="Course">
+      <ownedComment xmi:id="_NshBxkXWEee6P4AGk_WLrg" annotatedElement="_NshBxUXWEee6P4AGk_WLrg">
+        <body>Contains information on each individual course</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshBx0XWEee6P4AGk_WLrg" name="CourseName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshByEXWEee6P4AGk_WLrg" name="CourseNumber" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshByUXWEee6P4AGk_WLrg" name="Description" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshBykXWEee6P4AGk_WLrg" name="Pre-Requisites" visibility="private" type="_NshEb0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBy0XWEee6P4AGk_WLrg" name="CreditHours" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshBzEXWEee6P4AGk_WLrg" name="_curriculum" visibility="public" type="_NshBz0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCL0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBzUXWEee6P4AGk_WLrg" name="_requirements" visibility="public" type="_NshB-0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCRUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshBzkXWEee6P4AGk_WLrg" name="_grade" visibility="public" type="_NshB7UXWEee6P4AGk_WLrg" isUnique="false" association="_NshCRkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshBz0XWEee6P4AGk_WLrg" name="Curriculum">
+      <ownedComment xmi:id="_NshB0EXWEee6P4AGk_WLrg" annotatedElement="_NshBz0XWEee6P4AGk_WLrg">
+        <body>Holds the courses.
+Allows courses to be updated.
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshB0UXWEee6P4AGk_WLrg" name="catalogYear" visibility="private"/>
+      <ownedAttribute xmi:id="_NshB0kXWEee6P4AGk_WLrg" name="courseListing" visibility="private"/>
+      <ownedAttribute xmi:id="_NshB00XWEee6P4AGk_WLrg" name="_course" visibility="public" type="_NshBxUXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NshCL0XWEee6P4AGk_WLrg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NshB1EXWEee6P4AGk_WLrg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NshB1UXWEee6P4AGk_WLrg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshB1kXWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCSEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB10XWEee6P4AGk_WLrg" name="_curriculumDB" visibility="public" type="_NshCJUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCTUXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshB2EXWEee6P4AGk_WLrg" name="AddCourse" visibility="public">
+        <ownedParameter xmi:id="_NshB2UXWEee6P4AGk_WLrg" name="NewCourse" type="_NshBxUXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NshB2kXWEee6P4AGk_WLrg" name="DeleteCourse" visibility="public">
+        <ownedParameter xmi:id="_NshB20XWEee6P4AGk_WLrg" name="CourseNumber" direction="inout">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NshB3EXWEee6P4AGk_WLrg" name="EditCourse" visibility="public">
+        <ownedParameter xmi:id="_NshB3UXWEee6P4AGk_WLrg" name="Course" type="_NshBxUXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NshB3kXWEee6P4AGk_WLrg" name="findCourse" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB30XWEee6P4AGk_WLrg" name="Substitute">
+      <ownedAttribute xmi:id="_NshB4EXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCOkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshB4UXWEee6P4AGk_WLrg" name="blanketSub" visibility="public"/>
+      <ownedOperation xmi:id="_NshB4kXWEee6P4AGk_WLrg" name="individualSub" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB40XWEee6P4AGk_WLrg" name="BlanketSub"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB5EXWEee6P4AGk_WLrg" name="IndividualSub"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB5UXWEee6P4AGk_WLrg" name="Group">
+      <ownedAttribute xmi:id="_NshB5kXWEee6P4AGk_WLrg" name="studentId" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshB50XWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCO0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB6EXWEee6P4AGk_WLrg" name="StudentRecordDB">
+      <ownedAttribute xmi:id="_NshB6UXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCPEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB6kXWEee6P4AGk_WLrg" name="_transcript" visibility="public" type="_NshB8kXWEee6P4AGk_WLrg" isUnique="false" association="_NshCPUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB60XWEee6P4AGk_WLrg" name="_admin" visibility="public" type="_NshCB0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCUEXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshB7EXWEee6P4AGk_WLrg" name="getTranscript" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB7UXWEee6P4AGk_WLrg" name="Grade">
+      <ownedAttribute xmi:id="_NshB7kXWEee6P4AGk_WLrg" name="course" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshB70XWEee6P4AGk_WLrg" name="letterGrade" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshB8EXWEee6P4AGk_WLrg" name="_transcript" visibility="public" type="_NshB8kXWEee6P4AGk_WLrg" isUnique="false" association="_NshCPkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB8UXWEee6P4AGk_WLrg" name="_course" visibility="public" type="_NshBxUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCRkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB8kXWEee6P4AGk_WLrg" name="Transcript">
+      <ownedAttribute xmi:id="_NshB80XWEee6P4AGk_WLrg" name="grades" visibility="private"/>
+      <ownedAttribute xmi:id="_NshB9EXWEee6P4AGk_WLrg" name="_studentRecordDB" visibility="public" type="_NshB6EXWEee6P4AGk_WLrg" isUnique="false" association="_NshCPUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB9UXWEee6P4AGk_WLrg" name="_grade" visibility="public" type="_NshB7UXWEee6P4AGk_WLrg" isUnique="false" association="_NshCPkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB9kXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCP0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB90XWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQEXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshB-EXWEee6P4AGk_WLrg" name="studentView" visibility="public"/>
+      <ownedOperation xmi:id="_NshB-UXWEee6P4AGk_WLrg" name="advView" visibility="public"/>
+      <ownedOperation xmi:id="_NshB-kXWEee6P4AGk_WLrg" name="viewGPA" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB-0XWEee6P4AGk_WLrg" name="Requirements">
+      <ownedAttribute xmi:id="_NshB_EXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshB_UXWEee6P4AGk_WLrg" name="_course" visibility="public" type="_NshBxUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCRUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshB_kXWEee6P4AGk_WLrg" name="RecordView">
+      <ownedAttribute xmi:id="_NshB_0XWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCQ0XWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshCAEXWEee6P4AGk_WLrg" name="viewTranscript" visibility="public"/>
+      <ownedOperation xmi:id="_NshCAUXWEee6P4AGk_WLrg" name="viewGPA" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshCAkXWEee6P4AGk_WLrg" name="Authentication">
+      <ownedAttribute xmi:id="_NshCA0XWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCREXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCBEXWEee6P4AGk_WLrg" name="_uI" visibility="public" type="_NshCEkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCTEXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshCBUXWEee6P4AGk_WLrg" name="login" visibility="public"/>
+      <ownedOperation xmi:id="_NshCBkXWEee6P4AGk_WLrg" name="logout" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshCB0XWEee6P4AGk_WLrg" name="Admin">
+      <generalization xmi:id="_NshCCEXWEee6P4AGk_WLrg" general="_NshBfkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCCUXWEee6P4AGk_WLrg" name="Faculty ID" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NshCCkXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCR0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCC0XWEee6P4AGk_WLrg" name="_adminUI" visibility="public" type="_NshCIEXWEee6P4AGk_WLrg" isUnique="false" association="_NshCSkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCDEXWEee6P4AGk_WLrg" name="_studentRecordDB" visibility="public" type="_NshB6EXWEee6P4AGk_WLrg" isUnique="false" association="_NshCUEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCDUXWEee6P4AGk_WLrg" name="_curriculumDB" visibility="public" type="_NshCJUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCUUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCDkXWEee6P4AGk_WLrg" name="_curriculumDB" visibility="public" type="_NshCJUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCVEXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshCD0XWEee6P4AGk_WLrg" name="updateCourseListing" visibility="public"/>
+      <ownedOperation xmi:id="_NshCEEXWEee6P4AGk_WLrg" name="updateCurriculum" visibility="public"/>
+      <ownedOperation xmi:id="_NshCEUXWEee6P4AGk_WLrg" name="offerSubstitution" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshCEkXWEee6P4AGk_WLrg" name="UI" isAbstract="true">
+      <ownedComment xmi:id="_NshCE0XWEee6P4AGk_WLrg" annotatedElement="_NshCEkXWEee6P4AGk_WLrg">
+        <body>The generic UI type (subclassed)</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NshCFEXWEee6P4AGk_WLrg" name="_person" visibility="public" type="_NshBfkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCSUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCFUXWEee6P4AGk_WLrg" name="_authentication" visibility="public" type="_NshCAkXWEee6P4AGk_WLrg" isUnique="false" association="_NshCTEXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshCFkXWEee6P4AGk_WLrg" name="logoff" visibility="public"/>
+      <ownedOperation xmi:id="_NshCF0XWEee6P4AGk_WLrg" name="displayCurriculum" visibility="public"/>
+      <ownedOperation xmi:id="_NshCGEXWEee6P4AGk_WLrg" name="displayTranscript" visibility="public"/>
+      <ownedOperation xmi:id="_NshCGUXWEee6P4AGk_WLrg" name="displayGradRequirements" visibility="public"/>
+      <ownedOperation xmi:id="_NshCGkXWEee6P4AGk_WLrg" name="displayGPAs" visibility="public"/>
+      <ownedOperation xmi:id="_NshCG0XWEee6P4AGk_WLrg" name="displayRecommendedSchedule" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshCHEXWEee6P4AGk_WLrg" name="StudentUI" clientDependency="_NshCH0XWEee6P4AGk_WLrg">
+      <generalization xmi:id="_NshCHUXWEee6P4AGk_WLrg" general="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCHkXWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCS0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ComponentRealization" xmi:id="_NshCH0XWEee6P4AGk_WLrg" supplier="_NshCEkXWEee6P4AGk_WLrg" client="_NshCHEXWEee6P4AGk_WLrg" realizingClassifier="_NshCEkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshCIEXWEee6P4AGk_WLrg" name="AdminUI" clientDependency="_NshCJEXWEee6P4AGk_WLrg">
+      <generalization xmi:id="_NshCIUXWEee6P4AGk_WLrg" general="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCIkXWEee6P4AGk_WLrg" name="_admin" visibility="public" type="_NshCB0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCSkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshCI0XWEee6P4AGk_WLrg" name="updateCourse" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ComponentRealization" xmi:id="_NshCJEXWEee6P4AGk_WLrg" supplier="_NshCEkXWEee6P4AGk_WLrg" client="_NshCIEXWEee6P4AGk_WLrg" realizingClassifier="_NshCEkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NshCJUXWEee6P4AGk_WLrg" name="CurriculumDB">
+      <ownedAttribute xmi:id="_NshCJkXWEee6P4AGk_WLrg" name="_curriculum" visibility="public" type="_NshBz0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCTUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCJ0XWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCTkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCKEXWEee6P4AGk_WLrg" name="_admin" visibility="public" type="_NshCB0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCUUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCKUXWEee6P4AGk_WLrg" name="_admin" visibility="public" type="_NshCB0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCUkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NshCKkXWEee6P4AGk_WLrg" name="getCurriculum" visibility="public"/>
+      <ownedOperation xmi:id="_NshCK0XWEee6P4AGk_WLrg" name="writeCurriculum" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCLEXWEee6P4AGk_WLrg" memberEnd="_NshCLUXWEee6P4AGk_WLrg _NshCLkXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NshCLUXWEee6P4AGk_WLrg" name="_advisor" visibility="public" type="_NshBmUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCLEXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_NshCLkXWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCLEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCL0XWEee6P4AGk_WLrg" memberEnd="_NshB00XWEee6P4AGk_WLrg _NshBzEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCMEXWEee6P4AGk_WLrg" memberEnd="_NshBk0XWEee6P4AGk_WLrg _NshBsEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCMUXWEee6P4AGk_WLrg" memberEnd="_NshBm0XWEee6P4AGk_WLrg _NshBsUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCMkXWEee6P4AGk_WLrg" memberEnd="_NshBnEXWEee6P4AGk_WLrg _NshBvEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCM0XWEee6P4AGk_WLrg" memberEnd="_NshBg0XWEee6P4AGk_WLrg _NshBskXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCNEXWEee6P4AGk_WLrg" memberEnd="_NshBlEXWEee6P4AGk_WLrg _NshBs0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCNUXWEee6P4AGk_WLrg" memberEnd="_NshBnUXWEee6P4AGk_WLrg _NshBtEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCNkXWEee6P4AGk_WLrg" memberEnd="_NshBlUXWEee6P4AGk_WLrg _NshCN0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NshCN0XWEee6P4AGk_WLrg" name="_student" visibility="public" type="_NshBj0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCNkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCOEXWEee6P4AGk_WLrg" memberEnd="_NshBlkXWEee6P4AGk_WLrg _NshBtUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCOUXWEee6P4AGk_WLrg" memberEnd="_NshBl0XWEee6P4AGk_WLrg _NshBnkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCOkXWEee6P4AGk_WLrg" memberEnd="_NshBn0XWEee6P4AGk_WLrg _NshB4EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCO0XWEee6P4AGk_WLrg" memberEnd="_NshB50XWEee6P4AGk_WLrg _NshBoEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCPEXWEee6P4AGk_WLrg" memberEnd="_NshB6UXWEee6P4AGk_WLrg _NshBoUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCPUXWEee6P4AGk_WLrg" memberEnd="_NshB6kXWEee6P4AGk_WLrg _NshB9EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCPkXWEee6P4AGk_WLrg" memberEnd="_NshB9UXWEee6P4AGk_WLrg _NshB8EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCP0XWEee6P4AGk_WLrg" memberEnd="_NshB9kXWEee6P4AGk_WLrg _NshBokXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCQEXWEee6P4AGk_WLrg" memberEnd="_NshB90XWEee6P4AGk_WLrg _NshBo0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCQUXWEee6P4AGk_WLrg" memberEnd="_NshB_EXWEee6P4AGk_WLrg _NshBpEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCQkXWEee6P4AGk_WLrg" memberEnd="_NshBhEXWEee6P4AGk_WLrg _NshBtkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCQ0XWEee6P4AGk_WLrg" memberEnd="_NshB_0XWEee6P4AGk_WLrg _NshBpUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCREXWEee6P4AGk_WLrg" memberEnd="_NshCA0XWEee6P4AGk_WLrg _NshBhUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCRUXWEee6P4AGk_WLrg" memberEnd="_NshB_UXWEee6P4AGk_WLrg _NshBzUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCRkXWEee6P4AGk_WLrg" memberEnd="_NshB8UXWEee6P4AGk_WLrg _NshBzkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCR0XWEee6P4AGk_WLrg" memberEnd="_NshCCkXWEee6P4AGk_WLrg _NshBpkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCSEXWEee6P4AGk_WLrg" memberEnd="_NshBhkXWEee6P4AGk_WLrg _NshB1kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCSUXWEee6P4AGk_WLrg" memberEnd="_NshCFEXWEee6P4AGk_WLrg _NshBh0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCSkXWEee6P4AGk_WLrg" memberEnd="_NshCIkXWEee6P4AGk_WLrg _NshCC0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCS0XWEee6P4AGk_WLrg" memberEnd="_NshCHkXWEee6P4AGk_WLrg _NshBmEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCTEXWEee6P4AGk_WLrg" memberEnd="_NshCBEXWEee6P4AGk_WLrg _NshCFUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCTUXWEee6P4AGk_WLrg" memberEnd="_NshB10XWEee6P4AGk_WLrg _NshCJkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCTkXWEee6P4AGk_WLrg" memberEnd="_NshCJ0XWEee6P4AGk_WLrg _NshBp0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCT0XWEee6P4AGk_WLrg" memberEnd="_NshBiEXWEee6P4AGk_WLrg _NshBqEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCUEXWEee6P4AGk_WLrg" memberEnd="_NshCDEXWEee6P4AGk_WLrg _NshB60XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCUUXWEee6P4AGk_WLrg" memberEnd="_NshCDUXWEee6P4AGk_WLrg _NshCKEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCUkXWEee6P4AGk_WLrg" memberEnd="_NshCKUXWEee6P4AGk_WLrg _NshCU0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NshCU0XWEee6P4AGk_WLrg" name="_curriculumDB" visibility="public" type="_NshCJUXWEee6P4AGk_WLrg" isUnique="false" association="_NshCUkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NshCVEXWEee6P4AGk_WLrg" memberEnd="_NshCDkXWEee6P4AGk_WLrg _NshCVUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NshCVUXWEee6P4AGk_WLrg" name="_admin" visibility="public" type="_NshCB0XWEee6P4AGk_WLrg" isUnique="false" association="_NshCVEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshCVkXWEee6P4AGk_WLrg" name="LogIn_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshCV0XWEee6P4AGk_WLrg" name="LogIn">
+        <ownedConnector xmi:id="_NshCWEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCWUXWEee6P4AGk_WLrg" role="_NshCcEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCWkXWEee6P4AGk_WLrg" role="_NshCcUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshCW0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCXEXWEee6P4AGk_WLrg" role="_NshCcEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCXUXWEee6P4AGk_WLrg" role="_NshCckXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshCXkXWEee6P4AGk_WLrg" name="" represents="_NshCcEXWEee6P4AGk_WLrg" coveredBy="_NshCYUXWEee6P4AGk_WLrg _NshCZUXWEee6P4AGk_WLrg _NshCZkXWEee6P4AGk_WLrg _NshCaEXWEee6P4AGk_WLrg _NshCa0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCX0XWEee6P4AGk_WLrg" represents="_NshCcUXWEee6P4AGk_WLrg" coveredBy="_NshCaUXWEee6P4AGk_WLrg _NshCakXWEee6P4AGk_WLrg _NshCbEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCYEXWEee6P4AGk_WLrg" represents="_NshCckXWEee6P4AGk_WLrg" coveredBy="_NshCYkXWEee6P4AGk_WLrg _NshCY0XWEee6P4AGk_WLrg _NshCZEXWEee6P4AGk_WLrg _NshCZ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCYUXWEee6P4AGk_WLrg" covered="_NshCXkXWEee6P4AGk_WLrg" event="_NshD3EXWEee6P4AGk_WLrg" message="_NshCbkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCYkXWEee6P4AGk_WLrg" covered="_NshCYEXWEee6P4AGk_WLrg" event="_NshD3kXWEee6P4AGk_WLrg" message="_NshCbkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCY0XWEee6P4AGk_WLrg" covered="_NshCYEXWEee6P4AGk_WLrg" start="_NshCYkXWEee6P4AGk_WLrg" finish="_NshCZ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCZEXWEee6P4AGk_WLrg" covered="_NshCYEXWEee6P4AGk_WLrg" event="_NshD30XWEee6P4AGk_WLrg" message="_NshCb0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCZUXWEee6P4AGk_WLrg" covered="_NshCXkXWEee6P4AGk_WLrg" event="_NshD4UXWEee6P4AGk_WLrg" message="_NshCb0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCZkXWEee6P4AGk_WLrg" covered="_NshCXkXWEee6P4AGk_WLrg" start="_NshCZUXWEee6P4AGk_WLrg" finish="_NshCa0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCZ0XWEee6P4AGk_WLrg" covered="_NshCYEXWEee6P4AGk_WLrg" event="_NshD4UXWEee6P4AGk_WLrg" execution="_NshCY0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCaEXWEee6P4AGk_WLrg" covered="_NshCXkXWEee6P4AGk_WLrg" event="_NshD4kXWEee6P4AGk_WLrg" message="_NshCbUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCaUXWEee6P4AGk_WLrg" covered="_NshCX0XWEee6P4AGk_WLrg" event="_NshD5EXWEee6P4AGk_WLrg" message="_NshCbUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCakXWEee6P4AGk_WLrg" covered="_NshCX0XWEee6P4AGk_WLrg" start="_NshCaUXWEee6P4AGk_WLrg" finish="_NshCbEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCa0XWEee6P4AGk_WLrg" covered="_NshCXkXWEee6P4AGk_WLrg" event="_NshD5EXWEee6P4AGk_WLrg" execution="_NshCZkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCbEXWEee6P4AGk_WLrg" covered="_NshCX0XWEee6P4AGk_WLrg" event="_NshD5EXWEee6P4AGk_WLrg" execution="_NshCakXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCbUXWEee6P4AGk_WLrg" name="" receiveEvent="_NshCaUXWEee6P4AGk_WLrg" sendEvent="_NshCaEXWEee6P4AGk_WLrg" connector="_NshCWEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCbkXWEee6P4AGk_WLrg" name="" receiveEvent="_NshCYkXWEee6P4AGk_WLrg" sendEvent="_NshCYUXWEee6P4AGk_WLrg" connector="_NshCW0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCb0XWEee6P4AGk_WLrg" name="" receiveEvent="_NshCZUXWEee6P4AGk_WLrg" sendEvent="_NshCZEXWEee6P4AGk_WLrg" connector="_NshCW0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshCcEXWEee6P4AGk_WLrg" name="" type="_NshCAkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCcUXWEee6P4AGk_WLrg" name="" type="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCckXWEee6P4AGk_WLrg" name="" type="_NshBfkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshCc0XWEee6P4AGk_WLrg" name="Logoff_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshCdEXWEee6P4AGk_WLrg" name="Logoff">
+        <ownedConnector xmi:id="_NshCdUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCdkXWEee6P4AGk_WLrg" role="_NshCjUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCd0XWEee6P4AGk_WLrg" role="_NshCjkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshCeEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCeUXWEee6P4AGk_WLrg" role="_NshCjkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCekXWEee6P4AGk_WLrg" role="_NshCj0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshCe0XWEee6P4AGk_WLrg" name="" represents="_NshCjUXWEee6P4AGk_WLrg" coveredBy="_NshCfkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCfEXWEee6P4AGk_WLrg" name="" represents="_NshCjkXWEee6P4AGk_WLrg" coveredBy="_NshCf0XWEee6P4AGk_WLrg _NshCgEXWEee6P4AGk_WLrg _NshCgUXWEee6P4AGk_WLrg _NshChUXWEee6P4AGk_WLrg _NshChkXWEee6P4AGk_WLrg _NshCh0XWEee6P4AGk_WLrg _NshCiUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCfUXWEee6P4AGk_WLrg" represents="_NshCj0XWEee6P4AGk_WLrg" coveredBy="_NshCgkXWEee6P4AGk_WLrg _NshCg0XWEee6P4AGk_WLrg _NshChEXWEee6P4AGk_WLrg _NshCiEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCfkXWEee6P4AGk_WLrg" covered="_NshCe0XWEee6P4AGk_WLrg" event="_NshD5UXWEee6P4AGk_WLrg" message="_NshCikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCf0XWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" event="_NshD50XWEee6P4AGk_WLrg" message="_NshCikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCgEXWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" start="_NshCf0XWEee6P4AGk_WLrg" finish="_NshCiUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCgUXWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" event="_NshD6EXWEee6P4AGk_WLrg" message="_NshCi0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCgkXWEee6P4AGk_WLrg" covered="_NshCfUXWEee6P4AGk_WLrg" event="_NshD6kXWEee6P4AGk_WLrg" message="_NshCi0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCg0XWEee6P4AGk_WLrg" covered="_NshCfUXWEee6P4AGk_WLrg" start="_NshCgkXWEee6P4AGk_WLrg" finish="_NshCiEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshChEXWEee6P4AGk_WLrg" covered="_NshCfUXWEee6P4AGk_WLrg" event="_NshD60XWEee6P4AGk_WLrg" message="_NshCjEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshChUXWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" event="_NshD7UXWEee6P4AGk_WLrg" message="_NshCjEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshChkXWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" start="_NshChUXWEee6P4AGk_WLrg" finish="_NshCh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCh0XWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" event="_NshD7UXWEee6P4AGk_WLrg" execution="_NshChkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCiEXWEee6P4AGk_WLrg" covered="_NshCfUXWEee6P4AGk_WLrg" event="_NshD7UXWEee6P4AGk_WLrg" execution="_NshCg0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCiUXWEee6P4AGk_WLrg" covered="_NshCfEXWEee6P4AGk_WLrg" event="_NshD7UXWEee6P4AGk_WLrg" execution="_NshCgEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCikXWEee6P4AGk_WLrg" name="logout( )" receiveEvent="_NshCf0XWEee6P4AGk_WLrg" sendEvent="_NshCfkXWEee6P4AGk_WLrg" connector="_NshCdUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCi0XWEee6P4AGk_WLrg" name="goodbye( )" receiveEvent="_NshCgkXWEee6P4AGk_WLrg" sendEvent="_NshCgUXWEee6P4AGk_WLrg" connector="_NshCeEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCjEXWEee6P4AGk_WLrg" name="" receiveEvent="_NshChUXWEee6P4AGk_WLrg" sendEvent="_NshChEXWEee6P4AGk_WLrg" connector="_NshCeEXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshCjUXWEee6P4AGk_WLrg" name="" type="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCjkXWEee6P4AGk_WLrg" name="" type="_NshCAkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCj0XWEee6P4AGk_WLrg" name="" type="_NshBfkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshCkEXWEee6P4AGk_WLrg" name="View Curriculum_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshCkUXWEee6P4AGk_WLrg" name="View Curriculum">
+        <ownedConnector xmi:id="_NshCkkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCk0XWEee6P4AGk_WLrg" role="_NshCvUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshClEXWEee6P4AGk_WLrg" role="_NshCvkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshClUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshClkXWEee6P4AGk_WLrg" role="_NshCvkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCl0XWEee6P4AGk_WLrg" role="_NshCv0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshCmEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCmUXWEee6P4AGk_WLrg" role="_NshCv0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCmkXWEee6P4AGk_WLrg" role="_NshCwEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshCm0XWEee6P4AGk_WLrg" name="" represents="_NshCvUXWEee6P4AGk_WLrg" coveredBy="_NshCn0XWEee6P4AGk_WLrg _NshCr0XWEee6P4AGk_WLrg _NshCsEXWEee6P4AGk_WLrg _NshCtEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCnEXWEee6P4AGk_WLrg" name="" represents="_NshCvkXWEee6P4AGk_WLrg" coveredBy="_NshCoEXWEee6P4AGk_WLrg _NshCoUXWEee6P4AGk_WLrg _NshCokXWEee6P4AGk_WLrg _NshCrEXWEee6P4AGk_WLrg _NshCrUXWEee6P4AGk_WLrg _NshCrkXWEee6P4AGk_WLrg _NshCs0XWEee6P4AGk_WLrg _NshCtkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCnUXWEee6P4AGk_WLrg" name="" represents="_NshCv0XWEee6P4AGk_WLrg" coveredBy="_NshCo0XWEee6P4AGk_WLrg _NshCpEXWEee6P4AGk_WLrg _NshCpUXWEee6P4AGk_WLrg _NshCqUXWEee6P4AGk_WLrg _NshCqkXWEee6P4AGk_WLrg _NshCq0XWEee6P4AGk_WLrg _NshCsUXWEee6P4AGk_WLrg _NshCskXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCnkXWEee6P4AGk_WLrg" represents="_NshCwEXWEee6P4AGk_WLrg" coveredBy="_NshCpkXWEee6P4AGk_WLrg _NshCp0XWEee6P4AGk_WLrg _NshCqEXWEee6P4AGk_WLrg _NshCtUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCn0XWEee6P4AGk_WLrg" covered="_NshCm0XWEee6P4AGk_WLrg" event="_NshD7kXWEee6P4AGk_WLrg" message="_NshCt0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCoEXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" event="_NshD8EXWEee6P4AGk_WLrg" message="_NshCt0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCoUXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" start="_NshCoEXWEee6P4AGk_WLrg" finish="_NshCtkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCokXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" event="_NshD8UXWEee6P4AGk_WLrg" message="_NshCuUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCo0XWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" event="_NshD80XWEee6P4AGk_WLrg" message="_NshCuUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCpEXWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" start="_NshCo0XWEee6P4AGk_WLrg" finish="_NshCskXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCpUXWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" event="_NshD9EXWEee6P4AGk_WLrg" message="_NshCu0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCpkXWEee6P4AGk_WLrg" covered="_NshCnkXWEee6P4AGk_WLrg" event="_NshD9kXWEee6P4AGk_WLrg" message="_NshCu0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCp0XWEee6P4AGk_WLrg" covered="_NshCnkXWEee6P4AGk_WLrg" start="_NshCpkXWEee6P4AGk_WLrg" finish="_NshCtUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCqEXWEee6P4AGk_WLrg" covered="_NshCnkXWEee6P4AGk_WLrg" event="_NshD90XWEee6P4AGk_WLrg" message="_NshCvEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCqUXWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" event="_NshD-UXWEee6P4AGk_WLrg" message="_NshCvEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCqkXWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" start="_NshCqUXWEee6P4AGk_WLrg" finish="_NshCsUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCq0XWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" event="_NshD-kXWEee6P4AGk_WLrg" message="_NshCukXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCrEXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" event="_NshD_EXWEee6P4AGk_WLrg" message="_NshCukXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCrUXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" start="_NshCrEXWEee6P4AGk_WLrg" finish="_NshCs0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCrkXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" event="_NshD_UXWEee6P4AGk_WLrg" message="_NshCuEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshCr0XWEee6P4AGk_WLrg" covered="_NshCm0XWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" message="_NshCuEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshCsEXWEee6P4AGk_WLrg" covered="_NshCm0XWEee6P4AGk_WLrg" start="_NshCr0XWEee6P4AGk_WLrg" finish="_NshCtEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCsUXWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" execution="_NshCqkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCskXWEee6P4AGk_WLrg" covered="_NshCnUXWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" execution="_NshCpEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCs0XWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" execution="_NshCrUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCtEXWEee6P4AGk_WLrg" covered="_NshCm0XWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" execution="_NshCsEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCtUXWEee6P4AGk_WLrg" covered="_NshCnkXWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" execution="_NshCp0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshCtkXWEee6P4AGk_WLrg" covered="_NshCnEXWEee6P4AGk_WLrg" event="_NshD_0XWEee6P4AGk_WLrg" execution="_NshCoUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCt0XWEee6P4AGk_WLrg" name="viewCurriculum( )" receiveEvent="_NshCoEXWEee6P4AGk_WLrg" sendEvent="_NshCn0XWEee6P4AGk_WLrg" connector="_NshCkkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCuEXWEee6P4AGk_WLrg" name="displayCurriculum( )" receiveEvent="_NshCr0XWEee6P4AGk_WLrg" sendEvent="_NshCrkXWEee6P4AGk_WLrg" connector="_NshCkkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCuUXWEee6P4AGk_WLrg" name="getCurriculum( )" receiveEvent="_NshCo0XWEee6P4AGk_WLrg" sendEvent="_NshCokXWEee6P4AGk_WLrg" connector="_NshClUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCukXWEee6P4AGk_WLrg" name="" receiveEvent="_NshCrEXWEee6P4AGk_WLrg" sendEvent="_NshCq0XWEee6P4AGk_WLrg" connector="_NshClUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCu0XWEee6P4AGk_WLrg" name="getCurriculum( )" receiveEvent="_NshCpkXWEee6P4AGk_WLrg" sendEvent="_NshCpUXWEee6P4AGk_WLrg" connector="_NshCmEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshCvEXWEee6P4AGk_WLrg" name="" receiveEvent="_NshCqUXWEee6P4AGk_WLrg" sendEvent="_NshCqEXWEee6P4AGk_WLrg" connector="_NshCmEXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshCvUXWEee6P4AGk_WLrg" name="" type="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCvkXWEee6P4AGk_WLrg" name="" type="_NshBfkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCv0XWEee6P4AGk_WLrg" name="" type="_NshBmUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshCwEXWEee6P4AGk_WLrg" name="" type="_NshCJUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshCwUXWEee6P4AGk_WLrg" name="View Transcript_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshCwkXWEee6P4AGk_WLrg" name="View Transcript">
+        <ownedConnector xmi:id="_NshCw0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCxEXWEee6P4AGk_WLrg" role="_NshC7kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCxUXWEee6P4AGk_WLrg" role="_NshC70XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshCxkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCx0XWEee6P4AGk_WLrg" role="_NshC70XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCyEXWEee6P4AGk_WLrg" role="_NshC8EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshCyUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshCykXWEee6P4AGk_WLrg" role="_NshC8EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshCy0XWEee6P4AGk_WLrg" role="_NshC8UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshCzEXWEee6P4AGk_WLrg" name="" represents="_NshC7kXWEee6P4AGk_WLrg" coveredBy="_NshC0EXWEee6P4AGk_WLrg _NshC4kXWEee6P4AGk_WLrg _NshC40XWEee6P4AGk_WLrg _NshC50XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCzUXWEee6P4AGk_WLrg" name="" represents="_NshC70XWEee6P4AGk_WLrg" coveredBy="_NshC0UXWEee6P4AGk_WLrg _NshC0kXWEee6P4AGk_WLrg _NshC00XWEee6P4AGk_WLrg _NshC3UXWEee6P4AGk_WLrg _NshC3kXWEee6P4AGk_WLrg _NshC4EXWEee6P4AGk_WLrg _NshC4UXWEee6P4AGk_WLrg _NshC5UXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCzkXWEee6P4AGk_WLrg" name="" represents="_NshC8EXWEee6P4AGk_WLrg" coveredBy="_NshC1EXWEee6P4AGk_WLrg _NshC1UXWEee6P4AGk_WLrg _NshC1kXWEee6P4AGk_WLrg _NshC2kXWEee6P4AGk_WLrg _NshC20XWEee6P4AGk_WLrg _NshC3EXWEee6P4AGk_WLrg _NshC30XWEee6P4AGk_WLrg _NshC5EXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshCz0XWEee6P4AGk_WLrg" represents="_NshC8UXWEee6P4AGk_WLrg" coveredBy="_NshC10XWEee6P4AGk_WLrg _NshC2EXWEee6P4AGk_WLrg _NshC2UXWEee6P4AGk_WLrg _NshC5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC0EXWEee6P4AGk_WLrg" covered="_NshCzEXWEee6P4AGk_WLrg" event="_NshEAEXWEee6P4AGk_WLrg" message="_NshC6EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC0UXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" event="_NshEAkXWEee6P4AGk_WLrg" message="_NshC6EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshC0kXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" start="_NshC0UXWEee6P4AGk_WLrg" finish="_NshC5UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC00XWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" event="_NshEA0XWEee6P4AGk_WLrg" message="_NshC6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC1EXWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" event="_NshEBUXWEee6P4AGk_WLrg" message="_NshC6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshC1UXWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" start="_NshC1EXWEee6P4AGk_WLrg" finish="_NshC5EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC1kXWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" event="_NshEBkXWEee6P4AGk_WLrg" message="_NshC7EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC10XWEee6P4AGk_WLrg" covered="_NshCz0XWEee6P4AGk_WLrg" event="_NshECEXWEee6P4AGk_WLrg" message="_NshC7EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshC2EXWEee6P4AGk_WLrg" covered="_NshCz0XWEee6P4AGk_WLrg" start="_NshC10XWEee6P4AGk_WLrg" finish="_NshC5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC2UXWEee6P4AGk_WLrg" covered="_NshCz0XWEee6P4AGk_WLrg" event="_NshECUXWEee6P4AGk_WLrg" message="_NshC7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC2kXWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" event="_NshEC0XWEee6P4AGk_WLrg" message="_NshC7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshC20XWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" start="_NshC2kXWEee6P4AGk_WLrg" finish="_NshC30XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC3EXWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" event="_NshEDEXWEee6P4AGk_WLrg" message="_NshC60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC3UXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" event="_NshEDkXWEee6P4AGk_WLrg" message="_NshC60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshC3kXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" start="_NshC3UXWEee6P4AGk_WLrg" finish="_NshC4EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshC30XWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" event="_NshEDkXWEee6P4AGk_WLrg" execution="_NshC20XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshC4EXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" event="_NshEDkXWEee6P4AGk_WLrg" execution="_NshC3kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC4UXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" event="_NshED0XWEee6P4AGk_WLrg" message="_NshC6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshC4kXWEee6P4AGk_WLrg" covered="_NshCzEXWEee6P4AGk_WLrg" event="_NshEEUXWEee6P4AGk_WLrg" message="_NshC6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshC40XWEee6P4AGk_WLrg" covered="_NshCzEXWEee6P4AGk_WLrg" start="_NshC4kXWEee6P4AGk_WLrg" finish="_NshC50XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshC5EXWEee6P4AGk_WLrg" covered="_NshCzkXWEee6P4AGk_WLrg" event="_NshEEUXWEee6P4AGk_WLrg" execution="_NshC1UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshC5UXWEee6P4AGk_WLrg" covered="_NshCzUXWEee6P4AGk_WLrg" event="_NshEEUXWEee6P4AGk_WLrg" execution="_NshC0kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshC5kXWEee6P4AGk_WLrg" covered="_NshCz0XWEee6P4AGk_WLrg" event="_NshEEUXWEee6P4AGk_WLrg" execution="_NshC2EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshC50XWEee6P4AGk_WLrg" covered="_NshCzEXWEee6P4AGk_WLrg" event="_NshEEUXWEee6P4AGk_WLrg" execution="_NshC40XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshC6EXWEee6P4AGk_WLrg" name="viewTranscript( )" receiveEvent="_NshC0UXWEee6P4AGk_WLrg" sendEvent="_NshC0EXWEee6P4AGk_WLrg" connector="_NshCw0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshC6UXWEee6P4AGk_WLrg" name="displayTranscript( )" receiveEvent="_NshC4kXWEee6P4AGk_WLrg" sendEvent="_NshC4UXWEee6P4AGk_WLrg" connector="_NshCw0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshC6kXWEee6P4AGk_WLrg" name="getTranscript( )" receiveEvent="_NshC1EXWEee6P4AGk_WLrg" sendEvent="_NshC00XWEee6P4AGk_WLrg" connector="_NshCxkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshC60XWEee6P4AGk_WLrg" name="" receiveEvent="_NshC3UXWEee6P4AGk_WLrg" sendEvent="_NshC3EXWEee6P4AGk_WLrg" connector="_NshCxkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshC7EXWEee6P4AGk_WLrg" name="getTranscript( )" receiveEvent="_NshC10XWEee6P4AGk_WLrg" sendEvent="_NshC1kXWEee6P4AGk_WLrg" connector="_NshCyUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshC7UXWEee6P4AGk_WLrg" name="" receiveEvent="_NshC2kXWEee6P4AGk_WLrg" sendEvent="_NshC2UXWEee6P4AGk_WLrg" connector="_NshCyUXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshC7kXWEee6P4AGk_WLrg" name="" type="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshC70XWEee6P4AGk_WLrg" name="" type="_NshBfkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshC8EXWEee6P4AGk_WLrg" name="" type="_NshBmUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshC8UXWEee6P4AGk_WLrg" name="" type="_NshB6EXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshC8kXWEee6P4AGk_WLrg" name="View GPA_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshC80XWEee6P4AGk_WLrg" name="View GPA">
+        <ownedConnector xmi:id="_NshC9EXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshC9UXWEee6P4AGk_WLrg" role="_NshDL0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshC9kXWEee6P4AGk_WLrg" role="_NshDMEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshC90XWEee6P4AGk_WLrg">
+          <end xmi:id="_NshC-EXWEee6P4AGk_WLrg" role="_NshDMEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshC-UXWEee6P4AGk_WLrg" role="_NshDMUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshC-kXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshC-0XWEee6P4AGk_WLrg" role="_NshDMUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshC_EXWEee6P4AGk_WLrg" role="_NshDM0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshC_UXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshC_kXWEee6P4AGk_WLrg" role="_NshDMUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshC_0XWEee6P4AGk_WLrg" role="_NshDMkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshDAEXWEee6P4AGk_WLrg" name="" represents="_NshDL0XWEee6P4AGk_WLrg" coveredBy="_NshDBUXWEee6P4AGk_WLrg _NshDHEXWEee6P4AGk_WLrg _NshDHUXWEee6P4AGk_WLrg _NshDIEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDAUXWEee6P4AGk_WLrg" name="" represents="_NshDMEXWEee6P4AGk_WLrg" coveredBy="_NshDBkXWEee6P4AGk_WLrg _NshDB0XWEee6P4AGk_WLrg _NshDCEXWEee6P4AGk_WLrg _NshDGUXWEee6P4AGk_WLrg _NshDGkXWEee6P4AGk_WLrg _NshDG0XWEee6P4AGk_WLrg _NshDHkXWEee6P4AGk_WLrg _NshDH0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDAkXWEee6P4AGk_WLrg" name="" represents="_NshDMUXWEee6P4AGk_WLrg" coveredBy="_NshDCUXWEee6P4AGk_WLrg _NshDCkXWEee6P4AGk_WLrg _NshDC0XWEee6P4AGk_WLrg _NshDD0XWEee6P4AGk_WLrg _NshDEEXWEee6P4AGk_WLrg _NshDEUXWEee6P4AGk_WLrg _NshDEkXWEee6P4AGk_WLrg _NshDFkXWEee6P4AGk_WLrg _NshDF0XWEee6P4AGk_WLrg _NshDGEXWEee6P4AGk_WLrg _NshDIUXWEee6P4AGk_WLrg _NshDI0XWEee6P4AGk_WLrg _NshDJEXWEee6P4AGk_WLrg _NshDJUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDA0XWEee6P4AGk_WLrg" represents="_NshDMkXWEee6P4AGk_WLrg" coveredBy="_NshDE0XWEee6P4AGk_WLrg _NshDFEXWEee6P4AGk_WLrg _NshDFUXWEee6P4AGk_WLrg _NshDIkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDBEXWEee6P4AGk_WLrg" represents="_NshDM0XWEee6P4AGk_WLrg" coveredBy="_NshDDEXWEee6P4AGk_WLrg _NshDDUXWEee6P4AGk_WLrg _NshDDkXWEee6P4AGk_WLrg _NshDJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDBUXWEee6P4AGk_WLrg" covered="_NshDAEXWEee6P4AGk_WLrg" event="_NshEEkXWEee6P4AGk_WLrg" message="_NshDJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDBkXWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" event="_NshEFEXWEee6P4AGk_WLrg" message="_NshDJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDB0XWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" start="_NshDBkXWEee6P4AGk_WLrg" finish="_NshDH0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDCEXWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" event="_NshEFUXWEee6P4AGk_WLrg" message="_NshDKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDCUXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEF0XWEee6P4AGk_WLrg" message="_NshDKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDCkXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" start="_NshDCUXWEee6P4AGk_WLrg" finish="_NshDJUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDC0XWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEGEXWEee6P4AGk_WLrg" message="_NshDK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDDEXWEee6P4AGk_WLrg" covered="_NshDBEXWEee6P4AGk_WLrg" event="_NshEGkXWEee6P4AGk_WLrg" message="_NshDK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDDUXWEee6P4AGk_WLrg" covered="_NshDBEXWEee6P4AGk_WLrg" start="_NshDDEXWEee6P4AGk_WLrg" finish="_NshDJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDDkXWEee6P4AGk_WLrg" covered="_NshDBEXWEee6P4AGk_WLrg" event="_NshEG0XWEee6P4AGk_WLrg" message="_NshDLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDD0XWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEHkXWEee6P4AGk_WLrg" message="_NshDLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDEEXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" start="_NshDD0XWEee6P4AGk_WLrg" finish="_NshDJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDEUXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" start="_NshDD0XWEee6P4AGk_WLrg" finish="_NshDI0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDEkXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEH0XWEee6P4AGk_WLrg" message="_NshDLUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDE0XWEee6P4AGk_WLrg" covered="_NshDA0XWEee6P4AGk_WLrg" event="_NshEIUXWEee6P4AGk_WLrg" message="_NshDLUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDFEXWEee6P4AGk_WLrg" covered="_NshDA0XWEee6P4AGk_WLrg" start="_NshDE0XWEee6P4AGk_WLrg" finish="_NshDIkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDFUXWEee6P4AGk_WLrg" covered="_NshDA0XWEee6P4AGk_WLrg" event="_NshEIkXWEee6P4AGk_WLrg" message="_NshDLkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDFkXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEJEXWEee6P4AGk_WLrg" message="_NshDLkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDF0XWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" start="_NshDFkXWEee6P4AGk_WLrg" finish="_NshDIUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDGEXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEJUXWEee6P4AGk_WLrg" message="_NshDKkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDGUXWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" event="_NshEJ0XWEee6P4AGk_WLrg" message="_NshDKkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDGkXWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" start="_NshDGUXWEee6P4AGk_WLrg" finish="_NshDHkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDG0XWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" event="_NshEKEXWEee6P4AGk_WLrg" message="_NshDKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDHEXWEee6P4AGk_WLrg" covered="_NshDAEXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" message="_NshDKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDHUXWEee6P4AGk_WLrg" covered="_NshDAEXWEee6P4AGk_WLrg" start="_NshDHEXWEee6P4AGk_WLrg" finish="_NshDIEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDHkXWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDGkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDH0XWEee6P4AGk_WLrg" covered="_NshDAUXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDB0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDIEXWEee6P4AGk_WLrg" covered="_NshDAEXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDHUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDIUXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDF0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDIkXWEee6P4AGk_WLrg" covered="_NshDA0XWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDFEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDI0XWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDEUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDJEXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDEEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDJUXWEee6P4AGk_WLrg" covered="_NshDAkXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDCkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDJkXWEee6P4AGk_WLrg" covered="_NshDBEXWEee6P4AGk_WLrg" event="_NshEKkXWEee6P4AGk_WLrg" execution="_NshDDUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDJ0XWEee6P4AGk_WLrg" name="viewGPAs( )" receiveEvent="_NshDBkXWEee6P4AGk_WLrg" sendEvent="_NshDBUXWEee6P4AGk_WLrg" connector="_NshC9EXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDKEXWEee6P4AGk_WLrg" name="displayGPAs( )" receiveEvent="_NshDHEXWEee6P4AGk_WLrg" sendEvent="_NshDG0XWEee6P4AGk_WLrg" connector="_NshC9EXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDKUXWEee6P4AGk_WLrg" name="getGPA( )" receiveEvent="_NshDCUXWEee6P4AGk_WLrg" sendEvent="_NshDCEXWEee6P4AGk_WLrg" connector="_NshC90XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDKkXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDGUXWEee6P4AGk_WLrg" sendEvent="_NshDGEXWEee6P4AGk_WLrg" connector="_NshC90XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDK0XWEee6P4AGk_WLrg" name="getTranscript( )" receiveEvent="_NshDDEXWEee6P4AGk_WLrg" sendEvent="_NshDC0XWEee6P4AGk_WLrg" connector="_NshC-kXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDLEXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDD0XWEee6P4AGk_WLrg" sendEvent="_NshDDkXWEee6P4AGk_WLrg" connector="_NshC-kXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDLUXWEee6P4AGk_WLrg" name="viewGPA( )" receiveEvent="_NshDE0XWEee6P4AGk_WLrg" sendEvent="_NshDEkXWEee6P4AGk_WLrg" connector="_NshC_UXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDLkXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDFkXWEee6P4AGk_WLrg" sendEvent="_NshDFUXWEee6P4AGk_WLrg" connector="_NshC_UXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshDL0XWEee6P4AGk_WLrg" name="" type="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDMEXWEee6P4AGk_WLrg" name="" type="_NshBfkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDMUXWEee6P4AGk_WLrg" name="" type="_NshBmUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDMkXWEee6P4AGk_WLrg" name="" type="_NshB8kXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDM0XWEee6P4AGk_WLrg" name="" type="_NshB6EXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshDNEXWEee6P4AGk_WLrg" name="Get Graduation Requirements_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshDNUXWEee6P4AGk_WLrg" name="Get Graduation Requirements">
+        <ownedConnector xmi:id="_NshDNkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDN0XWEee6P4AGk_WLrg" role="_NshDkEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDOEXWEee6P4AGk_WLrg" role="_NshDkUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDOUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDOkXWEee6P4AGk_WLrg" role="_NshDkUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDO0XWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDPEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDPUXWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDPkXWEee6P4AGk_WLrg" role="_NshDlkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDP0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDQEXWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDQUXWEee6P4AGk_WLrg" role="_NshDlUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDQkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDQ0XWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDREXWEee6P4AGk_WLrg" role="_NshDlEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDRUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDRkXWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDR0XWEee6P4AGk_WLrg" role="_NshDk0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDSEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDSUXWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDSkXWEee6P4AGk_WLrg" role="_NshDkkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshDS0XWEee6P4AGk_WLrg" name="" represents="_NshDkEXWEee6P4AGk_WLrg" coveredBy="_NshDUkXWEee6P4AGk_WLrg _NshDfUXWEee6P4AGk_WLrg _NshDfkXWEee6P4AGk_WLrg _NshDf0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDTEXWEee6P4AGk_WLrg" name="" represents="_NshDkUXWEee6P4AGk_WLrg" coveredBy="_NshDU0XWEee6P4AGk_WLrg _NshDVEXWEee6P4AGk_WLrg _NshDVUXWEee6P4AGk_WLrg _NshDd0XWEee6P4AGk_WLrg _NshDeEXWEee6P4AGk_WLrg _NshDekXWEee6P4AGk_WLrg _NshDfEXWEee6P4AGk_WLrg _NshDgkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDTUXWEee6P4AGk_WLrg" name="" represents="_NshDkkXWEee6P4AGk_WLrg" coveredBy="_NshDVkXWEee6P4AGk_WLrg _NshDV0XWEee6P4AGk_WLrg _NshDWEXWEee6P4AGk_WLrg _NshDXEXWEee6P4AGk_WLrg _NshDXUXWEee6P4AGk_WLrg _NshDXkXWEee6P4AGk_WLrg _NshDX0XWEee6P4AGk_WLrg _NshDY0XWEee6P4AGk_WLrg _NshDZEXWEee6P4AGk_WLrg _NshDZkXWEee6P4AGk_WLrg _NshDakXWEee6P4AGk_WLrg _NshDa0XWEee6P4AGk_WLrg _NshDbUXWEee6P4AGk_WLrg _NshDcUXWEee6P4AGk_WLrg _NshDckXWEee6P4AGk_WLrg _NshDdEXWEee6P4AGk_WLrg _NshDdUXWEee6P4AGk_WLrg _NshDdkXWEee6P4AGk_WLrg _NshDeUXWEee6P4AGk_WLrg _NshDe0XWEee6P4AGk_WLrg _NshDgEXWEee6P4AGk_WLrg _NshDgUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDTkXWEee6P4AGk_WLrg" represents="_NshDk0XWEee6P4AGk_WLrg" coveredBy="_NshDZ0XWEee6P4AGk_WLrg _NshDaEXWEee6P4AGk_WLrg _NshDaUXWEee6P4AGk_WLrg _NshDbEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDT0XWEee6P4AGk_WLrg" represents="_NshDlEXWEee6P4AGk_WLrg" coveredBy="_NshDbkXWEee6P4AGk_WLrg _NshDb0XWEee6P4AGk_WLrg _NshDcEXWEee6P4AGk_WLrg _NshDc0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDUEXWEee6P4AGk_WLrg" represents="_NshDlUXWEee6P4AGk_WLrg" coveredBy="_NshDYEXWEee6P4AGk_WLrg _NshDYUXWEee6P4AGk_WLrg _NshDYkXWEee6P4AGk_WLrg _NshDZUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDUUXWEee6P4AGk_WLrg" represents="_NshDlkXWEee6P4AGk_WLrg" coveredBy="_NshDWUXWEee6P4AGk_WLrg _NshDWkXWEee6P4AGk_WLrg _NshDW0XWEee6P4AGk_WLrg _NshDg0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDUkXWEee6P4AGk_WLrg" covered="_NshDS0XWEee6P4AGk_WLrg" event="_NshEK0XWEee6P4AGk_WLrg" message="_NshDhEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDU0XWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" event="_NshELUXWEee6P4AGk_WLrg" message="_NshDhEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDVEXWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" start="_NshDU0XWEee6P4AGk_WLrg" finish="_NshDgkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDVUXWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" event="_NshELkXWEee6P4AGk_WLrg" message="_NshDhkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDVkXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEMEXWEee6P4AGk_WLrg" message="_NshDhkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDV0XWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" start="_NshDVkXWEee6P4AGk_WLrg" finish="_NshDgUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDWEXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEMUXWEee6P4AGk_WLrg" message="_NshDiEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDWUXWEee6P4AGk_WLrg" covered="_NshDUUXWEee6P4AGk_WLrg" event="_NshEM0XWEee6P4AGk_WLrg" message="_NshDiEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDWkXWEee6P4AGk_WLrg" covered="_NshDUUXWEee6P4AGk_WLrg" start="_NshDWUXWEee6P4AGk_WLrg" finish="_NshDg0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDW0XWEee6P4AGk_WLrg" covered="_NshDUUXWEee6P4AGk_WLrg" event="_NshENEXWEee6P4AGk_WLrg" message="_NshDiUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDXEXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEN0XWEee6P4AGk_WLrg" message="_NshDiUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDXUXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" start="_NshDXEXWEee6P4AGk_WLrg" finish="_NshDgEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDXkXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" start="_NshDXEXWEee6P4AGk_WLrg" finish="_NshDe0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDX0XWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEOEXWEee6P4AGk_WLrg" message="_NshDikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDYEXWEee6P4AGk_WLrg" covered="_NshDUEXWEee6P4AGk_WLrg" event="_NshEOkXWEee6P4AGk_WLrg" message="_NshDikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDYUXWEee6P4AGk_WLrg" covered="_NshDUEXWEee6P4AGk_WLrg" start="_NshDYEXWEee6P4AGk_WLrg" finish="_NshDZUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDYkXWEee6P4AGk_WLrg" covered="_NshDUEXWEee6P4AGk_WLrg" event="_NshEO0XWEee6P4AGk_WLrg" message="_NshDi0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDY0XWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEPUXWEee6P4AGk_WLrg" message="_NshDi0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDZEXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" start="_NshDY0XWEee6P4AGk_WLrg" finish="_NshDeUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDZUXWEee6P4AGk_WLrg" covered="_NshDUEXWEee6P4AGk_WLrg" event="_NshEPUXWEee6P4AGk_WLrg" execution="_NshDYUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDZkXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEPkXWEee6P4AGk_WLrg" message="_NshDjkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDZ0XWEee6P4AGk_WLrg" covered="_NshDTkXWEee6P4AGk_WLrg" event="_NshEQEXWEee6P4AGk_WLrg" message="_NshDjkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDaEXWEee6P4AGk_WLrg" covered="_NshDTkXWEee6P4AGk_WLrg" start="_NshDZ0XWEee6P4AGk_WLrg" finish="_NshDbEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDaUXWEee6P4AGk_WLrg" covered="_NshDTkXWEee6P4AGk_WLrg" event="_NshEQUXWEee6P4AGk_WLrg" message="_NshDj0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDakXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEQ0XWEee6P4AGk_WLrg" message="_NshDj0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDa0XWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" start="_NshDakXWEee6P4AGk_WLrg" finish="_NshDdUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDbEXWEee6P4AGk_WLrg" covered="_NshDTkXWEee6P4AGk_WLrg" event="_NshEQ0XWEee6P4AGk_WLrg" execution="_NshDaEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDbUXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshEREXWEee6P4AGk_WLrg" message="_NshDjEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDbkXWEee6P4AGk_WLrg" covered="_NshDT0XWEee6P4AGk_WLrg" event="_NshERkXWEee6P4AGk_WLrg" message="_NshDjEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDb0XWEee6P4AGk_WLrg" covered="_NshDT0XWEee6P4AGk_WLrg" start="_NshDbkXWEee6P4AGk_WLrg" finish="_NshDc0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDcEXWEee6P4AGk_WLrg" covered="_NshDT0XWEee6P4AGk_WLrg" event="_NshER0XWEee6P4AGk_WLrg" message="_NshDjUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDcUXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshESUXWEee6P4AGk_WLrg" message="_NshDjUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDckXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" start="_NshDcUXWEee6P4AGk_WLrg" finish="_NshDdEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDc0XWEee6P4AGk_WLrg" covered="_NshDT0XWEee6P4AGk_WLrg" event="_NshESUXWEee6P4AGk_WLrg" execution="_NshDb0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDdEXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshESUXWEee6P4AGk_WLrg" execution="_NshDckXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDdUXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshESUXWEee6P4AGk_WLrg" execution="_NshDa0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDdkXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshESkXWEee6P4AGk_WLrg" message="_NshDh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDd0XWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" event="_NshETEXWEee6P4AGk_WLrg" message="_NshDh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDeEXWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" start="_NshDd0XWEee6P4AGk_WLrg" finish="_NshDekXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDeUXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshETEXWEee6P4AGk_WLrg" execution="_NshDZEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDekXWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" event="_NshETEXWEee6P4AGk_WLrg" execution="_NshDeEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDe0XWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshETEXWEee6P4AGk_WLrg" execution="_NshDXkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDfEXWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" event="_NshETUXWEee6P4AGk_WLrg" message="_NshDhUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDfUXWEee6P4AGk_WLrg" covered="_NshDS0XWEee6P4AGk_WLrg" event="_NshET0XWEee6P4AGk_WLrg" message="_NshDhUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDfkXWEee6P4AGk_WLrg" covered="_NshDS0XWEee6P4AGk_WLrg" start="_NshDfUXWEee6P4AGk_WLrg" finish="_NshDf0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDf0XWEee6P4AGk_WLrg" covered="_NshDS0XWEee6P4AGk_WLrg" event="_NshET0XWEee6P4AGk_WLrg" execution="_NshDfkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDgEXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshET0XWEee6P4AGk_WLrg" execution="_NshDXUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDgUXWEee6P4AGk_WLrg" covered="_NshDTUXWEee6P4AGk_WLrg" event="_NshET0XWEee6P4AGk_WLrg" execution="_NshDV0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDgkXWEee6P4AGk_WLrg" covered="_NshDTEXWEee6P4AGk_WLrg" event="_NshET0XWEee6P4AGk_WLrg" execution="_NshDVEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDg0XWEee6P4AGk_WLrg" covered="_NshDUUXWEee6P4AGk_WLrg" event="_NshET0XWEee6P4AGk_WLrg" execution="_NshDWkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDhEXWEee6P4AGk_WLrg" name="viewGradRequirements( )" receiveEvent="_NshDU0XWEee6P4AGk_WLrg" sendEvent="_NshDUkXWEee6P4AGk_WLrg" connector="_NshDNkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDhUXWEee6P4AGk_WLrg" name="displayGradRequirements( )" receiveEvent="_NshDfUXWEee6P4AGk_WLrg" sendEvent="_NshDfEXWEee6P4AGk_WLrg" connector="_NshDNkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDhkXWEee6P4AGk_WLrg" name="checkRequirements( )" receiveEvent="_NshDVkXWEee6P4AGk_WLrg" sendEvent="_NshDVUXWEee6P4AGk_WLrg" connector="_NshDOUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDh0XWEee6P4AGk_WLrg" name="" receiveEvent="_NshDd0XWEee6P4AGk_WLrg" sendEvent="_NshDdkXWEee6P4AGk_WLrg" connector="_NshDOUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDiEXWEee6P4AGk_WLrg" name="getTranscript( )" receiveEvent="_NshDWUXWEee6P4AGk_WLrg" sendEvent="_NshDWEXWEee6P4AGk_WLrg" connector="_NshDPEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDiUXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDXEXWEee6P4AGk_WLrg" sendEvent="_NshDW0XWEee6P4AGk_WLrg" connector="_NshDPEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDikXWEee6P4AGk_WLrg" name="getCurriculum( )" receiveEvent="_NshDYEXWEee6P4AGk_WLrg" sendEvent="_NshDX0XWEee6P4AGk_WLrg" connector="_NshDP0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDi0XWEee6P4AGk_WLrg" name="" receiveEvent="_NshDY0XWEee6P4AGk_WLrg" sendEvent="_NshDYkXWEee6P4AGk_WLrg" connector="_NshDP0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDjEXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDbkXWEee6P4AGk_WLrg" sendEvent="_NshDbUXWEee6P4AGk_WLrg" connector="_NshDQkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDjUXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDcUXWEee6P4AGk_WLrg" sendEvent="_NshDcEXWEee6P4AGk_WLrg" connector="_NshDQkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDjkXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDZ0XWEee6P4AGk_WLrg" sendEvent="_NshDZkXWEee6P4AGk_WLrg" connector="_NshDRUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDj0XWEee6P4AGk_WLrg" name="" receiveEvent="_NshDakXWEee6P4AGk_WLrg" sendEvent="_NshDaUXWEee6P4AGk_WLrg" connector="_NshDRUXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshDkEXWEee6P4AGk_WLrg" name="" type="_NshCEkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDkUXWEee6P4AGk_WLrg" name="" type="_NshBfkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDkkXWEee6P4AGk_WLrg" name="" type="_NshBmUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDk0XWEee6P4AGk_WLrg" name="" type="_NshB8kXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDlEXWEee6P4AGk_WLrg" name="" type="_NshBz0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDlUXWEee6P4AGk_WLrg" name="" type="_NshCJUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshDlkXWEee6P4AGk_WLrg" name="" type="_NshB6EXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NshDl0XWEee6P4AGk_WLrg" name="Update Curriculum_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NshDmEXWEee6P4AGk_WLrg" name="Update Curriculum">
+        <ownedConnector xmi:id="_NshDmUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDmkXWEee6P4AGk_WLrg" role="_NshD10XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDm0XWEee6P4AGk_WLrg" role="_NshD2EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDnEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDnUXWEee6P4AGk_WLrg" role="_NshD2EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDnkXWEee6P4AGk_WLrg" role="_NshD2UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDn0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDoEXWEee6P4AGk_WLrg" role="_NshD2EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDoUXWEee6P4AGk_WLrg" role="_NshD20XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NshDokXWEee6P4AGk_WLrg">
+          <end xmi:id="_NshDo0XWEee6P4AGk_WLrg" role="_NshD2UXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NshDpEXWEee6P4AGk_WLrg" role="_NshD2kXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NshDpUXWEee6P4AGk_WLrg" name="" represents="_NshD10XWEee6P4AGk_WLrg" coveredBy="_NshDqkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDpkXWEee6P4AGk_WLrg" name="" represents="_NshD2EXWEee6P4AGk_WLrg" coveredBy="_NshDq0XWEee6P4AGk_WLrg _NshDrEXWEee6P4AGk_WLrg _NshDrUXWEee6P4AGk_WLrg _NshDt0XWEee6P4AGk_WLrg _NshDuEXWEee6P4AGk_WLrg _NshDu0XWEee6P4AGk_WLrg _NshDvEXWEee6P4AGk_WLrg _NshDwUXWEee6P4AGk_WLrg _NshDwkXWEee6P4AGk_WLrg _NshDw0XWEee6P4AGk_WLrg _NshDxEXWEee6P4AGk_WLrg _NshDy0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDp0XWEee6P4AGk_WLrg" name="" represents="_NshD2UXWEee6P4AGk_WLrg" coveredBy="_NshDrkXWEee6P4AGk_WLrg _NshDr0XWEee6P4AGk_WLrg _NshDsEXWEee6P4AGk_WLrg _NshDtEXWEee6P4AGk_WLrg _NshDtUXWEee6P4AGk_WLrg _NshDtkXWEee6P4AGk_WLrg _NshDuUXWEee6P4AGk_WLrg _NshDukXWEee6P4AGk_WLrg _NshDxUXWEee6P4AGk_WLrg _NshDxkXWEee6P4AGk_WLrg _NshDyEXWEee6P4AGk_WLrg _NshDzUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDqEXWEee6P4AGk_WLrg" represents="_NshD20XWEee6P4AGk_WLrg" coveredBy="_NshDvUXWEee6P4AGk_WLrg _NshDvkXWEee6P4AGk_WLrg _NshDwEXWEee6P4AGk_WLrg _NshDx0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NshDqUXWEee6P4AGk_WLrg" represents="_NshD2kXWEee6P4AGk_WLrg" coveredBy="_NshDsUXWEee6P4AGk_WLrg _NshDskXWEee6P4AGk_WLrg _NshDs0XWEee6P4AGk_WLrg _NshDv0XWEee6P4AGk_WLrg _NshDyUXWEee6P4AGk_WLrg _NshDykXWEee6P4AGk_WLrg _NshDzEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDqkXWEee6P4AGk_WLrg" covered="_NshDpUXWEee6P4AGk_WLrg" event="_NshEUEXWEee6P4AGk_WLrg" message="_NshDzkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDq0XWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEUkXWEee6P4AGk_WLrg" message="_NshDzkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDrEXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" start="_NshDq0XWEee6P4AGk_WLrg" finish="_NshDy0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDrUXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEU0XWEee6P4AGk_WLrg" message="_NshDz0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDrkXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEVUXWEee6P4AGk_WLrg" message="_NshDz0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDr0XWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" start="_NshDrkXWEee6P4AGk_WLrg" finish="_NshDukXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDsEXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEVkXWEee6P4AGk_WLrg" message="_NshD1EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDsUXWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" event="_NshEWEXWEee6P4AGk_WLrg" message="_NshD1EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDskXWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" start="_NshDsUXWEee6P4AGk_WLrg" finish="_NshDv0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDs0XWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" event="_NshEWUXWEee6P4AGk_WLrg" message="_NshD1UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDtEXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEW0XWEee6P4AGk_WLrg" message="_NshD1UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDtUXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" start="_NshDtEXWEee6P4AGk_WLrg" finish="_NshDuUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDtkXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEXEXWEee6P4AGk_WLrg" message="_NshD0EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDt0XWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEXkXWEee6P4AGk_WLrg" message="_NshD0EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDuEXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" start="_NshDt0XWEee6P4AGk_WLrg" finish="_NshDu0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDuUXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEXkXWEee6P4AGk_WLrg" execution="_NshDtUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDukXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEXkXWEee6P4AGk_WLrg" execution="_NshDr0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDu0XWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEXkXWEee6P4AGk_WLrg" execution="_NshDuEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDvEXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEX0XWEee6P4AGk_WLrg" message="_NshD0kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDvUXWEee6P4AGk_WLrg" covered="_NshDqEXWEee6P4AGk_WLrg" event="_NshEYUXWEee6P4AGk_WLrg" message="_NshD0kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDvkXWEee6P4AGk_WLrg" covered="_NshDqEXWEee6P4AGk_WLrg" start="_NshDvUXWEee6P4AGk_WLrg" finish="_NshDx0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDv0XWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" event="_NshEYUXWEee6P4AGk_WLrg" execution="_NshDskXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDwEXWEee6P4AGk_WLrg" covered="_NshDqEXWEee6P4AGk_WLrg" event="_NshEYkXWEee6P4AGk_WLrg" message="_NshD00XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDwUXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEZEXWEee6P4AGk_WLrg" message="_NshD00XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDwkXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" start="_NshDwUXWEee6P4AGk_WLrg" finish="_NshDw0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDw0XWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEZEXWEee6P4AGk_WLrg" execution="_NshDwkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDxEXWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEZUXWEee6P4AGk_WLrg" message="_NshD0UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDxUXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEZ0XWEee6P4AGk_WLrg" message="_NshD0UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDxkXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" start="_NshDxUXWEee6P4AGk_WLrg" finish="_NshDzUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDx0XWEee6P4AGk_WLrg" covered="_NshDqEXWEee6P4AGk_WLrg" event="_NshEZ0XWEee6P4AGk_WLrg" execution="_NshDvkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDyEXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEaEXWEee6P4AGk_WLrg" message="_NshD1kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NshDyUXWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" event="_NshEakXWEee6P4AGk_WLrg" message="_NshD1kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NshDykXWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" start="_NshDyUXWEee6P4AGk_WLrg" finish="_NshDzEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDy0XWEee6P4AGk_WLrg" covered="_NshDpkXWEee6P4AGk_WLrg" event="_NshEakXWEee6P4AGk_WLrg" execution="_NshDrEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDzEXWEee6P4AGk_WLrg" covered="_NshDqUXWEee6P4AGk_WLrg" event="_NshEakXWEee6P4AGk_WLrg" execution="_NshDykXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NshDzUXWEee6P4AGk_WLrg" covered="_NshDp0XWEee6P4AGk_WLrg" event="_NshEakXWEee6P4AGk_WLrg" execution="_NshDxkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDzkXWEee6P4AGk_WLrg" name="updateCurriculum( )" receiveEvent="_NshDq0XWEee6P4AGk_WLrg" sendEvent="_NshDqkXWEee6P4AGk_WLrg" connector="_NshDmUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshDz0XWEee6P4AGk_WLrg" name="getCurriculum( )" receiveEvent="_NshDrkXWEee6P4AGk_WLrg" sendEvent="_NshDrUXWEee6P4AGk_WLrg" connector="_NshDnEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD0EXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDt0XWEee6P4AGk_WLrg" sendEvent="_NshDtkXWEee6P4AGk_WLrg" connector="_NshDnEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD0UXWEee6P4AGk_WLrg" name="writeCurriculum( )" receiveEvent="_NshDxUXWEee6P4AGk_WLrg" sendEvent="_NshDxEXWEee6P4AGk_WLrg" connector="_NshDnEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD0kXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDvUXWEee6P4AGk_WLrg" sendEvent="_NshDvEXWEee6P4AGk_WLrg" connector="_NshDn0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD00XWEee6P4AGk_WLrg" name="" receiveEvent="_NshDwUXWEee6P4AGk_WLrg" sendEvent="_NshDwEXWEee6P4AGk_WLrg" connector="_NshDn0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD1EXWEee6P4AGk_WLrg" name="getCurriculum( )" receiveEvent="_NshDsUXWEee6P4AGk_WLrg" sendEvent="_NshDsEXWEee6P4AGk_WLrg" connector="_NshDokXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD1UXWEee6P4AGk_WLrg" name="" receiveEvent="_NshDtEXWEee6P4AGk_WLrg" sendEvent="_NshDs0XWEee6P4AGk_WLrg" connector="_NshDokXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NshD1kXWEee6P4AGk_WLrg" name="writeCurriculum( )" receiveEvent="_NshDyUXWEee6P4AGk_WLrg" sendEvent="_NshDyEXWEee6P4AGk_WLrg" connector="_NshDokXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NshD10XWEee6P4AGk_WLrg" name="" type="_NshCIEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshD2EXWEee6P4AGk_WLrg" name="" type="_NshCB0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshD2UXWEee6P4AGk_WLrg" name="" type="_NshBmUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshD2kXWEee6P4AGk_WLrg" name="" type="_NshCJUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NshD20XWEee6P4AGk_WLrg" name="" type="_NshBz0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD3EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD3UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD3kXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD30XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD4EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD4UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD4kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD40XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD5EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD5UXWEee6P4AGk_WLrg" operation="_NshCBkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD5kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD50XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD6EXWEee6P4AGk_WLrg" operation="_NshBiUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD6UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD6kXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD60XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD7EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD7UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD7kXWEee6P4AGk_WLrg" operation="_NshBikXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD70XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD8EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD8UXWEee6P4AGk_WLrg" operation="_NshBqkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD8kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD80XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD9EXWEee6P4AGk_WLrg" operation="_NshCKkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD9UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD9kXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD90XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD-EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD-UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD-kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD-0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD_EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshD_UXWEee6P4AGk_WLrg" operation="_NshCF0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshD_kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshD_0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEAEXWEee6P4AGk_WLrg" operation="_NshBi0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEAUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEAkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEA0XWEee6P4AGk_WLrg" operation="_NshBq0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEBEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEBUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEBkXWEee6P4AGk_WLrg" operation="_NshB7EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEB0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshECEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshECUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshECkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEC0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEDEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEDUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEDkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshED0XWEee6P4AGk_WLrg" operation="_NshCGEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEEEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEEUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEEkXWEee6P4AGk_WLrg" operation="_NshBjUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEE0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEFEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEFUXWEee6P4AGk_WLrg" operation="_NshBrEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEFkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEF0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEGEXWEee6P4AGk_WLrg" operation="_NshB7EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEGUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEGkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEG0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEHEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEHUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEHkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEH0XWEee6P4AGk_WLrg" operation="_NshB-kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEIEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEIUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEIkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEI0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEJEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEJUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEJkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEJ0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEKEXWEee6P4AGk_WLrg" operation="_NshCGkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEKUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEKkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEK0XWEee6P4AGk_WLrg" operation="_NshBjEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshELEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshELUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshELkXWEee6P4AGk_WLrg" operation="_NshBqUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEL0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEMEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEMUXWEee6P4AGk_WLrg" operation="_NshB7EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEMkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEM0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshENEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshENUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshENkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEN0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEOEXWEee6P4AGk_WLrg" operation="_NshCKkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEOUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEOkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEO0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEPEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEPUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEPkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEP0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEQEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEQUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEQkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEQ0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEREXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshERUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshERkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshER0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshESEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshESUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshESkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshES0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshETEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshETUXWEee6P4AGk_WLrg" operation="_NshCGUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshETkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshET0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEUEXWEee6P4AGk_WLrg" operation="_NshCEEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEUUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEUkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEU0XWEee6P4AGk_WLrg" operation="_NshBqkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEVEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEVUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEVkXWEee6P4AGk_WLrg" operation="_NshCKkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEV0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEWEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEWUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEWkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEW0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEXEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEXUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEXkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEX0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEYEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEYUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEYkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEY0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEZEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEZUXWEee6P4AGk_WLrg" operation="_NshBrUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEZkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEZ0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NshEaEXWEee6P4AGk_WLrg" operation="_NshCK0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NshEaUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NshEakXWEee6P4AGk_WLrg" name=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NshEa0XWEee6P4AGk_WLrg" name="Component View" clientDependency="_NshEbEXWEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NshEbEXWEee6P4AGk_WLrg" supplier="_NshBfUXWEee6P4AGk_WLrg" client="_NshEa0XWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NshEbUXWEee6P4AGk_WLrg" name="Deployment View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NshEbkXWEee6P4AGk_WLrg" name="RoseUserDefinedTypes">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NshEb0XWEee6P4AGk_WLrg" name="Array of Strings"/>
+  </packagedElement>
+  <profileApplication xmi:id="_NshEcEXWEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_NshEcUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

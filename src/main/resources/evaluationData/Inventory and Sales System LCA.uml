@@ -1,0 +1,1488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Ns4s-EXWEee6P4AGk_WLrg" name="Inventory and Sales System LCA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Ns4s-UXWEee6P4AGk_WLrg" name="Use Case View">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Ns4s-kXWEee6P4AGk_WLrg" name="SalesClerk"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Ns4s-0XWEee6P4AGk_WLrg" name="Printer"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Ns4s_EXWEee6P4AGk_WLrg" name="Manager"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4s_UXWEee6P4AGk_WLrg" name="CreateAnOrderSUC">
+      <ownedComment xmi:id="_Ns4s_kXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/CreateAnOrderSUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4s_0XWEee6P4AGk_WLrg" name="UpdateAnOrderSUC">
+      <ownedComment xmi:id="_Ns4tAEXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/UpdateAnOrderSUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4tAUXWEee6P4AGk_WLrg" name="AddNewCustomerSUC">
+      <ownedComment xmi:id="_Ns4tAkXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/AddNewCustomerSUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4tA0XWEee6P4AGk_WLrg" name="ManageCustomerInformationSUC">
+      <ownedComment xmi:id="_Ns4tBEXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/ManageCustomerInformationSUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4tBUXWEee6P4AGk_WLrg" name="ProduceSalesOrderReportSUC">
+      <ownedComment xmi:id="_Ns4tBkXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/ProduceSalesOrderReportSUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4tB0XWEee6P4AGk_WLrg" name="ProduceInventoryReportSUC">
+      <ownedComment xmi:id="_Ns4tCEXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/ProduceInventoryReportSUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ns4tCUXWEee6P4AGk_WLrg" name="UpdateInventorySUC">
+      <ownedComment xmi:id="_Ns4tCkXWEee6P4AGk_WLrg">
+        <body>http://matrix.senecac.on.ca/~pr566a01/UpdateInventorySUC.doc</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tC0XWEee6P4AGk_WLrg" memberEnd="_Ns4tDEXWEee6P4AGk_WLrg _Ns4tDUXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tDEXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tDEXWEee6P4AGk_WLrg" name="_produceSalesOrderReportSUC" visibility="public" type="_Ns4tBUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tC0XWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tDUXWEee6P4AGk_WLrg" name="_printer" visibility="public" type="_Ns4s-0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tC0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tDkXWEee6P4AGk_WLrg" memberEnd="_Ns4tD0XWEee6P4AGk_WLrg _Ns4tEEXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tD0XWEee6P4AGk_WLrg _Ns4tEEXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tD0XWEee6P4AGk_WLrg" name="_produceSalesOrderReportSUC" visibility="public" type="_Ns4tBUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tDkXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tEEXWEee6P4AGk_WLrg" name="_printer" visibility="public" type="_Ns4s-0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tDkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tEUXWEee6P4AGk_WLrg" memberEnd="_Ns4tEkXWEee6P4AGk_WLrg _Ns4tE0XWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tEkXWEee6P4AGk_WLrg _Ns4tE0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tEkXWEee6P4AGk_WLrg" name="_produceInventoryReportSUC" visibility="public" type="_Ns4tB0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tEUXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tE0XWEee6P4AGk_WLrg" name="_printer" visibility="public" type="_Ns4s-0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tEUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tFEXWEee6P4AGk_WLrg" memberEnd="_Ns4tFUXWEee6P4AGk_WLrg _Ns4tFkXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tFUXWEee6P4AGk_WLrg _Ns4tFkXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tFUXWEee6P4AGk_WLrg" name="_createAnOrderSUC" visibility="public" type="_Ns4s_UXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tFEXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tFkXWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tFEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tF0XWEee6P4AGk_WLrg" memberEnd="_Ns4tGEXWEee6P4AGk_WLrg _Ns4tGUXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tGEXWEee6P4AGk_WLrg _Ns4tGUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tGEXWEee6P4AGk_WLrg" name="_updateAnOrderSUC" visibility="public" type="_Ns4s_0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tF0XWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tGUXWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tF0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tGkXWEee6P4AGk_WLrg" memberEnd="_Ns4tG0XWEee6P4AGk_WLrg _Ns4tHEXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tG0XWEee6P4AGk_WLrg _Ns4tHEXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tG0XWEee6P4AGk_WLrg" name="_produceInventoryReportSUC" visibility="public" type="_Ns4tB0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tGkXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tHEXWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tGkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tHUXWEee6P4AGk_WLrg" memberEnd="_Ns4tHkXWEee6P4AGk_WLrg _Ns4tH0XWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tHkXWEee6P4AGk_WLrg _Ns4tH0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tHkXWEee6P4AGk_WLrg" name="_produceSalesOrderReportSUC" visibility="public" type="_Ns4tBUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tHUXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tH0XWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tHUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tIEXWEee6P4AGk_WLrg" memberEnd="_Ns4tIUXWEee6P4AGk_WLrg _Ns4tIkXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tIUXWEee6P4AGk_WLrg _Ns4tIkXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tIUXWEee6P4AGk_WLrg" name="_addNewCustomerSUC" visibility="public" type="_Ns4tAUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tIEXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tIkXWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tIEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tI0XWEee6P4AGk_WLrg" memberEnd="_Ns4tJEXWEee6P4AGk_WLrg _Ns4tJUXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tJEXWEee6P4AGk_WLrg _Ns4tJUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tJEXWEee6P4AGk_WLrg" name="_manageCustomerInformationSUC" visibility="public" type="_Ns4tA0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tI0XWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tJUXWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tI0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tJkXWEee6P4AGk_WLrg" memberEnd="_Ns4tJ0XWEee6P4AGk_WLrg _Ns4tKEXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tJ0XWEee6P4AGk_WLrg _Ns4tKEXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tJ0XWEee6P4AGk_WLrg" name="_updateInventorySUC" visibility="public" type="_Ns4tCUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tJkXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tKEXWEee6P4AGk_WLrg" name="_manager" visibility="public" type="_Ns4s_EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tJkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tKUXWEee6P4AGk_WLrg" memberEnd="_Ns4tKkXWEee6P4AGk_WLrg _Ns4tK0XWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tKkXWEee6P4AGk_WLrg _Ns4tK0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tKkXWEee6P4AGk_WLrg" name="_createAnOrderSUC" visibility="public" type="_Ns4s_UXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tKUXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tK0XWEee6P4AGk_WLrg" name="_salesClerk" visibility="public" type="_Ns4s-kXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tKUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tLEXWEee6P4AGk_WLrg" memberEnd="_Ns4tLUXWEee6P4AGk_WLrg _Ns4tLkXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tLUXWEee6P4AGk_WLrg _Ns4tLkXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tLUXWEee6P4AGk_WLrg" name="_updateAnOrderSUC" visibility="public" type="_Ns4s_0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tLEXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tLkXWEee6P4AGk_WLrg" name="_salesClerk" visibility="public" type="_Ns4s-kXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tLEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tL0XWEee6P4AGk_WLrg" memberEnd="_Ns4tMEXWEee6P4AGk_WLrg _Ns4tMUXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tMEXWEee6P4AGk_WLrg _Ns4tMUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tMEXWEee6P4AGk_WLrg" name="_addNewCustomerSUC" visibility="public" type="_Ns4tAUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tL0XWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tMUXWEee6P4AGk_WLrg" name="_salesClerk" visibility="public" type="_Ns4s-kXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tL0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tMkXWEee6P4AGk_WLrg" memberEnd="_Ns4tM0XWEee6P4AGk_WLrg _Ns4tNEXWEee6P4AGk_WLrg" navigableOwnedEnd="_Ns4tM0XWEee6P4AGk_WLrg _Ns4tNEXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_Ns4tM0XWEee6P4AGk_WLrg" name="_manageCustomerInformationSUC" visibility="public" type="_Ns4tA0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tMkXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_Ns4tNEXWEee6P4AGk_WLrg" name="_salesClerk" visibility="public" type="_Ns4s-kXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tMkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Ns4tNUXWEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tNkXWEee6P4AGk_WLrg" memberEnd="_Ns4tzkXWEee6P4AGk_WLrg _Ns4t_kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tN0XWEee6P4AGk_WLrg" memberEnd="_Ns4uAUXWEee6P4AGk_WLrg _Ns4tR0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ns4tOEXWEee6P4AGk_WLrg" name="CustomerManagementCalss">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4tOUXWEee6P4AGk_WLrg" name="AddNewCustomerPage">
+        <eAnnotations xmi:id="_Ns4tOkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tO0XWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tPEXWEee6P4AGk_WLrg" name="saveButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tPUXWEee6P4AGk_WLrg" name="clearButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tPkXWEee6P4AGk_WLrg" name="homeButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tP0XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tX0XWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4tQEXWEee6P4AGk_WLrg" name="displayPage()" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tQUXWEee6P4AGk_WLrg" name="handelClick" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tQkXWEee6P4AGk_WLrg" name="enterData" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tQ0XWEee6P4AGk_WLrg" name="enterData(CustomerInformation)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4tREXWEee6P4AGk_WLrg" name="CustomerInfo">
+        <eAnnotations xmi:id="_Ns4tRUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tRkXWEee6P4AGk_WLrg" key="entity"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tR0XWEee6P4AGk_WLrg" name="_orderRecord" visibility="public" type="_Ns4t-0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tN0XWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ns4tSEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ns4tSUXWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ns4tSkXWEee6P4AGk_WLrg" name="Name" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tS0XWEee6P4AGk_WLrg" name="Tel" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tTEXWEee6P4AGk_WLrg" name="Fax" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tTUXWEee6P4AGk_WLrg" name="Address" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tTkXWEee6P4AGk_WLrg" name="AccountNumber" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tT0XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tYkXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4tUEXWEee6P4AGk_WLrg" name="addNewCustomerInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tUUXWEee6P4AGk_WLrg" name="retriveCustomerInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tUkXWEee6P4AGk_WLrg" name="fetchCustomerInfo(AccountNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tU0XWEee6P4AGk_WLrg" name="updateCustomerInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tVEXWEee6P4AGk_WLrg" name="fetchCustomerInfo" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4tVUXWEee6P4AGk_WLrg" name="ManageCustomerInformationPage">
+        <eAnnotations xmi:id="_Ns4tVkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tV0XWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tWEXWEee6P4AGk_WLrg" name="saveButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tWUXWEee6P4AGk_WLrg" name="clearButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tWkXWEee6P4AGk_WLrg" name="homeButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tW0XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tYEXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4tXEXWEee6P4AGk_WLrg" name="displayPage" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tXUXWEee6P4AGk_WLrg" name="enterCustomerInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tXkXWEee6P4AGk_WLrg" name="handelClick(SaveButton)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tX0XWEee6P4AGk_WLrg" memberEnd="_Ns4tP0XWEee6P4AGk_WLrg _Ns4tmUXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tYEXWEee6P4AGk_WLrg" memberEnd="_Ns4tW0XWEee6P4AGk_WLrg _Ns4tmkXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tYUXWEee6P4AGk_WLrg" memberEnd="_Ns4tZ0XWEee6P4AGk_WLrg _Ns4tm0XWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4tYkXWEee6P4AGk_WLrg" memberEnd="_Ns4tnEXWEee6P4AGk_WLrg _Ns4tT0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ns4tY0XWEee6P4AGk_WLrg" name="CommonClass">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4tZEXWEee6P4AGk_WLrg" name="ConfrimationDialogueBox">
+        <eAnnotations xmi:id="_Ns4tZUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tZkXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tZ0XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tYUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4taEXWEee6P4AGk_WLrg" name="message" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4taUXWEee6P4AGk_WLrg" name="okButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4takXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t7EXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4ta0XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uLkXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4tbEXWEee6P4AGk_WLrg" name="displayDialogueBox(CustomerAccountNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tbUXWEee6P4AGk_WLrg" name="handelClick(okButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tbkXWEee6P4AGk_WLrg" name="closeDialogueBox" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tb0XWEee6P4AGk_WLrg" name="displayDialogueBox" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tcEXWEee6P4AGk_WLrg" name="handelClick(okButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tcUXWEee6P4AGk_WLrg" name="displayDialogfueBox" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tckXWEee6P4AGk_WLrg" name="handelClick(okButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tc0XWEee6P4AGk_WLrg" name="closePage()" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tdEXWEee6P4AGk_WLrg" name="displayDialogueBox " visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tdUXWEee6P4AGk_WLrg" name="displayDialogueBox" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tdkXWEee6P4AGk_WLrg" name="handelClick(OKButton)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4td0XWEee6P4AGk_WLrg" name="ErrorMessageBox">
+        <eAnnotations xmi:id="_Ns4teEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4teUXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tekXWEee6P4AGk_WLrg" name="message" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4te0XWEee6P4AGk_WLrg" name="okButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tfEXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uK0XWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4tfUXWEee6P4AGk_WLrg" name="MainMenuPage">
+        <eAnnotations xmi:id="_Ns4tfkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tf0XWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tgEXWEee6P4AGk_WLrg" name="AddNewCustomerButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tgUXWEee6P4AGk_WLrg" name="CreateAnOrderButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tgkXWEee6P4AGk_WLrg" name="ManageCustomerInformationButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tg0XWEee6P4AGk_WLrg" name="UpdateAnOrderButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4thEXWEee6P4AGk_WLrg" name="ProduceInventoryReportButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4thUXWEee6P4AGk_WLrg" name="ProduceSalesOrderReportButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4thkXWEee6P4AGk_WLrg" name="UpdateInventoryButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4th0XWEee6P4AGk_WLrg" name="ExitLogoffSystemButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4tiEXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t7kXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tiUXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uL0XWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4tikXWEee6P4AGk_WLrg" name="handelClick(AddNewCustomerButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4ti0XWEee6P4AGk_WLrg" name="opname" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tjEXWEee6P4AGk_WLrg" name="enterData(CustomerName, Phone number)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tjUXWEee6P4AGk_WLrg" name="handelClick(CreateAnOrderButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tjkXWEee6P4AGk_WLrg" name="enterData(AccountNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tj0XWEee6P4AGk_WLrg" name="handelClick(ManageCustomerInformationButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tkEXWEee6P4AGk_WLrg" name="handelClick(ProduceInventoryReportButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tkUXWEee6P4AGk_WLrg" name="enterData(fromDate, endDate)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tkkXWEee6P4AGk_WLrg" name="handelClick(ProduceSalesOrderReportButton)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tk0XWEee6P4AGk_WLrg" name="enterData(InvoiceNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tlEXWEee6P4AGk_WLrg" name="handleClick(UpdateAnOrder)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tlUXWEee6P4AGk_WLrg" name="handelClick(UpdateInventoryButton)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4tlkXWEee6P4AGk_WLrg" name="SystemControl">
+        <eAnnotations xmi:id="_Ns4tl0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tmEXWEee6P4AGk_WLrg" key="control"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tmUXWEee6P4AGk_WLrg" name="_addNewCustomerPage" visibility="public" type="_Ns4tOUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tX0XWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tmkXWEee6P4AGk_WLrg" name="_manageCustomerInformationPage" visibility="public" type="_Ns4tVUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tYEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tm0XWEee6P4AGk_WLrg" name="_confrimationDialogueBox" visibility="public" type="_Ns4tZEXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tYUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tnEXWEee6P4AGk_WLrg" name="_customerInfo" visibility="public" type="_Ns4tREXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tYkXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tnUXWEee6P4AGk_WLrg" name="_updateInventoryPage" visibility="public" type="_Ns4t30XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t6kXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tnkXWEee6P4AGk_WLrg" name="_produceInventoryReportPage" visibility="public" type="_Ns4t2UXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t60XWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tn0XWEee6P4AGk_WLrg" name="_confrimationDialogueBox" visibility="public" type="_Ns4tZEXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t7EXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4toEXWEee6P4AGk_WLrg" name="_inventoryItemInfo" visibility="public" type="_Ns4ty0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t7UXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4toUXWEee6P4AGk_WLrg" name="_mainMenuPage" visibility="public" type="_Ns4tfUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t7kXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tokXWEee6P4AGk_WLrg" name="_createAnOrderPage" visibility="public" type="_Ns4t8EXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uKUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4to0XWEee6P4AGk_WLrg" name="_produceSalesOrderReportPage" visibility="public" type="_Ns4uI0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uKkXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tpEXWEee6P4AGk_WLrg" name="_errorMessageBox" visibility="public" type="_Ns4td0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uK0XWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tpUXWEee6P4AGk_WLrg" name="_printOrderConfrimation" visibility="public" type="_Ns4uFkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uLEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tpkXWEee6P4AGk_WLrg" name="_orderRecord" visibility="public" type="_Ns4t-0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uLUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tp0XWEee6P4AGk_WLrg" name="_confrimationDialogueBox" visibility="public" type="_Ns4tZEXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uLkXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tqEXWEee6P4AGk_WLrg" name="_mainMenuPage" visibility="public" type="_Ns4tfUXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uL0XWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4tqUXWEee6P4AGk_WLrg" name="_updateAnOrderPage" visibility="public" type="_Ns4uGkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uMEXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4tqkXWEee6P4AGk_WLrg" name="requestAddNewCustomer" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tq0XWEee6P4AGk_WLrg" name="addData" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4trEXWEee6P4AGk_WLrg" name="addNewCustomerInformation(CustomerInfo)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4trUXWEee6P4AGk_WLrg" name="acceptConfirmation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4trkXWEee6P4AGk_WLrg" name="retrieveCustomerInformation()" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tr0XWEee6P4AGk_WLrg" name="getCustomerInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tsEXWEee6P4AGk_WLrg" name="getInvoiceNumber" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tsUXWEee6P4AGk_WLrg" name="addOrderInformation(OrderInformation)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tskXWEee6P4AGk_WLrg" name="updateInventoryItemInfo(SoldItemInfo)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4ts0XWEee6P4AGk_WLrg" name="addOrderInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4ttEXWEee6P4AGk_WLrg" name="retriveCustomerInfor(AccountNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4ttUXWEee6P4AGk_WLrg" name="getCustomerInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4ttkXWEee6P4AGk_WLrg" name="updateCustomerInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tt0XWEee6P4AGk_WLrg" name="acceptConfirmation(Saved)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tuEXWEee6P4AGk_WLrg" name="retriveInventoryItemInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tuUXWEee6P4AGk_WLrg" name="getInventoryItemInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tukXWEee6P4AGk_WLrg" name="retriveOrderInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tu0XWEee6P4AGk_WLrg" name="getOrderInformaton" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tvEXWEee6P4AGk_WLrg" name="opname" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tvUXWEee6P4AGk_WLrg" name="fetchOrderRecord(InvoiceNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tvkXWEee6P4AGk_WLrg" name="fetchOrderRecord" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tv0XWEee6P4AGk_WLrg" name="fetchOrderRecord(InvoiceNumber)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4twEXWEee6P4AGk_WLrg" name="getOrderRecord" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4twUXWEee6P4AGk_WLrg" name="updateOrderInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4twkXWEee6P4AGk_WLrg" name="updateInventoryItemInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tw0XWEee6P4AGk_WLrg" name="updateOrderInformation(orderInfo)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4txEXWEee6P4AGk_WLrg" name="acceptConfitmation(saved)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4txUXWEee6P4AGk_WLrg" name="retriveInventoryItem" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4txkXWEee6P4AGk_WLrg" name="retriveInventoryInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tx0XWEee6P4AGk_WLrg" name="getInventoryItemInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tyEXWEee6P4AGk_WLrg" name="updateInventor(Quantity, Cost, Salesprice)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4tyUXWEee6P4AGk_WLrg" name="acceptConfrimaton" visibility="public"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ns4tykXWEee6P4AGk_WLrg" name="InventoryManagementClass">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4ty0XWEee6P4AGk_WLrg" name="InventoryItemInfo">
+        <eAnnotations xmi:id="_Ns4tzEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4tzUXWEee6P4AGk_WLrg" key="entity"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4tzkXWEee6P4AGk_WLrg" name="_orderRecord" visibility="public" type="_Ns4t-0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tNkXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ns4tz0XWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ns4t0EXWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ns4t0UXWEee6P4AGk_WLrg" name="Name" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t0kXWEee6P4AGk_WLrg" name="Quantiry" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t00XWEee6P4AGk_WLrg" name="Price" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t1EXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t7UXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4t1UXWEee6P4AGk_WLrg" name="updateInventoryItemInfo(SoldItemInfo)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t1kXWEee6P4AGk_WLrg" name="fetchInventoryItemInfo" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t10XWEee6P4AGk_WLrg" name="fetchInventoryItemInfromation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t2EXWEee6P4AGk_WLrg" name="updateIventoryItemInformaiton" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4t2UXWEee6P4AGk_WLrg" name="ProduceInventoryReportPage">
+        <eAnnotations xmi:id="_Ns4t2kXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4t20XWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4t3EXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t60XWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4t3UXWEee6P4AGk_WLrg" name="displayPage" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t3kXWEee6P4AGk_WLrg" name="closePage" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4t30XWEee6P4AGk_WLrg" name="UpdateInventoryPage">
+        <eAnnotations xmi:id="_Ns4t4EXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4t4UXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4t4kXWEee6P4AGk_WLrg" name="updateButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t40XWEee6P4AGk_WLrg" name="homeButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t5EXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4t6kXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4t5UXWEee6P4AGk_WLrg" name="opname" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t5kXWEee6P4AGk_WLrg" name="opname2" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t50XWEee6P4AGk_WLrg" name="displayPage" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t6EXWEee6P4AGk_WLrg" name="enteDate(Quantity, cost, saleprice )" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t6UXWEee6P4AGk_WLrg" name="handelClick(updateButton)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4t6kXWEee6P4AGk_WLrg" memberEnd="_Ns4t5EXWEee6P4AGk_WLrg _Ns4tnUXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4t60XWEee6P4AGk_WLrg" memberEnd="_Ns4t3EXWEee6P4AGk_WLrg _Ns4tnkXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4t7EXWEee6P4AGk_WLrg" memberEnd="_Ns4takXWEee6P4AGk_WLrg _Ns4tn0XWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4t7UXWEee6P4AGk_WLrg" memberEnd="_Ns4t1EXWEee6P4AGk_WLrg _Ns4toEXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4t7kXWEee6P4AGk_WLrg" memberEnd="_Ns4toUXWEee6P4AGk_WLrg _Ns4tiEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ns4t70XWEee6P4AGk_WLrg" name="SalesManagementClass">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4t8EXWEee6P4AGk_WLrg" name="CreateAnOrderPage">
+        <eAnnotations xmi:id="_Ns4t8UXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4t8kXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <generalization xmi:id="_Ns4t80XWEee6P4AGk_WLrg" general="_Ns4tlkXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_Ns4t9EXWEee6P4AGk_WLrg" name="createOrderButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t9UXWEee6P4AGk_WLrg" name="clearOrderButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t9kXWEee6P4AGk_WLrg" name="homeButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4t90XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uKUXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4t-EXWEee6P4AGk_WLrg" name="displayPage" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t-UXWEee6P4AGk_WLrg" name="enterData(OrderInformation)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4t-kXWEee6P4AGk_WLrg" name="handelClick(CreateOrderButton)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4t-0XWEee6P4AGk_WLrg" name="OrderRecord">
+        <eAnnotations xmi:id="_Ns4t_EXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4t_UXWEee6P4AGk_WLrg" key="entity"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4t_kXWEee6P4AGk_WLrg" name="_inventoryItemInfo" visibility="public" type="_Ns4ty0XWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tNkXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ns4t_0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ns4uAEXWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ns4uAUXWEee6P4AGk_WLrg" name="_customerInfo" visibility="public" type="_Ns4tREXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4tN0XWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ns4uAkXWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ns4uA0XWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ns4uBEXWEee6P4AGk_WLrg" name="CustomerName" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uBUXWEee6P4AGk_WLrg" name="CustPhone" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uBkXWEee6P4AGk_WLrg" name="DeliveryTo" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uB0XWEee6P4AGk_WLrg" name="Phone" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uCEXWEee6P4AGk_WLrg" name="OrderDate" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uCUXWEee6P4AGk_WLrg" name="FirstChoice" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uCkXWEee6P4AGk_WLrg" name="SecChoice" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uC0XWEee6P4AGk_WLrg" name="Message" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uDEXWEee6P4AGk_WLrg" name="PaymentMethod" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uDUXWEee6P4AGk_WLrg" name="InvoiceNumber" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uDkXWEee6P4AGk_WLrg" name="AccountNumber" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uD0XWEee6P4AGk_WLrg" name="Total" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uEEXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uLUXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4uEUXWEee6P4AGk_WLrg" name="fetchInvoiceNumber" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uEkXWEee6P4AGk_WLrg" name="updateOrderRecord(OrderInformation)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uE0XWEee6P4AGk_WLrg" name="fetchOrderInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uFEXWEee6P4AGk_WLrg" name="fetchOrderRecord(InvoiceNumbeer)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uFUXWEee6P4AGk_WLrg" name="fetchOrderRecord(InvoiceNumber)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4uFkXWEee6P4AGk_WLrg" name="PrintOrderConfrimation">
+        <eAnnotations xmi:id="_Ns4uF0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4uGEXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4uGUXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uLEXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4uGkXWEee6P4AGk_WLrg" name="UpdateAnOrderPage">
+        <eAnnotations xmi:id="_Ns4uG0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4uHEXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4uHUXWEee6P4AGk_WLrg" name="updateOrderButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uHkXWEee6P4AGk_WLrg" name="homeButton" visibility="private"/>
+        <ownedAttribute xmi:id="_Ns4uH0XWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uMEXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4uIEXWEee6P4AGk_WLrg" name="displayPage(OrderInfo)" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uIUXWEee6P4AGk_WLrg" name="updateOrderInformation" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uIkXWEee6P4AGk_WLrg" name="handelClick(UpdateButton)" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ns4uI0XWEee6P4AGk_WLrg" name="ProduceSalesOrderReportPage">
+        <eAnnotations xmi:id="_Ns4uJEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ns4uJUXWEee6P4AGk_WLrg" key="boundary"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_Ns4uJkXWEee6P4AGk_WLrg" name="_systemControl" visibility="public" type="_Ns4tlkXWEee6P4AGk_WLrg" isUnique="false" association="_Ns4uKkXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_Ns4uJ0XWEee6P4AGk_WLrg" name="displayPage" visibility="public"/>
+        <ownedOperation xmi:id="_Ns4uKEXWEee6P4AGk_WLrg" name="closePage" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uKUXWEee6P4AGk_WLrg" memberEnd="_Ns4t90XWEee6P4AGk_WLrg _Ns4tokXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uKkXWEee6P4AGk_WLrg" memberEnd="_Ns4uJkXWEee6P4AGk_WLrg _Ns4to0XWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uK0XWEee6P4AGk_WLrg" memberEnd="_Ns4tfEXWEee6P4AGk_WLrg _Ns4tpEXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uLEXWEee6P4AGk_WLrg" memberEnd="_Ns4uGUXWEee6P4AGk_WLrg _Ns4tpUXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uLUXWEee6P4AGk_WLrg" memberEnd="_Ns4uEEXWEee6P4AGk_WLrg _Ns4tpkXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uLkXWEee6P4AGk_WLrg" memberEnd="_Ns4ta0XWEee6P4AGk_WLrg _Ns4tp0XWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uL0XWEee6P4AGk_WLrg" memberEnd="_Ns4tiUXWEee6P4AGk_WLrg _Ns4tqEXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4uMEXWEee6P4AGk_WLrg" memberEnd="_Ns4uH0XWEee6P4AGk_WLrg _Ns4tqUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4uMUXWEee6P4AGk_WLrg" name="AddNewCustomer_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4uMkXWEee6P4AGk_WLrg" name="AddNewCustomer">
+        <ownedConnector xmi:id="_Ns4uM0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uNEXWEee6P4AGk_WLrg" role="_Ns4ui0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uNUXWEee6P4AGk_WLrg" role="_Ns4ujUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uNkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uN0XWEee6P4AGk_WLrg" role="_Ns4ui0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uOEXWEee6P4AGk_WLrg" role="_Ns4ujEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uOUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uOkXWEee6P4AGk_WLrg" role="_Ns4ui0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uO0XWEee6P4AGk_WLrg" role="_Ns4ukEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uPEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uPUXWEee6P4AGk_WLrg" role="_Ns4ujUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uPkXWEee6P4AGk_WLrg" role="_Ns4ujEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uP0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uQEXWEee6P4AGk_WLrg" role="_Ns4ujUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uQUXWEee6P4AGk_WLrg" role="_Ns4ujkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uQkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uQ0XWEee6P4AGk_WLrg" role="_Ns4ujkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uREXWEee6P4AGk_WLrg" role="_Ns4ujEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uRUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uRkXWEee6P4AGk_WLrg" role="_Ns4ujkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uR0XWEee6P4AGk_WLrg" role="_Ns4uj0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uSEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uSUXWEee6P4AGk_WLrg" role="_Ns4ujkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uSkXWEee6P4AGk_WLrg" role="_Ns4ukEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uS0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uTEXWEee6P4AGk_WLrg" role="_Ns4ukEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uTUXWEee6P4AGk_WLrg" role="_Ns4ukEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4uTkXWEee6P4AGk_WLrg" name="" represents="_Ns4ui0XWEee6P4AGk_WLrg" coveredBy="_Ns4uVEXWEee6P4AGk_WLrg _Ns4uYEXWEee6P4AGk_WLrg _Ns4uZEXWEee6P4AGk_WLrg _Ns4ueEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4uT0XWEee6P4AGk_WLrg" name="" represents="_Ns4ujUXWEee6P4AGk_WLrg" coveredBy="_Ns4uVUXWEee6P4AGk_WLrg _Ns4uVkXWEee6P4AGk_WLrg _Ns4uV0XWEee6P4AGk_WLrg _Ns4uWEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4uUEXWEee6P4AGk_WLrg" represents="_Ns4ujEXWEee6P4AGk_WLrg" coveredBy="_Ns4uXUXWEee6P4AGk_WLrg _Ns4uXkXWEee6P4AGk_WLrg _Ns4uX0XWEee6P4AGk_WLrg _Ns4uYUXWEee6P4AGk_WLrg _Ns4uYkXWEee6P4AGk_WLrg _Ns4uY0XWEee6P4AGk_WLrg _Ns4uZUXWEee6P4AGk_WLrg _Ns4uZkXWEee6P4AGk_WLrg _Ns4uZ0XWEee6P4AGk_WLrg _Ns4uaEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4uUUXWEee6P4AGk_WLrg" name="" represents="_Ns4ukEXWEee6P4AGk_WLrg" coveredBy="_Ns4udUXWEee6P4AGk_WLrg _Ns4udkXWEee6P4AGk_WLrg _Ns4ud0XWEee6P4AGk_WLrg _Ns4ueUXWEee6P4AGk_WLrg _Ns4uekXWEee6P4AGk_WLrg _Ns4ue0XWEee6P4AGk_WLrg _Ns4ufEXWEee6P4AGk_WLrg _Ns4ufUXWEee6P4AGk_WLrg _Ns4ufkXWEee6P4AGk_WLrg _Ns4uf0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4uUkXWEee6P4AGk_WLrg" name="" represents="_Ns4ujkXWEee6P4AGk_WLrg" coveredBy="_Ns4uWUXWEee6P4AGk_WLrg _Ns4uWkXWEee6P4AGk_WLrg _Ns4uW0XWEee6P4AGk_WLrg _Ns4uXEXWEee6P4AGk_WLrg _Ns4uaUXWEee6P4AGk_WLrg _Ns4uakXWEee6P4AGk_WLrg _Ns4ua0XWEee6P4AGk_WLrg _Ns4ubEXWEee6P4AGk_WLrg _Ns4ucUXWEee6P4AGk_WLrg _Ns4uckXWEee6P4AGk_WLrg _Ns4uc0XWEee6P4AGk_WLrg _Ns4udEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4uU0XWEee6P4AGk_WLrg" represents="_Ns4uj0XWEee6P4AGk_WLrg" coveredBy="_Ns4ubUXWEee6P4AGk_WLrg _Ns4ubkXWEee6P4AGk_WLrg _Ns4ub0XWEee6P4AGk_WLrg _Ns4ucEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uVEXWEee6P4AGk_WLrg" covered="_Ns4uTkXWEee6P4AGk_WLrg" event="_NtBURUXWEee6P4AGk_WLrg" message="_Ns4ugEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uVUXWEee6P4AGk_WLrg" covered="_Ns4uT0XWEee6P4AGk_WLrg" event="_NtBUR0XWEee6P4AGk_WLrg" message="_Ns4ugEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uVkXWEee6P4AGk_WLrg" covered="_Ns4uT0XWEee6P4AGk_WLrg" start="_Ns4uVUXWEee6P4AGk_WLrg" finish="_Ns4uV0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uV0XWEee6P4AGk_WLrg" covered="_Ns4uT0XWEee6P4AGk_WLrg" event="_NtBUR0XWEee6P4AGk_WLrg" execution="_Ns4uVkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uWEXWEee6P4AGk_WLrg" covered="_Ns4uT0XWEee6P4AGk_WLrg" event="_NtBUSEXWEee6P4AGk_WLrg" message="_Ns4uhEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uWUXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUSkXWEee6P4AGk_WLrg" message="_Ns4uhEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uWkXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" start="_Ns4uWUXWEee6P4AGk_WLrg" finish="_Ns4uW0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uW0XWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUSkXWEee6P4AGk_WLrg" execution="_Ns4uWkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uXEXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUS0XWEee6P4AGk_WLrg" message="_Ns4uhkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uXUXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUTUXWEee6P4AGk_WLrg" message="_Ns4uhkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uXkXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" start="_Ns4uXUXWEee6P4AGk_WLrg" finish="_Ns4uX0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uX0XWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUTUXWEee6P4AGk_WLrg" execution="_Ns4uXkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uYEXWEee6P4AGk_WLrg" covered="_Ns4uTkXWEee6P4AGk_WLrg" event="_NtBUTkXWEee6P4AGk_WLrg" message="_Ns4ugUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uYUXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUUEXWEee6P4AGk_WLrg" message="_Ns4ugUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uYkXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" start="_Ns4uYUXWEee6P4AGk_WLrg" finish="_Ns4uY0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uY0XWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUUEXWEee6P4AGk_WLrg" execution="_Ns4uYkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uZEXWEee6P4AGk_WLrg" covered="_Ns4uTkXWEee6P4AGk_WLrg" event="_NtBUUUXWEee6P4AGk_WLrg" message="_Ns4ugkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uZUXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUU0XWEee6P4AGk_WLrg" message="_Ns4ugkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uZkXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" start="_Ns4uZUXWEee6P4AGk_WLrg" finish="_Ns4uZ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uZ0XWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUU0XWEee6P4AGk_WLrg" execution="_Ns4uZkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uaEXWEee6P4AGk_WLrg" covered="_Ns4uUEXWEee6P4AGk_WLrg" event="_NtBUVEXWEee6P4AGk_WLrg" message="_Ns4uhUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uaUXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUVkXWEee6P4AGk_WLrg" message="_Ns4uhUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uakXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" start="_Ns4uaUXWEee6P4AGk_WLrg" finish="_Ns4ua0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4ua0XWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUVkXWEee6P4AGk_WLrg" execution="_Ns4uakXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ubEXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUV0XWEee6P4AGk_WLrg" message="_Ns4uh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ubUXWEee6P4AGk_WLrg" covered="_Ns4uU0XWEee6P4AGk_WLrg" event="_NtBUWUXWEee6P4AGk_WLrg" message="_Ns4uh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4ubkXWEee6P4AGk_WLrg" covered="_Ns4uU0XWEee6P4AGk_WLrg" start="_Ns4ubUXWEee6P4AGk_WLrg" finish="_Ns4ub0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4ub0XWEee6P4AGk_WLrg" covered="_Ns4uU0XWEee6P4AGk_WLrg" event="_NtBUWUXWEee6P4AGk_WLrg" execution="_Ns4ubkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ucEXWEee6P4AGk_WLrg" covered="_Ns4uU0XWEee6P4AGk_WLrg" event="_NtBUWkXWEee6P4AGk_WLrg" message="_Ns4uiEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ucUXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUXEXWEee6P4AGk_WLrg" message="_Ns4uiEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uckXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" start="_Ns4ucUXWEee6P4AGk_WLrg" finish="_Ns4uc0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uc0XWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUXEXWEee6P4AGk_WLrg" execution="_Ns4uckXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4udEXWEee6P4AGk_WLrg" covered="_Ns4uUkXWEee6P4AGk_WLrg" event="_NtBUXUXWEee6P4AGk_WLrg" message="_Ns4uiUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4udUXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUX0XWEee6P4AGk_WLrg" message="_Ns4uiUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4udkXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" start="_Ns4udUXWEee6P4AGk_WLrg" finish="_Ns4ud0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4ud0XWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUX0XWEee6P4AGk_WLrg" execution="_Ns4udkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ueEXWEee6P4AGk_WLrg" covered="_Ns4uTkXWEee6P4AGk_WLrg" event="_NtBUYEXWEee6P4AGk_WLrg" message="_Ns4ug0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ueUXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUYkXWEee6P4AGk_WLrg" message="_Ns4ug0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uekXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" start="_Ns4ueUXWEee6P4AGk_WLrg" finish="_Ns4ue0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4ue0XWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUYkXWEee6P4AGk_WLrg" execution="_Ns4uekXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ufEXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUY0XWEee6P4AGk_WLrg" message="_Ns4uikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ufUXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUZUXWEee6P4AGk_WLrg" message="_Ns4uikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4ufkXWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" start="_Ns4ufUXWEee6P4AGk_WLrg" finish="_Ns4uf0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uf0XWEee6P4AGk_WLrg" covered="_Ns4uUUXWEee6P4AGk_WLrg" event="_NtBUZUXWEee6P4AGk_WLrg" execution="_Ns4ufkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4ugEXWEee6P4AGk_WLrg" name="handelClick(AddNewCustomerButton)" receiveEvent="_Ns4uVUXWEee6P4AGk_WLrg" sendEvent="_Ns4uVEXWEee6P4AGk_WLrg" connector="_Ns4uM0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4ugUXWEee6P4AGk_WLrg" name="enterData(CustomerInformation)" receiveEvent="_Ns4uYUXWEee6P4AGk_WLrg" sendEvent="_Ns4uYEXWEee6P4AGk_WLrg" connector="_Ns4uNkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4ugkXWEee6P4AGk_WLrg" name="handelClick(AddButton )" receiveEvent="_Ns4uZUXWEee6P4AGk_WLrg" sendEvent="_Ns4uZEXWEee6P4AGk_WLrg" connector="_Ns4uNkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4ug0XWEee6P4AGk_WLrg" name="handelClick(okButton)" receiveEvent="_Ns4ueUXWEee6P4AGk_WLrg" sendEvent="_Ns4ueEXWEee6P4AGk_WLrg" connector="_Ns4uOUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uhEXWEee6P4AGk_WLrg" name="requestAddNewCustomer( )" receiveEvent="_Ns4uWUXWEee6P4AGk_WLrg" sendEvent="_Ns4uWEXWEee6P4AGk_WLrg" connector="_Ns4uP0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uhUXWEee6P4AGk_WLrg" name="addNewCustomerInformation(CustomerInfo)" receiveEvent="_Ns4uaUXWEee6P4AGk_WLrg" sendEvent="_Ns4uaEXWEee6P4AGk_WLrg" connector="_Ns4uQkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uhkXWEee6P4AGk_WLrg" name="displayPage()" receiveEvent="_Ns4uXUXWEee6P4AGk_WLrg" sendEvent="_Ns4uXEXWEee6P4AGk_WLrg" connector="_Ns4uQkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uh0XWEee6P4AGk_WLrg" name="addNewCustomerInformation( )" receiveEvent="_Ns4ubUXWEee6P4AGk_WLrg" sendEvent="_Ns4ubEXWEee6P4AGk_WLrg" connector="_Ns4uRUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uiEXWEee6P4AGk_WLrg" name="acceptConfirmation( )" receiveEvent="_Ns4ucUXWEee6P4AGk_WLrg" sendEvent="_Ns4ucEXWEee6P4AGk_WLrg" connector="_Ns4uRUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uiUXWEee6P4AGk_WLrg" name="displayDialogueBox(CustomerAccountNumber)" receiveEvent="_Ns4udUXWEee6P4AGk_WLrg" sendEvent="_Ns4udEXWEee6P4AGk_WLrg" connector="_Ns4uSEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4uikXWEee6P4AGk_WLrg" name="closeDialogueBox( )" receiveEvent="_Ns4ufUXWEee6P4AGk_WLrg" sendEvent="_Ns4ufEXWEee6P4AGk_WLrg" connector="_Ns4uS0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Ns4ui0XWEee6P4AGk_WLrg" name="" type="_Ns4s_EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4ujEXWEee6P4AGk_WLrg" name="" type="_Ns4tOUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4ujUXWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4ujkXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4uj0XWEee6P4AGk_WLrg" name="" type="_Ns4tREXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4ukEXWEee6P4AGk_WLrg" name="" type="_Ns4tZEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4ukUXWEee6P4AGk_WLrg" name="ManageCustomerInformation_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4ukkXWEee6P4AGk_WLrg" name="ManageCustomerInformation">
+        <ownedConnector xmi:id="_Ns4uk0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4ulEXWEee6P4AGk_WLrg" role="_Ns4u90XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4ulUXWEee6P4AGk_WLrg" role="_Ns4u-kXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4ulkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4ul0XWEee6P4AGk_WLrg" role="_Ns4u90XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4umEXWEee6P4AGk_WLrg" role="_Ns4u-UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4umUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4umkXWEee6P4AGk_WLrg" role="_Ns4u90XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4um0XWEee6P4AGk_WLrg" role="_Ns4u-0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4unEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4unUXWEee6P4AGk_WLrg" role="_Ns4u-kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4unkXWEee6P4AGk_WLrg" role="_Ns4u_EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4un0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uoEXWEee6P4AGk_WLrg" role="_Ns4u-0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uoUXWEee6P4AGk_WLrg" role="_Ns4u-0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uokXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uo0XWEee6P4AGk_WLrg" role="_Ns4u_EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4upEXWEee6P4AGk_WLrg" role="_Ns4u-EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4upUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4upkXWEee6P4AGk_WLrg" role="_Ns4u_EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4up0XWEee6P4AGk_WLrg" role="_Ns4u-UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4uqEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4uqUXWEee6P4AGk_WLrg" role="_Ns4u_EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4uqkXWEee6P4AGk_WLrg" role="_Ns4u-0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4uq0XWEee6P4AGk_WLrg" name="" represents="_Ns4u90XWEee6P4AGk_WLrg" coveredBy="_Ns4usUXWEee6P4AGk_WLrg _Ns4utUXWEee6P4AGk_WLrg _Ns4uyUXWEee6P4AGk_WLrg _Ns4uzUXWEee6P4AGk_WLrg _Ns4u4EXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4urEXWEee6P4AGk_WLrg" name="" represents="_Ns4u-kXWEee6P4AGk_WLrg" coveredBy="_Ns4uskXWEee6P4AGk_WLrg _Ns4us0XWEee6P4AGk_WLrg _Ns4utEXWEee6P4AGk_WLrg _Ns4utkXWEee6P4AGk_WLrg _Ns4ut0XWEee6P4AGk_WLrg _Ns4uuEXWEee6P4AGk_WLrg _Ns4uuUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4urUXWEee6P4AGk_WLrg" represents="_Ns4u-UXWEee6P4AGk_WLrg" coveredBy="_Ns4uxkXWEee6P4AGk_WLrg _Ns4ux0XWEee6P4AGk_WLrg _Ns4uyEXWEee6P4AGk_WLrg _Ns4uykXWEee6P4AGk_WLrg _Ns4uy0XWEee6P4AGk_WLrg _Ns4uzEXWEee6P4AGk_WLrg _Ns4uzkXWEee6P4AGk_WLrg _Ns4uz0XWEee6P4AGk_WLrg _Ns4u0EXWEee6P4AGk_WLrg _Ns4u00XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4urkXWEee6P4AGk_WLrg" name="" represents="_Ns4u-0XWEee6P4AGk_WLrg" coveredBy="_Ns4u3kXWEee6P4AGk_WLrg _Ns4u30XWEee6P4AGk_WLrg _Ns4u4UXWEee6P4AGk_WLrg _Ns4u4kXWEee6P4AGk_WLrg _Ns4u40XWEee6P4AGk_WLrg _Ns4u5EXWEee6P4AGk_WLrg _Ns4u5UXWEee6P4AGk_WLrg _Ns4u5kXWEee6P4AGk_WLrg _Ns4u50XWEee6P4AGk_WLrg _Ns4u6EXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4ur0XWEee6P4AGk_WLrg" name="" represents="_Ns4u_EXWEee6P4AGk_WLrg" coveredBy="_Ns4uukXWEee6P4AGk_WLrg _Ns4uu0XWEee6P4AGk_WLrg _Ns4uvEXWEee6P4AGk_WLrg _Ns4uvUXWEee6P4AGk_WLrg _Ns4uwkXWEee6P4AGk_WLrg _Ns4uw0XWEee6P4AGk_WLrg _Ns4uxEXWEee6P4AGk_WLrg _Ns4uxUXWEee6P4AGk_WLrg _Ns4u0UXWEee6P4AGk_WLrg _Ns4u0kXWEee6P4AGk_WLrg _Ns4u1EXWEee6P4AGk_WLrg _Ns4u1UXWEee6P4AGk_WLrg _Ns4u2kXWEee6P4AGk_WLrg _Ns4u20XWEee6P4AGk_WLrg _Ns4u3EXWEee6P4AGk_WLrg _Ns4u3UXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4usEXWEee6P4AGk_WLrg" represents="_Ns4u-EXWEee6P4AGk_WLrg" coveredBy="_Ns4uvkXWEee6P4AGk_WLrg _Ns4uv0XWEee6P4AGk_WLrg _Ns4uwEXWEee6P4AGk_WLrg _Ns4uwUXWEee6P4AGk_WLrg _Ns4u1kXWEee6P4AGk_WLrg _Ns4u10XWEee6P4AGk_WLrg _Ns4u2EXWEee6P4AGk_WLrg _Ns4u2UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4usUXWEee6P4AGk_WLrg" covered="_Ns4uq0XWEee6P4AGk_WLrg" event="_NtBUZkXWEee6P4AGk_WLrg" message="_Ns4u6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uskXWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" event="_NtBUaEXWEee6P4AGk_WLrg" message="_Ns4u6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4us0XWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" start="_Ns4uskXWEee6P4AGk_WLrg" finish="_Ns4utEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4utEXWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" event="_NtBUaEXWEee6P4AGk_WLrg" execution="_Ns4us0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4utUXWEee6P4AGk_WLrg" covered="_Ns4uq0XWEee6P4AGk_WLrg" event="_NtBUaUXWEee6P4AGk_WLrg" message="_Ns4u6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4utkXWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" event="_NtBUa0XWEee6P4AGk_WLrg" message="_Ns4u6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4ut0XWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" start="_Ns4utkXWEee6P4AGk_WLrg" finish="_Ns4uuEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uuEXWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" event="_NtBUa0XWEee6P4AGk_WLrg" execution="_Ns4ut0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uuUXWEee6P4AGk_WLrg" covered="_Ns4urEXWEee6P4AGk_WLrg" event="_NtBUbEXWEee6P4AGk_WLrg" message="_Ns4u7kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uukXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUbkXWEee6P4AGk_WLrg" message="_Ns4u7kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uu0XWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" start="_Ns4uukXWEee6P4AGk_WLrg" finish="_Ns4uvEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uvEXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUbkXWEee6P4AGk_WLrg" execution="_Ns4uu0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uvUXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUb0XWEee6P4AGk_WLrg" message="_Ns4u8EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uvkXWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" event="_NtBUcUXWEee6P4AGk_WLrg" message="_Ns4u8EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uv0XWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" start="_Ns4uvkXWEee6P4AGk_WLrg" finish="_Ns4uwEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uwEXWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" event="_NtBUcUXWEee6P4AGk_WLrg" execution="_Ns4uv0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uwUXWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" event="_NtBUckXWEee6P4AGk_WLrg" message="_Ns4u8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uwkXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUdEXWEee6P4AGk_WLrg" message="_Ns4u8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uw0XWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" start="_Ns4uwkXWEee6P4AGk_WLrg" finish="_Ns4uxEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uxEXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUdEXWEee6P4AGk_WLrg" execution="_Ns4uw0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uxUXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUdUXWEee6P4AGk_WLrg" message="_Ns4u9EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uxkXWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUd0XWEee6P4AGk_WLrg" message="_Ns4u9EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4ux0XWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" start="_Ns4uxkXWEee6P4AGk_WLrg" finish="_Ns4uyEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uyEXWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUd0XWEee6P4AGk_WLrg" execution="_Ns4ux0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uyUXWEee6P4AGk_WLrg" covered="_Ns4uq0XWEee6P4AGk_WLrg" event="_NtBUeEXWEee6P4AGk_WLrg" message="_Ns4u60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uykXWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUekXWEee6P4AGk_WLrg" message="_Ns4u60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uy0XWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" start="_Ns4uykXWEee6P4AGk_WLrg" finish="_Ns4uzEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4uzEXWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUekXWEee6P4AGk_WLrg" execution="_Ns4uy0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uzUXWEee6P4AGk_WLrg" covered="_Ns4uq0XWEee6P4AGk_WLrg" event="_NtBUe0XWEee6P4AGk_WLrg" message="_Ns4u7EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4uzkXWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUfUXWEee6P4AGk_WLrg" message="_Ns4u7EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4uz0XWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" start="_Ns4uzkXWEee6P4AGk_WLrg" finish="_Ns4u00XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u0EXWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUfkXWEee6P4AGk_WLrg" message="_Ns4u9UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u0UXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUgEXWEee6P4AGk_WLrg" message="_Ns4u9UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4u0kXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" start="_Ns4u0UXWEee6P4AGk_WLrg" finish="_Ns4u1EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u00XWEee6P4AGk_WLrg" covered="_Ns4urUXWEee6P4AGk_WLrg" event="_NtBUgEXWEee6P4AGk_WLrg" execution="_Ns4uz0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u1EXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUgEXWEee6P4AGk_WLrg" execution="_Ns4u0kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u1UXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUgUXWEee6P4AGk_WLrg" message="_Ns4u8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u1kXWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" event="_NtBUg0XWEee6P4AGk_WLrg" message="_Ns4u8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4u10XWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" start="_Ns4u1kXWEee6P4AGk_WLrg" finish="_Ns4u2EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u2EXWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" event="_NtBUg0XWEee6P4AGk_WLrg" execution="_Ns4u10XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u2UXWEee6P4AGk_WLrg" covered="_Ns4usEXWEee6P4AGk_WLrg" event="_NtBUhEXWEee6P4AGk_WLrg" message="_Ns4u80XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u2kXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUhkXWEee6P4AGk_WLrg" message="_Ns4u80XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4u20XWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" start="_Ns4u2kXWEee6P4AGk_WLrg" finish="_Ns4u3EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u3EXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUhkXWEee6P4AGk_WLrg" execution="_Ns4u20XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u3UXWEee6P4AGk_WLrg" covered="_Ns4ur0XWEee6P4AGk_WLrg" event="_NtBUh0XWEee6P4AGk_WLrg" message="_Ns4u9kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u3kXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUiUXWEee6P4AGk_WLrg" message="_Ns4u9kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4u30XWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" start="_Ns4u3kXWEee6P4AGk_WLrg" finish="_Ns4u40XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u4EXWEee6P4AGk_WLrg" covered="_Ns4uq0XWEee6P4AGk_WLrg" event="_NtBUikXWEee6P4AGk_WLrg" message="_Ns4u7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u4UXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUjEXWEee6P4AGk_WLrg" message="_Ns4u7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4u4kXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" start="_Ns4u4UXWEee6P4AGk_WLrg" finish="_Ns4u5EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u40XWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUjEXWEee6P4AGk_WLrg" execution="_Ns4u30XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u5EXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUjEXWEee6P4AGk_WLrg" execution="_Ns4u4kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u5UXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUjUXWEee6P4AGk_WLrg" message="_Ns4u70XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4u5kXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUj0XWEee6P4AGk_WLrg" message="_Ns4u70XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4u50XWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" start="_Ns4u5kXWEee6P4AGk_WLrg" finish="_Ns4u6EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4u6EXWEee6P4AGk_WLrg" covered="_Ns4urkXWEee6P4AGk_WLrg" event="_NtBUj0XWEee6P4AGk_WLrg" execution="_Ns4u50XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u6UXWEee6P4AGk_WLrg" name="enterData(AccountNumber)" receiveEvent="_Ns4uskXWEee6P4AGk_WLrg" sendEvent="_Ns4usUXWEee6P4AGk_WLrg" connector="_Ns4uk0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u6kXWEee6P4AGk_WLrg" name="handelClick(ManageCustomerInformationButton)" receiveEvent="_Ns4utkXWEee6P4AGk_WLrg" sendEvent="_Ns4utUXWEee6P4AGk_WLrg" connector="_Ns4uk0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u60XWEee6P4AGk_WLrg" name="enterCustomerInfo( )" receiveEvent="_Ns4uykXWEee6P4AGk_WLrg" sendEvent="_Ns4uyUXWEee6P4AGk_WLrg" connector="_Ns4ulkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u7EXWEee6P4AGk_WLrg" name="handelClick(SaveButton)" receiveEvent="_Ns4uzkXWEee6P4AGk_WLrg" sendEvent="_Ns4uzUXWEee6P4AGk_WLrg" connector="_Ns4ulkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u7UXWEee6P4AGk_WLrg" name="handelClick(okButton)" receiveEvent="_Ns4u4UXWEee6P4AGk_WLrg" sendEvent="_Ns4u4EXWEee6P4AGk_WLrg" connector="_Ns4umUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u7kXWEee6P4AGk_WLrg" name="retriveCustomerInfor(AccountNumber)" receiveEvent="_Ns4uukXWEee6P4AGk_WLrg" sendEvent="_Ns4uuUXWEee6P4AGk_WLrg" connector="_Ns4unEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u70XWEee6P4AGk_WLrg" name="closePage()" receiveEvent="_Ns4u5kXWEee6P4AGk_WLrg" sendEvent="_Ns4u5UXWEee6P4AGk_WLrg" connector="_Ns4un0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u8EXWEee6P4AGk_WLrg" name="fetchCustomerInfo(AccountNumber)" receiveEvent="_Ns4uvkXWEee6P4AGk_WLrg" sendEvent="_Ns4uvUXWEee6P4AGk_WLrg" connector="_Ns4uokXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u8UXWEee6P4AGk_WLrg" name="getCustomerInfo( )" receiveEvent="_Ns4uwkXWEee6P4AGk_WLrg" sendEvent="_Ns4uwUXWEee6P4AGk_WLrg" connector="_Ns4uokXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u8kXWEee6P4AGk_WLrg" name="updateCustomerInfo( )" receiveEvent="_Ns4u1kXWEee6P4AGk_WLrg" sendEvent="_Ns4u1UXWEee6P4AGk_WLrg" connector="_Ns4uokXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u80XWEee6P4AGk_WLrg" name="acceptConfirmation(Saved)" receiveEvent="_Ns4u2kXWEee6P4AGk_WLrg" sendEvent="_Ns4u2UXWEee6P4AGk_WLrg" connector="_Ns4uokXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u9EXWEee6P4AGk_WLrg" name="displayPage( )" receiveEvent="_Ns4uxkXWEee6P4AGk_WLrg" sendEvent="_Ns4uxUXWEee6P4AGk_WLrg" connector="_Ns4upUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u9UXWEee6P4AGk_WLrg" name="updateCustomerInfo( )" receiveEvent="_Ns4u0UXWEee6P4AGk_WLrg" sendEvent="_Ns4u0EXWEee6P4AGk_WLrg" connector="_Ns4upUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4u9kXWEee6P4AGk_WLrg" name="displayDialogueBox( )" receiveEvent="_Ns4u3kXWEee6P4AGk_WLrg" sendEvent="_Ns4u3UXWEee6P4AGk_WLrg" connector="_Ns4uqEXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Ns4u90XWEee6P4AGk_WLrg" name="" type="_Ns4s_EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4u-EXWEee6P4AGk_WLrg" name="" type="_Ns4tREXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4u-UXWEee6P4AGk_WLrg" name="" type="_Ns4tVUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4u-kXWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4u-0XWEee6P4AGk_WLrg" name="" type="_Ns4tZEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4u_EXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4u_UXWEee6P4AGk_WLrg" name="ProduceInventoryReport_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4u_kXWEee6P4AGk_WLrg" name="ProduceInventoryReport">
+        <ownedConnector xmi:id="_Ns4u_0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vAEXWEee6P4AGk_WLrg" role="_Ns4vO0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vAUXWEee6P4AGk_WLrg" role="_Ns4vPEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vAkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vA0XWEee6P4AGk_WLrg" role="_Ns4vO0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vBEXWEee6P4AGk_WLrg" role="_Ns4vPUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vBUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vBkXWEee6P4AGk_WLrg" role="_Ns4vO0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vB0XWEee6P4AGk_WLrg" role="_Ns4vQEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vCEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vCUXWEee6P4AGk_WLrg" role="_Ns4vPEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vCkXWEee6P4AGk_WLrg" role="_Ns4vQEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vC0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vDEXWEee6P4AGk_WLrg" role="_Ns4vPUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vDUXWEee6P4AGk_WLrg" role="_Ns4vPkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vDkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vD0XWEee6P4AGk_WLrg" role="_Ns4vPkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vEEXWEee6P4AGk_WLrg" role="_Ns4vP0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vEUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vEkXWEee6P4AGk_WLrg" role="_Ns4vPkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vE0XWEee6P4AGk_WLrg" role="_Ns4vQEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vFEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vFUXWEee6P4AGk_WLrg" role="_Ns4vQEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vFkXWEee6P4AGk_WLrg" role="_Ns4vQEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4vF0XWEee6P4AGk_WLrg" name="" represents="_Ns4vO0XWEee6P4AGk_WLrg" coveredBy="_Ns4vHUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vGEXWEee6P4AGk_WLrg" represents="_Ns4vPEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vGUXWEee6P4AGk_WLrg" name="" represents="_Ns4vPUXWEee6P4AGk_WLrg" coveredBy="_Ns4vHkXWEee6P4AGk_WLrg _Ns4vH0XWEee6P4AGk_WLrg _Ns4vIEXWEee6P4AGk_WLrg _Ns4vIUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vGkXWEee6P4AGk_WLrg" name="" represents="_Ns4vQEXWEee6P4AGk_WLrg" coveredBy="_Ns4vLkXWEee6P4AGk_WLrg _Ns4vL0XWEee6P4AGk_WLrg _Ns4vMEXWEee6P4AGk_WLrg _Ns4vMUXWEee6P4AGk_WLrg _Ns4vMkXWEee6P4AGk_WLrg _Ns4vM0XWEee6P4AGk_WLrg _Ns4vNEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vG0XWEee6P4AGk_WLrg" name="" represents="_Ns4vPkXWEee6P4AGk_WLrg" coveredBy="_Ns4vIkXWEee6P4AGk_WLrg _Ns4vI0XWEee6P4AGk_WLrg _Ns4vJEXWEee6P4AGk_WLrg _Ns4vJUXWEee6P4AGk_WLrg _Ns4vKkXWEee6P4AGk_WLrg _Ns4vK0XWEee6P4AGk_WLrg _Ns4vLEXWEee6P4AGk_WLrg _Ns4vLUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vHEXWEee6P4AGk_WLrg" represents="_Ns4vP0XWEee6P4AGk_WLrg" coveredBy="_Ns4vJkXWEee6P4AGk_WLrg _Ns4vJ0XWEee6P4AGk_WLrg _Ns4vKEXWEee6P4AGk_WLrg _Ns4vKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vHUXWEee6P4AGk_WLrg" covered="_Ns4vF0XWEee6P4AGk_WLrg" event="_NtBUkEXWEee6P4AGk_WLrg" message="_Ns4vNUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vHkXWEee6P4AGk_WLrg" covered="_Ns4vGUXWEee6P4AGk_WLrg" event="_NtBUkkXWEee6P4AGk_WLrg" message="_Ns4vNUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vH0XWEee6P4AGk_WLrg" covered="_Ns4vGUXWEee6P4AGk_WLrg" start="_Ns4vHkXWEee6P4AGk_WLrg" finish="_Ns4vIEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vIEXWEee6P4AGk_WLrg" covered="_Ns4vGUXWEee6P4AGk_WLrg" event="_NtBUkkXWEee6P4AGk_WLrg" execution="_Ns4vH0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vIUXWEee6P4AGk_WLrg" covered="_Ns4vGUXWEee6P4AGk_WLrg" event="_NtBUk0XWEee6P4AGk_WLrg" message="_Ns4vNkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vIkXWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" event="_NtBUlUXWEee6P4AGk_WLrg" message="_Ns4vNkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vI0XWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" start="_Ns4vIkXWEee6P4AGk_WLrg" finish="_Ns4vJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vJEXWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" event="_NtBUlUXWEee6P4AGk_WLrg" execution="_Ns4vI0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vJUXWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" event="_NtBUlkXWEee6P4AGk_WLrg" message="_Ns4vN0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vJkXWEee6P4AGk_WLrg" covered="_Ns4vHEXWEee6P4AGk_WLrg" event="_NtBUmEXWEee6P4AGk_WLrg" message="_Ns4vN0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vJ0XWEee6P4AGk_WLrg" covered="_Ns4vHEXWEee6P4AGk_WLrg" start="_Ns4vJkXWEee6P4AGk_WLrg" finish="_Ns4vKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vKEXWEee6P4AGk_WLrg" covered="_Ns4vHEXWEee6P4AGk_WLrg" event="_NtBUmEXWEee6P4AGk_WLrg" execution="_Ns4vJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vKUXWEee6P4AGk_WLrg" covered="_Ns4vHEXWEee6P4AGk_WLrg" event="_NtBUmUXWEee6P4AGk_WLrg" message="_Ns4vOEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vKkXWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" event="_NtBUm0XWEee6P4AGk_WLrg" message="_Ns4vOEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vK0XWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" start="_Ns4vKkXWEee6P4AGk_WLrg" finish="_Ns4vLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vLEXWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" event="_NtBUm0XWEee6P4AGk_WLrg" execution="_Ns4vK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vLUXWEee6P4AGk_WLrg" covered="_Ns4vG0XWEee6P4AGk_WLrg" event="_NtBUnEXWEee6P4AGk_WLrg" message="_Ns4vOUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vLkXWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" event="_NtBUnkXWEee6P4AGk_WLrg" message="_Ns4vOUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vL0XWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" start="_Ns4vLkXWEee6P4AGk_WLrg" finish="_Ns4vMEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vMEXWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" event="_NtBUnkXWEee6P4AGk_WLrg" execution="_Ns4vL0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vMUXWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" event="_NtBUn0XWEee6P4AGk_WLrg" message="_Ns4vOkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vMkXWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" event="_NtBUoUXWEee6P4AGk_WLrg" message="_Ns4vOkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vM0XWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" start="_Ns4vMkXWEee6P4AGk_WLrg" finish="_Ns4vNEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vNEXWEee6P4AGk_WLrg" covered="_Ns4vGkXWEee6P4AGk_WLrg" event="_NtBUoUXWEee6P4AGk_WLrg" execution="_Ns4vM0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vNUXWEee6P4AGk_WLrg" name="handelClick(ProduceInventoryReportButton)" receiveEvent="_Ns4vHkXWEee6P4AGk_WLrg" sendEvent="_Ns4vHUXWEee6P4AGk_WLrg" connector="_Ns4vAkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vNkXWEee6P4AGk_WLrg" name="retriveInventoryItemInfo( )" receiveEvent="_Ns4vIkXWEee6P4AGk_WLrg" sendEvent="_Ns4vIUXWEee6P4AGk_WLrg" connector="_Ns4vC0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vN0XWEee6P4AGk_WLrg" name="fetchInventoryItemInfo( )" receiveEvent="_Ns4vJkXWEee6P4AGk_WLrg" sendEvent="_Ns4vJUXWEee6P4AGk_WLrg" connector="_Ns4vDkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vOEXWEee6P4AGk_WLrg" name="getInventoryItemInfo( )" receiveEvent="_Ns4vKkXWEee6P4AGk_WLrg" sendEvent="_Ns4vKUXWEee6P4AGk_WLrg" connector="_Ns4vDkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vOUXWEee6P4AGk_WLrg" name="displayPage( )" receiveEvent="_Ns4vLkXWEee6P4AGk_WLrg" sendEvent="_Ns4vLUXWEee6P4AGk_WLrg" connector="_Ns4vEUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vOkXWEee6P4AGk_WLrg" name="closePage( )" receiveEvent="_Ns4vMkXWEee6P4AGk_WLrg" sendEvent="_Ns4vMUXWEee6P4AGk_WLrg" connector="_Ns4vFEXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Ns4vO0XWEee6P4AGk_WLrg" name="" type="_Ns4s_EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vPEXWEee6P4AGk_WLrg" name="" type="_Ns4s-0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vPUXWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vPkXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vP0XWEee6P4AGk_WLrg" name="" type="_Ns4ty0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vQEXWEee6P4AGk_WLrg" name="" type="_Ns4t2UXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4vQUXWEee6P4AGk_WLrg" name="UpdateInventory_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4vQkXWEee6P4AGk_WLrg" name="UpdateInventory">
+        <ownedConnector xmi:id="_Ns4vQ0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vREXWEee6P4AGk_WLrg" role="_Ns4vpUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vRUXWEee6P4AGk_WLrg" role="_Ns4vqUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vRkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vR0XWEee6P4AGk_WLrg" role="_Ns4vpUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vSEXWEee6P4AGk_WLrg" role="_Ns4vp0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vSUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vSkXWEee6P4AGk_WLrg" role="_Ns4vpUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vS0XWEee6P4AGk_WLrg" role="_Ns4vqEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vTEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vTUXWEee6P4AGk_WLrg" role="_Ns4vpkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vTkXWEee6P4AGk_WLrg" role="_Ns4vp0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vT0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vUEXWEee6P4AGk_WLrg" role="_Ns4vpkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vUUXWEee6P4AGk_WLrg" role="_Ns4vqkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vUkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vU0XWEee6P4AGk_WLrg" role="_Ns4vpkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vVEXWEee6P4AGk_WLrg" role="_Ns4vqEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vVUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vVkXWEee6P4AGk_WLrg" role="_Ns4vp0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vV0XWEee6P4AGk_WLrg" role="_Ns4vqEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vWEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vWUXWEee6P4AGk_WLrg" role="_Ns4vqEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vWkXWEee6P4AGk_WLrg" role="_Ns4vqEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vW0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vXEXWEee6P4AGk_WLrg" role="_Ns4vqkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vXUXWEee6P4AGk_WLrg" role="_Ns4vpUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4vXkXWEee6P4AGk_WLrg" name="" represents="_Ns4vpkXWEee6P4AGk_WLrg" coveredBy="_Ns4vZEXWEee6P4AGk_WLrg _Ns4veEXWEee6P4AGk_WLrg _Ns4vfEXWEee6P4AGk_WLrg _Ns4vkEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vX0XWEee6P4AGk_WLrg" name="" represents="_Ns4vqkXWEee6P4AGk_WLrg" coveredBy="_Ns4vZUXWEee6P4AGk_WLrg _Ns4vZkXWEee6P4AGk_WLrg _Ns4vZ0XWEee6P4AGk_WLrg _Ns4vaEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vYEXWEee6P4AGk_WLrg" represents="_Ns4vp0XWEee6P4AGk_WLrg" coveredBy="_Ns4vdUXWEee6P4AGk_WLrg _Ns4vdkXWEee6P4AGk_WLrg _Ns4vd0XWEee6P4AGk_WLrg _Ns4veUXWEee6P4AGk_WLrg _Ns4vekXWEee6P4AGk_WLrg _Ns4ve0XWEee6P4AGk_WLrg _Ns4vfUXWEee6P4AGk_WLrg _Ns4vfkXWEee6P4AGk_WLrg _Ns4vf0XWEee6P4AGk_WLrg _Ns4vgkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vYUXWEee6P4AGk_WLrg" name="" represents="_Ns4vqEXWEee6P4AGk_WLrg" coveredBy="_Ns4vjUXWEee6P4AGk_WLrg _Ns4vjkXWEee6P4AGk_WLrg _Ns4vj0XWEee6P4AGk_WLrg _Ns4vkUXWEee6P4AGk_WLrg _Ns4vkkXWEee6P4AGk_WLrg _Ns4vk0XWEee6P4AGk_WLrg _Ns4vlEXWEee6P4AGk_WLrg _Ns4vlUXWEee6P4AGk_WLrg _Ns4vlkXWEee6P4AGk_WLrg _Ns4vl0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vYkXWEee6P4AGk_WLrg" name="" represents="_Ns4vpUXWEee6P4AGk_WLrg" coveredBy="_Ns4vaUXWEee6P4AGk_WLrg _Ns4vakXWEee6P4AGk_WLrg _Ns4va0XWEee6P4AGk_WLrg _Ns4vbEXWEee6P4AGk_WLrg _Ns4vcUXWEee6P4AGk_WLrg _Ns4vckXWEee6P4AGk_WLrg _Ns4vc0XWEee6P4AGk_WLrg _Ns4vdEXWEee6P4AGk_WLrg _Ns4vgEXWEee6P4AGk_WLrg _Ns4vgUXWEee6P4AGk_WLrg _Ns4vg0XWEee6P4AGk_WLrg _Ns4vhEXWEee6P4AGk_WLrg _Ns4viUXWEee6P4AGk_WLrg _Ns4vikXWEee6P4AGk_WLrg _Ns4vi0XWEee6P4AGk_WLrg _Ns4vjEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4vY0XWEee6P4AGk_WLrg" represents="_Ns4vqUXWEee6P4AGk_WLrg" coveredBy="_Ns4vbUXWEee6P4AGk_WLrg _Ns4vbkXWEee6P4AGk_WLrg _Ns4vb0XWEee6P4AGk_WLrg _Ns4vcEXWEee6P4AGk_WLrg _Ns4vhUXWEee6P4AGk_WLrg _Ns4vhkXWEee6P4AGk_WLrg _Ns4vh0XWEee6P4AGk_WLrg _Ns4viEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vZEXWEee6P4AGk_WLrg" covered="_Ns4vXkXWEee6P4AGk_WLrg" event="_NtBUokXWEee6P4AGk_WLrg" message="_Ns4voUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vZUXWEee6P4AGk_WLrg" covered="_Ns4vX0XWEee6P4AGk_WLrg" event="_NtBUpEXWEee6P4AGk_WLrg" message="_Ns4voUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vZkXWEee6P4AGk_WLrg" covered="_Ns4vX0XWEee6P4AGk_WLrg" start="_Ns4vZUXWEee6P4AGk_WLrg" finish="_Ns4vZ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vZ0XWEee6P4AGk_WLrg" covered="_Ns4vX0XWEee6P4AGk_WLrg" event="_NtBUpEXWEee6P4AGk_WLrg" execution="_Ns4vZkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vaEXWEee6P4AGk_WLrg" covered="_Ns4vX0XWEee6P4AGk_WLrg" event="_NtBUpUXWEee6P4AGk_WLrg" message="_Ns4vpEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vaUXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUp0XWEee6P4AGk_WLrg" message="_Ns4vpEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vakXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" start="_Ns4vaUXWEee6P4AGk_WLrg" finish="_Ns4va0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4va0XWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUp0XWEee6P4AGk_WLrg" execution="_Ns4vakXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vbEXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUqEXWEee6P4AGk_WLrg" message="_Ns4vmEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vbUXWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" event="_NtBUqkXWEee6P4AGk_WLrg" message="_Ns4vmEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vbkXWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" start="_Ns4vbUXWEee6P4AGk_WLrg" finish="_Ns4vb0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vb0XWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" event="_NtBUqkXWEee6P4AGk_WLrg" execution="_Ns4vbkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vcEXWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" event="_NtBUq0XWEee6P4AGk_WLrg" message="_Ns4vmkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vcUXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUrUXWEee6P4AGk_WLrg" message="_Ns4vmkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vckXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" start="_Ns4vcUXWEee6P4AGk_WLrg" finish="_Ns4vc0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vc0XWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUrUXWEee6P4AGk_WLrg" execution="_Ns4vckXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vdEXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUrkXWEee6P4AGk_WLrg" message="_Ns4vnEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vdUXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUsEXWEee6P4AGk_WLrg" message="_Ns4vnEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vdkXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" start="_Ns4vdUXWEee6P4AGk_WLrg" finish="_Ns4vd0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vd0XWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUsEXWEee6P4AGk_WLrg" execution="_Ns4vdkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4veEXWEee6P4AGk_WLrg" covered="_Ns4vXkXWEee6P4AGk_WLrg" event="_NtBUsUXWEee6P4AGk_WLrg" message="_Ns4vn0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4veUXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUs0XWEee6P4AGk_WLrg" message="_Ns4vn0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vekXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" start="_Ns4veUXWEee6P4AGk_WLrg" finish="_Ns4ve0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4ve0XWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUs0XWEee6P4AGk_WLrg" execution="_Ns4vekXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vfEXWEee6P4AGk_WLrg" covered="_Ns4vXkXWEee6P4AGk_WLrg" event="_NtBUtEXWEee6P4AGk_WLrg" message="_Ns4voEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vfUXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUtkXWEee6P4AGk_WLrg" message="_Ns4voEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vfkXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" start="_Ns4vfUXWEee6P4AGk_WLrg" finish="_Ns4vgkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vf0XWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUt0XWEee6P4AGk_WLrg" message="_Ns4vnUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vgEXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUuUXWEee6P4AGk_WLrg" message="_Ns4vnUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vgUXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" start="_Ns4vgEXWEee6P4AGk_WLrg" finish="_Ns4vg0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vgkXWEee6P4AGk_WLrg" covered="_Ns4vYEXWEee6P4AGk_WLrg" event="_NtBUuUXWEee6P4AGk_WLrg" execution="_Ns4vfkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vg0XWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUuUXWEee6P4AGk_WLrg" execution="_Ns4vgUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vhEXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUukXWEee6P4AGk_WLrg" message="_Ns4vmUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vhUXWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" event="_NtBUvEXWEee6P4AGk_WLrg" message="_Ns4vmUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vhkXWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" start="_Ns4vhUXWEee6P4AGk_WLrg" finish="_Ns4vh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vh0XWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" event="_NtBUvEXWEee6P4AGk_WLrg" execution="_Ns4vhkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4viEXWEee6P4AGk_WLrg" covered="_Ns4vY0XWEee6P4AGk_WLrg" event="_NtBUvUXWEee6P4AGk_WLrg" message="_Ns4vm0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4viUXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUv0XWEee6P4AGk_WLrg" message="_Ns4vm0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vikXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" start="_Ns4viUXWEee6P4AGk_WLrg" finish="_Ns4vi0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vi0XWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUv0XWEee6P4AGk_WLrg" execution="_Ns4vikXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vjEXWEee6P4AGk_WLrg" covered="_Ns4vYkXWEee6P4AGk_WLrg" event="_NtBUwEXWEee6P4AGk_WLrg" message="_Ns4vnkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vjUXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUwkXWEee6P4AGk_WLrg" message="_Ns4vnkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vjkXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" start="_Ns4vjUXWEee6P4AGk_WLrg" finish="_Ns4vj0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vj0XWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUwkXWEee6P4AGk_WLrg" execution="_Ns4vjkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vkEXWEee6P4AGk_WLrg" covered="_Ns4vXkXWEee6P4AGk_WLrg" event="_NtBUw0XWEee6P4AGk_WLrg" message="_Ns4vokXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vkUXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUxUXWEee6P4AGk_WLrg" message="_Ns4vokXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vkkXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" start="_Ns4vkUXWEee6P4AGk_WLrg" finish="_Ns4vk0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vk0XWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUxUXWEee6P4AGk_WLrg" execution="_Ns4vkkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vlEXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUxkXWEee6P4AGk_WLrg" message="_Ns4vo0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4vlUXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUyEXWEee6P4AGk_WLrg" message="_Ns4vo0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4vlkXWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" start="_Ns4vlUXWEee6P4AGk_WLrg" finish="_Ns4vl0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4vl0XWEee6P4AGk_WLrg" covered="_Ns4vYUXWEee6P4AGk_WLrg" event="_NtBUyEXWEee6P4AGk_WLrg" execution="_Ns4vlkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vmEXWEee6P4AGk_WLrg" name="fetchInventoryItemInfromation( )" receiveEvent="_Ns4vbUXWEee6P4AGk_WLrg" sendEvent="_Ns4vbEXWEee6P4AGk_WLrg" connector="_Ns4vQ0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vmUXWEee6P4AGk_WLrg" name="updateIventoryItemInformaiton( )" receiveEvent="_Ns4vhUXWEee6P4AGk_WLrg" sendEvent="_Ns4vhEXWEee6P4AGk_WLrg" connector="_Ns4vQ0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vmkXWEee6P4AGk_WLrg" name="getInventoryItemInformation( )" receiveEvent="_Ns4vcUXWEee6P4AGk_WLrg" sendEvent="_Ns4vcEXWEee6P4AGk_WLrg" connector="_Ns4vQ0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vm0XWEee6P4AGk_WLrg" name="acceptConfrimaton( )" receiveEvent="_Ns4viUXWEee6P4AGk_WLrg" sendEvent="_Ns4viEXWEee6P4AGk_WLrg" connector="_Ns4vQ0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vnEXWEee6P4AGk_WLrg" name="displayPage( )" receiveEvent="_Ns4vdUXWEee6P4AGk_WLrg" sendEvent="_Ns4vdEXWEee6P4AGk_WLrg" connector="_Ns4vRkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vnUXWEee6P4AGk_WLrg" name="updateInventor(Quantity, Cost, Salesprice)" receiveEvent="_Ns4vgEXWEee6P4AGk_WLrg" sendEvent="_Ns4vf0XWEee6P4AGk_WLrg" connector="_Ns4vRkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vnkXWEee6P4AGk_WLrg" name="displayDialogueBox( )" receiveEvent="_Ns4vjUXWEee6P4AGk_WLrg" sendEvent="_Ns4vjEXWEee6P4AGk_WLrg" connector="_Ns4vSUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vn0XWEee6P4AGk_WLrg" name="enteDate(Quantity, cost, saleprice )" receiveEvent="_Ns4veUXWEee6P4AGk_WLrg" sendEvent="_Ns4veEXWEee6P4AGk_WLrg" connector="_Ns4vTEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4voEXWEee6P4AGk_WLrg" name="handelClick(updateButton)" receiveEvent="_Ns4vfUXWEee6P4AGk_WLrg" sendEvent="_Ns4vfEXWEee6P4AGk_WLrg" connector="_Ns4vTEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4voUXWEee6P4AGk_WLrg" name="handelClick(UpdateInventoryButton)" receiveEvent="_Ns4vZUXWEee6P4AGk_WLrg" sendEvent="_Ns4vZEXWEee6P4AGk_WLrg" connector="_Ns4vT0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vokXWEee6P4AGk_WLrg" name="handelClick(OKButton)" receiveEvent="_Ns4vkUXWEee6P4AGk_WLrg" sendEvent="_Ns4vkEXWEee6P4AGk_WLrg" connector="_Ns4vUkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vo0XWEee6P4AGk_WLrg" name="closeDialogueBox()" receiveEvent="_Ns4vlUXWEee6P4AGk_WLrg" sendEvent="_Ns4vlEXWEee6P4AGk_WLrg" connector="_Ns4vWEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4vpEXWEee6P4AGk_WLrg" name="retriveInventoryInformation( )" receiveEvent="_Ns4vaUXWEee6P4AGk_WLrg" sendEvent="_Ns4vaEXWEee6P4AGk_WLrg" connector="_Ns4vW0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Ns4vpUXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vpkXWEee6P4AGk_WLrg" name="" type="_Ns4s_EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vp0XWEee6P4AGk_WLrg" name="" type="_Ns4t30XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vqEXWEee6P4AGk_WLrg" name="" type="_Ns4tZEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vqUXWEee6P4AGk_WLrg" name="" type="_Ns4ty0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4vqkXWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4vq0XWEee6P4AGk_WLrg" name="CreateAnOrder_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4vrEXWEee6P4AGk_WLrg" name="CreateAnOrder">
+        <ownedConnector xmi:id="_Ns4vrUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vrkXWEee6P4AGk_WLrg" role="_Ns4wNkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vr0XWEee6P4AGk_WLrg" role="_Ns4wN0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vsEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vsUXWEee6P4AGk_WLrg" role="_Ns4wNkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vskXWEee6P4AGk_WLrg" role="_Ns4wO0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vs0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vtEXWEee6P4AGk_WLrg" role="_Ns4wNkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vtUXWEee6P4AGk_WLrg" role="_Ns4wOEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vtkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vt0XWEee6P4AGk_WLrg" role="_Ns4wN0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vuEXWEee6P4AGk_WLrg" role="_Ns4wO0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vuUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vukXWEee6P4AGk_WLrg" role="_Ns4wN0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vu0XWEee6P4AGk_WLrg" role="_Ns4wOkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vvEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vvUXWEee6P4AGk_WLrg" role="_Ns4wN0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vvkXWEee6P4AGk_WLrg" role="_Ns4wOUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vv0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vwEXWEee6P4AGk_WLrg" role="_Ns4wOEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vwUXWEee6P4AGk_WLrg" role="_Ns4wOEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vwkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vw0XWEee6P4AGk_WLrg" role="_Ns4wOUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vxEXWEee6P4AGk_WLrg" role="_Ns4wOkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vxUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vxkXWEee6P4AGk_WLrg" role="_Ns4wOUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vx0XWEee6P4AGk_WLrg" role="_Ns4wO0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vyEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vyUXWEee6P4AGk_WLrg" role="_Ns4wOUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vykXWEee6P4AGk_WLrg" role="_Ns4wOEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vy0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vzEXWEee6P4AGk_WLrg" role="_Ns4wOUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4vzUXWEee6P4AGk_WLrg" role="_Ns4wPEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4vzkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4vz0XWEee6P4AGk_WLrg" role="_Ns4wOUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4v0EXWEee6P4AGk_WLrg" role="_Ns4wPUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4v0UXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4v0kXWEee6P4AGk_WLrg" role="_Ns4wO0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4v00XWEee6P4AGk_WLrg" role="_Ns4wPUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4v1EXWEee6P4AGk_WLrg" name="" represents="_Ns4wNkXWEee6P4AGk_WLrg" coveredBy="_Ns4v3EXWEee6P4AGk_WLrg _Ns4v4EXWEee6P4AGk_WLrg _Ns4v_EXWEee6P4AGk_WLrg _Ns4wAEXWEee6P4AGk_WLrg _Ns4wHEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v1UXWEee6P4AGk_WLrg" name="" represents="_Ns4wN0XWEee6P4AGk_WLrg" coveredBy="_Ns4v3UXWEee6P4AGk_WLrg _Ns4v3kXWEee6P4AGk_WLrg _Ns4v30XWEee6P4AGk_WLrg _Ns4v4UXWEee6P4AGk_WLrg _Ns4v4kXWEee6P4AGk_WLrg _Ns4v40XWEee6P4AGk_WLrg _Ns4v5EXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v1kXWEee6P4AGk_WLrg" represents="_Ns4wO0XWEee6P4AGk_WLrg" coveredBy="_Ns4v-UXWEee6P4AGk_WLrg _Ns4v-kXWEee6P4AGk_WLrg _Ns4v-0XWEee6P4AGk_WLrg _Ns4v_UXWEee6P4AGk_WLrg _Ns4v_kXWEee6P4AGk_WLrg _Ns4v_0XWEee6P4AGk_WLrg _Ns4wAUXWEee6P4AGk_WLrg _Ns4wAkXWEee6P4AGk_WLrg _Ns4wA0XWEee6P4AGk_WLrg _Ns4wBkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v10XWEee6P4AGk_WLrg" name="" represents="_Ns4wOEXWEee6P4AGk_WLrg" coveredBy="_Ns4wGUXWEee6P4AGk_WLrg _Ns4wGkXWEee6P4AGk_WLrg _Ns4wG0XWEee6P4AGk_WLrg _Ns4wHUXWEee6P4AGk_WLrg _Ns4wHkXWEee6P4AGk_WLrg _Ns4wH0XWEee6P4AGk_WLrg _Ns4wIEXWEee6P4AGk_WLrg _Ns4wIUXWEee6P4AGk_WLrg _Ns4wIkXWEee6P4AGk_WLrg _Ns4wI0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v2EXWEee6P4AGk_WLrg" name="" represents="_Ns4wOUXWEee6P4AGk_WLrg" coveredBy="_Ns4v5UXWEee6P4AGk_WLrg _Ns4v5kXWEee6P4AGk_WLrg _Ns4v50XWEee6P4AGk_WLrg _Ns4v6EXWEee6P4AGk_WLrg _Ns4v7UXWEee6P4AGk_WLrg _Ns4v7kXWEee6P4AGk_WLrg _Ns4v70XWEee6P4AGk_WLrg _Ns4v8EXWEee6P4AGk_WLrg _Ns4v9UXWEee6P4AGk_WLrg _Ns4v9kXWEee6P4AGk_WLrg _Ns4v90XWEee6P4AGk_WLrg _Ns4v-EXWEee6P4AGk_WLrg _Ns4wBEXWEee6P4AGk_WLrg _Ns4wBUXWEee6P4AGk_WLrg _Ns4wB0XWEee6P4AGk_WLrg _Ns4wCEXWEee6P4AGk_WLrg _Ns4wDUXWEee6P4AGk_WLrg _Ns4wDkXWEee6P4AGk_WLrg _Ns4wD0XWEee6P4AGk_WLrg _Ns4wEEXWEee6P4AGk_WLrg _Ns4wFUXWEee6P4AGk_WLrg _Ns4wFkXWEee6P4AGk_WLrg _Ns4wF0XWEee6P4AGk_WLrg _Ns4wGEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v2UXWEee6P4AGk_WLrg" represents="_Ns4wOkXWEee6P4AGk_WLrg" coveredBy="_Ns4v8UXWEee6P4AGk_WLrg _Ns4v8kXWEee6P4AGk_WLrg _Ns4v80XWEee6P4AGk_WLrg _Ns4v9EXWEee6P4AGk_WLrg _Ns4wEUXWEee6P4AGk_WLrg _Ns4wEkXWEee6P4AGk_WLrg _Ns4wE0XWEee6P4AGk_WLrg _Ns4wFEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v2kXWEee6P4AGk_WLrg" represents="_Ns4wPEXWEee6P4AGk_WLrg" coveredBy="_Ns4v6UXWEee6P4AGk_WLrg _Ns4v6kXWEee6P4AGk_WLrg _Ns4v60XWEee6P4AGk_WLrg _Ns4v7EXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4v20XWEee6P4AGk_WLrg" represents="_Ns4wPUXWEee6P4AGk_WLrg" coveredBy="_Ns4wCUXWEee6P4AGk_WLrg _Ns4wCkXWEee6P4AGk_WLrg _Ns4wC0XWEee6P4AGk_WLrg _Ns4wDEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v3EXWEee6P4AGk_WLrg" covered="_Ns4v1EXWEee6P4AGk_WLrg" event="_NtBUyUXWEee6P4AGk_WLrg" message="_Ns4wJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v3UXWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" event="_NtBUy0XWEee6P4AGk_WLrg" message="_Ns4wJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v3kXWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" start="_Ns4v3UXWEee6P4AGk_WLrg" finish="_Ns4v30XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v30XWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" event="_NtBUy0XWEee6P4AGk_WLrg" execution="_Ns4v3kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v4EXWEee6P4AGk_WLrg" covered="_Ns4v1EXWEee6P4AGk_WLrg" event="_NtBUzEXWEee6P4AGk_WLrg" message="_Ns4wJUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v4UXWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" event="_NtBUzkXWEee6P4AGk_WLrg" message="_Ns4wJUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v4kXWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" start="_Ns4v4UXWEee6P4AGk_WLrg" finish="_Ns4v40XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v40XWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" event="_NtBUzkXWEee6P4AGk_WLrg" execution="_Ns4v4kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v5EXWEee6P4AGk_WLrg" covered="_Ns4v1UXWEee6P4AGk_WLrg" event="_NtBUz0XWEee6P4AGk_WLrg" message="_Ns4wKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v5UXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU0UXWEee6P4AGk_WLrg" message="_Ns4wKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v5kXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" start="_Ns4v5UXWEee6P4AGk_WLrg" finish="_Ns4v50XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v50XWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU0UXWEee6P4AGk_WLrg" execution="_Ns4v5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v6EXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU0kXWEee6P4AGk_WLrg" message="_Ns4wMkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v6UXWEee6P4AGk_WLrg" covered="_Ns4v2kXWEee6P4AGk_WLrg" event="_NtBU1EXWEee6P4AGk_WLrg" message="_Ns4wMkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v6kXWEee6P4AGk_WLrg" covered="_Ns4v2kXWEee6P4AGk_WLrg" start="_Ns4v6UXWEee6P4AGk_WLrg" finish="_Ns4v60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v60XWEee6P4AGk_WLrg" covered="_Ns4v2kXWEee6P4AGk_WLrg" event="_NtBU1EXWEee6P4AGk_WLrg" execution="_Ns4v6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v7EXWEee6P4AGk_WLrg" covered="_Ns4v2kXWEee6P4AGk_WLrg" event="_NtBU1UXWEee6P4AGk_WLrg" message="_Ns4wM0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v7UXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU10XWEee6P4AGk_WLrg" message="_Ns4wM0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v7kXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" start="_Ns4v7UXWEee6P4AGk_WLrg" finish="_Ns4v70XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v70XWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU10XWEee6P4AGk_WLrg" execution="_Ns4v7kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v8EXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU2EXWEee6P4AGk_WLrg" message="_Ns4wK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v8UXWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" event="_NtBU2kXWEee6P4AGk_WLrg" message="_Ns4wK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v8kXWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" start="_Ns4v8UXWEee6P4AGk_WLrg" finish="_Ns4v80XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v80XWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" event="_NtBU2kXWEee6P4AGk_WLrg" execution="_Ns4v8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v9EXWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" event="_NtBU20XWEee6P4AGk_WLrg" message="_Ns4wLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v9UXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU3UXWEee6P4AGk_WLrg" message="_Ns4wLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v9kXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" start="_Ns4v9UXWEee6P4AGk_WLrg" finish="_Ns4v90XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v90XWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU3UXWEee6P4AGk_WLrg" execution="_Ns4v9kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v-EXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU3kXWEee6P4AGk_WLrg" message="_Ns4wL0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v-UXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU4EXWEee6P4AGk_WLrg" message="_Ns4wL0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v-kXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" start="_Ns4v-UXWEee6P4AGk_WLrg" finish="_Ns4v-0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v-0XWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU4EXWEee6P4AGk_WLrg" execution="_Ns4v-kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v_EXWEee6P4AGk_WLrg" covered="_Ns4v1EXWEee6P4AGk_WLrg" event="_NtBU4UXWEee6P4AGk_WLrg" message="_Ns4wJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4v_UXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU40XWEee6P4AGk_WLrg" message="_Ns4wJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4v_kXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" start="_Ns4v_UXWEee6P4AGk_WLrg" finish="_Ns4v_0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4v_0XWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU40XWEee6P4AGk_WLrg" execution="_Ns4v_kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wAEXWEee6P4AGk_WLrg" covered="_Ns4v1EXWEee6P4AGk_WLrg" event="_NtBU5EXWEee6P4AGk_WLrg" message="_Ns4wJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wAUXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU5kXWEee6P4AGk_WLrg" message="_Ns4wJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wAkXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" start="_Ns4wAUXWEee6P4AGk_WLrg" finish="_Ns4wBkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wA0XWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU50XWEee6P4AGk_WLrg" message="_Ns4wMEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wBEXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU6UXWEee6P4AGk_WLrg" message="_Ns4wMEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wBUXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" start="_Ns4wBEXWEee6P4AGk_WLrg" finish="_Ns4wB0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wBkXWEee6P4AGk_WLrg" covered="_Ns4v1kXWEee6P4AGk_WLrg" event="_NtBU6UXWEee6P4AGk_WLrg" execution="_Ns4wAkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wB0XWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU6UXWEee6P4AGk_WLrg" execution="_Ns4wBUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wCEXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU6kXWEee6P4AGk_WLrg" message="_Ns4wNEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wCUXWEee6P4AGk_WLrg" covered="_Ns4v20XWEee6P4AGk_WLrg" event="_NtBU7EXWEee6P4AGk_WLrg" message="_Ns4wNEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wCkXWEee6P4AGk_WLrg" covered="_Ns4v20XWEee6P4AGk_WLrg" start="_Ns4wCUXWEee6P4AGk_WLrg" finish="_Ns4wC0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wC0XWEee6P4AGk_WLrg" covered="_Ns4v20XWEee6P4AGk_WLrg" event="_NtBU7EXWEee6P4AGk_WLrg" execution="_Ns4wCkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wDEXWEee6P4AGk_WLrg" covered="_Ns4v20XWEee6P4AGk_WLrg" event="_NtBU7UXWEee6P4AGk_WLrg" message="_Ns4wNUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wDUXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU70XWEee6P4AGk_WLrg" message="_Ns4wNUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wDkXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" start="_Ns4wDUXWEee6P4AGk_WLrg" finish="_Ns4wD0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wD0XWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU70XWEee6P4AGk_WLrg" execution="_Ns4wDkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wEEXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU8EXWEee6P4AGk_WLrg" message="_Ns4wLUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wEUXWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" event="_NtBU8kXWEee6P4AGk_WLrg" message="_Ns4wLUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wEkXWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" start="_Ns4wEUXWEee6P4AGk_WLrg" finish="_Ns4wE0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wE0XWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" event="_NtBU8kXWEee6P4AGk_WLrg" execution="_Ns4wEkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wFEXWEee6P4AGk_WLrg" covered="_Ns4v2UXWEee6P4AGk_WLrg" event="_NtBU80XWEee6P4AGk_WLrg" message="_Ns4wLkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wFUXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU9UXWEee6P4AGk_WLrg" message="_Ns4wLkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wFkXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" start="_Ns4wFUXWEee6P4AGk_WLrg" finish="_Ns4wF0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wF0XWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU9UXWEee6P4AGk_WLrg" execution="_Ns4wFkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wGEXWEee6P4AGk_WLrg" covered="_Ns4v2EXWEee6P4AGk_WLrg" event="_NtBU9kXWEee6P4AGk_WLrg" message="_Ns4wMUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wGUXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU-EXWEee6P4AGk_WLrg" message="_Ns4wMUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wGkXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" start="_Ns4wGUXWEee6P4AGk_WLrg" finish="_Ns4wG0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wG0XWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU-EXWEee6P4AGk_WLrg" execution="_Ns4wGkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wHEXWEee6P4AGk_WLrg" covered="_Ns4v1EXWEee6P4AGk_WLrg" event="_NtBU-UXWEee6P4AGk_WLrg" message="_Ns4wKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wHUXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU-0XWEee6P4AGk_WLrg" message="_Ns4wKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wHkXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" start="_Ns4wHUXWEee6P4AGk_WLrg" finish="_Ns4wH0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wH0XWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU-0XWEee6P4AGk_WLrg" execution="_Ns4wHkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wIEXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU_EXWEee6P4AGk_WLrg" message="_Ns4wKkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wIUXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU_kXWEee6P4AGk_WLrg" message="_Ns4wKkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wIkXWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" start="_Ns4wIUXWEee6P4AGk_WLrg" finish="_Ns4wI0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wI0XWEee6P4AGk_WLrg" covered="_Ns4v10XWEee6P4AGk_WLrg" event="_NtBU_kXWEee6P4AGk_WLrg" execution="_Ns4wIkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wJEXWEee6P4AGk_WLrg" name="enterData(CustomerName, Phone number)" receiveEvent="_Ns4v3UXWEee6P4AGk_WLrg" sendEvent="_Ns4v3EXWEee6P4AGk_WLrg" connector="_Ns4vrUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wJUXWEee6P4AGk_WLrg" name="handelClick(CreateAnOrderButton)" receiveEvent="_Ns4v4UXWEee6P4AGk_WLrg" sendEvent="_Ns4v4EXWEee6P4AGk_WLrg" connector="_Ns4vrUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wJkXWEee6P4AGk_WLrg" name="enterData(OrderInformation)" receiveEvent="_Ns4v_UXWEee6P4AGk_WLrg" sendEvent="_Ns4v_EXWEee6P4AGk_WLrg" connector="_Ns4vsEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wJ0XWEee6P4AGk_WLrg" name="handelClick(CreateOrderButton)" receiveEvent="_Ns4wAUXWEee6P4AGk_WLrg" sendEvent="_Ns4wAEXWEee6P4AGk_WLrg" connector="_Ns4vsEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wKEXWEee6P4AGk_WLrg" name="handelClick(okButton)" receiveEvent="_Ns4wHUXWEee6P4AGk_WLrg" sendEvent="_Ns4wHEXWEee6P4AGk_WLrg" connector="_Ns4vs0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wKUXWEee6P4AGk_WLrg" name="retrieveCustomerInformation()" receiveEvent="_Ns4v5UXWEee6P4AGk_WLrg" sendEvent="_Ns4v5EXWEee6P4AGk_WLrg" connector="_Ns4vvEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wKkXWEee6P4AGk_WLrg" name="closeDialogueBox()" receiveEvent="_Ns4wIUXWEee6P4AGk_WLrg" sendEvent="_Ns4wIEXWEee6P4AGk_WLrg" connector="_Ns4vv0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wK0XWEee6P4AGk_WLrg" name="fetchInvoiceNumber( )" receiveEvent="_Ns4v8UXWEee6P4AGk_WLrg" sendEvent="_Ns4v8EXWEee6P4AGk_WLrg" connector="_Ns4vwkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wLEXWEee6P4AGk_WLrg" name="getInvoiceNumber( )" receiveEvent="_Ns4v9UXWEee6P4AGk_WLrg" sendEvent="_Ns4v9EXWEee6P4AGk_WLrg" connector="_Ns4vwkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wLUXWEee6P4AGk_WLrg" name="updateOrderRecord(OrderInformation)" receiveEvent="_Ns4wEUXWEee6P4AGk_WLrg" sendEvent="_Ns4wEEXWEee6P4AGk_WLrg" connector="_Ns4vwkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wLkXWEee6P4AGk_WLrg" name="acceptConfrimation(Saved)" receiveEvent="_Ns4wFUXWEee6P4AGk_WLrg" sendEvent="_Ns4wFEXWEee6P4AGk_WLrg" connector="_Ns4vwkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wL0XWEee6P4AGk_WLrg" name="displayPage( )" receiveEvent="_Ns4v-UXWEee6P4AGk_WLrg" sendEvent="_Ns4v-EXWEee6P4AGk_WLrg" connector="_Ns4vxUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wMEXWEee6P4AGk_WLrg" name="addOrderInformation( )" receiveEvent="_Ns4wBEXWEee6P4AGk_WLrg" sendEvent="_Ns4wA0XWEee6P4AGk_WLrg" connector="_Ns4vxUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wMUXWEee6P4AGk_WLrg" name="displayDialogueBox( )" receiveEvent="_Ns4wGUXWEee6P4AGk_WLrg" sendEvent="_Ns4wGEXWEee6P4AGk_WLrg" connector="_Ns4vyEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wMkXWEee6P4AGk_WLrg" name="retriveCustomerInformation( )" receiveEvent="_Ns4v6UXWEee6P4AGk_WLrg" sendEvent="_Ns4v6EXWEee6P4AGk_WLrg" connector="_Ns4vy0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wM0XWEee6P4AGk_WLrg" name="getCustomerInformation( )" receiveEvent="_Ns4v7UXWEee6P4AGk_WLrg" sendEvent="_Ns4v7EXWEee6P4AGk_WLrg" connector="_Ns4vy0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wNEXWEee6P4AGk_WLrg" name="updateInventoryItemInfo(SoldItemInfo)" receiveEvent="_Ns4wCUXWEee6P4AGk_WLrg" sendEvent="_Ns4wCEXWEee6P4AGk_WLrg" connector="_Ns4vzkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wNUXWEee6P4AGk_WLrg" name="acceptConfirmation(Saved)" receiveEvent="_Ns4wDUXWEee6P4AGk_WLrg" sendEvent="_Ns4wDEXWEee6P4AGk_WLrg" connector="_Ns4vzkXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Ns4wNkXWEee6P4AGk_WLrg" name="" type="_Ns4s-kXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wN0XWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wOEXWEee6P4AGk_WLrg" name="" type="_Ns4tZEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wOUXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wOkXWEee6P4AGk_WLrg" name="" type="_Ns4t-0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wO0XWEee6P4AGk_WLrg" name="" type="_Ns4t8EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wPEXWEee6P4AGk_WLrg" name="" type="_Ns4tREXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wPUXWEee6P4AGk_WLrg" name="" type="_Ns4ty0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4wPkXWEee6P4AGk_WLrg" name="ProduceSalesOrderReport_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4wP0XWEee6P4AGk_WLrg" name="ProduceSalesOrderReport">
+        <ownedConnector xmi:id="_Ns4wQEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wQUXWEee6P4AGk_WLrg" role="_Ns4wlUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wQkXWEee6P4AGk_WLrg" role="_Ns4wl0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wQ0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wREXWEee6P4AGk_WLrg" role="_Ns4wlUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wRUXWEee6P4AGk_WLrg" role="_Ns4wmEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wRkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wR0XWEee6P4AGk_WLrg" role="_Ns4wlkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wSEXWEee6P4AGk_WLrg" role="_Ns4wmEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wSUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wSkXWEee6P4AGk_WLrg" role="_Ns4wl0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wS0XWEee6P4AGk_WLrg" role="_Ns4wmUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wTEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wTUXWEee6P4AGk_WLrg" role="_Ns4wmEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wTkXWEee6P4AGk_WLrg" role="_Ns4wmkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wT0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wUEXWEee6P4AGk_WLrg" role="_Ns4wmEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wUUXWEee6P4AGk_WLrg" role="_Ns4wmEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wUkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wU0XWEee6P4AGk_WLrg" role="_Ns4wmUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wVEXWEee6P4AGk_WLrg" role="_Ns4wlkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wVUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wVkXWEee6P4AGk_WLrg" role="_Ns4wmUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wV0XWEee6P4AGk_WLrg" role="_Ns4wmEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wWEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wWUXWEee6P4AGk_WLrg" role="_Ns4wmUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wWkXWEee6P4AGk_WLrg" role="_Ns4wmkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wW0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wXEXWEee6P4AGk_WLrg" role="_Ns4wmUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wXUXWEee6P4AGk_WLrg" role="_Ns4wm0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wXkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wX0XWEee6P4AGk_WLrg" role="_Ns4wmkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wYEXWEee6P4AGk_WLrg" role="_Ns4wmkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4wYUXWEee6P4AGk_WLrg" name="" represents="_Ns4wlUXWEee6P4AGk_WLrg" coveredBy="_Ns4waEXWEee6P4AGk_WLrg _Ns4wbEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wYkXWEee6P4AGk_WLrg" represents="_Ns4wmkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wY0XWEee6P4AGk_WLrg" name="" represents="_Ns4wl0XWEee6P4AGk_WLrg" coveredBy="_Ns4waUXWEee6P4AGk_WLrg _Ns4wakXWEee6P4AGk_WLrg _Ns4wa0XWEee6P4AGk_WLrg _Ns4wbUXWEee6P4AGk_WLrg _Ns4wbkXWEee6P4AGk_WLrg _Ns4wb0XWEee6P4AGk_WLrg _Ns4wckXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wZEXWEee6P4AGk_WLrg" name="" represents="_Ns4wmEXWEee6P4AGk_WLrg" coveredBy="_Ns4whUXWEee6P4AGk_WLrg _Ns4whkXWEee6P4AGk_WLrg _Ns4wh0XWEee6P4AGk_WLrg _Ns4wiEXWEee6P4AGk_WLrg _Ns4wiUXWEee6P4AGk_WLrg _Ns4wikXWEee6P4AGk_WLrg _Ns4wi0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wZUXWEee6P4AGk_WLrg" name="" represents="_Ns4wmUXWEee6P4AGk_WLrg" coveredBy="_Ns4wcEXWEee6P4AGk_WLrg _Ns4wcUXWEee6P4AGk_WLrg _Ns4wc0XWEee6P4AGk_WLrg _Ns4wdEXWEee6P4AGk_WLrg _Ns4weUXWEee6P4AGk_WLrg _Ns4wekXWEee6P4AGk_WLrg _Ns4we0XWEee6P4AGk_WLrg _Ns4wfEXWEee6P4AGk_WLrg _Ns4wgUXWEee6P4AGk_WLrg _Ns4wgkXWEee6P4AGk_WLrg _Ns4wg0XWEee6P4AGk_WLrg _Ns4whEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wZkXWEee6P4AGk_WLrg" name="OrderRecord" represents="_Ns4wlkXWEee6P4AGk_WLrg" coveredBy="_Ns4wdUXWEee6P4AGk_WLrg _Ns4wdkXWEee6P4AGk_WLrg _Ns4wd0XWEee6P4AGk_WLrg _Ns4weEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wZ0XWEee6P4AGk_WLrg" represents="_Ns4wm0XWEee6P4AGk_WLrg" coveredBy="_Ns4wfUXWEee6P4AGk_WLrg _Ns4wfkXWEee6P4AGk_WLrg _Ns4wf0XWEee6P4AGk_WLrg _Ns4wgEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4waEXWEee6P4AGk_WLrg" covered="_Ns4wYUXWEee6P4AGk_WLrg" event="_NtBT-kXWEee6P4AGk_WLrg" message="_Ns4wjEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4waUXWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" event="_NtBT_EXWEee6P4AGk_WLrg" message="_Ns4wjEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wakXWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" start="_Ns4waUXWEee6P4AGk_WLrg" finish="_Ns4wa0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wa0XWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" event="_NtBT_EXWEee6P4AGk_WLrg" execution="_Ns4wakXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wbEXWEee6P4AGk_WLrg" covered="_Ns4wYUXWEee6P4AGk_WLrg" event="_NtBT_UXWEee6P4AGk_WLrg" message="_Ns4wjUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wbUXWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" event="_NtBT_0XWEee6P4AGk_WLrg" message="_Ns4wjUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wbkXWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" start="_Ns4wbUXWEee6P4AGk_WLrg" finish="_Ns4wckXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wb0XWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" event="_NtBUAEXWEee6P4AGk_WLrg" message="_Ns4wjkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wcEXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUAkXWEee6P4AGk_WLrg" message="_Ns4wjkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wcUXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" start="_Ns4wcEXWEee6P4AGk_WLrg" finish="_Ns4wc0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wckXWEee6P4AGk_WLrg" covered="_Ns4wY0XWEee6P4AGk_WLrg" event="_NtBUAkXWEee6P4AGk_WLrg" execution="_Ns4wbkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wc0XWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUAkXWEee6P4AGk_WLrg" execution="_Ns4wcUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wdEXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUA0XWEee6P4AGk_WLrg" message="_Ns4wkEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wdUXWEee6P4AGk_WLrg" covered="_Ns4wZkXWEee6P4AGk_WLrg" event="_NtBUBUXWEee6P4AGk_WLrg" message="_Ns4wkEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wdkXWEee6P4AGk_WLrg" covered="_Ns4wZkXWEee6P4AGk_WLrg" start="_Ns4wdUXWEee6P4AGk_WLrg" finish="_Ns4wd0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wd0XWEee6P4AGk_WLrg" covered="_Ns4wZkXWEee6P4AGk_WLrg" event="_NtBUBUXWEee6P4AGk_WLrg" execution="_Ns4wdkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4weEXWEee6P4AGk_WLrg" covered="_Ns4wZkXWEee6P4AGk_WLrg" event="_NtBUBkXWEee6P4AGk_WLrg" message="_Ns4wkUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4weUXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUCEXWEee6P4AGk_WLrg" message="_Ns4wkUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wekXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" start="_Ns4weUXWEee6P4AGk_WLrg" finish="_Ns4we0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4we0XWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUCEXWEee6P4AGk_WLrg" execution="_Ns4wekXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wfEXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUCUXWEee6P4AGk_WLrg" message="_Ns4wk0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wfUXWEee6P4AGk_WLrg" covered="_Ns4wZ0XWEee6P4AGk_WLrg" event="_NtBUC0XWEee6P4AGk_WLrg" message="_Ns4wk0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wfkXWEee6P4AGk_WLrg" covered="_Ns4wZ0XWEee6P4AGk_WLrg" start="_Ns4wfUXWEee6P4AGk_WLrg" finish="_Ns4wf0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wf0XWEee6P4AGk_WLrg" covered="_Ns4wZ0XWEee6P4AGk_WLrg" event="_NtBUC0XWEee6P4AGk_WLrg" execution="_Ns4wfkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wgEXWEee6P4AGk_WLrg" covered="_Ns4wZ0XWEee6P4AGk_WLrg" event="_NtBUDEXWEee6P4AGk_WLrg" message="_Ns4wlEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wgUXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUDkXWEee6P4AGk_WLrg" message="_Ns4wlEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wgkXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" start="_Ns4wgUXWEee6P4AGk_WLrg" finish="_Ns4wg0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wg0XWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUDkXWEee6P4AGk_WLrg" execution="_Ns4wgkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4whEXWEee6P4AGk_WLrg" covered="_Ns4wZUXWEee6P4AGk_WLrg" event="_NtBUD0XWEee6P4AGk_WLrg" message="_Ns4wkkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4whUXWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" event="_NtBUEUXWEee6P4AGk_WLrg" message="_Ns4wkkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4whkXWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" start="_Ns4whUXWEee6P4AGk_WLrg" finish="_Ns4wh0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wh0XWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" event="_NtBUEUXWEee6P4AGk_WLrg" execution="_Ns4whkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wiEXWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" event="_NtBUEkXWEee6P4AGk_WLrg" message="_Ns4wj0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wiUXWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" event="_NtBUFEXWEee6P4AGk_WLrg" message="_Ns4wj0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wikXWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" start="_Ns4wiUXWEee6P4AGk_WLrg" finish="_Ns4wi0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wi0XWEee6P4AGk_WLrg" covered="_Ns4wZEXWEee6P4AGk_WLrg" event="_NtBUFEXWEee6P4AGk_WLrg" execution="_Ns4wikXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wjEXWEee6P4AGk_WLrg" name="enterData(fromDate, endDate)" receiveEvent="_Ns4waUXWEee6P4AGk_WLrg" sendEvent="_Ns4waEXWEee6P4AGk_WLrg" connector="_Ns4wQEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wjUXWEee6P4AGk_WLrg" name="handelClick(ProduceSalesOrderReportButton)" receiveEvent="_Ns4wbUXWEee6P4AGk_WLrg" sendEvent="_Ns4wbEXWEee6P4AGk_WLrg" connector="_Ns4wQEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wjkXWEee6P4AGk_WLrg" name="retriveOrderInformation( )" receiveEvent="_Ns4wcEXWEee6P4AGk_WLrg" sendEvent="_Ns4wb0XWEee6P4AGk_WLrg" connector="_Ns4wSUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wj0XWEee6P4AGk_WLrg" name="closePage( )" receiveEvent="_Ns4wiUXWEee6P4AGk_WLrg" sendEvent="_Ns4wiEXWEee6P4AGk_WLrg" connector="_Ns4wT0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wkEXWEee6P4AGk_WLrg" name="fetchOrderInformation( )" receiveEvent="_Ns4wdUXWEee6P4AGk_WLrg" sendEvent="_Ns4wdEXWEee6P4AGk_WLrg" connector="_Ns4wUkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wkUXWEee6P4AGk_WLrg" name="getOrderInformaton( )" receiveEvent="_Ns4weUXWEee6P4AGk_WLrg" sendEvent="_Ns4weEXWEee6P4AGk_WLrg" connector="_Ns4wUkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wkkXWEee6P4AGk_WLrg" name="displayPage( )" receiveEvent="_Ns4whUXWEee6P4AGk_WLrg" sendEvent="_Ns4whEXWEee6P4AGk_WLrg" connector="_Ns4wVUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wk0XWEee6P4AGk_WLrg" name="fetchCustomerInfo( )" receiveEvent="_Ns4wfUXWEee6P4AGk_WLrg" sendEvent="_Ns4wfEXWEee6P4AGk_WLrg" connector="_Ns4wW0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4wlEXWEee6P4AGk_WLrg" name="opname( )" receiveEvent="_Ns4wgUXWEee6P4AGk_WLrg" sendEvent="_Ns4wgEXWEee6P4AGk_WLrg" connector="_Ns4wW0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_Ns4wlUXWEee6P4AGk_WLrg" name="" type="_Ns4s-kXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wlkXWEee6P4AGk_WLrg" name="OrderRecord" type="_Ns4t-0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wl0XWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wmEXWEee6P4AGk_WLrg" name="" type="_Ns4uI0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wmUXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wmkXWEee6P4AGk_WLrg" name="" type="_Ns4s-0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_Ns4wm0XWEee6P4AGk_WLrg" name="" type="_Ns4tREXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_Ns4wnEXWEee6P4AGk_WLrg" name="UpdateAnOrder_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Ns4wnUXWEee6P4AGk_WLrg" name="UpdateAnOrder">
+        <ownedConnector xmi:id="_Ns4wnkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wn0XWEee6P4AGk_WLrg" role="_NtBT80XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4woEXWEee6P4AGk_WLrg" role="_NtBT9EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4woUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wokXWEee6P4AGk_WLrg" role="_NtBT80XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wo0XWEee6P4AGk_WLrg" role="_NtBT9UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wpEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wpUXWEee6P4AGk_WLrg" role="_NtBT80XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wpkXWEee6P4AGk_WLrg" role="_NtBT90XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wp0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wqEXWEee6P4AGk_WLrg" role="_NtBT9EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wqUXWEee6P4AGk_WLrg" role="_NtBT9kXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wqkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wq0XWEee6P4AGk_WLrg" role="_NtBT9kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wrEXWEee6P4AGk_WLrg" role="_NtBT-EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wrUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wrkXWEee6P4AGk_WLrg" role="_NtBT9kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wr0XWEee6P4AGk_WLrg" role="_NtBT9UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wsEXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wsUXWEee6P4AGk_WLrg" role="_NtBT9kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wskXWEee6P4AGk_WLrg" role="_NtBT90XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4ws0XWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wtEXWEee6P4AGk_WLrg" role="_NtBT9kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wtUXWEee6P4AGk_WLrg" role="_NtBT-UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wtkXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wt0XWEee6P4AGk_WLrg" role="_NtBT90XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wuEXWEee6P4AGk_WLrg" role="_NtBT90XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_Ns4wuUXWEee6P4AGk_WLrg">
+          <end xmi:id="_Ns4wukXWEee6P4AGk_WLrg" role="_NtBT-EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_Ns4wu0XWEee6P4AGk_WLrg" role="_NtBT90XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_Ns4wvEXWEee6P4AGk_WLrg" name="" represents="_NtBT80XWEee6P4AGk_WLrg" coveredBy="_Ns4ww0XWEee6P4AGk_WLrg _Ns4wx0XWEee6P4AGk_WLrg _Ns4w2kXWEee6P4AGk_WLrg _Ns4w30XWEee6P4AGk_WLrg _Ns4w-0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wvUXWEee6P4AGk_WLrg" name="" represents="_NtBT9EXWEee6P4AGk_WLrg" coveredBy="_Ns4wxEXWEee6P4AGk_WLrg _Ns4wxUXWEee6P4AGk_WLrg _Ns4wxkXWEee6P4AGk_WLrg _Ns4wyEXWEee6P4AGk_WLrg _Ns4wyUXWEee6P4AGk_WLrg _Ns4wykXWEee6P4AGk_WLrg _Ns4wzUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wvkXWEee6P4AGk_WLrg" represents="_NtBT9UXWEee6P4AGk_WLrg" coveredBy="_Ns4w10XWEee6P4AGk_WLrg _Ns4w2EXWEee6P4AGk_WLrg _Ns4w20XWEee6P4AGk_WLrg _Ns4w3EXWEee6P4AGk_WLrg _Ns4w3UXWEee6P4AGk_WLrg _Ns4w3kXWEee6P4AGk_WLrg _Ns4w4EXWEee6P4AGk_WLrg _Ns4w4UXWEee6P4AGk_WLrg _Ns4w4kXWEee6P4AGk_WLrg _Ns4w5UXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wv0XWEee6P4AGk_WLrg" name="" represents="_NtBT90XWEee6P4AGk_WLrg" coveredBy="_Ns4w-EXWEee6P4AGk_WLrg _Ns4w-UXWEee6P4AGk_WLrg _Ns4w-kXWEee6P4AGk_WLrg _Ns4w_EXWEee6P4AGk_WLrg _Ns4w_UXWEee6P4AGk_WLrg _Ns4w_kXWEee6P4AGk_WLrg _Ns4w_0XWEee6P4AGk_WLrg _Ns4xAEXWEee6P4AGk_WLrg _Ns4xAUXWEee6P4AGk_WLrg _Ns4xAkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wwEXWEee6P4AGk_WLrg" name="" represents="_NtBT9kXWEee6P4AGk_WLrg" coveredBy="_Ns4wy0XWEee6P4AGk_WLrg _Ns4wzEXWEee6P4AGk_WLrg _Ns4wzkXWEee6P4AGk_WLrg _Ns4wz0XWEee6P4AGk_WLrg _Ns4w1EXWEee6P4AGk_WLrg _Ns4w1UXWEee6P4AGk_WLrg _Ns4w1kXWEee6P4AGk_WLrg _Ns4w2UXWEee6P4AGk_WLrg _Ns4w40XWEee6P4AGk_WLrg _Ns4w5EXWEee6P4AGk_WLrg _Ns4w5kXWEee6P4AGk_WLrg _Ns4w50XWEee6P4AGk_WLrg _Ns4w7EXWEee6P4AGk_WLrg _Ns4w7UXWEee6P4AGk_WLrg _Ns4w7kXWEee6P4AGk_WLrg _Ns4w70XWEee6P4AGk_WLrg _Ns4w9EXWEee6P4AGk_WLrg _Ns4w9UXWEee6P4AGk_WLrg _Ns4w9kXWEee6P4AGk_WLrg _Ns4w90XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wwUXWEee6P4AGk_WLrg" represents="_NtBT-EXWEee6P4AGk_WLrg" coveredBy="_Ns4w0EXWEee6P4AGk_WLrg _Ns4w0UXWEee6P4AGk_WLrg _Ns4w0kXWEee6P4AGk_WLrg _Ns4w00XWEee6P4AGk_WLrg _Ns4w8EXWEee6P4AGk_WLrg _Ns4w8UXWEee6P4AGk_WLrg _Ns4w8kXWEee6P4AGk_WLrg _Ns4w80XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_Ns4wwkXWEee6P4AGk_WLrg" represents="_NtBT-UXWEee6P4AGk_WLrg" coveredBy="_Ns4w6EXWEee6P4AGk_WLrg _Ns4w6UXWEee6P4AGk_WLrg _Ns4w6kXWEee6P4AGk_WLrg _Ns4w60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4ww0XWEee6P4AGk_WLrg" covered="_Ns4wvEXWEee6P4AGk_WLrg" event="_NtBUFUXWEee6P4AGk_WLrg" message="_Ns4xA0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wxEXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" event="_NtBUF0XWEee6P4AGk_WLrg" message="_Ns4xA0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wxUXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" start="_Ns4wxEXWEee6P4AGk_WLrg" finish="_Ns4wxkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wxkXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" event="_NtBUF0XWEee6P4AGk_WLrg" execution="_Ns4wxUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wx0XWEee6P4AGk_WLrg" covered="_Ns4wvEXWEee6P4AGk_WLrg" event="_NtBUGEXWEee6P4AGk_WLrg" message="_Ns4xBEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wyEXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" event="_NtBUGkXWEee6P4AGk_WLrg" message="_Ns4xBEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wyUXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" start="_Ns4wyEXWEee6P4AGk_WLrg" finish="_Ns4wzUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wykXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" event="_NtBUG0XWEee6P4AGk_WLrg" message="_Ns4xCEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wy0XWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUHUXWEee6P4AGk_WLrg" message="_Ns4xCEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4wzEXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" start="_Ns4wy0XWEee6P4AGk_WLrg" finish="_Ns4wzkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wzUXWEee6P4AGk_WLrg" covered="_Ns4wvUXWEee6P4AGk_WLrg" event="_NtBUHUXWEee6P4AGk_WLrg" execution="_Ns4wyUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4wzkXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUHUXWEee6P4AGk_WLrg" execution="_Ns4wzEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4wz0XWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUHkXWEee6P4AGk_WLrg" message="_Ns4xCUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w0EXWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" event="_NtBUIEXWEee6P4AGk_WLrg" message="_Ns4xCUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w0UXWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" start="_Ns4w0EXWEee6P4AGk_WLrg" finish="_Ns4w0kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w0kXWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" event="_NtBUIEXWEee6P4AGk_WLrg" execution="_Ns4w0UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w00XWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" event="_NtBUIUXWEee6P4AGk_WLrg" message="_Ns4xCkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w1EXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUI0XWEee6P4AGk_WLrg" message="_Ns4xCkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w1UXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" start="_Ns4w1EXWEee6P4AGk_WLrg" finish="_Ns4w2UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w1kXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUJEXWEee6P4AGk_WLrg" message="_Ns4xDUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w10XWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBUJkXWEee6P4AGk_WLrg" message="_Ns4xDUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w2EXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" start="_Ns4w10XWEee6P4AGk_WLrg" finish="_Ns4w3UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w2UXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUJkXWEee6P4AGk_WLrg" execution="_Ns4w1UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w2kXWEee6P4AGk_WLrg" covered="_Ns4wvEXWEee6P4AGk_WLrg" event="_NtBUJ0XWEee6P4AGk_WLrg" message="_Ns4xBUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w20XWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBUKUXWEee6P4AGk_WLrg" message="_Ns4xBUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w3EXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" start="_Ns4w20XWEee6P4AGk_WLrg" finish="_Ns4w3kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w3UXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBUKUXWEee6P4AGk_WLrg" execution="_Ns4w2EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w3kXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBUKUXWEee6P4AGk_WLrg" execution="_Ns4w3EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w30XWEee6P4AGk_WLrg" covered="_Ns4wvEXWEee6P4AGk_WLrg" event="_NtBUKkXWEee6P4AGk_WLrg" message="_Ns4xBkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w4EXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBULEXWEee6P4AGk_WLrg" message="_Ns4xBkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w4UXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" start="_Ns4w4EXWEee6P4AGk_WLrg" finish="_Ns4w5UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w4kXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBULUXWEee6P4AGk_WLrg" message="_Ns4xDkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w40XWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUL0XWEee6P4AGk_WLrg" message="_Ns4xDkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w5EXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" start="_Ns4w40XWEee6P4AGk_WLrg" finish="_Ns4w5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w5UXWEee6P4AGk_WLrg" covered="_Ns4wvkXWEee6P4AGk_WLrg" event="_NtBUL0XWEee6P4AGk_WLrg" execution="_Ns4w4UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w5kXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUL0XWEee6P4AGk_WLrg" execution="_Ns4w5EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w50XWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUMEXWEee6P4AGk_WLrg" message="_NtBT8EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w6EXWEee6P4AGk_WLrg" covered="_Ns4wwkXWEee6P4AGk_WLrg" event="_NtBUMkXWEee6P4AGk_WLrg" message="_NtBT8EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w6UXWEee6P4AGk_WLrg" covered="_Ns4wwkXWEee6P4AGk_WLrg" start="_Ns4w6EXWEee6P4AGk_WLrg" finish="_Ns4w6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w6kXWEee6P4AGk_WLrg" covered="_Ns4wwkXWEee6P4AGk_WLrg" event="_NtBUMkXWEee6P4AGk_WLrg" execution="_Ns4w6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w60XWEee6P4AGk_WLrg" covered="_Ns4wwkXWEee6P4AGk_WLrg" event="_NtBUM0XWEee6P4AGk_WLrg" message="_NtBT8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w7EXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUNUXWEee6P4AGk_WLrg" message="_NtBT8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w7UXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" start="_Ns4w7EXWEee6P4AGk_WLrg" finish="_Ns4w7kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w7kXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUNUXWEee6P4AGk_WLrg" execution="_Ns4w7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w70XWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUNkXWEee6P4AGk_WLrg" message="_Ns4xC0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w8EXWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" event="_NtBUOEXWEee6P4AGk_WLrg" message="_Ns4xC0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w8UXWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" start="_Ns4w8EXWEee6P4AGk_WLrg" finish="_Ns4w8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w8kXWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" event="_NtBUOEXWEee6P4AGk_WLrg" execution="_Ns4w8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w80XWEee6P4AGk_WLrg" covered="_Ns4wwUXWEee6P4AGk_WLrg" event="_NtBUOUXWEee6P4AGk_WLrg" message="_Ns4xDEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w9EXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUO0XWEee6P4AGk_WLrg" message="_Ns4xDEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w9UXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" start="_Ns4w9EXWEee6P4AGk_WLrg" finish="_Ns4w9kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w9kXWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUO0XWEee6P4AGk_WLrg" execution="_Ns4w9UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w90XWEee6P4AGk_WLrg" covered="_Ns4wwEXWEee6P4AGk_WLrg" event="_NtBUPEXWEee6P4AGk_WLrg" message="_Ns4xD0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w-EXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUPkXWEee6P4AGk_WLrg" message="_Ns4xD0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w-UXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" start="_Ns4w-EXWEee6P4AGk_WLrg" finish="_Ns4w-kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w-kXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUPkXWEee6P4AGk_WLrg" execution="_Ns4w-UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w-0XWEee6P4AGk_WLrg" covered="_Ns4wvEXWEee6P4AGk_WLrg" event="_NtBUP0XWEee6P4AGk_WLrg" message="_Ns4xB0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w_EXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUQUXWEee6P4AGk_WLrg" message="_Ns4xB0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4w_UXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" start="_Ns4w_EXWEee6P4AGk_WLrg" finish="_Ns4w_kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4w_kXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUQUXWEee6P4AGk_WLrg" execution="_Ns4w_UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4w_0XWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUQkXWEee6P4AGk_WLrg" message="_NtBT8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ns4xAEXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUREXWEee6P4AGk_WLrg" message="_NtBT8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ns4xAUXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" start="_Ns4xAEXWEee6P4AGk_WLrg" finish="_Ns4xAkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ns4xAkXWEee6P4AGk_WLrg" covered="_Ns4wv0XWEee6P4AGk_WLrg" event="_NtBUREXWEee6P4AGk_WLrg" execution="_Ns4xAUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xA0XWEee6P4AGk_WLrg" name="enterData(InvoiceNumber)" receiveEvent="_Ns4wxEXWEee6P4AGk_WLrg" sendEvent="_Ns4ww0XWEee6P4AGk_WLrg" connector="_Ns4wnkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xBEXWEee6P4AGk_WLrg" name="handleClick(UpdateAnOrder)" receiveEvent="_Ns4wyEXWEee6P4AGk_WLrg" sendEvent="_Ns4wx0XWEee6P4AGk_WLrg" connector="_Ns4wnkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xBUXWEee6P4AGk_WLrg" name="updateOrderInformation( )" receiveEvent="_Ns4w20XWEee6P4AGk_WLrg" sendEvent="_Ns4w2kXWEee6P4AGk_WLrg" connector="_Ns4woUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xBkXWEee6P4AGk_WLrg" name="handelClick(UpdateButton)" receiveEvent="_Ns4w4EXWEee6P4AGk_WLrg" sendEvent="_Ns4w30XWEee6P4AGk_WLrg" connector="_Ns4woUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xB0XWEee6P4AGk_WLrg" name="handelClick(okButton)" receiveEvent="_Ns4w_EXWEee6P4AGk_WLrg" sendEvent="_Ns4w-0XWEee6P4AGk_WLrg" connector="_Ns4wpEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xCEXWEee6P4AGk_WLrg" name="fetchOrderRecord(InvoiceNumber)" receiveEvent="_Ns4wy0XWEee6P4AGk_WLrg" sendEvent="_Ns4wykXWEee6P4AGk_WLrg" connector="_Ns4wp0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xCUXWEee6P4AGk_WLrg" name="fetchOrderRecord(InvoiceNumber)" receiveEvent="_Ns4w0EXWEee6P4AGk_WLrg" sendEvent="_Ns4wz0XWEee6P4AGk_WLrg" connector="_Ns4wqkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xCkXWEee6P4AGk_WLrg" name="getOrderRecord( )" receiveEvent="_Ns4w1EXWEee6P4AGk_WLrg" sendEvent="_Ns4w00XWEee6P4AGk_WLrg" connector="_Ns4wqkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xC0XWEee6P4AGk_WLrg" name="updateOrderRecord(OrderInformation)" receiveEvent="_Ns4w8EXWEee6P4AGk_WLrg" sendEvent="_Ns4w70XWEee6P4AGk_WLrg" connector="_Ns4wqkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xDEXWEee6P4AGk_WLrg" name="acceptConfirmation(Saved)" receiveEvent="_Ns4w9EXWEee6P4AGk_WLrg" sendEvent="_Ns4w80XWEee6P4AGk_WLrg" connector="_Ns4wqkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xDUXWEee6P4AGk_WLrg" name="displayPage(OrderInfo)" receiveEvent="_Ns4w10XWEee6P4AGk_WLrg" sendEvent="_Ns4w1kXWEee6P4AGk_WLrg" connector="_Ns4wrUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xDkXWEee6P4AGk_WLrg" name="updateOrderInformation(orderInfo)" receiveEvent="_Ns4w40XWEee6P4AGk_WLrg" sendEvent="_Ns4w4kXWEee6P4AGk_WLrg" connector="_Ns4wrUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_Ns4xD0XWEee6P4AGk_WLrg" name="displayDialogueBox ( )" receiveEvent="_Ns4w-EXWEee6P4AGk_WLrg" sendEvent="_Ns4w90XWEee6P4AGk_WLrg" connector="_Ns4wsEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtBT8EXWEee6P4AGk_WLrg" name="updateInventoryItemInfo(SoldItemInfo)" receiveEvent="_Ns4w6EXWEee6P4AGk_WLrg" sendEvent="_Ns4w50XWEee6P4AGk_WLrg" connector="_Ns4ws0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtBT8UXWEee6P4AGk_WLrg" name="acceptConfitmation(saved)" receiveEvent="_Ns4w7EXWEee6P4AGk_WLrg" sendEvent="_Ns4w60XWEee6P4AGk_WLrg" connector="_Ns4ws0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtBT8kXWEee6P4AGk_WLrg" name="closePage()" receiveEvent="_Ns4xAEXWEee6P4AGk_WLrg" sendEvent="_Ns4w_0XWEee6P4AGk_WLrg" connector="_Ns4wtkXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtBT80XWEee6P4AGk_WLrg" name="" type="_Ns4s-kXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtBT9EXWEee6P4AGk_WLrg" name="" type="_Ns4tfUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtBT9UXWEee6P4AGk_WLrg" name="" type="_Ns4uGkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtBT9kXWEee6P4AGk_WLrg" name="" type="_Ns4tlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtBT90XWEee6P4AGk_WLrg" name="" type="_Ns4tZEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtBT-EXWEee6P4AGk_WLrg" name="" type="_Ns4t-0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtBT-UXWEee6P4AGk_WLrg" name="" type="_Ns4ty0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBT-kXWEee6P4AGk_WLrg" operation="_Ns4tkUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBT-0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBT_EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBT_UXWEee6P4AGk_WLrg" operation="_Ns4tkkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBT_kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBT_0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUAEXWEee6P4AGk_WLrg" operation="_Ns4tukXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUAUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUAkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUA0XWEee6P4AGk_WLrg" operation="_Ns4uE0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUBEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUBUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUBkXWEee6P4AGk_WLrg" operation="_Ns4tu0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUB0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUCEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUCUXWEee6P4AGk_WLrg" operation="_Ns4tVEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUCkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUC0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUDEXWEee6P4AGk_WLrg" operation="_Ns4tvEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUDUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUDkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUD0XWEee6P4AGk_WLrg" operation="_Ns4uJ0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUEEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUEUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUEkXWEee6P4AGk_WLrg" operation="_Ns4uKEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUE0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUFEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUFUXWEee6P4AGk_WLrg" operation="_Ns4tk0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUFkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUF0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUGEXWEee6P4AGk_WLrg" operation="_Ns4tlEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUGUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUGkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUG0XWEee6P4AGk_WLrg" operation="_Ns4tvUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUHEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUHUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUHkXWEee6P4AGk_WLrg" operation="_Ns4uFUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUH0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUIEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUIUXWEee6P4AGk_WLrg" operation="_Ns4twEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUIkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUI0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUJEXWEee6P4AGk_WLrg" operation="_Ns4uIEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUJUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUJkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUJ0XWEee6P4AGk_WLrg" operation="_Ns4uIUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUKEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUKUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUKkXWEee6P4AGk_WLrg" operation="_Ns4uIkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUK0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBULEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBULUXWEee6P4AGk_WLrg" operation="_Ns4tw0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBULkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUL0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUMEXWEee6P4AGk_WLrg" operation="_Ns4t1UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUMUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUMkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUM0XWEee6P4AGk_WLrg" operation="_Ns4txEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUNEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUNUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUNkXWEee6P4AGk_WLrg" operation="_Ns4uEkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUN0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUOEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUOUXWEee6P4AGk_WLrg" operation="_Ns4trUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUOkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUO0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUPEXWEee6P4AGk_WLrg" operation="_Ns4tdEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUPUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUPkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUP0XWEee6P4AGk_WLrg" operation="_Ns4tbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUQEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUQUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUQkXWEee6P4AGk_WLrg" operation="_Ns4tc0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUQ0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUREXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBURUXWEee6P4AGk_WLrg" operation="_Ns4tikXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBURkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUR0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUSEXWEee6P4AGk_WLrg" operation="_Ns4tqkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUSUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUSkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUS0XWEee6P4AGk_WLrg" operation="_Ns4tQEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUTEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUTUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUTkXWEee6P4AGk_WLrg" operation="_Ns4tQ0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUT0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUUEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUUUXWEee6P4AGk_WLrg" operation="_Ns4tQUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUUkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUU0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUVEXWEee6P4AGk_WLrg" operation="_Ns4trEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUVUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUVkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUV0XWEee6P4AGk_WLrg" operation="_Ns4tUEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUWEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUWUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUWkXWEee6P4AGk_WLrg" operation="_Ns4trUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUW0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUXEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUXUXWEee6P4AGk_WLrg" operation="_Ns4tbEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUXkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUX0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUYEXWEee6P4AGk_WLrg" operation="_Ns4tbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUYUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUYkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUY0XWEee6P4AGk_WLrg" operation="_Ns4tbkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUZEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUZUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUZkXWEee6P4AGk_WLrg" operation="_Ns4tjkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUZ0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUaEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUaUXWEee6P4AGk_WLrg" operation="_Ns4tj0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUakXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUa0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUbEXWEee6P4AGk_WLrg" operation="_Ns4ttEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUbkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUb0XWEee6P4AGk_WLrg" operation="_Ns4tUkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUcEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUcUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUckXWEee6P4AGk_WLrg" operation="_Ns4ttUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUc0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUdEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUdUXWEee6P4AGk_WLrg" operation="_Ns4tXEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUdkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUd0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUeEXWEee6P4AGk_WLrg" operation="_Ns4tXUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUeUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUekXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUe0XWEee6P4AGk_WLrg" operation="_Ns4tXkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUfEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUfUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUfkXWEee6P4AGk_WLrg" operation="_Ns4ttkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUf0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUgEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUgUXWEee6P4AGk_WLrg" operation="_Ns4tU0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUgkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUg0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUhEXWEee6P4AGk_WLrg" operation="_Ns4tt0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUhUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUhkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUh0XWEee6P4AGk_WLrg" operation="_Ns4tb0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUiEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUiUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUikXWEee6P4AGk_WLrg" operation="_Ns4tbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUi0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUjEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUjUXWEee6P4AGk_WLrg" operation="_Ns4tc0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUjkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUj0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUkEXWEee6P4AGk_WLrg" operation="_Ns4tkEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUkUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUkkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUk0XWEee6P4AGk_WLrg" operation="_Ns4tuEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUlEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUlUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUlkXWEee6P4AGk_WLrg" operation="_Ns4t1kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUl0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUmEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUmUXWEee6P4AGk_WLrg" operation="_Ns4tuUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUmkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUm0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUnEXWEee6P4AGk_WLrg" operation="_Ns4t3UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUnUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUnkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUn0XWEee6P4AGk_WLrg" operation="_Ns4t3kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUoEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUoUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUokXWEee6P4AGk_WLrg" operation="_Ns4tlUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUo0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUpEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUpUXWEee6P4AGk_WLrg" operation="_Ns4txkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUpkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUp0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUqEXWEee6P4AGk_WLrg" operation="_Ns4t10XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUqUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUqkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUq0XWEee6P4AGk_WLrg" operation="_Ns4tx0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUrEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUrUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUrkXWEee6P4AGk_WLrg" operation="_Ns4t50XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUr0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUsEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUsUXWEee6P4AGk_WLrg" operation="_Ns4t6EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUskXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUs0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUtEXWEee6P4AGk_WLrg" operation="_Ns4t6UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUtUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUtkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUt0XWEee6P4AGk_WLrg" operation="_Ns4tyEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUuEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUuUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUukXWEee6P4AGk_WLrg" operation="_Ns4t2EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUu0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUvEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUvUXWEee6P4AGk_WLrg" operation="_Ns4tyUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUvkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUv0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUwEXWEee6P4AGk_WLrg" operation="_Ns4tb0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUwUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUwkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUw0XWEee6P4AGk_WLrg" operation="_Ns4tdkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUxEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUxUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUxkXWEee6P4AGk_WLrg" operation="_Ns4tbkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUx0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUyEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUyUXWEee6P4AGk_WLrg" operation="_Ns4tjEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUykXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUy0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUzEXWEee6P4AGk_WLrg" operation="_Ns4tjUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBUzUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBUzkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBUz0XWEee6P4AGk_WLrg" operation="_Ns4trkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU0EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU0UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU0kXWEee6P4AGk_WLrg" operation="_Ns4tUUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU00XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU1EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU1UXWEee6P4AGk_WLrg" operation="_Ns4tr0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU1kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU10XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU2EXWEee6P4AGk_WLrg" operation="_Ns4uEUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU2UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU2kXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU20XWEee6P4AGk_WLrg" operation="_Ns4tsEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU3EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU3UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU3kXWEee6P4AGk_WLrg" operation="_Ns4t-EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU30XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU4EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU4UXWEee6P4AGk_WLrg" operation="_Ns4t-UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU4kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU40XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU5EXWEee6P4AGk_WLrg" operation="_Ns4t-kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU5UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU5kXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU50XWEee6P4AGk_WLrg" operation="_Ns4ts0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU6EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU6UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU6kXWEee6P4AGk_WLrg" operation="_Ns4t1UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU60XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU7EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU7UXWEee6P4AGk_WLrg" operation="_Ns4trUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU7kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU70XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU8EXWEee6P4AGk_WLrg" operation="_Ns4uEkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU8UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU8kXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU80XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU9EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU9UXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU9kXWEee6P4AGk_WLrg" operation="_Ns4tb0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU90XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU-EXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU-UXWEee6P4AGk_WLrg" operation="_Ns4tbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU-kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU-0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtBU_EXWEee6P4AGk_WLrg" operation="_Ns4tbkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtBU_UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtBU_kXWEee6P4AGk_WLrg" name=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtBU_0XWEee6P4AGk_WLrg" name="Component View" clientDependency="_NtBVAEXWEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NtBVAEXWEee6P4AGk_WLrg" supplier="_Ns4tNUXWEee6P4AGk_WLrg" client="_NtBU_0XWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtBVAUXWEee6P4AGk_WLrg" name="Deployment View"/>
+  <profileApplication xmi:id="_NtBVAkXWEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_NtBVA0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NtoNFEXWEee6P4AGk_WLrg" name="ModelViewController">
+  <packageImport xmi:id="_NtoNFUXWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="RoseCppDatatypes.uml#_Nt_PWUXWEee6P4AGk_WLrg"/>
+  </packageImport>
+  <packageImport xmi:id="_NtoNFkXWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_NtoNF0XWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="RoseAnalysisDatatypes.uml#_NtyLn0XWEee6P4AGk_WLrg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoNGEXWEee6P4AGk_WLrg" name="Use Case View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoNGUXWEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoNGkXWEee6P4AGk_WLrg" memberEnd="_NtoNWkXWEee6P4AGk_WLrg _NtoNG0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoNG0XWEee6P4AGk_WLrg" name="_observer" visibility="public" type="_NtoNWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoNGkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoNHEXWEee6P4AGk_WLrg" memberEnd="_NtoNHUXWEee6P4AGk_WLrg _NtoNpUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoNHUXWEee6P4AGk_WLrg" name="_modelData" visibility="public" type="_NtoNo0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoNHEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoNHkXWEee6P4AGk_WLrg" memberEnd="_NtoNJ0XWEee6P4AGk_WLrg _NtoOHUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoNH0XWEee6P4AGk_WLrg" memberEnd="_NtoNKEXWEee6P4AGk_WLrg _NtoOFUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoNIEXWEee6P4AGk_WLrg" memberEnd="_NtoNKUXWEee6P4AGk_WLrg _NtoOFkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NtoNIUXWEee6P4AGk_WLrg" name="View" clientDependency="_NtoNIkXWEee6P4AGk_WLrg _NtoNI0XWEee6P4AGk_WLrg">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoNIkXWEee6P4AGk_WLrg" supplier="_NtoNYkXWEee6P4AGk_WLrg" client="_NtoNIUXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoNI0XWEee6P4AGk_WLrg" supplier="_NtoOEUXWEee6P4AGk_WLrg" client="_NtoNIUXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNJEXWEee6P4AGk_WLrg" name="ClassDiagram">
+        <ownedComment xmi:id="_NtoNJUXWEee6P4AGk_WLrg" annotatedElement="_NtoNJEXWEee6P4AGk_WLrg">
+          <body>Ist für die Darstellung und die Konstruktion des Klassendiagramms im Fenster zuständig.</body>
+        </ownedComment>
+        <generalization xmi:id="_NtoNJkXWEee6P4AGk_WLrg" general="_NtoNWEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNJ0XWEee6P4AGk_WLrg" name="_window" visibility="public" type="_NtoOG0XWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoNHkXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNKEXWEee6P4AGk_WLrg" name="_gui" visibility="public" type="_NtoOE0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoNH0XWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNKUXWEee6P4AGk_WLrg" name="_gui_1" visibility="public" type="_NtoOE0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoNIEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNKkXWEee6P4AGk_WLrg" name="_elementView" visibility="public" type="_NtoNTEXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoNYUXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoNK0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoNLEXWEee6P4AGk_WLrg"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NtoNLUXWEee6P4AGk_WLrg" name="mouseMove" visibility="public">
+          <ownedComment xmi:id="_NtoNLkXWEee6P4AGk_WLrg" annotatedElement="_NtoNLUXWEee6P4AGk_WLrg">
+            <body>Maus wird bewegt.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNL0XWEee6P4AGk_WLrg" name="Event" type="_NtoOrkXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNMEXWEee6P4AGk_WLrg" name="mousePressed" visibility="public">
+          <ownedComment xmi:id="_NtoNMUXWEee6P4AGk_WLrg" annotatedElement="_NtoNMEXWEee6P4AGk_WLrg">
+            <body>Maustaste wurde gedrückt.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNMkXWEee6P4AGk_WLrg" name="Event" type="_NtoOrkXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNM0XWEee6P4AGk_WLrg" name="mouseRelease" visibility="public">
+          <ownedComment xmi:id="_NtoNNEXWEee6P4AGk_WLrg" annotatedElement="_NtoNM0XWEee6P4AGk_WLrg">
+            <body>Maustaste wurde wieder losgelassen.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNNUXWEee6P4AGk_WLrg" name="Event" type="_NtoOrkXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNNkXWEee6P4AGk_WLrg" name="mouseEntered" visibility="public">
+          <ownedComment xmi:id="_NtoNN0XWEee6P4AGk_WLrg" annotatedElement="_NtoNNkXWEee6P4AGk_WLrg">
+            <body>Maus wird im Darstellungsbereich gezogen.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNOEXWEee6P4AGk_WLrg" name="Event" type="_NtoOrkXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNOUXWEee6P4AGk_WLrg" name="mouseExited" visibility="public">
+          <ownedComment xmi:id="_NtoNOkXWEee6P4AGk_WLrg" annotatedElement="_NtoNOUXWEee6P4AGk_WLrg">
+            <body>Maus wurde aus dem Darstellungsbereich gezogen.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNO0XWEee6P4AGk_WLrg" name="Event" type="_NtoOrkXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNPEXWEee6P4AGk_WLrg" name="getSelectionList" visibility="public">
+          <ownedComment xmi:id="_NtoNPUXWEee6P4AGk_WLrg" annotatedElement="_NtoNPEXWEee6P4AGk_WLrg">
+            <body>Liste der selektierten Elemente wird zurückgegeben.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNPkXWEee6P4AGk_WLrg" type="_NtoOsUXWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNP0XWEee6P4AGk_WLrg" name="selectPointerButton" visibility="public">
+          <ownedComment xmi:id="_NtoNQEXWEee6P4AGk_WLrg" annotatedElement="_NtoNP0XWEee6P4AGk_WLrg">
+            <body>Pointer wurde in der Werkzeugleiste selektiert.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNQUXWEee6P4AGk_WLrg" name="selectClassButton" visibility="public">
+          <ownedComment xmi:id="_NtoNQkXWEee6P4AGk_WLrg" annotatedElement="_NtoNQUXWEee6P4AGk_WLrg">
+            <body>Klassen-Symbol wurde in der Werkzeugleiste selektiert.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNQ0XWEee6P4AGk_WLrg" name="selectAssociationButton" visibility="public">
+          <ownedComment xmi:id="_NtoNREXWEee6P4AGk_WLrg" annotatedElement="_NtoNQ0XWEee6P4AGk_WLrg">
+            <body>Assoziations-Symbol wurde in der Werkzeugleiste selektiert.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNRUXWEee6P4AGk_WLrg" name="selectGeneraliationButton" visibility="public">
+          <ownedComment xmi:id="_NtoNRkXWEee6P4AGk_WLrg" annotatedElement="_NtoNRUXWEee6P4AGk_WLrg">
+            <body>Generalisierungs-Symbol wurde in der Werkzeugleiste selektiert.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNR0XWEee6P4AGk_WLrg" name="deleteElement" visibility="public">
+          <ownedComment xmi:id="_NtoNSEXWEee6P4AGk_WLrg" annotatedElement="_NtoNR0XWEee6P4AGk_WLrg">
+            <body>Ein Element soll gelöscht werden.
+Wenn Klassen selektiert sind, soll nur die Darstellung in diesem View gelöscht werden. Die Klasse wird aber nicht vom Model gelöscht.
+Wenn Relationen selektiert sind, wird die Relation auch vom Model gelöscht.
+</body>
+          </ownedComment>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNSUXWEee6P4AGk_WLrg" name="ClassView">
+        <ownedComment xmi:id="_NtoNSkXWEee6P4AGk_WLrg" annotatedElement="_NtoNSUXWEee6P4AGk_WLrg">
+          <body>Darstellung einer Klasse.</body>
+        </ownedComment>
+        <generalization xmi:id="_NtoNS0XWEee6P4AGk_WLrg" general="_NtoNTEXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNTEXWEee6P4AGk_WLrg" name="ElementView">
+        <ownedAttribute xmi:id="_NtoNTUXWEee6P4AGk_WLrg" name="_classDiagram" visibility="public" type="_NtoNJEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoNYUXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoNTkXWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoNT0XWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNUEXWEee6P4AGk_WLrg" name="RelationView">
+        <generalization xmi:id="_NtoNUUXWEee6P4AGk_WLrg" general="_NtoNTEXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNUkXWEee6P4AGk_WLrg" name="AssoziationView">
+        <generalization xmi:id="_NtoNU0XWEee6P4AGk_WLrg" general="_NtoNUEXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNVEXWEee6P4AGk_WLrg" name="GeneraliationView">
+        <generalization xmi:id="_NtoNVUXWEee6P4AGk_WLrg" general="_NtoNUEXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNVkXWEee6P4AGk_WLrg" name="AggregationView">
+        <generalization xmi:id="_NtoNV0XWEee6P4AGk_WLrg" general="_NtoNUEXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNWEXWEee6P4AGk_WLrg" name="Observer">
+        <ownedComment xmi:id="_NtoNWUXWEee6P4AGk_WLrg" annotatedElement="_NtoNWEXWEee6P4AGk_WLrg">
+          <body>Interfaceklasse für einen View (Beobachter Entwurfsmuster).</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_NtoNWkXWEee6P4AGk_WLrg" name="_modelData" visibility="public" type="_NtoNo0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoNGkXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_NtoNW0XWEee6P4AGk_WLrg" name="update" visibility="public" postcondition="_NtoNXUXWEee6P4AGk_WLrg">
+          <ownedComment xmi:id="_NtoNXEXWEee6P4AGk_WLrg" annotatedElement="_NtoNW0XWEee6P4AGk_WLrg">
+            <body>Observer soll sich aktualisieren.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_NtoNXUXWEee6P4AGk_WLrg" constrainedElement="_NtoNW0XWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNXkXWEee6P4AGk_WLrg">
+              <body>Observer wurde aktualisiert.</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_NtoNX0XWEee6P4AGk_WLrg" name="vClassList" type="_NtoOrUXWEee6P4AGk_WLrg" direction="inout"/>
+          <ownedParameter xmi:id="_NtoNYEXWEee6P4AGk_WLrg" name="vRelationList" type="_NtoOrUXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoNYUXWEee6P4AGk_WLrg" memberEnd="_NtoNTUXWEee6P4AGk_WLrg _NtoNKkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NtoNYkXWEee6P4AGk_WLrg" name="Model" clientDependency="_NtoNY0XWEee6P4AGk_WLrg">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoNY0XWEee6P4AGk_WLrg" supplier="_NtoNIUXWEee6P4AGk_WLrg" client="_NtoNYkXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNZEXWEee6P4AGk_WLrg" name="ClassData">
+        <ownedAttribute xmi:id="_NtoNZUXWEee6P4AGk_WLrg" name="sbClassName" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNZkXWEee6P4AGk_WLrg" name="vMethodList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNZ0XWEee6P4AGk_WLrg" name="vAttributeList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNaEXWEee6P4AGk_WLrg" name="vRelationList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNaUXWEee6P4AGk_WLrg" name="sbDescription" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNakXWEee6P4AGk_WLrg" name="_modelData" visibility="public" type="_NtoNo0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoN_kXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNa0XWEee6P4AGk_WLrg" name="_method" visibility="public" type="_NtoN3kXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoODkXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoNbEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoNbUXWEee6P4AGk_WLrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NtoNbkXWEee6P4AGk_WLrg" name="_attribute" visibility="public" type="_NtoN9EXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoOD0XWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoNb0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoNcEXWEee6P4AGk_WLrg"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NtoNcUXWEee6P4AGk_WLrg" name="setClassName" visibility="public">
+          <ownedParameter xmi:id="_NtoNckXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNc0XWEee6P4AGk_WLrg" name="addMethod" visibility="public">
+          <ownedParameter xmi:id="_NtoNdEXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNdUXWEee6P4AGk_WLrg" name="addAttribute" visibility="public">
+          <ownedParameter xmi:id="_NtoNdkXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNd0XWEee6P4AGk_WLrg" name="addRelation" visibility="public">
+          <ownedParameter xmi:id="_NtoNeEXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNeUXWEee6P4AGk_WLrg" name="setDescription" visibility="public">
+          <ownedParameter xmi:id="_NtoNekXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNe0XWEee6P4AGk_WLrg" name="deleteMethod" visibility="public">
+          <ownedParameter xmi:id="_NtoNfEXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNfUXWEee6P4AGk_WLrg" name="deleteAttribute" visibility="public">
+          <ownedParameter xmi:id="_NtoNfkXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNf0XWEee6P4AGk_WLrg" name="deleteRelation" visibility="public">
+          <ownedParameter xmi:id="_NtoNgEXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNgUXWEee6P4AGk_WLrg" name="getClassName" visibility="public">
+          <ownedParameter xmi:id="_NtoNgkXWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNg0XWEee6P4AGk_WLrg" name="getDescription" visibility="public">
+          <ownedParameter xmi:id="_NtoNhEXWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNhUXWEee6P4AGk_WLrg" name="RelationData">
+        <ownedAttribute xmi:id="_NtoNhkXWEee6P4AGk_WLrg" name="sbRoleA" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNh0XWEee6P4AGk_WLrg" name="sbRoleB" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNiEXWEee6P4AGk_WLrg" name="sbMultiplicityA" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNiUXWEee6P4AGk_WLrg" name="sbMultiplicityB" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNikXWEee6P4AGk_WLrg" name="eType" visibility="private" type="_NtoOsEXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_NtoNi0XWEee6P4AGk_WLrg" name="setRoleA" visibility="public">
+          <ownedParameter xmi:id="_NtoNjEXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+          <ownedParameter xmi:id="_NtoNjUXWEee6P4AGk_WLrg" name="sRoleName" direction="inout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNjkXWEee6P4AGk_WLrg" name="setRoleB" visibility="public">
+          <ownedParameter xmi:id="_NtoNj0XWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNkEXWEee6P4AGk_WLrg" name="getRoleA" visibility="public">
+          <ownedParameter xmi:id="_NtoNkUXWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNkkXWEee6P4AGk_WLrg" name="getRoleB" visibility="public">
+          <ownedParameter xmi:id="_NtoNk0XWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNlEXWEee6P4AGk_WLrg" name="setMultiplicityA" visibility="public">
+          <ownedParameter xmi:id="_NtoNlUXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNlkXWEee6P4AGk_WLrg" name="setMultiplicityB" visibility="public">
+          <ownedParameter xmi:id="_NtoNl0XWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNmEXWEee6P4AGk_WLrg" name="getMultiplicityA" visibility="public">
+          <ownedParameter xmi:id="_NtoNmUXWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNmkXWEee6P4AGk_WLrg" name="getMultiplicityB" visibility="public">
+          <ownedParameter xmi:id="_NtoNm0XWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNnEXWEee6P4AGk_WLrg" name="getClassA" visibility="public">
+          <ownedParameter xmi:id="_NtoNnUXWEee6P4AGk_WLrg" type="_NtoNZEXWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNnkXWEee6P4AGk_WLrg" name="getClassB" visibility="public">
+          <ownedParameter xmi:id="_NtoNn0XWEee6P4AGk_WLrg" type="_NtoNZEXWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNoEXWEee6P4AGk_WLrg" name="setType" visibility="public"/>
+        <ownedOperation xmi:id="_NtoNoUXWEee6P4AGk_WLrg" name="getType" visibility="public">
+          <ownedParameter xmi:id="_NtoNokXWEee6P4AGk_WLrg" type="_NtoOsEXWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoNo0XWEee6P4AGk_WLrg" name="ModelData">
+        <ownedComment xmi:id="_NtoNpEXWEee6P4AGk_WLrg" annotatedElement="_NtoNo0XWEee6P4AGk_WLrg">
+          <body>Interface des Subjektes, hier ModelData (Beobachter Entwurfsmuster).</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_NtoNpUXWEee6P4AGk_WLrg" name="_observer" visibility="public" type="_NtoNWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoNHEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNpkXWEee6P4AGk_WLrg" name="vClassList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNp0XWEee6P4AGk_WLrg" name="vRelationList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoNqEXWEee6P4AGk_WLrg" name="vObserverList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_NtoNqUXWEee6P4AGk_WLrg" name="attachObserver" visibility="public" postcondition="_NtoNq0XWEee6P4AGk_WLrg">
+          <ownedComment xmi:id="_NtoNqkXWEee6P4AGk_WLrg" annotatedElement="_NtoNqUXWEee6P4AGk_WLrg">
+            <body>Ein weiteren Observer der Liste hinzufügen.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_NtoNq0XWEee6P4AGk_WLrg" constrainedElement="_NtoNqUXWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNrEXWEee6P4AGk_WLrg">
+              <body>Der Observer wurde hinzugefügt.</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_NtoNrUXWEee6P4AGk_WLrg" name="theObserver" type="_NtoNWEXWEee6P4AGk_WLrg" direction="inout">
+            <ownedComment xmi:id="_NtoNrkXWEee6P4AGk_WLrg" annotatedElement="_NtoNrUXWEee6P4AGk_WLrg">
+              <body>Der Observer, der hinzugefüt werden soll.</body>
+            </ownedComment>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNr0XWEee6P4AGk_WLrg" name="detachObserver" visibility="public" precondition="_NtoNsUXWEee6P4AGk_WLrg" postcondition="_NtoNs0XWEee6P4AGk_WLrg">
+          <ownedComment xmi:id="_NtoNsEXWEee6P4AGk_WLrg" annotatedElement="_NtoNr0XWEee6P4AGk_WLrg">
+            <body>Einen Observer entfernen.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_NtoNsUXWEee6P4AGk_WLrg" constrainedElement="_NtoNr0XWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNskXWEee6P4AGk_WLrg">
+              <body>Der Observer muss in ModelData vorhanden sein.</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_NtoNs0XWEee6P4AGk_WLrg" constrainedElement="_NtoNr0XWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNtEXWEee6P4AGk_WLrg">
+              <body>Der Observer wurde entfernt.</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_NtoNtUXWEee6P4AGk_WLrg" name="theObserver" type="_NtoNWEXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNtkXWEee6P4AGk_WLrg" name="createClass" visibility="public">
+          <ownedComment xmi:id="_NtoNt0XWEee6P4AGk_WLrg" annotatedElement="_NtoNtkXWEee6P4AGk_WLrg">
+            <body>Ein Observer fügt eine neue Klasse in das Model ein. Das Model liefert die neue Klasse zurück. 
+Des weiteren werden alle Observer aktualisiert, bis auf der Observer, der CreateClass() aufgerufen hat.
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNuEXWEee6P4AGk_WLrg" type="_NtoNZEXWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNuUXWEee6P4AGk_WLrg" name="deleteClass" visibility="public" precondition="_NtoNu0XWEee6P4AGk_WLrg" postcondition="_NtoNvUXWEee6P4AGk_WLrg">
+          <ownedComment xmi:id="_NtoNukXWEee6P4AGk_WLrg" annotatedElement="_NtoNuUXWEee6P4AGk_WLrg">
+            <body>Eine Klasse soll gelöscht werden.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_NtoNu0XWEee6P4AGk_WLrg" constrainedElement="_NtoNuUXWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNvEXWEee6P4AGk_WLrg">
+              <body>Klasse muss im Model vorhanden sein.</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_NtoNvUXWEee6P4AGk_WLrg" constrainedElement="_NtoNuUXWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNvkXWEee6P4AGk_WLrg">
+              <body>Klasse wurde gelöscht.</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_NtoNv0XWEee6P4AGk_WLrg" name="theClass" type="_NtoNZEXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNwEXWEee6P4AGk_WLrg" name="createRelation" visibility="public">
+          <ownedComment xmi:id="_NtoNwUXWEee6P4AGk_WLrg" annotatedElement="_NtoNwEXWEee6P4AGk_WLrg">
+            <body>Ein Observer fügt eine neue Relation in das Model ein. Das Model liefert die neue Relation zurück. 
+Des weiteren werden alle Observer aktualisiert, bis auf der Observer, der CreateRelation() aufgerufen hat.
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_NtoNwkXWEee6P4AGk_WLrg" type="_NtoNZEXWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNw0XWEee6P4AGk_WLrg" name="deleteRelation" visibility="public" precondition="_NtoNxUXWEee6P4AGk_WLrg" postcondition="_NtoNx0XWEee6P4AGk_WLrg">
+          <ownedComment xmi:id="_NtoNxEXWEee6P4AGk_WLrg" annotatedElement="_NtoNw0XWEee6P4AGk_WLrg">
+            <body>Eine Relation soll gelöscht werden.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_NtoNxUXWEee6P4AGk_WLrg" constrainedElement="_NtoNw0XWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNxkXWEee6P4AGk_WLrg">
+              <body>Die Relation muss vorhanden sein.</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_NtoNx0XWEee6P4AGk_WLrg" constrainedElement="_NtoNw0XWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNyEXWEee6P4AGk_WLrg">
+              <body>Die Relation wurde gelöscht.</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_NtoNyUXWEee6P4AGk_WLrg" name="theRelationData" type="_NtoNhUXWEee6P4AGk_WLrg" direction="inout"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoNykXWEee6P4AGk_WLrg" name="update" visibility="public" precondition="_NtoNzEXWEee6P4AGk_WLrg" postcondition="_NtoNzkXWEee6P4AGk_WLrg">
+          <ownedComment xmi:id="_NtoNy0XWEee6P4AGk_WLrg" annotatedElement="_NtoNykXWEee6P4AGk_WLrg">
+            <body>Ein Element wurde geändert.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_NtoNzEXWEee6P4AGk_WLrg" constrainedElement="_NtoNykXWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNzUXWEee6P4AGk_WLrg">
+              <body>Klasse muss vorhanden sein.</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_NtoNzkXWEee6P4AGk_WLrg" constrainedElement="_NtoNykXWEee6P4AGk_WLrg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_NtoNz0XWEee6P4AGk_WLrg">
+              <body>Klasse wurde geändert.</body>
+            </specification>
+          </ownedRule>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoN0EXWEee6P4AGk_WLrg" name="Variable">
+        <ownedAttribute xmi:id="_NtoN0UXWEee6P4AGk_WLrg" name="sbName" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN0kXWEee6P4AGk_WLrg" name="sbType" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN00XWEee6P4AGk_WLrg" name="_method" visibility="public" type="_NtoN3kXWEee6P4AGk_WLrg" isUnique="false" association="_NtoOEEXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoN1EXWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoN1UXWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NtoN1kXWEee6P4AGk_WLrg" name="setName" visibility="public">
+          <ownedParameter xmi:id="_NtoN10XWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN2EXWEee6P4AGk_WLrg" name="setType" visibility="public">
+          <ownedParameter xmi:id="_NtoN2UXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN2kXWEee6P4AGk_WLrg" name="getName" visibility="public">
+          <ownedParameter xmi:id="_NtoN20XWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN3EXWEee6P4AGk_WLrg" name="getType" visibility="public">
+          <ownedParameter xmi:id="_NtoN3UXWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoN3kXWEee6P4AGk_WLrg" name="Method">
+        <ownedAttribute xmi:id="_NtoN30XWEee6P4AGk_WLrg" name="sbName" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN4EXWEee6P4AGk_WLrg" name="sbReturnType" visibility="private" type="_NtoOrEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN4UXWEee6P4AGk_WLrg" name="vParameterList" visibility="private" type="_NtoOrUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN4kXWEee6P4AGk_WLrg" name="_classData" visibility="public" type="_NtoNZEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoODkXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoN40XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoN5EXWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NtoN5UXWEee6P4AGk_WLrg" name="_variable" visibility="public" type="_NtoN0EXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoOEEXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoN5kXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoN50XWEee6P4AGk_WLrg"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NtoN6EXWEee6P4AGk_WLrg" name="setName" visibility="public">
+          <ownedParameter xmi:id="_NtoN6UXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN6kXWEee6P4AGk_WLrg" name="getName" visibility="public">
+          <ownedParameter xmi:id="_NtoN60XWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN7EXWEee6P4AGk_WLrg" name="addParameter" visibility="public">
+          <ownedParameter xmi:id="_NtoN7UXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN7kXWEee6P4AGk_WLrg" name="getParameterList" visibility="public">
+          <ownedParameter xmi:id="_NtoN70XWEee6P4AGk_WLrg" type="_NtoOr0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN8EXWEee6P4AGk_WLrg" name="setReturnType" visibility="public">
+          <ownedParameter xmi:id="_NtoN8UXWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN8kXWEee6P4AGk_WLrg" name="getReturnType" visibility="public">
+          <ownedParameter xmi:id="_NtoN80XWEee6P4AGk_WLrg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoN9EXWEee6P4AGk_WLrg" name="Attribute">
+        <generalization xmi:id="_NtoN9UXWEee6P4AGk_WLrg" general="_NtoN0EXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN9kXWEee6P4AGk_WLrg" name="eVisibility" visibility="private" type="_NtoOsEXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoN90XWEee6P4AGk_WLrg" name="_classData" visibility="public" type="_NtoNZEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoOD0XWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoN-EXWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoN-UXWEee6P4AGk_WLrg" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NtoN-kXWEee6P4AGk_WLrg" name="setVisibility" visibility="public">
+          <ownedParameter xmi:id="_NtoN-0XWEee6P4AGk_WLrg" type="_NtoOq0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NtoN_EXWEee6P4AGk_WLrg" name="getVisibility" visibility="public">
+          <ownedParameter xmi:id="_NtoN_UXWEee6P4AGk_WLrg" type="_NtoOr0XWEee6P4AGk_WLrg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoN_kXWEee6P4AGk_WLrg" memberEnd="_NtoNakXWEee6P4AGk_WLrg _NtoN_0XWEee6P4AGk_WLrg">
+        <ownedEnd xmi:id="_NtoN_0XWEee6P4AGk_WLrg" name="_classData" visibility="public" type="_NtoNZEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoN_kXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoOAEXWEee6P4AGk_WLrg" memberEnd="_NtoOAUXWEee6P4AGk_WLrg _NtoOBEXWEee6P4AGk_WLrg">
+        <ownedEnd xmi:id="_NtoOAUXWEee6P4AGk_WLrg" name="_classData" visibility="public" type="_NtoNZEXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoOAEXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoOAkXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoOA0XWEee6P4AGk_WLrg"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_NtoOBEXWEee6P4AGk_WLrg" name="_modelData" visibility="public" type="_NtoNo0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoOAEXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoOBUXWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoOBkXWEee6P4AGk_WLrg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoOB0XWEee6P4AGk_WLrg" memberEnd="_NtoOCEXWEee6P4AGk_WLrg _NtoOC0XWEee6P4AGk_WLrg">
+        <ownedEnd xmi:id="_NtoOCEXWEee6P4AGk_WLrg" name="_relationData" visibility="public" type="_NtoNhUXWEee6P4AGk_WLrg" isUnique="false" aggregation="shared" association="_NtoOB0XWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoOCUXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoOCkXWEee6P4AGk_WLrg"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_NtoOC0XWEee6P4AGk_WLrg" name="_modelData" visibility="public" type="_NtoNo0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoOB0XWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoODEXWEee6P4AGk_WLrg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoODUXWEee6P4AGk_WLrg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoODkXWEee6P4AGk_WLrg" memberEnd="_NtoNa0XWEee6P4AGk_WLrg _NtoN4kXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoOD0XWEee6P4AGk_WLrg" memberEnd="_NtoNbkXWEee6P4AGk_WLrg _NtoN90XWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NtoOEEXWEee6P4AGk_WLrg" memberEnd="_NtoN5UXWEee6P4AGk_WLrg _NtoN00XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NtoOEUXWEee6P4AGk_WLrg" name="GUI" clientDependency="_NtoOEkXWEee6P4AGk_WLrg">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoOEkXWEee6P4AGk_WLrg" supplier="_NtoNIUXWEee6P4AGk_WLrg" client="_NtoOEUXWEee6P4AGk_WLrg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoOE0XWEee6P4AGk_WLrg" name="Gui">
+        <ownedComment xmi:id="_NtoOFEXWEee6P4AGk_WLrg" annotatedElement="_NtoOE0XWEee6P4AGk_WLrg">
+          <body>Ist für die Darstellung der Kontext-Menüs und des Spezifikations-Dialogs zuständig.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_NtoOFUXWEee6P4AGk_WLrg" name="_classDiagram" visibility="public" type="_NtoNJEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoNH0XWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoOFkXWEee6P4AGk_WLrg" name="_classDiagram" visibility="public" type="_NtoNJEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoNIEXWEee6P4AGk_WLrg"/>
+        <ownedOperation xmi:id="_NtoOF0XWEee6P4AGk_WLrg" name="contextMenuElement" visibility="public"/>
+        <ownedOperation xmi:id="_NtoOGEXWEee6P4AGk_WLrg" name="contextMenuGroup" visibility="public"/>
+        <ownedOperation xmi:id="_NtoOGUXWEee6P4AGk_WLrg" name="contextMenuBackground" visibility="public"/>
+        <ownedOperation xmi:id="_NtoOGkXWEee6P4AGk_WLrg" name="specificationDialog" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NtoOG0XWEee6P4AGk_WLrg" name="Window">
+        <ownedComment xmi:id="_NtoOHEXWEee6P4AGk_WLrg" annotatedElement="_NtoOG0XWEee6P4AGk_WLrg">
+          <body>Das Fenster des Views.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_NtoOHUXWEee6P4AGk_WLrg" name="_classDiagram" visibility="public" type="_NtoNJEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoNHkXWEee6P4AGk_WLrg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoOHkXWEee6P4AGk_WLrg" name="ContextMenu_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoOH0XWEee6P4AGk_WLrg" name="ContextMenu">
+        <ownedConnector xmi:id="_NtoOIEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOIUXWEee6P4AGk_WLrg" role="_NtoOVUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOIkXWEee6P4AGk_WLrg" role="_NtoOVUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOI0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOJEXWEee6P4AGk_WLrg" role="_NtoOVkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOJUXWEee6P4AGk_WLrg" role="_NtoOVUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOJkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOJ0XWEee6P4AGk_WLrg" role="_NtoOVkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOKEXWEee6P4AGk_WLrg" role="_NtoOVkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOKUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOKkXWEee6P4AGk_WLrg" role="_NtoOVkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOK0XWEee6P4AGk_WLrg" role="_NtoOWEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOLEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOLUXWEee6P4AGk_WLrg" role="_NtoOV0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOLkXWEee6P4AGk_WLrg" role="_NtoOVkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOL0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOMEXWEee6P4AGk_WLrg" role="_NtoOWEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOMUXWEee6P4AGk_WLrg" role="_NtoOWUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoOMkXWEee6P4AGk_WLrg" name="" represents="_NtoOWEXWEee6P4AGk_WLrg" coveredBy="_NtoORkXWEee6P4AGk_WLrg _NtoOR0XWEee6P4AGk_WLrg _NtoOSEXWEee6P4AGk_WLrg _NtoOTEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoOM0XWEee6P4AGk_WLrg" name="" represents="_NtoOV0XWEee6P4AGk_WLrg" coveredBy="_NtoON0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoONEXWEee6P4AGk_WLrg" name="" represents="_NtoOVkXWEee6P4AGk_WLrg" coveredBy="_NtoOOEXWEee6P4AGk_WLrg _NtoOOUXWEee6P4AGk_WLrg _NtoOOkXWEee6P4AGk_WLrg _NtoOQUXWEee6P4AGk_WLrg _NtoOQ0XWEee6P4AGk_WLrg _NtoOREXWEee6P4AGk_WLrg _NtoORUXWEee6P4AGk_WLrg _NtoOTUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoONUXWEee6P4AGk_WLrg" name="" represents="_NtoOVUXWEee6P4AGk_WLrg" coveredBy="_NtoOO0XWEee6P4AGk_WLrg _NtoOPEXWEee6P4AGk_WLrg _NtoOPUXWEee6P4AGk_WLrg _NtoOPkXWEee6P4AGk_WLrg _NtoOP0XWEee6P4AGk_WLrg _NtoOQEXWEee6P4AGk_WLrg _NtoOQkXWEee6P4AGk_WLrg _NtoOTkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoONkXWEee6P4AGk_WLrg" represents="_NtoOWUXWEee6P4AGk_WLrg" coveredBy="_NtoOSUXWEee6P4AGk_WLrg _NtoOSkXWEee6P4AGk_WLrg _NtoOS0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoON0XWEee6P4AGk_WLrg" covered="_NtoOM0XWEee6P4AGk_WLrg" event="_NtoOhkXWEee6P4AGk_WLrg" message="_NtoOU0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOOEXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" event="_NtoOiEXWEee6P4AGk_WLrg" message="_NtoOU0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOOUXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" start="_NtoOOEXWEee6P4AGk_WLrg" finish="_NtoOQUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOOkXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" event="_NtoOiUXWEee6P4AGk_WLrg" message="_NtoOUEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOO0XWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" event="_NtoOi0XWEee6P4AGk_WLrg" message="_NtoOUEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOPEXWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" start="_NtoOO0XWEee6P4AGk_WLrg" finish="_NtoOQEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOPUXWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" event="_NtoOjEXWEee6P4AGk_WLrg" message="_NtoOT0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOPkXWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" event="_NtoOjkXWEee6P4AGk_WLrg" message="_NtoOT0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOP0XWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" start="_NtoOPkXWEee6P4AGk_WLrg" finish="_NtoOTkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOQEXWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" event="_NtoOjkXWEee6P4AGk_WLrg" execution="_NtoOPEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOQUXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" event="_NtoOjkXWEee6P4AGk_WLrg" execution="_NtoOOUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOQkXWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" event="_NtoOj0XWEee6P4AGk_WLrg" message="_NtoOUUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOQ0XWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" event="_NtoOkUXWEee6P4AGk_WLrg" message="_NtoOUUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOREXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" start="_NtoOQ0XWEee6P4AGk_WLrg" finish="_NtoOTUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoORUXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" event="_NtoOkkXWEee6P4AGk_WLrg" message="_NtoOUkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoORkXWEee6P4AGk_WLrg" covered="_NtoOMkXWEee6P4AGk_WLrg" event="_NtoOlEXWEee6P4AGk_WLrg" message="_NtoOUkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOR0XWEee6P4AGk_WLrg" covered="_NtoOMkXWEee6P4AGk_WLrg" start="_NtoORkXWEee6P4AGk_WLrg" finish="_NtoOTEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOSEXWEee6P4AGk_WLrg" covered="_NtoOMkXWEee6P4AGk_WLrg" event="_NtoOlUXWEee6P4AGk_WLrg" message="_NtoOVEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOSUXWEee6P4AGk_WLrg" covered="_NtoONkXWEee6P4AGk_WLrg" event="_NtoOl0XWEee6P4AGk_WLrg" message="_NtoOVEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOSkXWEee6P4AGk_WLrg" covered="_NtoONkXWEee6P4AGk_WLrg" start="_NtoOSUXWEee6P4AGk_WLrg" finish="_NtoOS0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOS0XWEee6P4AGk_WLrg" covered="_NtoONkXWEee6P4AGk_WLrg" event="_NtoOl0XWEee6P4AGk_WLrg" execution="_NtoOSkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOTEXWEee6P4AGk_WLrg" covered="_NtoOMkXWEee6P4AGk_WLrg" event="_NtoOl0XWEee6P4AGk_WLrg" execution="_NtoOR0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOTUXWEee6P4AGk_WLrg" covered="_NtoONEXWEee6P4AGk_WLrg" event="_NtoOl0XWEee6P4AGk_WLrg" execution="_NtoOREXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOTkXWEee6P4AGk_WLrg" covered="_NtoONUXWEee6P4AGk_WLrg" event="_NtoOl0XWEee6P4AGk_WLrg" execution="_NtoOP0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOT0XWEee6P4AGk_WLrg" name="specificationDialog( )" receiveEvent="_NtoOPkXWEee6P4AGk_WLrg" sendEvent="_NtoOPUXWEee6P4AGk_WLrg" connector="_NtoOIEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOUEXWEee6P4AGk_WLrg" name="contextMenuElement( )" receiveEvent="_NtoOO0XWEee6P4AGk_WLrg" sendEvent="_NtoOOkXWEee6P4AGk_WLrg" connector="_NtoOI0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOUUXWEee6P4AGk_WLrg" name="getSelectionList( )" messageSort="asynchCall" receiveEvent="_NtoOQ0XWEee6P4AGk_WLrg" sendEvent="_NtoOQkXWEee6P4AGk_WLrg" connector="_NtoOI0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOUkXWEee6P4AGk_WLrg" name="update( )" receiveEvent="_NtoORkXWEee6P4AGk_WLrg" sendEvent="_NtoORUXWEee6P4AGk_WLrg" connector="_NtoOKUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOU0XWEee6P4AGk_WLrg" name="mousePressed(MouseEvent)" receiveEvent="_NtoOOEXWEee6P4AGk_WLrg" sendEvent="_NtoON0XWEee6P4AGk_WLrg" connector="_NtoOLEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOVEXWEee6P4AGk_WLrg" name="update(Vector, Vector)" receiveEvent="_NtoOSUXWEee6P4AGk_WLrg" sendEvent="_NtoOSEXWEee6P4AGk_WLrg" connector="_NtoOL0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoOVUXWEee6P4AGk_WLrg" name="" type="_NtoOE0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOVkXWEee6P4AGk_WLrg" name="" type="_NtoNJEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOV0XWEee6P4AGk_WLrg" name="" type="_NtoOG0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOWEXWEee6P4AGk_WLrg" name="" type="_NtoNo0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOWUXWEee6P4AGk_WLrg" name="" type="_NtoNWEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoOWkXWEee6P4AGk_WLrg" name="ObserverPattern_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoOW0XWEee6P4AGk_WLrg" name="ObserverPattern">
+        <ownedConnector xmi:id="_NtoOXEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOXUXWEee6P4AGk_WLrg" role="_NtoOgkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOXkXWEee6P4AGk_WLrg" role="_NtoOhEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOX0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOYEXWEee6P4AGk_WLrg" role="_NtoOgkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOYUXWEee6P4AGk_WLrg" role="_NtoOhUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoOYkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoOY0XWEee6P4AGk_WLrg" role="_NtoOg0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoOZEXWEee6P4AGk_WLrg" role="_NtoOgkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoOZUXWEee6P4AGk_WLrg" name="" represents="_NtoOgkXWEee6P4AGk_WLrg" coveredBy="_NtoOakXWEee6P4AGk_WLrg _NtoOa0XWEee6P4AGk_WLrg _NtoObEXWEee6P4AGk_WLrg _NtoObkXWEee6P4AGk_WLrg _NtoOb0XWEee6P4AGk_WLrg _NtoOcEXWEee6P4AGk_WLrg _NtoOcUXWEee6P4AGk_WLrg _NtoOdUXWEee6P4AGk_WLrg _NtoOeUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoOZkXWEee6P4AGk_WLrg" name="" represents="_NtoOg0XWEee6P4AGk_WLrg" coveredBy="_NtoOaUXWEee6P4AGk_WLrg _NtoObUXWEee6P4AGk_WLrg _NtoOckXWEee6P4AGk_WLrg _NtoOc0XWEee6P4AGk_WLrg _NtoOdEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoOZ0XWEee6P4AGk_WLrg" represents="_NtoOhEXWEee6P4AGk_WLrg" coveredBy="_NtoOdkXWEee6P4AGk_WLrg _NtoOd0XWEee6P4AGk_WLrg _NtoOeEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoOaEXWEee6P4AGk_WLrg" represents="_NtoOhUXWEee6P4AGk_WLrg" coveredBy="_NtoOekXWEee6P4AGk_WLrg _NtoOe0XWEee6P4AGk_WLrg _NtoOfEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOaUXWEee6P4AGk_WLrg" covered="_NtoOZkXWEee6P4AGk_WLrg" event="_NtoOmEXWEee6P4AGk_WLrg" message="_NtoOf0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOakXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOmkXWEee6P4AGk_WLrg" message="_NtoOf0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOa0XWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" start="_NtoOakXWEee6P4AGk_WLrg" finish="_NtoObEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoObEXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOmkXWEee6P4AGk_WLrg" execution="_NtoOa0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoObUXWEee6P4AGk_WLrg" covered="_NtoOZkXWEee6P4AGk_WLrg" event="_NtoOm0XWEee6P4AGk_WLrg" message="_NtoOgEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoObkXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOnUXWEee6P4AGk_WLrg" message="_NtoOgEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOb0XWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" start="_NtoObkXWEee6P4AGk_WLrg" finish="_NtoOcEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOcEXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOnUXWEee6P4AGk_WLrg" execution="_NtoOb0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOcUXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOnkXWEee6P4AGk_WLrg" message="_NtoOgUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOckXWEee6P4AGk_WLrg" covered="_NtoOZkXWEee6P4AGk_WLrg" event="_NtoOoEXWEee6P4AGk_WLrg" message="_NtoOgUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOc0XWEee6P4AGk_WLrg" covered="_NtoOZkXWEee6P4AGk_WLrg" start="_NtoOckXWEee6P4AGk_WLrg" finish="_NtoOdEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOdEXWEee6P4AGk_WLrg" covered="_NtoOZkXWEee6P4AGk_WLrg" event="_NtoOoEXWEee6P4AGk_WLrg" execution="_NtoOc0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOdUXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOoUXWEee6P4AGk_WLrg" message="_NtoOfUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOdkXWEee6P4AGk_WLrg" covered="_NtoOZ0XWEee6P4AGk_WLrg" event="_NtoOo0XWEee6P4AGk_WLrg" message="_NtoOfUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOd0XWEee6P4AGk_WLrg" covered="_NtoOZ0XWEee6P4AGk_WLrg" start="_NtoOdkXWEee6P4AGk_WLrg" finish="_NtoOeEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOeEXWEee6P4AGk_WLrg" covered="_NtoOZ0XWEee6P4AGk_WLrg" event="_NtoOo0XWEee6P4AGk_WLrg" execution="_NtoOd0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOeUXWEee6P4AGk_WLrg" covered="_NtoOZUXWEee6P4AGk_WLrg" event="_NtoOpEXWEee6P4AGk_WLrg" message="_NtoOfkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoOekXWEee6P4AGk_WLrg" covered="_NtoOaEXWEee6P4AGk_WLrg" event="_NtoOpkXWEee6P4AGk_WLrg" message="_NtoOfkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoOe0XWEee6P4AGk_WLrg" covered="_NtoOaEXWEee6P4AGk_WLrg" start="_NtoOekXWEee6P4AGk_WLrg" finish="_NtoOfEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoOfEXWEee6P4AGk_WLrg" covered="_NtoOaEXWEee6P4AGk_WLrg" event="_NtoOpkXWEee6P4AGk_WLrg" execution="_NtoOe0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOfUXWEee6P4AGk_WLrg" name="update(Vector, Vector)" receiveEvent="_NtoOdkXWEee6P4AGk_WLrg" sendEvent="_NtoOdUXWEee6P4AGk_WLrg" connector="_NtoOXEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOfkXWEee6P4AGk_WLrg" name="update(Vector, Vector)" receiveEvent="_NtoOekXWEee6P4AGk_WLrg" sendEvent="_NtoOeUXWEee6P4AGk_WLrg" connector="_NtoOX0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOf0XWEee6P4AGk_WLrg" name="createClass( )" messageSort="asynchCall" receiveEvent="_NtoOakXWEee6P4AGk_WLrg" sendEvent="_NtoOaUXWEee6P4AGk_WLrg" connector="_NtoOYkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOgEXWEee6P4AGk_WLrg" name="update( )" receiveEvent="_NtoObkXWEee6P4AGk_WLrg" sendEvent="_NtoObUXWEee6P4AGk_WLrg" connector="_NtoOYkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoOgUXWEee6P4AGk_WLrg" name="update(Vector, Vector)" receiveEvent="_NtoOckXWEee6P4AGk_WLrg" sendEvent="_NtoOcUXWEee6P4AGk_WLrg" connector="_NtoOYkXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoOgkXWEee6P4AGk_WLrg" name="" type="_NtoNo0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOg0XWEee6P4AGk_WLrg" name="" type="_NtoNWEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOhEXWEee6P4AGk_WLrg" name="" type="_NtoNWEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoOhUXWEee6P4AGk_WLrg" name="" type="_NtoNWEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOhkXWEee6P4AGk_WLrg" operation="_NtoNMEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOh0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOiEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOiUXWEee6P4AGk_WLrg" operation="_NtoOF0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOikXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOi0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOjEXWEee6P4AGk_WLrg" operation="_NtoOGkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOjUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOjkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOj0XWEee6P4AGk_WLrg" operation="_NtoNPEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOkEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOkUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOkkXWEee6P4AGk_WLrg" operation="_NtoNykXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOk0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOlEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOlUXWEee6P4AGk_WLrg" operation="_NtoNW0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOlkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOl0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOmEXWEee6P4AGk_WLrg" operation="_NtoNtkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOmUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOmkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOm0XWEee6P4AGk_WLrg" operation="_NtoNykXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOnEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOnUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOnkXWEee6P4AGk_WLrg" operation="_NtoNW0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOn0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOoEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOoUXWEee6P4AGk_WLrg" operation="_NtoNW0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOokXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOo0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoOpEXWEee6P4AGk_WLrg" operation="_NtoNW0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoOpUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoOpkXWEee6P4AGk_WLrg" name=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoOp0XWEee6P4AGk_WLrg" name="Component View" clientDependency="_NtoOqEXWEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NtoOqEXWEee6P4AGk_WLrg" supplier="_NtoNGUXWEee6P4AGk_WLrg" client="_NtoOp0XWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoOqUXWEee6P4AGk_WLrg" name="Deployment View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoOqkXWEee6P4AGk_WLrg" name="RoseUserDefinedTypes">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOq0XWEee6P4AGk_WLrg" name="boolean"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOrEXWEee6P4AGk_WLrg" name="StringBuffer"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOrUXWEee6P4AGk_WLrg" name="Vector"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOrkXWEee6P4AGk_WLrg" name="MouseEvent"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOr0XWEee6P4AGk_WLrg" name="Enumeration"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOsEXWEee6P4AGk_WLrg" name="Enum"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoOsUXWEee6P4AGk_WLrg" name="Collection"/>
+  </packagedElement>
+  <profileApplication xmi:id="_NtoOskXWEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_NtoOs0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

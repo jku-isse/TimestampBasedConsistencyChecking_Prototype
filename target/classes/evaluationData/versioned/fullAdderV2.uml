@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_JdD--keHEeeTGcQlbXOTzg" name="fullAdderV1">
+  <packageImport xmi:id="_JdD--0eHEeeTGcQlbXOTzg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JdD-_EeHEeeTGcQlbXOTzg" name="ReadNode">
+    <ownedAttribute xmi:id="_JdD-_UeHEeeTGcQlbXOTzg" name="nodeArray" visibility="private">
+      <type xmi:type="uml:Class" href="RoseJavaDatatypes.uml#_JdA7i0eHEeeTGcQlbXOTzg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JdD-_keHEeeTGcQlbXOTzg" name="edgeArray" visibility="private">
+      <type xmi:type="uml:Class" href="RoseJavaDatatypes.uml#_JdA7y0eHEeeTGcQlbXOTzg"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JdD-_0eHEeeTGcQlbXOTzg" name="readFile"/>
+    <ownedOperation xmi:id="_JdD_AEeHEeeTGcQlbXOTzg" name="readNodes"/>
+    <ownedOperation xmi:id="_JdD_AUeHEeeTGcQlbXOTzg" name="readEdges"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JdD_AkeHEeeTGcQlbXOTzg" name="MainController">
+    <ownedAttribute xmi:id="_JdD_A0eHEeeTGcQlbXOTzg" name="readnode" visibility="private" type="_JdD-_EeHEeeTGcQlbXOTzg" association="_JdD_DUeHEeeTGcQlbXOTzg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdD_BEeHEeeTGcQlbXOTzg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdD_BUeHEeeTGcQlbXOTzg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JdD_BkeHEeeTGcQlbXOTzg" name="reader" visibility="private" type="_JdD-_EeHEeeTGcQlbXOTzg"/>
+    <ownedAttribute xmi:id="_JdD_B0eHEeeTGcQlbXOTzg" name="nodeFactory" visibility="private" type="_JdD_EUeHEeeTGcQlbXOTzg" association="_JdD_F0eHEeeTGcQlbXOTzg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdD_CEeHEeeTGcQlbXOTzg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdD_CUeHEeeTGcQlbXOTzg"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JdD_CkeHEeeTGcQlbXOTzg" name="readFile"/>
+    <ownedOperation xmi:id="_JdD_C0eHEeeTGcQlbXOTzg" name="generate"/>
+    <ownedOperation xmi:id="_JdD_DEeHEeeTGcQlbXOTzg" name="execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JdD_DUeHEeeTGcQlbXOTzg" memberEnd="_JdD_DkeHEeeTGcQlbXOTzg _JdD_A0eHEeeTGcQlbXOTzg">
+    <ownedEnd xmi:id="_JdD_DkeHEeeTGcQlbXOTzg" name="mainController" visibility="private" type="_JdD_AkeHEeeTGcQlbXOTzg" association="_JdD_DUeHEeeTGcQlbXOTzg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdD_D0eHEeeTGcQlbXOTzg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdD_EEeHEeeTGcQlbXOTzg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JdD_EUeHEeeTGcQlbXOTzg" name="NodeFactory">
+    <ownedAttribute xmi:id="_JdD_EkeHEeeTGcQlbXOTzg" name="port" visibility="private" type="_JdD_TEeHEeeTGcQlbXOTzg" association="_JdD_TUeHEeeTGcQlbXOTzg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdD_E0eHEeeTGcQlbXOTzg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdD_FEeHEeeTGcQlbXOTzg"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JdD_FUeHEeeTGcQlbXOTzg" name="createNode"/>
+    <ownedOperation xmi:id="_JdD_FkeHEeeTGcQlbXOTzg" name="addEdge"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JdD_F0eHEeeTGcQlbXOTzg" memberEnd="_JdD_B0eHEeeTGcQlbXOTzg _JdD_GEeHEeeTGcQlbXOTzg">
+    <ownedEnd xmi:id="_JdD_GEeHEeeTGcQlbXOTzg" name="" visibility="private" type="_JdD_AkeHEeeTGcQlbXOTzg" association="_JdD_F0eHEeeTGcQlbXOTzg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdD_GUeHEeeTGcQlbXOTzg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdD_GkeHEeeTGcQlbXOTzg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_JdD_G0eHEeeTGcQlbXOTzg" name="Collaboration">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JdD_HEeHEeeTGcQlbXOTzg" name="Interaction">
+      <ownedConnector xmi:id="_JdD_HUeHEeeTGcQlbXOTzg">
+        <end xmi:id="_JdD_HkeHEeeTGcQlbXOTzg" role="_JdD_SEeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_JdD_H0eHEeeTGcQlbXOTzg" role="_JdD_SUeHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_JdD_IEeHEeeTGcQlbXOTzg">
+        <end xmi:id="_JdD_IUeHEeeTGcQlbXOTzg" role="_JdD_SEeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_JdD_IkeHEeeTGcQlbXOTzg" role="_JdD_SEeHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_JdD_I0eHEeeTGcQlbXOTzg">
+        <end xmi:id="_JdD_JEeHEeeTGcQlbXOTzg" role="_JdD_SkeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_JdD_JUeHEeeTGcQlbXOTzg" role="_JdD_SEeHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_JdD_JkeHEeeTGcQlbXOTzg">
+        <end xmi:id="_JdD_J0eHEeeTGcQlbXOTzg" role="_JdD_SkeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_JdD_KEeHEeeTGcQlbXOTzg" role="_JdD_S0eHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <lifeline xmi:id="_JdD_KUeHEeeTGcQlbXOTzg" name="mainController" represents="_JdD_SEeHEeeTGcQlbXOTzg" coveredBy="_JdD_LUeHEeeTGcQlbXOTzg _JdD_MEeHEeeTGcQlbXOTzg _JdD_MkeHEeeTGcQlbXOTzg _JdD_M0eHEeeTGcQlbXOTzg _JdD_PUeHEeeTGcQlbXOTzg _JdD_NEeHEeeTGcQlbXOTzg _JdD_PEeHEeeTGcQlbXOTzg _JdD_PkeHEeeTGcQlbXOTzg _JdD_P0eHEeeTGcQlbXOTzg _JdD_QEeHEeeTGcQlbXOTzg _JdD_QUeHEeeTGcQlbXOTzg"/>
+      <lifeline xmi:id="_JdD_KkeHEeeTGcQlbXOTzg" name="NodeReader" represents="_JdD_SUeHEeeTGcQlbXOTzg" coveredBy="_JdD_LkeHEeeTGcQlbXOTzg _JdD_L0eHEeeTGcQlbXOTzg _JdD_MUeHEeeTGcQlbXOTzg"/>
+      <lifeline xmi:id="_JdD_K0eHEeeTGcQlbXOTzg" name="nodeFactory" represents="_JdD_SkeHEeeTGcQlbXOTzg" coveredBy="_JdD_NUeHEeeTGcQlbXOTzg _JdD_NkeHEeeTGcQlbXOTzg _JdD_O0eHEeeTGcQlbXOTzg _JdD_N0eHEeeTGcQlbXOTzg"/>
+      <lifeline xmi:id="_JdD_LEeHEeeTGcQlbXOTzg" name="Property" represents="_JdD_S0eHEeeTGcQlbXOTzg" coveredBy="_JdD_OEeHEeeTGcQlbXOTzg _JdD_OUeHEeeTGcQlbXOTzg _JdD_OkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_LUeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_QkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_LkeHEeeTGcQlbXOTzg" covered="_JdD_KkeHEeeTGcQlbXOTzg" message="_JdD_QkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JdD_L0eHEeeTGcQlbXOTzg" covered="_JdD_KkeHEeeTGcQlbXOTzg" start="_JdD_LkeHEeeTGcQlbXOTzg" finish="_JdD_MUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_MEeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_Q0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JdD_MUeHEeeTGcQlbXOTzg" covered="_JdD_KkeHEeeTGcQlbXOTzg" event="_JdD_UUeHEeeTGcQlbXOTzg" execution="_JdD_L0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_MkeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_Q0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JdD_M0eHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" start="_JdD_MkeHEeeTGcQlbXOTzg" finish="_JdD_PUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_NEeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_REeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_NUeHEeeTGcQlbXOTzg" covered="_JdD_K0eHEeeTGcQlbXOTzg" message="_JdD_REeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JdD_NkeHEeeTGcQlbXOTzg" covered="_JdD_K0eHEeeTGcQlbXOTzg" start="_JdD_NUeHEeeTGcQlbXOTzg" finish="_JdD_O0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_N0eHEeeTGcQlbXOTzg" covered="_JdD_K0eHEeeTGcQlbXOTzg" message="_JdD_R0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_OEeHEeeTGcQlbXOTzg" covered="_JdD_LEeHEeeTGcQlbXOTzg" message="_JdD_R0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JdD_OUeHEeeTGcQlbXOTzg" covered="_JdD_LEeHEeeTGcQlbXOTzg" start="_JdD_OEeHEeeTGcQlbXOTzg" finish="_JdD_OkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JdD_OkeHEeeTGcQlbXOTzg" covered="_JdD_LEeHEeeTGcQlbXOTzg" event="_JdD_UUeHEeeTGcQlbXOTzg" execution="_JdD_OUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_O0eHEeeTGcQlbXOTzg" covered="_JdD_K0eHEeeTGcQlbXOTzg" message="_JdD_RUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_PEeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_RUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JdD_PUeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" event="_JdD_UUeHEeeTGcQlbXOTzg" execution="_JdD_M0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_PkeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_RkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JdD_P0eHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" message="_JdD_RkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JdD_QEeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" start="_JdD_P0eHEeeTGcQlbXOTzg" finish="_JdD_QUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JdD_QUeHEeeTGcQlbXOTzg" covered="_JdD_KUeHEeeTGcQlbXOTzg" event="_JdD_UUeHEeeTGcQlbXOTzg" execution="_JdD_QEeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_JdD_QkeHEeeTGcQlbXOTzg" name="readFile" messageSort="asynchCall" receiveEvent="_JdD_LkeHEeeTGcQlbXOTzg" sendEvent="_JdD_LUeHEeeTGcQlbXOTzg" connector="_JdD_HUeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_JdD_Q0eHEeeTGcQlbXOTzg" name="generateNodes" messageSort="asynchCall" receiveEvent="_JdD_MkeHEeeTGcQlbXOTzg" sendEvent="_JdD_MEeHEeeTGcQlbXOTzg" connector="_JdD_IEeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_JdD_REeHEeeTGcQlbXOTzg" name="create" receiveEvent="_JdD_NUeHEeeTGcQlbXOTzg" sendEvent="_JdD_NEeHEeeTGcQlbXOTzg" connector="_JdD_I0eHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_JdD_RUeHEeeTGcQlbXOTzg" name="addToHashMap" messageSort="reply" receiveEvent="_JdD_PEeHEeeTGcQlbXOTzg" sendEvent="_JdD_O0eHEeeTGcQlbXOTzg" connector="_JdD_I0eHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_JdD_RkeHEeeTGcQlbXOTzg" name="generateNodes" messageSort="asynchCall" receiveEvent="_JdD_P0eHEeeTGcQlbXOTzg" sendEvent="_JdD_PkeHEeeTGcQlbXOTzg" connector="_JdD_IEeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_JdD_R0eHEeeTGcQlbXOTzg" name="createNode" messageSort="asynchCall" receiveEvent="_JdD_OEeHEeeTGcQlbXOTzg" sendEvent="_JdD_N0eHEeeTGcQlbXOTzg" connector="_JdD_JkeHEeeTGcQlbXOTzg"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_JdD_SEeHEeeTGcQlbXOTzg" name="mainController" type="_JdD_AkeHEeeTGcQlbXOTzg"/>
+    <ownedAttribute xmi:id="_JdD_SUeHEeeTGcQlbXOTzg" name="NodeReader"/>
+    <ownedAttribute xmi:id="_JdD_SkeHEeeTGcQlbXOTzg" name="nodeFactory" type="_JdD_EUeHEeeTGcQlbXOTzg"/>
+    <ownedAttribute xmi:id="_JdD_S0eHEeeTGcQlbXOTzg" name="Node"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JdD_TEeHEeeTGcQlbXOTzg" name="Port"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JdD_TUeHEeeTGcQlbXOTzg" memberEnd="_JdD_EkeHEeeTGcQlbXOTzg _JdD_TkeHEeeTGcQlbXOTzg">
+    <ownedEnd xmi:id="_JdD_TkeHEeeTGcQlbXOTzg" name="" visibility="private" type="_JdD_EUeHEeeTGcQlbXOTzg" association="_JdD_TUeHEeeTGcQlbXOTzg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdD_T0eHEeeTGcQlbXOTzg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdD_UEeHEeeTGcQlbXOTzg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_JdD_UUeHEeeTGcQlbXOTzg" name="ExecutionEvent1"/>
+  <profileApplication xmi:id="_JdD_UkeHEeeTGcQlbXOTzg">
+    <eAnnotations xmi:id="_JdD_U0eHEeeTGcQlbXOTzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

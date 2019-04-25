@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_n1GGkkXVEee6P4AGk_WLrg" name="ATM">
+  <packageImport xmi:id="_n1GGk0XVEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_n1GGlEXVEee6P4AGk_WLrg" name="Use Case View">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_n1GGlUXVEee6P4AGk_WLrg" name="Bankkunde"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_n1GGlkXVEee6P4AGk_WLrg" name="Geld abheben"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_n1GGl0XVEee6P4AGk_WLrg" name="Geld einzahlen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_n1GGmEXVEee6P4AGk_WLrg" name="Überweisung"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GGmUXVEee6P4AGk_WLrg" memberEnd="_n1GGmkXVEee6P4AGk_WLrg _n1GGm0XVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GGmkXVEee6P4AGk_WLrg" name="_geld abheben" visibility="public" type="_n1GGlkXVEee6P4AGk_WLrg" isUnique="false" association="_n1GGmUXVEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_n1GGm0XVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" type="_n1GGlUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GGmUXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GGnEXVEee6P4AGk_WLrg" memberEnd="_n1GGnUXVEee6P4AGk_WLrg _n1GGnkXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GGnUXVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" type="_n1GGlUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GGnEXVEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_n1GGnkXVEee6P4AGk_WLrg" name="_geld einzahlen" visibility="public" type="_n1GGl0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GGnEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GGn0XVEee6P4AGk_WLrg" memberEnd="_n1GGoEXVEee6P4AGk_WLrg _n1GGoUXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GGoEXVEee6P4AGk_WLrg" name="_überweisung" visibility="public" type="_n1GGmEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GGn0XVEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_n1GGoUXVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" type="_n1GGlUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GGn0XVEee6P4AGk_WLrg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_n1GGokXVEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGo0XVEee6P4AGk_WLrg" name="Geldausgabe">
+      <ownedAttribute xmi:id="_n1GGpEXVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" isUnique="false" association="_n1GG4kXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGpUXVEee6P4AGk_WLrg" name="_abheben" visibility="public" type="_n1GGpkXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG5EXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGpkXVEee6P4AGk_WLrg" name="Abheben">
+      <ownedAttribute xmi:id="_n1GGp0XVEee6P4AGk_WLrg" name="_geldausgabe" visibility="public" isUnique="false" association="_n1GG5EXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGqEXVEee6P4AGk_WLrg" name="_kassenschnittstelle" visibility="public" type="_n1GGrUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG7kXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGqUXVEee6P4AGk_WLrg" name="_konto" visibility="public" type="_n1GGtUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG8EXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGqkXVEee6P4AGk_WLrg" name="_tranaktionsmanager" visibility="public" type="_n1GG20XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHFkXVEee6P4AGk_WLrg"/>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_n1GGq0XVEee6P4AGk_WLrg" name="State/Activity Model">
+        <region xmi:id="_n1GGrEXVEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGrUXVEee6P4AGk_WLrg" name="Kassenschnittstelle">
+      <ownedAttribute xmi:id="_n1GGrkXVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" isUnique="false" association="_n1GG5UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGr0XVEee6P4AGk_WLrg" name="_überweisung" visibility="public" type="_n1GGskXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG50XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGsEXVEee6P4AGk_WLrg" name="_einzahlung" visibility="public" type="_n1GGwEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG7EXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGsUXVEee6P4AGk_WLrg" name="_abheben" visibility="public" type="_n1GGpkXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG7kXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGskXVEee6P4AGk_WLrg" name="Überweisung">
+      <ownedAttribute xmi:id="_n1GGs0XVEee6P4AGk_WLrg" name="_kassenschnittstelle" visibility="public" isUnique="false" association="_n1GG50XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGtEXVEee6P4AGk_WLrg" name="_konto" visibility="public" type="_n1GGtUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG6EXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGtUXVEee6P4AGk_WLrg" name="Konto">
+      <generalization xmi:id="_n1GGtkXVEee6P4AGk_WLrg" general="_n1GG4UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGt0XVEee6P4AGk_WLrg" name="betrag" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_n1GGuEXVEee6P4AGk_WLrg">
+          <body>0</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_n1GGuUXVEee6P4AGk_WLrg" name="_überweisung" visibility="public" isUnique="false" association="_n1GG6EXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGukXVEee6P4AGk_WLrg" name="_einzahlung" visibility="public" type="_n1GGwEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG7UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGu0XVEee6P4AGk_WLrg" name="_abheben" visibility="public" type="_n1GGpkXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG8EXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGvEXVEee6P4AGk_WLrg" name="Geldeingabe">
+      <ownedAttribute xmi:id="_n1GGvUXVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" isUnique="false" association="_n1GG6UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGvkXVEee6P4AGk_WLrg" name="_einzahlung" visibility="public" type="_n1GGwEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG60XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGv0XVEee6P4AGk_WLrg" name="_einzahlung" visibility="public" type="_n1GGwEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG70XVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGwEXVEee6P4AGk_WLrg" name="Einzahlung">
+      <ownedAttribute xmi:id="_n1GGwUXVEee6P4AGk_WLrg" name="_geldeingabe" visibility="public" isUnique="false" association="_n1GG60XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGwkXVEee6P4AGk_WLrg" name="_kassenschnittstelle" visibility="public" type="_n1GGrUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG7EXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGw0XVEee6P4AGk_WLrg" name="_konto" visibility="public" type="_n1GGtUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG7UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGxEXVEee6P4AGk_WLrg" name="_geldeingabe" visibility="public" type="_n1GGvEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG70XVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGxUXVEee6P4AGk_WLrg" name="Kartenleser">
+      <ownedAttribute xmi:id="_n1GGxkXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" isUnique="false" association="_n1GHCEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGx0XVEee6P4AGk_WLrg" name="Anzeige">
+      <ownedAttribute xmi:id="_n1GGyEXVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" type="_n1GGlUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG9EXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGyUXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHBkXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGykXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHCkXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGy0XVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHDEXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGzEXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHDkXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGzUXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHEEXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GGzkXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHEkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GGz0XVEee6P4AGk_WLrg" name="Tastatur">
+      <ownedAttribute xmi:id="_n1GG0EXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG-0XVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG0UXVEee6P4AGk_WLrg" name="Kundenmanager">
+      <ownedAttribute xmi:id="_n1GG0kXVEee6P4AGk_WLrg" name="_auszahlungsversorger" visibility="public" type="_n1GG2UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG-UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GG00XVEee6P4AGk_WLrg" name="_geldzähler" visibility="public" type="_n1GG10XVEee6P4AGk_WLrg" isUnique="false" association="_n1GG_UXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GG1EXVEee6P4AGk_WLrg" name="_tranaktionsmanager" visibility="public" type="_n1GG20XVEee6P4AGk_WLrg" isUnique="false" association="_n1GG_0XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GG1UXVEee6P4AGk_WLrg" name="_kartenleser" visibility="public" type="_n1GGxUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHBEXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GG1kXVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHFEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG10XVEee6P4AGk_WLrg" name="Geldzähler">
+      <ownedAttribute xmi:id="_n1GG2EXVEee6P4AGk_WLrg" name="_auszahlungssensor" visibility="public" isUnique="false" association="_n1GHGkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG2UXVEee6P4AGk_WLrg" name="Auszahlungsversorger"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG2kXVEee6P4AGk_WLrg" name="Auszahlungssensor"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG20XVEee6P4AGk_WLrg" name="Tranaktionsmanager">
+      <ownedAttribute xmi:id="_n1GG3EXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" isUnique="false" association="_n1GG_0XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GG3UXVEee6P4AGk_WLrg" name="_kontomanager" visibility="public" type="_n1GG30XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHAEXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GG3kXVEee6P4AGk_WLrg" name="_abheben" visibility="public" type="_n1GGpkXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHGEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG30XVEee6P4AGk_WLrg" name="Kontomanager">
+      <ownedAttribute xmi:id="_n1GG4EXVEee6P4AGk_WLrg" name="_konto" visibility="public" isUnique="false" association="_n1GHAkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n1GG4UXVEee6P4AGk_WLrg" name="Persistente Klasse"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG4kXVEee6P4AGk_WLrg" memberEnd="_n1GG40XVEee6P4AGk_WLrg _n1GGpEXVEee6P4AGk_WLrg" navigableOwnedEnd="_n1GG40XVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG40XVEee6P4AGk_WLrg" name="_geldausgabe" visibility="public" type="_n1GGo0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GG4kXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG5EXVEee6P4AGk_WLrg" memberEnd="_n1GGpUXVEee6P4AGk_WLrg _n1GGp0XVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG5UXVEee6P4AGk_WLrg" memberEnd="_n1GG5kXVEee6P4AGk_WLrg _n1GGrkXVEee6P4AGk_WLrg" navigableOwnedEnd="_n1GG5kXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG5kXVEee6P4AGk_WLrg" name="_kassenschnittstelle" visibility="public" type="_n1GGrUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG5UXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG50XVEee6P4AGk_WLrg" memberEnd="_n1GGr0XVEee6P4AGk_WLrg _n1GGs0XVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG6EXVEee6P4AGk_WLrg" memberEnd="_n1GGtEXVEee6P4AGk_WLrg _n1GGuUXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG6UXVEee6P4AGk_WLrg" memberEnd="_n1GG6kXVEee6P4AGk_WLrg _n1GGvUXVEee6P4AGk_WLrg" navigableOwnedEnd="_n1GG6kXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG6kXVEee6P4AGk_WLrg" name="_geldeingabe" visibility="public" type="_n1GGvEXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG6UXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG60XVEee6P4AGk_WLrg" memberEnd="_n1GGvkXVEee6P4AGk_WLrg _n1GGwUXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG7EXVEee6P4AGk_WLrg" memberEnd="_n1GGsEXVEee6P4AGk_WLrg _n1GGwkXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG7UXVEee6P4AGk_WLrg" memberEnd="_n1GGw0XVEee6P4AGk_WLrg _n1GGukXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG7kXVEee6P4AGk_WLrg" memberEnd="_n1GGsUXVEee6P4AGk_WLrg _n1GGqEXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG70XVEee6P4AGk_WLrg" memberEnd="_n1GGv0XVEee6P4AGk_WLrg _n1GGxEXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG8EXVEee6P4AGk_WLrg" memberEnd="_n1GGqUXVEee6P4AGk_WLrg _n1GGu0XVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG8UXVEee6P4AGk_WLrg" memberEnd="_n1GG8kXVEee6P4AGk_WLrg _n1GG80XVEee6P4AGk_WLrg" navigableOwnedEnd="_n1GG8kXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG8kXVEee6P4AGk_WLrg" name="_kartenleser" visibility="public" type="_n1GGxUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG8UXVEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_n1GG80XVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" type="_n1GGlUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG8UXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG9EXVEee6P4AGk_WLrg" memberEnd="_n1GGyEXVEee6P4AGk_WLrg _n1GG9UXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG9UXVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GG9EXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG9kXVEee6P4AGk_WLrg" memberEnd="_n1GG90XVEee6P4AGk_WLrg _n1GG-EXVEee6P4AGk_WLrg" navigableOwnedEnd="_n1GG-EXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG90XVEee6P4AGk_WLrg" name="_bankkunde" visibility="public" type="_n1GGlUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG9kXVEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_n1GG-EXVEee6P4AGk_WLrg" name="_tastatur" visibility="public" type="_n1GGz0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GG9kXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG-UXVEee6P4AGk_WLrg" memberEnd="_n1GG-kXVEee6P4AGk_WLrg _n1GG0kXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG-kXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG-UXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG-0XVEee6P4AGk_WLrg" memberEnd="_n1GG_EXVEee6P4AGk_WLrg _n1GG0EXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG_EXVEee6P4AGk_WLrg" name="_tastatur" visibility="public" type="_n1GGz0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GG-0XVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG_UXVEee6P4AGk_WLrg" memberEnd="_n1GG_kXVEee6P4AGk_WLrg _n1GG00XVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GG_kXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GG_UXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GG_0XVEee6P4AGk_WLrg" memberEnd="_n1GG1EXVEee6P4AGk_WLrg _n1GG3EXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHAEXVEee6P4AGk_WLrg" memberEnd="_n1GHAUXVEee6P4AGk_WLrg _n1GG3UXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHAUXVEee6P4AGk_WLrg" name="_tranaktionsmanager" visibility="public" type="_n1GG20XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHAEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHAkXVEee6P4AGk_WLrg" memberEnd="_n1GG4EXVEee6P4AGk_WLrg _n1GHA0XVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHA0XVEee6P4AGk_WLrg" name="_kontomanager" visibility="public" type="_n1GG30XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHAkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHBEXVEee6P4AGk_WLrg" memberEnd="_n1GHBUXVEee6P4AGk_WLrg _n1GG1UXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHBUXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHBEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHBkXVEee6P4AGk_WLrg" memberEnd="_n1GHB0XVEee6P4AGk_WLrg _n1GGyUXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHB0XVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHBkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHCEXVEee6P4AGk_WLrg" memberEnd="_n1GGxkXVEee6P4AGk_WLrg _n1GHCUXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHCUXVEee6P4AGk_WLrg" name="_kartenleser" visibility="public" type="_n1GGxUXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHCEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHCkXVEee6P4AGk_WLrg" memberEnd="_n1GHC0XVEee6P4AGk_WLrg _n1GGykXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHC0XVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHCkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHDEXVEee6P4AGk_WLrg" memberEnd="_n1GHDUXVEee6P4AGk_WLrg _n1GGy0XVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHDUXVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHDEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHDkXVEee6P4AGk_WLrg" memberEnd="_n1GGzEXVEee6P4AGk_WLrg _n1GHD0XVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHD0XVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHDkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHEEXVEee6P4AGk_WLrg" memberEnd="_n1GHEUXVEee6P4AGk_WLrg _n1GGzUXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHEUXVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHEEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHEkXVEee6P4AGk_WLrg" memberEnd="_n1GHE0XVEee6P4AGk_WLrg _n1GGzkXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHE0XVEee6P4AGk_WLrg" name="_anzeige" visibility="public" type="_n1GGx0XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHEkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHFEXVEee6P4AGk_WLrg" memberEnd="_n1GG1kXVEee6P4AGk_WLrg _n1GHFUXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHFUXVEee6P4AGk_WLrg" name="_kundenmanager" visibility="public" type="_n1GG0UXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHFEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHFkXVEee6P4AGk_WLrg" memberEnd="_n1GHF0XVEee6P4AGk_WLrg _n1GGqkXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHF0XVEee6P4AGk_WLrg" name="_abheben" visibility="public" type="_n1GGpkXVEee6P4AGk_WLrg" isUnique="false" association="_n1GHFkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHGEXVEee6P4AGk_WLrg" memberEnd="_n1GHGUXVEee6P4AGk_WLrg _n1GG3kXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHGUXVEee6P4AGk_WLrg" name="_tranaktionsmanager" visibility="public" type="_n1GG20XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHGEXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n1GHGkXVEee6P4AGk_WLrg" memberEnd="_n1GHG0XVEee6P4AGk_WLrg _n1GG2EXVEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_n1GHG0XVEee6P4AGk_WLrg" name="_geldzähler" visibility="public" type="_n1GG10XVEee6P4AGk_WLrg" isUnique="false" association="_n1GHGkXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_n1GHHEXVEee6P4AGk_WLrg" name="_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_n1GHHUXVEee6P4AGk_WLrg" name="">
+        <ownedConnector xmi:id="_n1GHHkXVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHH0XVEee6P4AGk_WLrg" role="_n1GHUUXVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHIEXVEee6P4AGk_WLrg" role="_n1GHUkXVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_n1GHIUXVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHIkXVEee6P4AGk_WLrg" role="_n1GHUUXVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHI0XVEee6P4AGk_WLrg" role="_n1GHUUXVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_n1GHJEXVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHJUXVEee6P4AGk_WLrg" role="_n1GHUkXVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHJkXVEee6P4AGk_WLrg" role="_n1GHVEXVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_n1GHJ0XVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHKEXVEee6P4AGk_WLrg" role="_n1GHU0XVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHKUXVEee6P4AGk_WLrg" role="_n1GHU0XVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_n1GHKkXVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHK0XVEee6P4AGk_WLrg" role="_n1GHU0XVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHLEXVEee6P4AGk_WLrg" role="_n1GHUUXVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_n1GHLUXVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHLkXVEee6P4AGk_WLrg" role="_n1GHVEXVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHL0XVEee6P4AGk_WLrg" role="_n1GHVUXVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_n1GHMEXVEee6P4AGk_WLrg">
+          <end xmi:id="_n1GHMUXVEee6P4AGk_WLrg" role="_n1GHVEXVEee6P4AGk_WLrg"/>
+          <end xmi:id="_n1GHMkXVEee6P4AGk_WLrg" role="_n1GHU0XVEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_n1GHM0XVEee6P4AGk_WLrg" name="" represents="_n1GHUUXVEee6P4AGk_WLrg" coveredBy="_n1GHOEXVEee6P4AGk_WLrg _n1GHRkXVEee6P4AGk_WLrg _n1GHR0XVEee6P4AGk_WLrg _n1GHSEXVEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_n1GHNEXVEee6P4AGk_WLrg" name="Geldausgabe" represents="_n1GHUkXVEee6P4AGk_WLrg" coveredBy="_n1GHOUXVEee6P4AGk_WLrg _n1GHOkXVEee6P4AGk_WLrg _n1GHO0XVEee6P4AGk_WLrg _n1GHS0XVEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_n1GHNUXVEee6P4AGk_WLrg" name="Überweisung" represents="_n1GHVEXVEee6P4AGk_WLrg" coveredBy="_n1GHPEXVEee6P4AGk_WLrg _n1GHPUXVEee6P4AGk_WLrg _n1GHPkXVEee6P4AGk_WLrg _n1GHQkXVEee6P4AGk_WLrg _n1GHSkXVEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_n1GHNkXVEee6P4AGk_WLrg" name="Konto" represents="_n1GHVUXVEee6P4AGk_WLrg" coveredBy="_n1GHP0XVEee6P4AGk_WLrg _n1GHQEXVEee6P4AGk_WLrg _n1GHQUXVEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_n1GHN0XVEee6P4AGk_WLrg" name="Geldeingabe" represents="_n1GHU0XVEee6P4AGk_WLrg" coveredBy="_n1GHQ0XVEee6P4AGk_WLrg _n1GHREXVEee6P4AGk_WLrg _n1GHRUXVEee6P4AGk_WLrg _n1GHSUXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHOEXVEee6P4AGk_WLrg" covered="_n1GHM0XVEee6P4AGk_WLrg" event="_n1GHWEXVEee6P4AGk_WLrg" message="_n1GHTEXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHOUXVEee6P4AGk_WLrg" covered="_n1GHNEXVEee6P4AGk_WLrg" event="_n1GHWkXVEee6P4AGk_WLrg" message="_n1GHTEXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_n1GHOkXVEee6P4AGk_WLrg" covered="_n1GHNEXVEee6P4AGk_WLrg" start="_n1GHOUXVEee6P4AGk_WLrg" finish="_n1GHS0XVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHO0XVEee6P4AGk_WLrg" covered="_n1GHNEXVEee6P4AGk_WLrg" event="_n1GHW0XVEee6P4AGk_WLrg" message="_n1GHTUXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHPEXVEee6P4AGk_WLrg" covered="_n1GHNUXVEee6P4AGk_WLrg" event="_n1GHXUXVEee6P4AGk_WLrg" message="_n1GHTUXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_n1GHPUXVEee6P4AGk_WLrg" covered="_n1GHNUXVEee6P4AGk_WLrg" start="_n1GHPEXVEee6P4AGk_WLrg" finish="_n1GHSkXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHPkXVEee6P4AGk_WLrg" covered="_n1GHNUXVEee6P4AGk_WLrg" event="_n1GHXkXVEee6P4AGk_WLrg" message="_n1GHT0XVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHP0XVEee6P4AGk_WLrg" covered="_n1GHNkXVEee6P4AGk_WLrg" event="_n1GHYEXVEee6P4AGk_WLrg" message="_n1GHT0XVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_n1GHQEXVEee6P4AGk_WLrg" covered="_n1GHNkXVEee6P4AGk_WLrg" start="_n1GHP0XVEee6P4AGk_WLrg" finish="_n1GHQUXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_n1GHQUXVEee6P4AGk_WLrg" covered="_n1GHNkXVEee6P4AGk_WLrg" event="_n1GHYEXVEee6P4AGk_WLrg" execution="_n1GHQEXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHQkXVEee6P4AGk_WLrg" covered="_n1GHNUXVEee6P4AGk_WLrg" event="_n1GHYUXVEee6P4AGk_WLrg" message="_n1GHUEXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHQ0XVEee6P4AGk_WLrg" covered="_n1GHN0XVEee6P4AGk_WLrg" event="_n1GHY0XVEee6P4AGk_WLrg" message="_n1GHUEXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_n1GHREXVEee6P4AGk_WLrg" covered="_n1GHN0XVEee6P4AGk_WLrg" start="_n1GHQ0XVEee6P4AGk_WLrg" finish="_n1GHSUXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHRUXVEee6P4AGk_WLrg" covered="_n1GHN0XVEee6P4AGk_WLrg" event="_n1GHZEXVEee6P4AGk_WLrg" message="_n1GHTkXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n1GHRkXVEee6P4AGk_WLrg" covered="_n1GHM0XVEee6P4AGk_WLrg" event="_n1GHZkXVEee6P4AGk_WLrg" message="_n1GHTkXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_n1GHR0XVEee6P4AGk_WLrg" covered="_n1GHM0XVEee6P4AGk_WLrg" start="_n1GHRkXVEee6P4AGk_WLrg" finish="_n1GHSEXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_n1GHSEXVEee6P4AGk_WLrg" covered="_n1GHM0XVEee6P4AGk_WLrg" event="_n1GHZkXVEee6P4AGk_WLrg" execution="_n1GHR0XVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_n1GHSUXVEee6P4AGk_WLrg" covered="_n1GHN0XVEee6P4AGk_WLrg" event="_n1GHZkXVEee6P4AGk_WLrg" execution="_n1GHREXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_n1GHSkXVEee6P4AGk_WLrg" covered="_n1GHNUXVEee6P4AGk_WLrg" event="_n1GHZkXVEee6P4AGk_WLrg" execution="_n1GHPUXVEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_n1GHS0XVEee6P4AGk_WLrg" covered="_n1GHNEXVEee6P4AGk_WLrg" event="_n1GHZkXVEee6P4AGk_WLrg" execution="_n1GHOkXVEee6P4AGk_WLrg"/>
+        <message xmi:id="_n1GHTEXVEee6P4AGk_WLrg" name="Identität" receiveEvent="_n1GHOUXVEee6P4AGk_WLrg" sendEvent="_n1GHOEXVEee6P4AGk_WLrg" connector="_n1GHHkXVEee6P4AGk_WLrg"/>
+        <message xmi:id="_n1GHTUXVEee6P4AGk_WLrg" name="Abheben beantragen" receiveEvent="_n1GHPEXVEee6P4AGk_WLrg" sendEvent="_n1GHO0XVEee6P4AGk_WLrg" connector="_n1GHJEXVEee6P4AGk_WLrg"/>
+        <message xmi:id="_n1GHTkXVEee6P4AGk_WLrg" name="Geld ausgeben" receiveEvent="_n1GHRkXVEee6P4AGk_WLrg" sendEvent="_n1GHRUXVEee6P4AGk_WLrg" connector="_n1GHKkXVEee6P4AGk_WLrg"/>
+        <message xmi:id="_n1GHT0XVEee6P4AGk_WLrg" name="validiere und hebe ab" receiveEvent="_n1GHP0XVEee6P4AGk_WLrg" sendEvent="_n1GHPkXVEee6P4AGk_WLrg" connector="_n1GHLUXVEee6P4AGk_WLrg"/>
+        <message xmi:id="_n1GHUEXVEee6P4AGk_WLrg" name="autorisiere Ausgabe" receiveEvent="_n1GHQ0XVEee6P4AGk_WLrg" sendEvent="_n1GHQkXVEee6P4AGk_WLrg" connector="_n1GHMEXVEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_n1GHUUXVEee6P4AGk_WLrg" name="" type="_n1GGlUXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GHUkXVEee6P4AGk_WLrg" name="Geldausgabe" type="_n1GGo0XVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GHU0XVEee6P4AGk_WLrg" name="Geldeingabe" type="_n1GGvEXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GHVEXVEee6P4AGk_WLrg" name="Überweisung" type="_n1GGskXVEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_n1GHVUXVEee6P4AGk_WLrg" name="Konto" type="_n1GGtUXVEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_n1GHVkXVEee6P4AGk_WLrg" name="_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_n1GHV0XVEee6P4AGk_WLrg" name=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_n1GHWEXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_n1GHWUXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_n1GHWkXVEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_n1GHW0XVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_n1GHXEXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_n1GHXUXVEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_n1GHXkXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_n1GHX0XVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_n1GHYEXVEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_n1GHYUXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_n1GHYkXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_n1GHY0XVEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_n1GHZEXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_n1GHZUXVEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_n1GHZkXVEee6P4AGk_WLrg" name=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_n1GHZ0XVEee6P4AGk_WLrg" name="Component View" clientDependency="_n1GHaEXVEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_n1GHaEXVEee6P4AGk_WLrg" supplier="_n1GGokXVEee6P4AGk_WLrg" client="_n1GHZ0XVEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_n1GHaUXVEee6P4AGk_WLrg" name="Deployment View"/>
+  <profileApplication xmi:id="_n1GHakXVEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_n1GHa0XVEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

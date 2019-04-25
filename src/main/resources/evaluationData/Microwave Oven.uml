@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NtoT9EXWEee6P4AGk_WLrg" name="Microwave Oven">
+  <packageImport xmi:id="_NtoT9UXWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_NtoT9kXWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="RoseAnalysisDatatypes.uml#_NtyLn0XWEee6P4AGk_WLrg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoT90XWEee6P4AGk_WLrg" name="Use Case View">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_NtoT-EXWEee6P4AGk_WLrg" name="User"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_NtoT-UXWEee6P4AGk_WLrg" name="Heat Food">
+      <ownedComment xmi:id="_NtoT-kXWEee6P4AGk_WLrg" annotatedElement="_NtoT-UXWEee6P4AGk_WLrg">
+        <body>User:
+1) Opens door
+2) Inserts food
+3) Closes door
+4) Punches time button once for each minute of cooking
+5) Hits start button
+6) --extension point--
+7) Opens door
+8) Removes food
+9) Closes door
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_NtoT-0XWEee6P4AGk_WLrg" name="Stop Cooking Prematurely">
+      <ownedComment xmi:id="_NtoT_EXWEee6P4AGk_WLrg" annotatedElement="_NtoT-0XWEee6P4AGk_WLrg">
+        <body>6a) User does not wait for alarm.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_NtoT_UXWEee6P4AGk_WLrg" name="Wait Until Cooking is Done">
+      <ownedComment xmi:id="_NtoT_kXWEee6P4AGk_WLrg" annotatedElement="_NtoT_UXWEee6P4AGk_WLrg">
+        <body>6b) User waits for alarm.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoT_0XWEee6P4AGk_WLrg" memberEnd="_NtoUAEXWEee6P4AGk_WLrg _NtoUAUXWEee6P4AGk_WLrg" navigableOwnedEnd="_NtoUAEXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoUAEXWEee6P4AGk_WLrg" name="_heat Food" visibility="public" type="_NtoT-UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoT_0XWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_NtoUAUXWEee6P4AGk_WLrg" name="_user" visibility="public" type="_NtoT-EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoT_0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoUAkXWEee6P4AGk_WLrg" memberEnd="_NtoUBUXWEee6P4AGk_WLrg _NtoUBkXWEee6P4AGk_WLrg" navigableOwnedEnd="_NtoUBUXWEee6P4AGk_WLrg">
+      <eAnnotations xmi:id="_NtoUA0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUBEXWEee6P4AGk_WLrg" key="extend"/>
+      </eAnnotations>
+      <ownedEnd xmi:id="_NtoUBUXWEee6P4AGk_WLrg" name="_heat Food" visibility="public" type="_NtoT-UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUAkXWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_NtoUBkXWEee6P4AGk_WLrg" name="_stop Cooking Prematurely" visibility="public" type="_NtoT-0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoUAkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoUB0XWEee6P4AGk_WLrg" memberEnd="_NtoUCkXWEee6P4AGk_WLrg _NtoUC0XWEee6P4AGk_WLrg" navigableOwnedEnd="_NtoUCkXWEee6P4AGk_WLrg">
+      <eAnnotations xmi:id="_NtoUCEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUCUXWEee6P4AGk_WLrg" key="extend"/>
+      </eAnnotations>
+      <ownedEnd xmi:id="_NtoUCkXWEee6P4AGk_WLrg" name="_heat Food" visibility="public" type="_NtoT-UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUB0XWEee6P4AGk_WLrg"/>
+      <ownedEnd xmi:id="_NtoUC0XWEee6P4AGk_WLrg" name="_wait Until Cooking is Done" visibility="public" type="_NtoT_UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUB0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoUDEXWEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoUDUXWEee6P4AGk_WLrg" name="Light">
+      <eAnnotations xmi:id="_NtoUDkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUD0XWEee6P4AGk_WLrg" key="entity"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_NtoUEEXWEee6P4AGk_WLrg" annotatedElement="_NtoUDUXWEee6P4AGk_WLrg">
+        <body>This light should be on when the oven is cooking, or when the door is open.</body>
+      </ownedComment>
+      <ownedOperation xmi:id="_NtoUEUXWEee6P4AGk_WLrg" name="on" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUEkXWEee6P4AGk_WLrg" name="off" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoUE0XWEee6P4AGk_WLrg" name="PowerTube">
+      <eAnnotations xmi:id="_NtoUFEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUFUXWEee6P4AGk_WLrg" key="entity"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_NtoUFkXWEee6P4AGk_WLrg" annotatedElement="_NtoUE0XWEee6P4AGk_WLrg">
+        <body>The microwave-generating device.
+This tube should be on only when the oven is cooking.
+</body>
+      </ownedComment>
+      <ownedOperation xmi:id="_NtoUF0XWEee6P4AGk_WLrg" name="energize" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUGEXWEee6P4AGk_WLrg" name="deEnergize" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoUGUXWEee6P4AGk_WLrg" name="Timer" isActive="true">
+      <eAnnotations xmi:id="_NtoUGkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUG0XWEee6P4AGk_WLrg" key="entity"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_NtoUHEXWEee6P4AGk_WLrg" annotatedElement="_NtoUGUXWEee6P4AGk_WLrg">
+        <body>Maintains the time left to cook. It is an active object, so it will count down on its own, and send a timeout message to the OvenControl object.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NtoUHUXWEee6P4AGk_WLrg" name="count" visibility="private" type="_NtoVNUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoUHkXWEee6P4AGk_WLrg" name="oven" visibility="private" type="_NtoUIkXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUqUXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NtoUH0XWEee6P4AGk_WLrg" name="bumpUp" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUIEXWEee6P4AGk_WLrg" name="setTimeTo1" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUIUXWEee6P4AGk_WLrg" name="setTimeTo0" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoUIkXWEee6P4AGk_WLrg" name="OvenControl">
+      <eAnnotations xmi:id="_NtoUI0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUJEXWEee6P4AGk_WLrg" key="control"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_NtoUJUXWEee6P4AGk_WLrg" annotatedElement="_NtoUIkXWEee6P4AGk_WLrg">
+        <body>Controls all oven functions.
+Gets timeout message from timer, and knows when the &quot;+&quot; button is pushed to increment the cooking time.
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_NtoUJkXWEee6P4AGk_WLrg" name="t" visibility="private" type="_NtoUGUXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUqUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoUJ0XWEee6P4AGk_WLrg" name="l" visibility="private" type="_NtoUDUXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUqkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoUKEXWEee6P4AGk_WLrg" name="b" visibility="private" type="_NtoUpEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUrEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoUKUXWEee6P4AGk_WLrg" name="p" visibility="private" type="_NtoUE0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoUrkXWEee6P4AGk_WLrg"/>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_NtoUKkXWEee6P4AGk_WLrg" name="State/Activity Model">
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoUK0XWEee6P4AGk_WLrg" name="t.setTimeTo0()"/>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoULEXWEee6P4AGk_WLrg" name="l.on()"/>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoULUXWEee6P4AGk_WLrg" name="p.energize()"/>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoULkXWEee6P4AGk_WLrg" name="Idle with door closed">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUL0XWEee6P4AGk_WLrg" name="off">
+            <eAnnotations xmi:id="_NtoUMEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUMUXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoUMkXWEee6P4AGk_WLrg" name="Initial cooking period">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUM0XWEee6P4AGk_WLrg" name="setTimeTo1">
+            <eAnnotations xmi:id="_NtoUNEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUNUXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUNkXWEee6P4AGk_WLrg" name="on">
+            <eAnnotations xmi:id="_NtoUN0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUOEXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUOUXWEee6P4AGk_WLrg" name="energize">
+            <eAnnotations xmi:id="_NtoUOkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUO0XWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoUPEXWEee6P4AGk_WLrg" name="Cooking period extended">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUPUXWEee6P4AGk_WLrg" name="bumpUp">
+            <eAnnotations xmi:id="_NtoUPkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUP0XWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoUQEXWEee6P4AGk_WLrg" name="Cooking Interrupted">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUQUXWEee6P4AGk_WLrg" name="deEnergize">
+            <eAnnotations xmi:id="_NtoUQkXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUQ0XWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUREXWEee6P4AGk_WLrg" name="setTimeTo0">
+            <eAnnotations xmi:id="_NtoURUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoURkXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoUR0XWEee6P4AGk_WLrg" name="Cooking complete">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUSEXWEee6P4AGk_WLrg" name="off">
+            <eAnnotations xmi:id="_NtoUSUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUSkXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUS0XWEee6P4AGk_WLrg" name="deEnergize">
+            <eAnnotations xmi:id="_NtoUTEXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUTUXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUTkXWEee6P4AGk_WLrg" name="beep">
+            <eAnnotations xmi:id="_NtoUT0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUUEXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Activity" xmi:id="_NtoUUUXWEee6P4AGk_WLrg" name="Idle with door opened">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NtoUUkXWEee6P4AGk_WLrg" name="on">
+            <eAnnotations xmi:id="_NtoUU0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_NtoUVEXWEee6P4AGk_WLrg" key="entry"/>
+            </eAnnotations>
+          </node>
+        </nestedClassifier>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUVUXWEee6P4AGk_WLrg" name="Idle with door closed" outgoing="_NtoUiEXWEee6P4AGk_WLrg _NtoUi0XWEee6P4AGk_WLrg" incoming="_NtoUZ0XWEee6P4AGk_WLrg _NtoUakXWEee6P4AGk_WLrg _NtoUnUXWEee6P4AGk_WLrg" behavior="_NtoULkXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUVkXWEee6P4AGk_WLrg" name="Initial cooking period" outgoing="_NtoUbUXWEee6P4AGk_WLrg _NtoUfEXWEee6P4AGk_WLrg _NtoUl0XWEee6P4AGk_WLrg" incoming="_NtoUiEXWEee6P4AGk_WLrg" behavior="_NtoUMkXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUV0XWEee6P4AGk_WLrg" name="Cooking period extended" outgoing="_NtoUcEXWEee6P4AGk_WLrg _NtoUgkXWEee6P4AGk_WLrg _NtoUjkXWEee6P4AGk_WLrg" incoming="_NtoUbUXWEee6P4AGk_WLrg _NtoUcEXWEee6P4AGk_WLrg" behavior="_NtoUPEXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUWEXWEee6P4AGk_WLrg" name="Cooking Interrupted" outgoing="_NtoUakXWEee6P4AGk_WLrg" incoming="_NtoUjkXWEee6P4AGk_WLrg _NtoUl0XWEee6P4AGk_WLrg" behavior="_NtoUQEXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUWUXWEee6P4AGk_WLrg" name="Cooking complete" outgoing="_NtoUlEXWEee6P4AGk_WLrg" incoming="_NtoUfEXWEee6P4AGk_WLrg _NtoUgkXWEee6P4AGk_WLrg" behavior="_NtoUR0XWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUWkXWEee6P4AGk_WLrg" name="Idle with door opened" outgoing="_NtoUZ0XWEee6P4AGk_WLrg" incoming="_NtoUi0XWEee6P4AGk_WLrg _NtoUlEXWEee6P4AGk_WLrg" behavior="_NtoUUUXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUW0XWEee6P4AGk_WLrg" name="Idle with door closed" outgoing="_NtoUkUXWEee6P4AGk_WLrg" behavior="_NtoULkXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUXEXWEee6P4AGk_WLrg" name="Initial cooking period" incoming="_NtoUdkXWEee6P4AGk_WLrg" behavior="_NtoUMkXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUXUXWEee6P4AGk_WLrg" name="t.setTimeTo0()" outgoing="_NtoUZEXWEee6P4AGk_WLrg" incoming="_NtoUmkXWEee6P4AGk_WLrg" behavior="_NtoUK0XWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUXkXWEee6P4AGk_WLrg" name="l.on()" outgoing="_NtoUf0XWEee6P4AGk_WLrg" incoming="_NtoUc0XWEee6P4AGk_WLrg" behavior="_NtoULEXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_NtoUX0XWEee6P4AGk_WLrg" name="p.energize()" outgoing="_NtoUhUXWEee6P4AGk_WLrg" incoming="_NtoUeUXWEee6P4AGk_WLrg" behavior="_NtoULUXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:ForkNode" xmi:id="_NtoUYEXWEee6P4AGk_WLrg" outgoing="_NtoUc0XWEee6P4AGk_WLrg _NtoUeUXWEee6P4AGk_WLrg _NtoUmkXWEee6P4AGk_WLrg" incoming="_NtoUkUXWEee6P4AGk_WLrg"/>
+        <node xmi:type="uml:JoinNode" xmi:id="_NtoUYUXWEee6P4AGk_WLrg" visibility="public" outgoing="_NtoUdkXWEee6P4AGk_WLrg" incoming="_NtoUZEXWEee6P4AGk_WLrg _NtoUf0XWEee6P4AGk_WLrg _NtoUhUXWEee6P4AGk_WLrg">
+          <joinSpec xmi:type="uml:Expression" xmi:id="_NtoUYkXWEee6P4AGk_WLrg" symbol="and"/>
+        </node>
+        <node xmi:type="uml:InitialNode" xmi:id="_NtoUY0XWEee6P4AGk_WLrg" name="Start" outgoing="_NtoUnUXWEee6P4AGk_WLrg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUZEXWEee6P4AGk_WLrg" source="_NtoUXUXWEee6P4AGk_WLrg" target="_NtoUYUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUZUXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUZkXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUZ0XWEee6P4AGk_WLrg" name="doorClosed" source="_NtoUWkXWEee6P4AGk_WLrg" target="_NtoUVUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUaEXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUaUXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUakXWEee6P4AGk_WLrg" name="doorClosed" source="_NtoUWEXWEee6P4AGk_WLrg" target="_NtoUVUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUa0XWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUbEXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUbUXWEee6P4AGk_WLrg" name="timerButtonPushed" source="_NtoUVkXWEee6P4AGk_WLrg" target="_NtoUV0XWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUbkXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUb0XWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUcEXWEee6P4AGk_WLrg" name="timerButtonPushed" source="_NtoUV0XWEee6P4AGk_WLrg" target="_NtoUV0XWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUcUXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUckXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUc0XWEee6P4AGk_WLrg" source="_NtoUYEXWEee6P4AGk_WLrg" target="_NtoUXkXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUdEXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUdUXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUdkXWEee6P4AGk_WLrg" source="_NtoUYUXWEee6P4AGk_WLrg" target="_NtoUXEXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUd0XWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUeEXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUeUXWEee6P4AGk_WLrg" source="_NtoUYEXWEee6P4AGk_WLrg" target="_NtoUX0XWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUekXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUe0XWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUfEXWEee6P4AGk_WLrg" name="timerTimedOut" source="_NtoUVkXWEee6P4AGk_WLrg" target="_NtoUWUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUfUXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUfkXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUf0XWEee6P4AGk_WLrg" source="_NtoUXkXWEee6P4AGk_WLrg" target="_NtoUYUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUgEXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUgUXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUgkXWEee6P4AGk_WLrg" name="timerTimedOut" source="_NtoUV0XWEee6P4AGk_WLrg" target="_NtoUWUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUg0XWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUhEXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUhUXWEee6P4AGk_WLrg" source="_NtoUX0XWEee6P4AGk_WLrg" target="_NtoUYUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUhkXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUh0XWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUiEXWEee6P4AGk_WLrg" name="timerButtonPushed" source="_NtoUVUXWEee6P4AGk_WLrg" target="_NtoUVkXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUiUXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUikXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUi0XWEee6P4AGk_WLrg" name="doorOpened" source="_NtoUVUXWEee6P4AGk_WLrg" target="_NtoUWkXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUjEXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUjUXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUjkXWEee6P4AGk_WLrg" name="doorOpened" source="_NtoUV0XWEee6P4AGk_WLrg" target="_NtoUWEXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUj0XWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUkEXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUkUXWEee6P4AGk_WLrg" name="timeButtonPushed" source="_NtoUW0XWEee6P4AGk_WLrg" target="_NtoUYEXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUkkXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUk0XWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUlEXWEee6P4AGk_WLrg" name="doorOpened" source="_NtoUWUXWEee6P4AGk_WLrg" target="_NtoUWkXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUlUXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUlkXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUl0XWEee6P4AGk_WLrg" name="doorOpened" source="_NtoUVkXWEee6P4AGk_WLrg" target="_NtoUWEXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUmEXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUmUXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUmkXWEee6P4AGk_WLrg" source="_NtoUYEXWEee6P4AGk_WLrg" target="_NtoUXUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUm0XWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUnEXWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NtoUnUXWEee6P4AGk_WLrg" source="_NtoUY0XWEee6P4AGk_WLrg" target="_NtoUVUXWEee6P4AGk_WLrg">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NtoUnkXWEee6P4AGk_WLrg"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_NtoUn0XWEee6P4AGk_WLrg" value="1"/>
+        </edge>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_NtoUoEXWEee6P4AGk_WLrg" name="timerTimedOut" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUoUXWEee6P4AGk_WLrg" name="timerButtonPushed" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUokXWEee6P4AGk_WLrg" name="doorOpened" visibility="public"/>
+      <ownedOperation xmi:id="_NtoUo0XWEee6P4AGk_WLrg" name="doorClosed" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoUpEXWEee6P4AGk_WLrg" name="Beeper">
+      <eAnnotations xmi:id="_NtoUpUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NtoUpkXWEee6P4AGk_WLrg" key="boundary"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_NtoUp0XWEee6P4AGk_WLrg" annotatedElement="_NtoUpEXWEee6P4AGk_WLrg">
+        <body>The beeper sounds when the oven is shut down.</body>
+      </ownedComment>
+      <ownedOperation xmi:id="_NtoUqEXWEee6P4AGk_WLrg" name="beep" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoUqUXWEee6P4AGk_WLrg" memberEnd="_NtoUJkXWEee6P4AGk_WLrg _NtoUHkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoUqkXWEee6P4AGk_WLrg" memberEnd="_NtoUJ0XWEee6P4AGk_WLrg _NtoUq0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoUq0XWEee6P4AGk_WLrg" name="_ovenControl" visibility="public" type="_NtoUIkXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUqkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoUrEXWEee6P4AGk_WLrg" memberEnd="_NtoUKEXWEee6P4AGk_WLrg _NtoUrUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoUrUXWEee6P4AGk_WLrg" name="_ovenControl" visibility="public" type="_NtoUIkXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUrEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoUrkXWEee6P4AGk_WLrg" memberEnd="_NtoUKUXWEee6P4AGk_WLrg _NtoUr0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoUr0XWEee6P4AGk_WLrg" name="_ovenControl" visibility="public" type="_NtoUIkXWEee6P4AGk_WLrg" isUnique="false" association="_NtoUrkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoUsEXWEee6P4AGk_WLrg" name="Cook Food for 5 Minutes_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoUsUXWEee6P4AGk_WLrg" name="Cook Food for 5 Minutes">
+        <ownedConnector xmi:id="_NtoUskXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoUs0XWEee6P4AGk_WLrg" role="_NtoU6kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoUtEXWEee6P4AGk_WLrg" role="_NtoU60XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoUtUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoUtkXWEee6P4AGk_WLrg" role="_NtoU6kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoUt0XWEee6P4AGk_WLrg" role="_NtoU7EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoUuEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoUuUXWEee6P4AGk_WLrg" role="_NtoU60XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoUukXWEee6P4AGk_WLrg" role="_NtoU7EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoUu0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoUvEXWEee6P4AGk_WLrg" role="_NtoU60XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoUvUXWEee6P4AGk_WLrg" role="_NtoU7UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoUvkXWEee6P4AGk_WLrg" name="Jim" represents="_NtoU6kXWEee6P4AGk_WLrg" coveredBy="_NtoUwkXWEee6P4AGk_WLrg _NtoUxkXWEee6P4AGk_WLrg _NtoUzkXWEee6P4AGk_WLrg _NtoU2kXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoUv0XWEee6P4AGk_WLrg" name="" represents="_NtoU60XWEee6P4AGk_WLrg" coveredBy="_NtoUw0XWEee6P4AGk_WLrg _NtoUxEXWEee6P4AGk_WLrg _NtoUxUXWEee6P4AGk_WLrg _NtoUx0XWEee6P4AGk_WLrg _NtoUyEXWEee6P4AGk_WLrg _NtoUyUXWEee6P4AGk_WLrg _NtoUzUXWEee6P4AGk_WLrg _NtoUz0XWEee6P4AGk_WLrg _NtoU0EXWEee6P4AGk_WLrg _NtoU0UXWEee6P4AGk_WLrg _NtoU1UXWEee6P4AGk_WLrg _NtoU2UXWEee6P4AGk_WLrg _NtoU20XWEee6P4AGk_WLrg _NtoU3EXWEee6P4AGk_WLrg _NtoU3UXWEee6P4AGk_WLrg _NtoU4UXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoUwEXWEee6P4AGk_WLrg" represents="_NtoU7EXWEee6P4AGk_WLrg" coveredBy="_NtoUykXWEee6P4AGk_WLrg _NtoUy0XWEee6P4AGk_WLrg _NtoUzEXWEee6P4AGk_WLrg _NtoU0kXWEee6P4AGk_WLrg _NtoU00XWEee6P4AGk_WLrg _NtoU1EXWEee6P4AGk_WLrg _NtoU3kXWEee6P4AGk_WLrg _NtoU30XWEee6P4AGk_WLrg _NtoU4EXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoUwUXWEee6P4AGk_WLrg" represents="_NtoU7UXWEee6P4AGk_WLrg" coveredBy="_NtoU1kXWEee6P4AGk_WLrg _NtoU10XWEee6P4AGk_WLrg _NtoU2EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUwkXWEee6P4AGk_WLrg" covered="_NtoUvkXWEee6P4AGk_WLrg" event="_NtoVEEXWEee6P4AGk_WLrg" message="_NtoU4kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUw0XWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVEkXWEee6P4AGk_WLrg" message="_NtoU4kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoUxEXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" start="_NtoUw0XWEee6P4AGk_WLrg" finish="_NtoUxUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoUxUXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVEkXWEee6P4AGk_WLrg" execution="_NtoUxEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUxkXWEee6P4AGk_WLrg" covered="_NtoUvkXWEee6P4AGk_WLrg" event="_NtoVE0XWEee6P4AGk_WLrg" message="_NtoU40XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUx0XWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVFUXWEee6P4AGk_WLrg" message="_NtoU40XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoUyEXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" start="_NtoUx0XWEee6P4AGk_WLrg" finish="_NtoUzUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUyUXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVFkXWEee6P4AGk_WLrg" message="_NtoU5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUykXWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" event="_NtoVGEXWEee6P4AGk_WLrg" message="_NtoU5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoUy0XWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" start="_NtoUykXWEee6P4AGk_WLrg" finish="_NtoUzEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoUzEXWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" event="_NtoVGEXWEee6P4AGk_WLrg" execution="_NtoUy0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoUzUXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVGEXWEee6P4AGk_WLrg" execution="_NtoUyEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUzkXWEee6P4AGk_WLrg" covered="_NtoUvkXWEee6P4AGk_WLrg" event="_NtoVGUXWEee6P4AGk_WLrg" message="_NtoU5EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoUz0XWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVG0XWEee6P4AGk_WLrg" message="_NtoU5EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoU0EXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" start="_NtoUz0XWEee6P4AGk_WLrg" finish="_NtoU2UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU0UXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVHEXWEee6P4AGk_WLrg" message="_NtoU50XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU0kXWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" event="_NtoVHkXWEee6P4AGk_WLrg" message="_NtoU50XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoU00XWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" start="_NtoU0kXWEee6P4AGk_WLrg" finish="_NtoU1EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoU1EXWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" event="_NtoVHkXWEee6P4AGk_WLrg" execution="_NtoU00XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU1UXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVH0XWEee6P4AGk_WLrg" message="_NtoU6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU1kXWEee6P4AGk_WLrg" covered="_NtoUwUXWEee6P4AGk_WLrg" event="_NtoVIUXWEee6P4AGk_WLrg" message="_NtoU6UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoU10XWEee6P4AGk_WLrg" covered="_NtoUwUXWEee6P4AGk_WLrg" start="_NtoU1kXWEee6P4AGk_WLrg" finish="_NtoU2EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoU2EXWEee6P4AGk_WLrg" covered="_NtoUwUXWEee6P4AGk_WLrg" event="_NtoVIUXWEee6P4AGk_WLrg" execution="_NtoU10XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoU2UXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVIUXWEee6P4AGk_WLrg" execution="_NtoU0EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU2kXWEee6P4AGk_WLrg" covered="_NtoUvkXWEee6P4AGk_WLrg" event="_NtoVIkXWEee6P4AGk_WLrg" message="_NtoU5UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU20XWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVJEXWEee6P4AGk_WLrg" message="_NtoU5UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoU3EXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" start="_NtoU20XWEee6P4AGk_WLrg" finish="_NtoU4UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU3UXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVJUXWEee6P4AGk_WLrg" message="_NtoU6EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU3kXWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" event="_NtoVJ0XWEee6P4AGk_WLrg" message="_NtoU6EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoU30XWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" start="_NtoU3kXWEee6P4AGk_WLrg" finish="_NtoU4EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoU4EXWEee6P4AGk_WLrg" covered="_NtoUwEXWEee6P4AGk_WLrg" event="_NtoVJ0XWEee6P4AGk_WLrg" execution="_NtoU30XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoU4UXWEee6P4AGk_WLrg" covered="_NtoUv0XWEee6P4AGk_WLrg" event="_NtoVJ0XWEee6P4AGk_WLrg" execution="_NtoU3EXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU4kXWEee6P4AGk_WLrg" name="doorOpened( )" receiveEvent="_NtoUw0XWEee6P4AGk_WLrg" sendEvent="_NtoUwkXWEee6P4AGk_WLrg" connector="_NtoUskXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU40XWEee6P4AGk_WLrg" name="doorClosed( )" receiveEvent="_NtoUx0XWEee6P4AGk_WLrg" sendEvent="_NtoUxkXWEee6P4AGk_WLrg" connector="_NtoUskXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU5EXWEee6P4AGk_WLrg" name="timerButtonPushed( )" receiveEvent="_NtoUz0XWEee6P4AGk_WLrg" sendEvent="_NtoUzkXWEee6P4AGk_WLrg" connector="_NtoUskXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU5UXWEee6P4AGk_WLrg" name="timerButtonPushed( )" receiveEvent="_NtoU20XWEee6P4AGk_WLrg" sendEvent="_NtoU2kXWEee6P4AGk_WLrg" connector="_NtoUskXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU5kXWEee6P4AGk_WLrg" name="setTimeTo0( )" receiveEvent="_NtoUykXWEee6P4AGk_WLrg" sendEvent="_NtoUyUXWEee6P4AGk_WLrg" connector="_NtoUuEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU50XWEee6P4AGk_WLrg" name="bumpUp( )" receiveEvent="_NtoU0kXWEee6P4AGk_WLrg" sendEvent="_NtoU0UXWEee6P4AGk_WLrg" connector="_NtoUuEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU6EXWEee6P4AGk_WLrg" name="bumpUp( )" receiveEvent="_NtoU3kXWEee6P4AGk_WLrg" sendEvent="_NtoU3UXWEee6P4AGk_WLrg" connector="_NtoUuEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoU6UXWEee6P4AGk_WLrg" name="energize( )" receiveEvent="_NtoU1kXWEee6P4AGk_WLrg" sendEvent="_NtoU1UXWEee6P4AGk_WLrg" connector="_NtoUu0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoU6kXWEee6P4AGk_WLrg" name="Jim" type="_NtoT-EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoU60XWEee6P4AGk_WLrg" name="" type="_NtoUIkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoU7EXWEee6P4AGk_WLrg" name="" type="_NtoUGUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoU7UXWEee6P4AGk_WLrg" name="" type="_NtoUE0XWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoU7kXWEee6P4AGk_WLrg" name="Last Minute of Cooking_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoU70XWEee6P4AGk_WLrg" name="Last Minute of Cooking">
+        <ownedConnector xmi:id="_NtoU8EXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoU8UXWEee6P4AGk_WLrg" role="_NtoVDEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoU8kXWEee6P4AGk_WLrg" role="_NtoVDUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoU80XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoU9EXWEee6P4AGk_WLrg" role="_NtoVDUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoU9UXWEee6P4AGk_WLrg" role="_NtoVDkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoU9kXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoU90XWEee6P4AGk_WLrg" role="_NtoVDUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoU-EXWEee6P4AGk_WLrg" role="_NtoVD0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoU-UXWEee6P4AGk_WLrg" name="" represents="_NtoVDEXWEee6P4AGk_WLrg" coveredBy="_NtoU_UXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoU-kXWEee6P4AGk_WLrg" name="" represents="_NtoVDUXWEee6P4AGk_WLrg" coveredBy="_NtoU_kXWEee6P4AGk_WLrg _NtoU_0XWEee6P4AGk_WLrg _NtoVAEXWEee6P4AGk_WLrg _NtoVBEXWEee6P4AGk_WLrg _NtoVCEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoU-0XWEee6P4AGk_WLrg" represents="_NtoVDkXWEee6P4AGk_WLrg" coveredBy="_NtoVAUXWEee6P4AGk_WLrg _NtoVAkXWEee6P4AGk_WLrg _NtoVA0XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoU_EXWEee6P4AGk_WLrg" represents="_NtoVD0XWEee6P4AGk_WLrg" coveredBy="_NtoVBUXWEee6P4AGk_WLrg _NtoVBkXWEee6P4AGk_WLrg _NtoVB0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU_UXWEee6P4AGk_WLrg" covered="_NtoU-UXWEee6P4AGk_WLrg" event="_NtoVKEXWEee6P4AGk_WLrg" message="_NtoVCUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoU_kXWEee6P4AGk_WLrg" covered="_NtoU-kXWEee6P4AGk_WLrg" event="_NtoVKkXWEee6P4AGk_WLrg" message="_NtoVCUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoU_0XWEee6P4AGk_WLrg" covered="_NtoU-kXWEee6P4AGk_WLrg" start="_NtoU_kXWEee6P4AGk_WLrg" finish="_NtoVCEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoVAEXWEee6P4AGk_WLrg" covered="_NtoU-kXWEee6P4AGk_WLrg" event="_NtoVK0XWEee6P4AGk_WLrg" message="_NtoVCkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoVAUXWEee6P4AGk_WLrg" covered="_NtoU-0XWEee6P4AGk_WLrg" event="_NtoVLUXWEee6P4AGk_WLrg" message="_NtoVCkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoVAkXWEee6P4AGk_WLrg" covered="_NtoU-0XWEee6P4AGk_WLrg" start="_NtoVAUXWEee6P4AGk_WLrg" finish="_NtoVA0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoVA0XWEee6P4AGk_WLrg" covered="_NtoU-0XWEee6P4AGk_WLrg" event="_NtoVLUXWEee6P4AGk_WLrg" execution="_NtoVAkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoVBEXWEee6P4AGk_WLrg" covered="_NtoU-kXWEee6P4AGk_WLrg" event="_NtoVLkXWEee6P4AGk_WLrg" message="_NtoVC0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoVBUXWEee6P4AGk_WLrg" covered="_NtoU_EXWEee6P4AGk_WLrg" event="_NtoVMEXWEee6P4AGk_WLrg" message="_NtoVC0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoVBkXWEee6P4AGk_WLrg" covered="_NtoU_EXWEee6P4AGk_WLrg" start="_NtoVBUXWEee6P4AGk_WLrg" finish="_NtoVB0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoVB0XWEee6P4AGk_WLrg" covered="_NtoU_EXWEee6P4AGk_WLrg" event="_NtoVMEXWEee6P4AGk_WLrg" execution="_NtoVBkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoVCEXWEee6P4AGk_WLrg" covered="_NtoU-kXWEee6P4AGk_WLrg" event="_NtoVMEXWEee6P4AGk_WLrg" execution="_NtoU_0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoVCUXWEee6P4AGk_WLrg" name="timerTimedOut( )" receiveEvent="_NtoU_kXWEee6P4AGk_WLrg" sendEvent="_NtoU_UXWEee6P4AGk_WLrg" connector="_NtoU8EXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoVCkXWEee6P4AGk_WLrg" name="deEnergize( )" receiveEvent="_NtoVAUXWEee6P4AGk_WLrg" sendEvent="_NtoVAEXWEee6P4AGk_WLrg" connector="_NtoU80XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoVC0XWEee6P4AGk_WLrg" name="beep( )" receiveEvent="_NtoVBUXWEee6P4AGk_WLrg" sendEvent="_NtoVBEXWEee6P4AGk_WLrg" connector="_NtoU9kXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoVDEXWEee6P4AGk_WLrg" name="" type="_NtoUGUXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoVDUXWEee6P4AGk_WLrg" name="" type="_NtoUIkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoVDkXWEee6P4AGk_WLrg" name="" type="_NtoUE0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoVD0XWEee6P4AGk_WLrg" name="" type="_NtoUpEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVEEXWEee6P4AGk_WLrg" operation="_NtoUokXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVEUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVEkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVE0XWEee6P4AGk_WLrg" operation="_NtoUo0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVFEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVFUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVFkXWEee6P4AGk_WLrg" operation="_NtoUIUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVF0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVGEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVGUXWEee6P4AGk_WLrg" operation="_NtoUoUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVGkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVG0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVHEXWEee6P4AGk_WLrg" operation="_NtoUH0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVHUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVHkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVH0XWEee6P4AGk_WLrg" operation="_NtoUF0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVIEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVIUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVIkXWEee6P4AGk_WLrg" operation="_NtoUoUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVI0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVJEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVJUXWEee6P4AGk_WLrg" operation="_NtoUH0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVJkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVJ0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVKEXWEee6P4AGk_WLrg" operation="_NtoUoEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVKUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVKkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVK0XWEee6P4AGk_WLrg" operation="_NtoUGEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVLEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVLUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoVLkXWEee6P4AGk_WLrg" operation="_NtoUqEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoVL0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoVMEXWEee6P4AGk_WLrg" name=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoVMUXWEee6P4AGk_WLrg" name="Component View" clientDependency="_NtoVMkXWEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NtoVMkXWEee6P4AGk_WLrg" supplier="_NtoUDEXWEee6P4AGk_WLrg" client="_NtoVMUXWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoVM0XWEee6P4AGk_WLrg" name="Deployment View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoVNEXWEee6P4AGk_WLrg" name="RoseUserDefinedTypes">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoVNUXWEee6P4AGk_WLrg" name="int"/>
+  </packagedElement>
+  <profileApplication xmi:id="_NtoVNkXWEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_NtoVN0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

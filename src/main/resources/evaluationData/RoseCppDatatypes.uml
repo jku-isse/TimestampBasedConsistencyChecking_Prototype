@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Basic_0="http:///Basic_0.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///Basic_0.profile.uml2 pathmap://UML_PROFILES/Standard.profile.uml#__LeIQK86Edih9-GG5afQ0g">
+  <uml:Model xmi:id="_Nt_PWUXWEee6P4AGk_WLrg" name="RoseCppDatatypes">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PWkXWEee6P4AGk_WLrg" name="bool"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PW0XWEee6P4AGk_WLrg" name="byte"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PXEXWEee6P4AGk_WLrg" name="char"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PXUXWEee6P4AGk_WLrg" name="double"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PXkXWEee6P4AGk_WLrg" name="float"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PX0XWEee6P4AGk_WLrg" name="int"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PYEXWEee6P4AGk_WLrg" name="long"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PYUXWEee6P4AGk_WLrg" name="short"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PYkXWEee6P4AGk_WLrg" name="unsigned"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nt_PY0XWEee6P4AGk_WLrg" name="void"/>
+    <profileApplication xmi:id="_Nt_PZEXWEee6P4AGk_WLrg">
+      <eAnnotations xmi:id="_Nt_PZUXWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#__LeIQK86Edih9-GG5afQ0g"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Basic_0:Basic__ModelLibrary xmi:id="_Nt_PZkXWEee6P4AGk_WLrg" base_Package="_Nt_PWUXWEee6P4AGk_WLrg"/>
+</xmi:XMI>

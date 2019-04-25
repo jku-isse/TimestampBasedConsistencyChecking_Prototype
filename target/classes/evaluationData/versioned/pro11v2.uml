@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Jc60OEeHEeeTGcQlbXOTzg" name="main">
+  <packageImport xmi:id="_Jc60OUeHEeeTGcQlbXOTzg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Jc60OkeHEeeTGcQlbXOTzg" name="Staff">
+    <ownedAttribute xmi:id="_Jc60O0eHEeeTGcQlbXOTzg" name="StaffId" visibility="private"/>
+    <ownedAttribute xmi:id="_Jc60PEeHEeeTGcQlbXOTzg" name="name" visibility="private"/>
+    <ownedOperation xmi:id="_Jc60PUeHEeeTGcQlbXOTzg" name="CreateNew"/>
+    <ownedOperation xmi:id="_Jc60PkeHEeeTGcQlbXOTzg" name="Delete"/>
+    <ownedOperation xmi:id="_Jc60P0eHEeeTGcQlbXOTzg" name="Search"/>
+    <ownedOperation xmi:id="_Jc60QEeHEeeTGcQlbXOTzg" name="OpenTimeBook"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Jc60QUeHEeeTGcQlbXOTzg" name="MainSystem">
+    <ownedOperation xmi:id="_Jc60QkeHEeeTGcQlbXOTzg" name="CallMethod"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_Jc60Q0eHEeeTGcQlbXOTzg" name="Collaboration1">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Jc60REeHEeeTGcQlbXOTzg" name="Add Staff">
+      <ownedConnector xmi:id="_Jc60RUeHEeeTGcQlbXOTzg">
+        <end xmi:id="_Jc60RkeHEeeTGcQlbXOTzg" role="_Jc60V0eHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_Jc60R0eHEeeTGcQlbXOTzg" role="_Jc60V0eHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_Jc60SEeHEeeTGcQlbXOTzg">
+        <end xmi:id="_Jc60SUeHEeeTGcQlbXOTzg" role="_Jc60WEeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_Jc60SkeHEeeTGcQlbXOTzg" role="_Jc60V0eHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <lifeline xmi:id="_Jc60S0eHEeeTGcQlbXOTzg" name="mainSystem" represents="_Jc60V0eHEeeTGcQlbXOTzg" coveredBy="_Jc60TUeHEeeTGcQlbXOTzg _Jc60UUeHEeeTGcQlbXOTzg _Jc60UkeHEeeTGcQlbXOTzg _Jc60U0eHEeeTGcQlbXOTzg _Jc60VEeHEeeTGcQlbXOTzg"/>
+      <lifeline xmi:id="_Jc60TEeHEeeTGcQlbXOTzg" name="staff" represents="_Jc60WEeHEeeTGcQlbXOTzg" coveredBy="_Jc60TkeHEeeTGcQlbXOTzg _Jc60T0eHEeeTGcQlbXOTzg _Jc60UEeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60TUeHEeeTGcQlbXOTzg" covered="_Jc60S0eHEeeTGcQlbXOTzg" message="_Jc60VUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60TkeHEeeTGcQlbXOTzg" covered="_Jc60TEeHEeeTGcQlbXOTzg" message="_Jc60VUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Jc60T0eHEeeTGcQlbXOTzg" covered="_Jc60TEeHEeeTGcQlbXOTzg" start="_Jc60TkeHEeeTGcQlbXOTzg" finish="_Jc60UEeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Jc60UEeHEeeTGcQlbXOTzg" covered="_Jc60TEeHEeeTGcQlbXOTzg" event="_Jc60WUeHEeeTGcQlbXOTzg" execution="_Jc60T0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60UUeHEeeTGcQlbXOTzg" covered="_Jc60S0eHEeeTGcQlbXOTzg" message="_Jc60VkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60UkeHEeeTGcQlbXOTzg" covered="_Jc60S0eHEeeTGcQlbXOTzg" message="_Jc60VkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Jc60U0eHEeeTGcQlbXOTzg" covered="_Jc60S0eHEeeTGcQlbXOTzg" start="_Jc60UkeHEeeTGcQlbXOTzg" finish="_Jc60VEeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Jc60VEeHEeeTGcQlbXOTzg" covered="_Jc60S0eHEeeTGcQlbXOTzg" event="_Jc60WUeHEeeTGcQlbXOTzg" execution="_Jc60U0eHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_Jc60VUeHEeeTGcQlbXOTzg" name="addNew()" messageSort="asynchCall" receiveEvent="_Jc60TkeHEeeTGcQlbXOTzg" sendEvent="_Jc60TUeHEeeTGcQlbXOTzg" connector="_Jc60SEeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_Jc60VkeHEeeTGcQlbXOTzg" name="Add new staff member()" messageSort="asynchCall" receiveEvent="_Jc60UkeHEeeTGcQlbXOTzg" sendEvent="_Jc60UUeHEeeTGcQlbXOTzg" connector="_Jc60RUeHEeeTGcQlbXOTzg"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_Jc60V0eHEeeTGcQlbXOTzg" name="mainSystem" type="_Jc60QUeHEeeTGcQlbXOTzg"/>
+    <ownedAttribute xmi:id="_Jc60WEeHEeeTGcQlbXOTzg" name="staff" type="_Jc60OkeHEeeTGcQlbXOTzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_Jc60WUeHEeeTGcQlbXOTzg" name="ExecutionEvent1"/>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_Jc60WkeHEeeTGcQlbXOTzg" name="Collaboration2">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Jc60W0eHEeeTGcQlbXOTzg" name="Remove Staff">
+      <ownedConnector xmi:id="_Jc60XEeHEeeTGcQlbXOTzg">
+        <end xmi:id="_Jc60XUeHEeeTGcQlbXOTzg" role="_Jc60bkeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_Jc60XkeHEeeTGcQlbXOTzg" role="_Jc60b0eHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_Jc60X0eHEeeTGcQlbXOTzg">
+        <end xmi:id="_Jc60YEeHEeeTGcQlbXOTzg" role="_Jc60bkeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_Jc60YUeHEeeTGcQlbXOTzg" role="_Jc60bkeHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <lifeline xmi:id="_Jc60YkeHEeeTGcQlbXOTzg" name="mainSystem" represents="_Jc60bkeHEeeTGcQlbXOTzg" coveredBy="_Jc60ZEeHEeeTGcQlbXOTzg _Jc60aEeHEeeTGcQlbXOTzg _Jc60aUeHEeeTGcQlbXOTzg _Jc60akeHEeeTGcQlbXOTzg _Jc60a0eHEeeTGcQlbXOTzg"/>
+      <lifeline xmi:id="_Jc60Y0eHEeeTGcQlbXOTzg" name="staff" represents="_Jc60b0eHEeeTGcQlbXOTzg" coveredBy="_Jc60ZUeHEeeTGcQlbXOTzg _Jc60ZkeHEeeTGcQlbXOTzg _Jc60Z0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60ZEeHEeeTGcQlbXOTzg" covered="_Jc60YkeHEeeTGcQlbXOTzg" message="_Jc60bEeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60ZUeHEeeTGcQlbXOTzg" covered="_Jc60Y0eHEeeTGcQlbXOTzg" message="_Jc60bEeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Jc60ZkeHEeeTGcQlbXOTzg" covered="_Jc60Y0eHEeeTGcQlbXOTzg" start="_Jc60ZUeHEeeTGcQlbXOTzg" finish="_Jc60Z0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Jc60Z0eHEeeTGcQlbXOTzg" covered="_Jc60Y0eHEeeTGcQlbXOTzg" event="_Jc60WUeHEeeTGcQlbXOTzg" execution="_Jc60ZkeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60aEeHEeeTGcQlbXOTzg" covered="_Jc60YkeHEeeTGcQlbXOTzg" message="_Jc60bUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60aUeHEeeTGcQlbXOTzg" covered="_Jc60YkeHEeeTGcQlbXOTzg" message="_Jc60bUeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Jc60akeHEeeTGcQlbXOTzg" covered="_Jc60YkeHEeeTGcQlbXOTzg" start="_Jc60aUeHEeeTGcQlbXOTzg" finish="_Jc60a0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Jc60a0eHEeeTGcQlbXOTzg" covered="_Jc60YkeHEeeTGcQlbXOTzg" event="_Jc60WUeHEeeTGcQlbXOTzg" execution="_Jc60akeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_Jc60bEeHEeeTGcQlbXOTzg" name="Remove()" messageSort="asynchCall" receiveEvent="_Jc60ZUeHEeeTGcQlbXOTzg" sendEvent="_Jc60ZEeHEeeTGcQlbXOTzg" connector="_Jc60XEeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_Jc60bUeHEeeTGcQlbXOTzg" name="Remove from database()" messageSort="asynchCall" receiveEvent="_Jc60aUeHEeeTGcQlbXOTzg" sendEvent="_Jc60aEeHEeeTGcQlbXOTzg" connector="_Jc60X0eHEeeTGcQlbXOTzg"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_Jc60bkeHEeeTGcQlbXOTzg" name="mainSystem" type="_Jc60QUeHEeeTGcQlbXOTzg"/>
+    <ownedAttribute xmi:id="_Jc60b0eHEeeTGcQlbXOTzg" name="staff" type="_Jc60OkeHEeeTGcQlbXOTzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_Jc60cEeHEeeTGcQlbXOTzg" name="Collaboration3">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Jc60cUeHEeeTGcQlbXOTzg" name="timebook">
+      <ownedConnector xmi:id="_Jc60ckeHEeeTGcQlbXOTzg">
+        <end xmi:id="_Jc60c0eHEeeTGcQlbXOTzg" role="_Jc60fEeHEeeTGcQlbXOTzg"/>
+        <end xmi:id="_Jc60dEeHEeeTGcQlbXOTzg" role="_Jc60fUeHEeeTGcQlbXOTzg"/>
+      </ownedConnector>
+      <lifeline xmi:id="_Jc60dUeHEeeTGcQlbXOTzg" name="mainSystem" represents="_Jc60fEeHEeeTGcQlbXOTzg" coveredBy="_Jc60d0eHEeeTGcQlbXOTzg"/>
+      <lifeline xmi:id="_Jc60dkeHEeeTGcQlbXOTzg" name="staff" represents="_Jc60fUeHEeeTGcQlbXOTzg" coveredBy="_Jc60eEeHEeeTGcQlbXOTzg _Jc60eUeHEeeTGcQlbXOTzg _Jc60ekeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60d0eHEeeTGcQlbXOTzg" covered="_Jc60dUeHEeeTGcQlbXOTzg" message="_Jc60e0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Jc60eEeHEeeTGcQlbXOTzg" covered="_Jc60dkeHEeeTGcQlbXOTzg" message="_Jc60e0eHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Jc60eUeHEeeTGcQlbXOTzg" covered="_Jc60dkeHEeeTGcQlbXOTzg" start="_Jc60eEeHEeeTGcQlbXOTzg" finish="_Jc60ekeHEeeTGcQlbXOTzg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Jc60ekeHEeeTGcQlbXOTzg" covered="_Jc60dkeHEeeTGcQlbXOTzg" event="_Jc60WUeHEeeTGcQlbXOTzg" execution="_Jc60eUeHEeeTGcQlbXOTzg"/>
+      <message xmi:id="_Jc60e0eHEeeTGcQlbXOTzg" name="Open()" messageSort="asynchCall" receiveEvent="_Jc60eEeHEeeTGcQlbXOTzg" sendEvent="_Jc60d0eHEeeTGcQlbXOTzg" connector="_Jc60ckeHEeeTGcQlbXOTzg"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_Jc60fEeHEeeTGcQlbXOTzg" name="mainSystem" type="_Jc60QUeHEeeTGcQlbXOTzg"/>
+    <ownedAttribute xmi:id="_Jc60fUeHEeeTGcQlbXOTzg" name="staff" type="_Jc60OkeHEeeTGcQlbXOTzg"/>
+  </packagedElement>
+  <profileApplication xmi:id="_Jc60fkeHEeeTGcQlbXOTzg">
+    <eAnnotations xmi:id="_Jc60f0eHEeeTGcQlbXOTzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

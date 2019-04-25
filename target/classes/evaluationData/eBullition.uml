@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NtoQskXWEee6P4AGk_WLrg" name="eBullition">
+  <packageImport xmi:id="_NtoQs0XWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_NtoQtEXWEee6P4AGk_WLrg">
+    <importedPackage xmi:type="uml:Model" href="RoseAnalysisDatatypes.uml#_NtyLn0XWEee6P4AGk_WLrg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoQtUXWEee6P4AGk_WLrg" name="Use Case View">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_NtoQtkXWEee6P4AGk_WLrg" name="User"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoQt0XWEee6P4AGk_WLrg" name="Logical View">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoQuEXWEee6P4AGk_WLrg" name="Class" clientDependency="_NtoQ0EXWEee6P4AGk_WLrg" isAbstract="true">
+      <ownedOperation xmi:id="_NtoQuUXWEee6P4AGk_WLrg" name="getField" visibility="public">
+        <ownedParameter xmi:id="_NtoQukXWEee6P4AGk_WLrg" type="_NtoSoUXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQu0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQvEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoQvUXWEee6P4AGk_WLrg" name="opcode" type="_NtoSoEXWEee6P4AGk_WLrg" direction="inout"/>
+        <ownedParameter xmi:id="_NtoQvkXWEee6P4AGk_WLrg" name="cpIndex" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+        <ownedParameter xmi:id="_NtoQv0XWEee6P4AGk_WLrg" name="isStatic" type="_NtoSp0XWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQwEXWEee6P4AGk_WLrg" name="getClass" visibility="public">
+        <ownedParameter xmi:id="_NtoQwUXWEee6P4AGk_WLrg" type="_NtoSrEXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQwkXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQw0XWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoQxEXWEee6P4AGk_WLrg" name="cpIndex" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQxUXWEee6P4AGk_WLrg" name="getCPEntry" visibility="public">
+        <ownedParameter xmi:id="_NtoQxkXWEee6P4AGk_WLrg" type="_NtoSpEXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQx0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQyEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoQyUXWEee6P4AGk_WLrg" name="cpIndex" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQykXWEee6P4AGk_WLrg" name="getMethod" visibility="public">
+        <ownedParameter xmi:id="_NtoQy0XWEee6P4AGk_WLrg" type="_NtoSpkXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQzEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQzUXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoQzkXWEee6P4AGk_WLrg" name="cpIndex" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+        <ownedParameter xmi:id="_NtoQz0XWEee6P4AGk_WLrg" name="isStatic" type="_NtoSp0XWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoQ0EXWEee6P4AGk_WLrg" supplier="_NtoQ2kXWEee6P4AGk_WLrg" client="_NtoQuEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoQ0UXWEee6P4AGk_WLrg" name="ClassLoader" clientDependency="_NtoQ2UXWEee6P4AGk_WLrg" isAbstract="true">
+      <ownedOperation xmi:id="_NtoQ0kXWEee6P4AGk_WLrg" name="getClass" visibility="public">
+        <ownedParameter xmi:id="_NtoQ00XWEee6P4AGk_WLrg" type="_NtoQuEXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQ1EXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQ1UXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoQ1kXWEee6P4AGk_WLrg" name="instance" type="_NtoSqkXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQ10XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQ2EXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoQ2UXWEee6P4AGk_WLrg" supplier="_NtoQuEXWEee6P4AGk_WLrg" client="_NtoQ0UXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoQ2kXWEee6P4AGk_WLrg" name="ConstantPool" isAbstract="true">
+      <ownedOperation xmi:id="_NtoQ20XWEee6P4AGk_WLrg" name="getEntry" visibility="public">
+        <ownedParameter xmi:id="_NtoQ3EXWEee6P4AGk_WLrg" type="_NtoSpEXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQ3UXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQ3kXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoQ30XWEee6P4AGk_WLrg" name="cpIndex" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQ4EXWEee6P4AGk_WLrg" name="getPool" visibility="public">
+        <ownedParameter xmi:id="_NtoQ4UXWEee6P4AGk_WLrg" type="_NtoSnkXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQ4kXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQ40XWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoQ5EXWEee6P4AGk_WLrg" name="ExecutionManager" clientDependency="_NtoQ-EXWEee6P4AGk_WLrg _NtoQ-UXWEee6P4AGk_WLrg">
+      <ownedAttribute xmi:id="_NtoQ5UXWEee6P4AGk_WLrg" name="execute_status_t" visibility="public" type="_NtoSq0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoQ5kXWEee6P4AGk_WLrg" name="_interpreter" visibility="public" type="_NtoRM0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoRikXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoQ50XWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRkEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoQ6EXWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRnEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoQ6UXWEee6P4AGk_WLrg" name="_interpreter" visibility="public" type="_NtoRM0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoRoEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoQ6kXWEee6P4AGk_WLrg" name="_stackManager" visibility="public" type="_NtoRSEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRokXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NtoQ60XWEee6P4AGk_WLrg" name="ExecutionManager" visibility="public">
+        <ownedParameter xmi:id="_NtoQ7EXWEee6P4AGk_WLrg" name="cl" type="_NtoQ0UXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQ7UXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQ7kXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQ70XWEee6P4AGk_WLrg" name="~ExecutionManager" visibility="public"/>
+      <ownedOperation xmi:id="_NtoQ8EXWEee6P4AGk_WLrg" name="execute" visibility="public">
+        <ownedParameter xmi:id="_NtoQ8UXWEee6P4AGk_WLrg" type="_NtoSokXWEee6P4AGk_WLrg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQ8kXWEee6P4AGk_WLrg" name="notifyPushFrame" visibility="public"/>
+      <ownedOperation xmi:id="_NtoQ80XWEee6P4AGk_WLrg" name="notifyPopFrame" visibility="public"/>
+      <ownedOperation xmi:id="_NtoQ9EXWEee6P4AGk_WLrg" name="setStack" visibility="public">
+        <ownedParameter xmi:id="_NtoQ9UXWEee6P4AGk_WLrg" name="_stack" type="_NtoRSEXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoQ9kXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoQ90XWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoQ-EXWEee6P4AGk_WLrg" supplier="_NtoRM0XWEee6P4AGk_WLrg" client="_NtoQ5EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoQ-UXWEee6P4AGk_WLrg" supplier="_NtoQ0UXWEee6P4AGk_WLrg" client="_NtoQ5EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoQ-kXWEee6P4AGk_WLrg" name="Frame" clientDependency="_NtoRMkXWEee6P4AGk_WLrg" isAbstract="true">
+      <ownedOperation xmi:id="_NtoQ-0XWEee6P4AGk_WLrg" name="getIP8" visibility="public">
+        <ownedParameter xmi:id="_NtoQ_EXWEee6P4AGk_WLrg" type="_NtoSnUXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NtoQ_UXWEee6P4AGk_WLrg" name="offset" direction="inout">
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_NtoQ_kXWEee6P4AGk_WLrg">
+            <body>0:VMint</body>
+          </defaultValue>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoQ_0XWEee6P4AGk_WLrg" name="getIP16" visibility="public">
+        <ownedParameter xmi:id="_NtoRAEXWEee6P4AGk_WLrg" type="_NtoSmUXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NtoRAUXWEee6P4AGk_WLrg" name="offset" direction="inout">
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_NtoRAkXWEee6P4AGk_WLrg">
+            <body>0:VMint</body>
+          </defaultValue>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRA0XWEee6P4AGk_WLrg" name="getIP32" visibility="public">
+        <ownedParameter xmi:id="_NtoRBEXWEee6P4AGk_WLrg" type="_NtoSmEXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NtoRBUXWEee6P4AGk_WLrg" name="offset" direction="inout">
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_NtoRBkXWEee6P4AGk_WLrg">
+            <body>0:VMint</body>
+          </defaultValue>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRB0XWEee6P4AGk_WLrg" name="getPreviousAddrIP" visibility="public">
+        <ownedParameter xmi:id="_NtoRCEXWEee6P4AGk_WLrg" type="_NtoSnUXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRCUXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRCkXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRC0XWEee6P4AGk_WLrg" name="getLP" visibility="public">
+        <ownedParameter xmi:id="_NtoRDEXWEee6P4AGk_WLrg" type="_NtoSmEXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NtoRDUXWEee6P4AGk_WLrg" name="index" type="_NtoSm0XWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRDkXWEee6P4AGk_WLrg" name="getClass" visibility="public">
+        <ownedParameter xmi:id="_NtoRD0XWEee6P4AGk_WLrg" type="_NtoQuEXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoREEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoREUXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoREkXWEee6P4AGk_WLrg" name="getSyncObject" visibility="public">
+        <ownedParameter xmi:id="_NtoRE0XWEee6P4AGk_WLrg" type="_NtoSlkXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRFEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRFUXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRFkXWEee6P4AGk_WLrg" name="getMethod" visibility="public">
+        <ownedParameter xmi:id="_NtoRF0XWEee6P4AGk_WLrg" type="_NtoSpkXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRGEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRGUXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRGkXWEee6P4AGk_WLrg" name="peekTYPE" visibility="public">
+        <ownedParameter xmi:id="_NtoRG0XWEee6P4AGk_WLrg" type="_NtoSnEXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NtoRHEXWEee6P4AGk_WLrg" name="pos" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRHUXWEee6P4AGk_WLrg" name="popTYPE" visibility="public">
+        <ownedParameter xmi:id="_NtoRHkXWEee6P4AGk_WLrg" type="_NtoSnEXWEee6P4AGk_WLrg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRH0XWEee6P4AGk_WLrg" name="applyPreviousState" visibility="public">
+        <ownedParameter xmi:id="_NtoRIEXWEee6P4AGk_WLrg" name="current" type="_NtoQ-kXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRIUXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRIkXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRI0XWEee6P4AGk_WLrg" name="moveIP" visibility="public">
+        <ownedParameter xmi:id="_NtoRJEXWEee6P4AGk_WLrg" name="distance" type="_NtoSm0XWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRJUXWEee6P4AGk_WLrg" name="setLP" visibility="public">
+        <ownedParameter xmi:id="_NtoRJkXWEee6P4AGk_WLrg" name="index" type="_NtoSmkXWEee6P4AGk_WLrg" direction="inout"/>
+        <ownedParameter xmi:id="_NtoRJ0XWEee6P4AGk_WLrg" name="value" type="_NtoSmEXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRKEXWEee6P4AGk_WLrg" name="incIP8" visibility="public">
+        <ownedParameter xmi:id="_NtoRKUXWEee6P4AGk_WLrg" type="_NtoSl0XWEee6P4AGk_WLrg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRKkXWEee6P4AGk_WLrg" name="incIP16" visibility="public">
+        <ownedParameter xmi:id="_NtoRK0XWEee6P4AGk_WLrg" type="_NtoSmUXWEee6P4AGk_WLrg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRLEXWEee6P4AGk_WLrg" name="incIP32" visibility="public">
+        <ownedParameter xmi:id="_NtoRLUXWEee6P4AGk_WLrg" type="_NtoSmEXWEee6P4AGk_WLrg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRLkXWEee6P4AGk_WLrg" name="push32" visibility="public">
+        <ownedParameter xmi:id="_NtoRL0XWEee6P4AGk_WLrg" name="element" type="_NtoSnEXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRMEXWEee6P4AGk_WLrg" name="push64" visibility="public">
+        <ownedParameter xmi:id="_NtoRMUXWEee6P4AGk_WLrg" name="element" type="_NtoSnEXWEee6P4AGk_WLrg" direction="inout"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoRMkXWEee6P4AGk_WLrg" supplier="_NtoQuEXWEee6P4AGk_WLrg" client="_NtoQ-kXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoRM0XWEee6P4AGk_WLrg" name="Interpreter" clientDependency="_NtoRRkXWEee6P4AGk_WLrg _NtoRR0XWEee6P4AGk_WLrg" isAbstract="true">
+      <ownedAttribute xmi:id="_NtoRNEXWEee6P4AGk_WLrg" name="vm_status_t" visibility="public" type="_NtoSq0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRNUXWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRlEXWEee6P4AGk_WLrg"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_NtoRNkXWEee6P4AGk_WLrg" name="VmStatus">
+        <ownedAttribute xmi:id="_NtoRN0XWEee6P4AGk_WLrg" name="status" visibility="public" type="_NtoSqUXWEee6P4AGk_WLrg"/>
+        <ownedAttribute xmi:id="_NtoROEXWEee6P4AGk_WLrg" name="exceptionInstance" visibility="public" type="_NtoSpUXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoROUXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoROkXWEee6P4AGk_WLrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NtoRO0XWEee6P4AGk_WLrg" name="exceptionName" visibility="public" type="_NtoSlUXWEee6P4AGk_WLrg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRPEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRPUXWEee6P4AGk_WLrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NtoRPkXWEee6P4AGk_WLrg" name="cpIndex" visibility="public" type="_NtoSmkXWEee6P4AGk_WLrg"/>
+      </nestedClassifier>
+      <ownedOperation xmi:id="_NtoRP0XWEee6P4AGk_WLrg" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_NtoRQEXWEee6P4AGk_WLrg" name="method" type="_NtoQ-kXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRQUXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRQkXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoRQ0XWEee6P4AGk_WLrg" name="st" type="_NtoRNkXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRREXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRRUXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoRRkXWEee6P4AGk_WLrg" supplier="_NtoQ0UXWEee6P4AGk_WLrg" client="_NtoRM0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoRR0XWEee6P4AGk_WLrg" supplier="_NtoQ-kXWEee6P4AGk_WLrg" client="_NtoRM0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoRSEXWEee6P4AGk_WLrg" name="StackManager" clientDependency="_NtoRV0XWEee6P4AGk_WLrg" isAbstract="true">
+      <ownedOperation xmi:id="_NtoRSUXWEee6P4AGk_WLrg" name="push" visibility="public">
+        <ownedParameter xmi:id="_NtoRSkXWEee6P4AGk_WLrg" name="element" type="_NtoQ-kXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRS0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRTEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRTUXWEee6P4AGk_WLrg" name="pop" visibility="public">
+        <ownedParameter xmi:id="_NtoRTkXWEee6P4AGk_WLrg" type="_NtoQ-kXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRT0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRUEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRUUXWEee6P4AGk_WLrg" name="peek" visibility="public">
+        <ownedParameter xmi:id="_NtoRUkXWEee6P4AGk_WLrg" type="_NtoQ-kXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRU0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRVEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRVUXWEee6P4AGk_WLrg" name="getSize" visibility="public">
+        <ownedParameter xmi:id="_NtoRVkXWEee6P4AGk_WLrg" type="_NtoSmkXWEee6P4AGk_WLrg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoRV0XWEee6P4AGk_WLrg" supplier="_NtoQ-kXWEee6P4AGk_WLrg" client="_NtoRSEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoRWEXWEee6P4AGk_WLrg" name="ThreadManager" clientDependency="_NtoRfUXWEee6P4AGk_WLrg">
+      <ownedAttribute xmi:id="_NtoRWUXWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRiEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRWkXWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRkkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRW0XWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRlkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRXEXWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRmkXWEee6P4AGk_WLrg"/>
+      <ownedOperation xmi:id="_NtoRXUXWEee6P4AGk_WLrg" name="ThreadManager" visibility="public">
+        <ownedParameter xmi:id="_NtoRXkXWEee6P4AGk_WLrg" name="_loader" type="_NtoQ0UXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRX0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRYEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRYUXWEee6P4AGk_WLrg" name="init" visibility="public">
+        <ownedParameter xmi:id="_NtoRYkXWEee6P4AGk_WLrg" type="_NtoSrUXWEee6P4AGk_WLrg" direction="return"/>
+        <ownedParameter xmi:id="_NtoRY0XWEee6P4AGk_WLrg" name="className" type="_NtoSlUXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRZEXWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRZUXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_NtoRZkXWEee6P4AGk_WLrg" name="arguments" type="_NtoSn0XWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRZ0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRaEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRaUXWEee6P4AGk_WLrg" name="rescheduleThreads" visibility="public">
+        <ownedParameter xmi:id="_NtoRakXWEee6P4AGk_WLrg" type="_NtoQ5EXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRa0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRbEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRbUXWEee6P4AGk_WLrg" name="getCurrentExecutionManager" visibility="public">
+        <ownedParameter xmi:id="_NtoRbkXWEee6P4AGk_WLrg" type="_NtoQ5EXWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRb0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRcEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRcUXWEee6P4AGk_WLrg" name="addThread" visibility="public">
+        <ownedParameter xmi:id="_NtoRckXWEee6P4AGk_WLrg" name="thread" type="_NtoSqEXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRc0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRdEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoRdUXWEee6P4AGk_WLrg" name="removeThread" visibility="public">
+        <ownedParameter xmi:id="_NtoRdkXWEee6P4AGk_WLrg" name="thread" type="_NtoSqEXWEee6P4AGk_WLrg" direction="inout">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRd0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoReEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NtoReUXWEee6P4AGk_WLrg" name="getThreadMap" visibility="public">
+        <ownedParameter xmi:id="_NtoRekXWEee6P4AGk_WLrg" type="_NtoSo0XWEee6P4AGk_WLrg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NtoRe0XWEee6P4AGk_WLrg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NtoRfEXWEee6P4AGk_WLrg"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoRfUXWEee6P4AGk_WLrg" supplier="_NtoQ5EXWEee6P4AGk_WLrg" client="_NtoRWEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoRfkXWEee6P4AGk_WLrg" name="Exising KVM">
+      <ownedAttribute xmi:id="_NtoRf0XWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRhkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtoRgEXWEee6P4AGk_WLrg" name="EbullitionLoader" clientDependency="_NtoRhUXWEee6P4AGk_WLrg">
+      <ownedAttribute xmi:id="_NtoRgUXWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRjEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRgkXWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRjkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRg0XWEee6P4AGk_WLrg" name="_classLoader" visibility="public" type="_NtoQ0UXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRmEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoRhEXWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRnkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NtoRhUXWEee6P4AGk_WLrg" supplier="_NtoRWEXWEee6P4AGk_WLrg" client="_NtoRgEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRhkXWEee6P4AGk_WLrg" memberEnd="_NtoRf0XWEee6P4AGk_WLrg _NtoRh0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRh0XWEee6P4AGk_WLrg" name="_exising KVM" visibility="public" type="_NtoRfkXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRhkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRiEXWEee6P4AGk_WLrg" memberEnd="_NtoRWUXWEee6P4AGk_WLrg _NtoRiUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRiUXWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRiEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRikXWEee6P4AGk_WLrg" memberEnd="_NtoQ5kXWEee6P4AGk_WLrg _NtoRi0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRi0XWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRikXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRjEXWEee6P4AGk_WLrg" memberEnd="_NtoRgUXWEee6P4AGk_WLrg _NtoRjUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRjUXWEee6P4AGk_WLrg" name="_ebullitionLoader" visibility="public" type="_NtoRgEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRjEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRjkXWEee6P4AGk_WLrg" memberEnd="_NtoRgkXWEee6P4AGk_WLrg _NtoRj0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRj0XWEee6P4AGk_WLrg" name="_ebullitionLoader" visibility="public" type="_NtoRgEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRjkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRkEXWEee6P4AGk_WLrg" memberEnd="_NtoQ50XWEee6P4AGk_WLrg _NtoRkUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRkUXWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRkEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRkkXWEee6P4AGk_WLrg" memberEnd="_NtoRWkXWEee6P4AGk_WLrg _NtoRk0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRk0XWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRkkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRlEXWEee6P4AGk_WLrg" memberEnd="_NtoRNUXWEee6P4AGk_WLrg _NtoRlUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRlUXWEee6P4AGk_WLrg" name="_interpreter" visibility="public" type="_NtoRM0XWEee6P4AGk_WLrg" isUnique="false" association="_NtoRlEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRlkXWEee6P4AGk_WLrg" memberEnd="_NtoRW0XWEee6P4AGk_WLrg _NtoRl0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRl0XWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRlkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRmEXWEee6P4AGk_WLrg" memberEnd="_NtoRg0XWEee6P4AGk_WLrg _NtoRmUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRmUXWEee6P4AGk_WLrg" name="_ebullitionLoader" visibility="public" type="_NtoRgEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRmEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRmkXWEee6P4AGk_WLrg" memberEnd="_NtoRXEXWEee6P4AGk_WLrg _NtoRm0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRm0XWEee6P4AGk_WLrg" name="_threadManager" visibility="public" type="_NtoRWEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRmkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRnEXWEee6P4AGk_WLrg" memberEnd="_NtoQ6EXWEee6P4AGk_WLrg _NtoRnUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRnUXWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRnEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRnkXWEee6P4AGk_WLrg" memberEnd="_NtoRhEXWEee6P4AGk_WLrg _NtoRn0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRn0XWEee6P4AGk_WLrg" name="_ebullitionLoader" visibility="public" type="_NtoRgEXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRnkXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRoEXWEee6P4AGk_WLrg" memberEnd="_NtoQ6UXWEee6P4AGk_WLrg _NtoRoUXWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRoUXWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRoEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtoRokXWEee6P4AGk_WLrg" memberEnd="_NtoQ6kXWEee6P4AGk_WLrg _NtoRo0XWEee6P4AGk_WLrg">
+      <ownedEnd xmi:id="_NtoRo0XWEee6P4AGk_WLrg" name="_executionManager" visibility="public" type="_NtoQ5EXWEee6P4AGk_WLrg" isUnique="false" association="_NtoRokXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoRpEXWEee6P4AGk_WLrg" name="Interpreting One Frame_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoRpUXWEee6P4AGk_WLrg" name="Interpreting One Frame">
+        <ownedConnector xmi:id="_NtoRpkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoRp0XWEee6P4AGk_WLrg" role="_NtoR-UXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoRqEXWEee6P4AGk_WLrg" role="_NtoR-kXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoRqUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoRqkXWEee6P4AGk_WLrg" role="_NtoR-kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoRq0XWEee6P4AGk_WLrg" role="_NtoR-0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoRrEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoRrUXWEee6P4AGk_WLrg" role="_NtoR-kXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoRrkXWEee6P4AGk_WLrg" role="_NtoR_EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoRr0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoRsEXWEee6P4AGk_WLrg" role="_NtoR_EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoRsUXWEee6P4AGk_WLrg" role="_NtoR_UXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoRskXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoRs0XWEee6P4AGk_WLrg" role="_NtoR_EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoRtEXWEee6P4AGk_WLrg" role="_NtoR_EXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoRtUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoRtkXWEee6P4AGk_WLrg" role="_NtoR_EXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoRt0XWEee6P4AGk_WLrg" role="_NtoR_kXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoRuEXWEee6P4AGk_WLrg" name="" represents="_NtoR-UXWEee6P4AGk_WLrg" coveredBy="_NtoRvkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoRuUXWEee6P4AGk_WLrg" name="" represents="_NtoR-kXWEee6P4AGk_WLrg" coveredBy="_NtoRv0XWEee6P4AGk_WLrg _NtoRwEXWEee6P4AGk_WLrg _NtoRwUXWEee6P4AGk_WLrg _NtoRxUXWEee6P4AGk_WLrg _NtoR5UXWEee6P4AGk_WLrg _NtoR50XWEee6P4AGk_WLrg _NtoR6kXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoRukXWEee6P4AGk_WLrg" name="BasicStackManager" represents="_NtoR-0XWEee6P4AGk_WLrg" coveredBy="_NtoRwkXWEee6P4AGk_WLrg _NtoRw0XWEee6P4AGk_WLrg _NtoRxEXWEee6P4AGk_WLrg _NtoR6EXWEee6P4AGk_WLrg _NtoR6UXWEee6P4AGk_WLrg _NtoR60XWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoRu0XWEee6P4AGk_WLrg" name="BasicInterpreter" represents="_NtoR_EXWEee6P4AGk_WLrg" coveredBy="_NtoRxkXWEee6P4AGk_WLrg _NtoRx0XWEee6P4AGk_WLrg _NtoRyEXWEee6P4AGk_WLrg _NtoRzEXWEee6P4AGk_WLrg _NtoRzUXWEee6P4AGk_WLrg _NtoRzkXWEee6P4AGk_WLrg _NtoR0kXWEee6P4AGk_WLrg _NtoR1kXWEee6P4AGk_WLrg _NtoR2kXWEee6P4AGk_WLrg _NtoR3kXWEee6P4AGk_WLrg _NtoR4kXWEee6P4AGk_WLrg _NtoR40XWEee6P4AGk_WLrg _NtoR5EXWEee6P4AGk_WLrg _NtoR5kXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoRvEXWEee6P4AGk_WLrg" name="BasicFrame" represents="_NtoR_UXWEee6P4AGk_WLrg" coveredBy="_NtoRyUXWEee6P4AGk_WLrg _NtoRykXWEee6P4AGk_WLrg _NtoRy0XWEee6P4AGk_WLrg _NtoRz0XWEee6P4AGk_WLrg _NtoR0EXWEee6P4AGk_WLrg _NtoR0UXWEee6P4AGk_WLrg _NtoR00XWEee6P4AGk_WLrg _NtoR1EXWEee6P4AGk_WLrg _NtoR1UXWEee6P4AGk_WLrg _NtoR20XWEee6P4AGk_WLrg _NtoR3EXWEee6P4AGk_WLrg _NtoR3UXWEee6P4AGk_WLrg _NtoR30XWEee6P4AGk_WLrg _NtoR4EXWEee6P4AGk_WLrg _NtoR4UXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoRvUXWEee6P4AGk_WLrg" name="BasicClass" represents="_NtoR_kXWEee6P4AGk_WLrg" coveredBy="_NtoR10XWEee6P4AGk_WLrg _NtoR2EXWEee6P4AGk_WLrg _NtoR2UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRvkXWEee6P4AGk_WLrg" covered="_NtoRuEXWEee6P4AGk_WLrg" event="_NtoSUkXWEee6P4AGk_WLrg" message="_NtoR7EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRv0XWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" event="_NtoSVEXWEee6P4AGk_WLrg" message="_NtoR7EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoRwEXWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" start="_NtoRv0XWEee6P4AGk_WLrg" finish="_NtoR6kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRwUXWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" event="_NtoSVUXWEee6P4AGk_WLrg" message="_NtoR7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRwkXWEee6P4AGk_WLrg" covered="_NtoRukXWEee6P4AGk_WLrg" event="_NtoSV0XWEee6P4AGk_WLrg" message="_NtoR7UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoRw0XWEee6P4AGk_WLrg" covered="_NtoRukXWEee6P4AGk_WLrg" start="_NtoRwkXWEee6P4AGk_WLrg" finish="_NtoRxEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoRxEXWEee6P4AGk_WLrg" covered="_NtoRukXWEee6P4AGk_WLrg" event="_NtoSV0XWEee6P4AGk_WLrg" execution="_NtoRw0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRxUXWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" event="_NtoSWEXWEee6P4AGk_WLrg" message="_NtoR70XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRxkXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSWkXWEee6P4AGk_WLrg" message="_NtoR70XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoRx0XWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" start="_NtoRxkXWEee6P4AGk_WLrg" finish="_NtoR5kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRyEXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSW0XWEee6P4AGk_WLrg" message="_NtoR8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRyUXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSXUXWEee6P4AGk_WLrg" message="_NtoR8UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoRykXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" start="_NtoRyUXWEee6P4AGk_WLrg" finish="_NtoRy0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoRy0XWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSXUXWEee6P4AGk_WLrg" execution="_NtoRykXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRzEXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSXkXWEee6P4AGk_WLrg" message="_NtoR9kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRzUXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSX0XWEee6P4AGk_WLrg" message="_NtoR9kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRzkXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSYEXWEee6P4AGk_WLrg" message="_NtoR80XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoRz0XWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSYkXWEee6P4AGk_WLrg" message="_NtoR80XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoR0EXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" start="_NtoRz0XWEee6P4AGk_WLrg" finish="_NtoR0UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR0UXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSYkXWEee6P4AGk_WLrg" execution="_NtoR0EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR0kXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSY0XWEee6P4AGk_WLrg" message="_NtoR8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR00XWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSZUXWEee6P4AGk_WLrg" message="_NtoR8kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoR1EXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" start="_NtoR00XWEee6P4AGk_WLrg" finish="_NtoR1UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR1UXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSZUXWEee6P4AGk_WLrg" execution="_NtoR1EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR1kXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSZkXWEee6P4AGk_WLrg" message="_NtoR-EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR10XWEee6P4AGk_WLrg" covered="_NtoRvUXWEee6P4AGk_WLrg" event="_NtoSaEXWEee6P4AGk_WLrg" message="_NtoR-EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoR2EXWEee6P4AGk_WLrg" covered="_NtoRvUXWEee6P4AGk_WLrg" start="_NtoR10XWEee6P4AGk_WLrg" finish="_NtoR2UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR2UXWEee6P4AGk_WLrg" covered="_NtoRvUXWEee6P4AGk_WLrg" event="_NtoSaEXWEee6P4AGk_WLrg" execution="_NtoR2EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR2kXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSaUXWEee6P4AGk_WLrg" message="_NtoR9EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR20XWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSa0XWEee6P4AGk_WLrg" message="_NtoR9EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoR3EXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" start="_NtoR20XWEee6P4AGk_WLrg" finish="_NtoR3UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR3UXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSa0XWEee6P4AGk_WLrg" execution="_NtoR3EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR3kXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSbEXWEee6P4AGk_WLrg" message="_NtoR9UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR30XWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSbkXWEee6P4AGk_WLrg" message="_NtoR9UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoR4EXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" start="_NtoR30XWEee6P4AGk_WLrg" finish="_NtoR4UXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR4UXWEee6P4AGk_WLrg" covered="_NtoRvEXWEee6P4AGk_WLrg" event="_NtoSbkXWEee6P4AGk_WLrg" execution="_NtoR4EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR4kXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSb0XWEee6P4AGk_WLrg" message="_NtoR90XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR40XWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoScEXWEee6P4AGk_WLrg" message="_NtoR90XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR5EXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoScUXWEee6P4AGk_WLrg" message="_NtoR8EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR5UXWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" event="_NtoSckXWEee6P4AGk_WLrg" message="_NtoR8EXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR5kXWEee6P4AGk_WLrg" covered="_NtoRu0XWEee6P4AGk_WLrg" event="_NtoSbkXWEee6P4AGk_WLrg" execution="_NtoRx0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR50XWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" event="_NtoSc0XWEee6P4AGk_WLrg" message="_NtoR7kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoR6EXWEee6P4AGk_WLrg" covered="_NtoRukXWEee6P4AGk_WLrg" event="_NtoSdUXWEee6P4AGk_WLrg" message="_NtoR7kXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoR6UXWEee6P4AGk_WLrg" covered="_NtoRukXWEee6P4AGk_WLrg" start="_NtoR6EXWEee6P4AGk_WLrg" finish="_NtoR60XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR6kXWEee6P4AGk_WLrg" covered="_NtoRuUXWEee6P4AGk_WLrg" event="_NtoSdUXWEee6P4AGk_WLrg" execution="_NtoRwEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoR60XWEee6P4AGk_WLrg" covered="_NtoRukXWEee6P4AGk_WLrg" event="_NtoSdUXWEee6P4AGk_WLrg" execution="_NtoR6UXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR7EXWEee6P4AGk_WLrg" name="execute( )" receiveEvent="_NtoRv0XWEee6P4AGk_WLrg" sendEvent="_NtoRvkXWEee6P4AGk_WLrg" connector="_NtoRpkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR7UXWEee6P4AGk_WLrg" name="peek( )" receiveEvent="_NtoRwkXWEee6P4AGk_WLrg" sendEvent="_NtoRwUXWEee6P4AGk_WLrg" connector="_NtoRqUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR7kXWEee6P4AGk_WLrg" name="pop( )" receiveEvent="_NtoR6EXWEee6P4AGk_WLrg" sendEvent="_NtoR50XWEee6P4AGk_WLrg" connector="_NtoRqUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR70XWEee6P4AGk_WLrg" name="interpret(topFrame, status)" receiveEvent="_NtoRxkXWEee6P4AGk_WLrg" sendEvent="_NtoRxUXWEee6P4AGk_WLrg" connector="_NtoRrEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR8EXWEee6P4AGk_WLrg" name="VM_RETURN_32" messageSort="reply" receiveEvent="_NtoR5UXWEee6P4AGk_WLrg" sendEvent="_NtoR5EXWEee6P4AGk_WLrg" connector="_NtoRrEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR8UXWEee6P4AGk_WLrg" name="getIP8()" receiveEvent="_NtoRyUXWEee6P4AGk_WLrg" sendEvent="_NtoRyEXWEee6P4AGk_WLrg" connector="_NtoRr0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR8kXWEee6P4AGk_WLrg" name="getClass( )" receiveEvent="_NtoR00XWEee6P4AGk_WLrg" sendEvent="_NtoR0kXWEee6P4AGk_WLrg" connector="_NtoRr0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR80XWEee6P4AGk_WLrg" name="getIP8(1)" receiveEvent="_NtoRz0XWEee6P4AGk_WLrg" sendEvent="_NtoRzkXWEee6P4AGk_WLrg" connector="_NtoRr0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR9EXWEee6P4AGk_WLrg" name="push32(23)" receiveEvent="_NtoR20XWEee6P4AGk_WLrg" sendEvent="_NtoR2kXWEee6P4AGk_WLrg" connector="_NtoRr0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR9UXWEee6P4AGk_WLrg" name="moveIP(2)" receiveEvent="_NtoR30XWEee6P4AGk_WLrg" sendEvent="_NtoR3kXWEee6P4AGk_WLrg" connector="_NtoRr0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR9kXWEee6P4AGk_WLrg" name="LDC" receiveEvent="_NtoRzUXWEee6P4AGk_WLrg" sendEvent="_NtoRzEXWEee6P4AGk_WLrg" connector="_NtoRskXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR90XWEee6P4AGk_WLrg" name="RETURN" receiveEvent="_NtoR40XWEee6P4AGk_WLrg" sendEvent="_NtoR4kXWEee6P4AGk_WLrg" connector="_NtoRskXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoR-EXWEee6P4AGk_WLrg" name="getCPEntry(3)" receiveEvent="_NtoR10XWEee6P4AGk_WLrg" sendEvent="_NtoR1kXWEee6P4AGk_WLrg" connector="_NtoRtUXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoR-UXWEee6P4AGk_WLrg" name="" type="_NtoQtkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoR-kXWEee6P4AGk_WLrg" name="" type="_NtoQ5EXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoR-0XWEee6P4AGk_WLrg" name="BasicStackManager" type="_NtoRSEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoR_EXWEee6P4AGk_WLrg" name="BasicInterpreter" type="_NtoRM0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoR_UXWEee6P4AGk_WLrg" name="BasicFrame" type="_NtoQ-kXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoR_kXWEee6P4AGk_WLrg" name="BasicClass" type="_NtoQuEXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoR_0XWEee6P4AGk_WLrg" name="Executing One Thread_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoSAEXWEee6P4AGk_WLrg" name="Executing One Thread">
+        <ownedConnector xmi:id="_NtoSAUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSAkXWEee6P4AGk_WLrg" role="_NtoSLUXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSA0XWEee6P4AGk_WLrg" role="_NtoSLkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoSBEXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSBUXWEee6P4AGk_WLrg" role="_NtoSLkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSBkXWEee6P4AGk_WLrg" role="_NtoSL0XWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoSB0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSCEXWEee6P4AGk_WLrg" role="_NtoSLkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSCUXWEee6P4AGk_WLrg" role="_NtoSMEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoSCkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSC0XWEee6P4AGk_WLrg" role="_NtoSLkXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSDEXWEee6P4AGk_WLrg" role="_NtoSLkXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoSDUXWEee6P4AGk_WLrg" name="" represents="_NtoSLUXWEee6P4AGk_WLrg" coveredBy="_NtoSEUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoSDkXWEee6P4AGk_WLrg" name="" represents="_NtoSLkXWEee6P4AGk_WLrg" coveredBy="_NtoSEkXWEee6P4AGk_WLrg _NtoSE0XWEee6P4AGk_WLrg _NtoSFEXWEee6P4AGk_WLrg _NtoSGEXWEee6P4AGk_WLrg _NtoSHEXWEee6P4AGk_WLrg _NtoSIEXWEee6P4AGk_WLrg _NtoSIUXWEee6P4AGk_WLrg _NtoSJEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoSD0XWEee6P4AGk_WLrg" represents="_NtoSL0XWEee6P4AGk_WLrg" coveredBy="_NtoSFUXWEee6P4AGk_WLrg _NtoSFkXWEee6P4AGk_WLrg _NtoSF0XWEee6P4AGk_WLrg _NtoSGUXWEee6P4AGk_WLrg _NtoSGkXWEee6P4AGk_WLrg _NtoSG0XWEee6P4AGk_WLrg _NtoSIkXWEee6P4AGk_WLrg _NtoSI0XWEee6P4AGk_WLrg _NtoSJUXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoSEEXWEee6P4AGk_WLrg" represents="_NtoSMEXWEee6P4AGk_WLrg" coveredBy="_NtoSHUXWEee6P4AGk_WLrg _NtoSHkXWEee6P4AGk_WLrg _NtoSH0XWEee6P4AGk_WLrg _NtoSJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSEUXWEee6P4AGk_WLrg" covered="_NtoSDUXWEee6P4AGk_WLrg" event="_NtoSdkXWEee6P4AGk_WLrg" message="_NtoSJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSEkXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoSeEXWEee6P4AGk_WLrg" message="_NtoSJ0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSE0XWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" start="_NtoSEkXWEee6P4AGk_WLrg" finish="_NtoSJEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSFEXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoSeUXWEee6P4AGk_WLrg" message="_NtoSKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSFUXWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" event="_NtoSe0XWEee6P4AGk_WLrg" message="_NtoSKEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSFkXWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" start="_NtoSFUXWEee6P4AGk_WLrg" finish="_NtoSF0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSF0XWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" event="_NtoSe0XWEee6P4AGk_WLrg" execution="_NtoSFkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSGEXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoSfEXWEee6P4AGk_WLrg" message="_NtoSKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSGUXWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" event="_NtoSfkXWEee6P4AGk_WLrg" message="_NtoSKUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSGkXWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" start="_NtoSGUXWEee6P4AGk_WLrg" finish="_NtoSG0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSG0XWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" event="_NtoSfkXWEee6P4AGk_WLrg" execution="_NtoSGkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSHEXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoSf0XWEee6P4AGk_WLrg" message="_NtoSK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSHUXWEee6P4AGk_WLrg" covered="_NtoSEEXWEee6P4AGk_WLrg" event="_NtoSgUXWEee6P4AGk_WLrg" message="_NtoSK0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSHkXWEee6P4AGk_WLrg" covered="_NtoSEEXWEee6P4AGk_WLrg" start="_NtoSHUXWEee6P4AGk_WLrg" finish="_NtoSJkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSH0XWEee6P4AGk_WLrg" covered="_NtoSEEXWEee6P4AGk_WLrg" event="_NtoSgkXWEee6P4AGk_WLrg" message="_NtoSLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSIEXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoSg0XWEee6P4AGk_WLrg" message="_NtoSLEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSIUXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoShEXWEee6P4AGk_WLrg" message="_NtoSKkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSIkXWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" event="_NtoShkXWEee6P4AGk_WLrg" message="_NtoSKkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSI0XWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" start="_NtoSIkXWEee6P4AGk_WLrg" finish="_NtoSJUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSJEXWEee6P4AGk_WLrg" covered="_NtoSDkXWEee6P4AGk_WLrg" event="_NtoShkXWEee6P4AGk_WLrg" execution="_NtoSE0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSJUXWEee6P4AGk_WLrg" covered="_NtoSD0XWEee6P4AGk_WLrg" event="_NtoShkXWEee6P4AGk_WLrg" execution="_NtoSI0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSJkXWEee6P4AGk_WLrg" covered="_NtoSEEXWEee6P4AGk_WLrg" event="_NtoShkXWEee6P4AGk_WLrg" execution="_NtoSHkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSJ0XWEee6P4AGk_WLrg" name="startEbullition(NAME, ARGUMENTS)" receiveEvent="_NtoSEkXWEee6P4AGk_WLrg" sendEvent="_NtoSEUXWEee6P4AGk_WLrg" connector="_NtoSAUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSKEXWEee6P4AGk_WLrg" name="init(NAME, ARGUMENTS)" receiveEvent="_NtoSFUXWEee6P4AGk_WLrg" sendEvent="_NtoSFEXWEee6P4AGk_WLrg" connector="_NtoSBEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSKUXWEee6P4AGk_WLrg" name="getCurrentExecutionManager( )" receiveEvent="_NtoSGUXWEee6P4AGk_WLrg" sendEvent="_NtoSGEXWEee6P4AGk_WLrg" connector="_NtoSBEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSKkXWEee6P4AGk_WLrg" name="rescheduleThreads( )" receiveEvent="_NtoSIkXWEee6P4AGk_WLrg" sendEvent="_NtoSIUXWEee6P4AGk_WLrg" connector="_NtoSBEXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSK0XWEee6P4AGk_WLrg" name="execute( )" receiveEvent="_NtoSHUXWEee6P4AGk_WLrg" sendEvent="_NtoSHEXWEee6P4AGk_WLrg" connector="_NtoSB0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSLEXWEee6P4AGk_WLrg" name="EXEC_END_OF_THREAD" messageSort="reply" receiveEvent="_NtoSIEXWEee6P4AGk_WLrg" sendEvent="_NtoSH0XWEee6P4AGk_WLrg" connector="_NtoSB0XWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoSLUXWEee6P4AGk_WLrg" name="" type="_NtoQtkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoSLkXWEee6P4AGk_WLrg" name="" type="_NtoRgEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoSL0XWEee6P4AGk_WLrg" name="" type="_NtoRWEXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoSMEXWEee6P4AGk_WLrg" name="" type="_NtoQ5EXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_NtoSMUXWEee6P4AGk_WLrg" name="Throwing An Exception_Collaboration">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NtoSMkXWEee6P4AGk_WLrg" name="Throwing An Exception">
+        <ownedConnector xmi:id="_NtoSM0XWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSNEXWEee6P4AGk_WLrg" role="_NtoST0XWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSNUXWEee6P4AGk_WLrg" role="_NtoSUEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoSNkXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSN0XWEee6P4AGk_WLrg" role="_NtoSUEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSOEXWEee6P4AGk_WLrg" role="_NtoSUEXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_NtoSOUXWEee6P4AGk_WLrg">
+          <end xmi:id="_NtoSOkXWEee6P4AGk_WLrg" role="_NtoSUEXWEee6P4AGk_WLrg"/>
+          <end xmi:id="_NtoSO0XWEee6P4AGk_WLrg" role="_NtoSUUXWEee6P4AGk_WLrg"/>
+        </ownedConnector>
+        <lifeline xmi:id="_NtoSPEXWEee6P4AGk_WLrg" name="" represents="_NtoST0XWEee6P4AGk_WLrg" coveredBy="_NtoSP0XWEee6P4AGk_WLrg _NtoSSEXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoSPUXWEee6P4AGk_WLrg" name="BasicInterpreter" represents="_NtoSUEXWEee6P4AGk_WLrg" coveredBy="_NtoSQEXWEee6P4AGk_WLrg _NtoSQUXWEee6P4AGk_WLrg _NtoSQkXWEee6P4AGk_WLrg _NtoSQ0XWEee6P4AGk_WLrg _NtoSREXWEee6P4AGk_WLrg _NtoSR0XWEee6P4AGk_WLrg _NtoSSkXWEee6P4AGk_WLrg"/>
+        <lifeline xmi:id="_NtoSPkXWEee6P4AGk_WLrg" name="BasicFrame" represents="_NtoSUUXWEee6P4AGk_WLrg" coveredBy="_NtoSRUXWEee6P4AGk_WLrg _NtoSRkXWEee6P4AGk_WLrg _NtoSSUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSP0XWEee6P4AGk_WLrg" covered="_NtoSPEXWEee6P4AGk_WLrg" event="_NtoSh0XWEee6P4AGk_WLrg" message="_NtoSS0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSQEXWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" event="_NtoSiUXWEee6P4AGk_WLrg" message="_NtoSS0XWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSQUXWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" start="_NtoSQEXWEee6P4AGk_WLrg" finish="_NtoSSkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSQkXWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" event="_NtoSikXWEee6P4AGk_WLrg" message="_NtoSTUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSQ0XWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" event="_NtoSi0XWEee6P4AGk_WLrg" message="_NtoSTUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSREXWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" event="_NtoSjEXWEee6P4AGk_WLrg" message="_NtoSTkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSRUXWEee6P4AGk_WLrg" covered="_NtoSPkXWEee6P4AGk_WLrg" event="_NtoSjkXWEee6P4AGk_WLrg" message="_NtoSTkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NtoSRkXWEee6P4AGk_WLrg" covered="_NtoSPkXWEee6P4AGk_WLrg" start="_NtoSRUXWEee6P4AGk_WLrg" finish="_NtoSSUXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSR0XWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" event="_NtoSj0XWEee6P4AGk_WLrg" message="_NtoSTEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NtoSSEXWEee6P4AGk_WLrg" covered="_NtoSPEXWEee6P4AGk_WLrg" event="_NtoSkEXWEee6P4AGk_WLrg" message="_NtoSTEXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSSUXWEee6P4AGk_WLrg" covered="_NtoSPkXWEee6P4AGk_WLrg" event="_NtoSjkXWEee6P4AGk_WLrg" execution="_NtoSRkXWEee6P4AGk_WLrg"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NtoSSkXWEee6P4AGk_WLrg" covered="_NtoSPUXWEee6P4AGk_WLrg" event="_NtoSjkXWEee6P4AGk_WLrg" execution="_NtoSQUXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSS0XWEee6P4AGk_WLrg" name="interpret(FRAME, status)" receiveEvent="_NtoSQEXWEee6P4AGk_WLrg" sendEvent="_NtoSP0XWEee6P4AGk_WLrg" connector="_NtoSM0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSTEXWEee6P4AGk_WLrg" name="VM_THROW_INSTANCE" messageSort="reply" receiveEvent="_NtoSSEXWEee6P4AGk_WLrg" sendEvent="_NtoSR0XWEee6P4AGk_WLrg" connector="_NtoSM0XWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSTUXWEee6P4AGk_WLrg" name="ATHROW" receiveEvent="_NtoSQ0XWEee6P4AGk_WLrg" sendEvent="_NtoSQkXWEee6P4AGk_WLrg" connector="_NtoSNkXWEee6P4AGk_WLrg"/>
+        <message xmi:id="_NtoSTkXWEee6P4AGk_WLrg" name="popVMulong( )" receiveEvent="_NtoSRUXWEee6P4AGk_WLrg" sendEvent="_NtoSREXWEee6P4AGk_WLrg" connector="_NtoSOUXWEee6P4AGk_WLrg"/>
+      </ownedBehavior>
+      <ownedAttribute xmi:id="_NtoST0XWEee6P4AGk_WLrg" name="" type="_NtoQtkXWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoSUEXWEee6P4AGk_WLrg" name="BasicInterpreter" type="_NtoRM0XWEee6P4AGk_WLrg"/>
+      <ownedAttribute xmi:id="_NtoSUUXWEee6P4AGk_WLrg" name="BasicFrame" type="_NtoQ-kXWEee6P4AGk_WLrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSUkXWEee6P4AGk_WLrg" operation="_NtoQ8EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSU0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSVEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSVUXWEee6P4AGk_WLrg" operation="_NtoRUUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSVkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSV0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSWEXWEee6P4AGk_WLrg" operation="_NtoRP0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSWUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSWkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSW0XWEee6P4AGk_WLrg" operation="_NtoQ-0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSXEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSXUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSXkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSX0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSYEXWEee6P4AGk_WLrg" operation="_NtoQ-0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSYUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSYkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSY0XWEee6P4AGk_WLrg" operation="_NtoRDkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSZEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSZUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSZkXWEee6P4AGk_WLrg" operation="_NtoQxUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSZ0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSaEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSaUXWEee6P4AGk_WLrg" operation="_NtoRLkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSakXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSa0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSbEXWEee6P4AGk_WLrg" operation="_NtoRI0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSbkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSb0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoScEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoScUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSckXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSc0XWEee6P4AGk_WLrg" operation="_NtoRTUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSdEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSdUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSdkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSd0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSeEXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSeUXWEee6P4AGk_WLrg" operation="_NtoRYUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSekXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSe0XWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSfEXWEee6P4AGk_WLrg" operation="_NtoRbUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSfUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSfkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSf0XWEee6P4AGk_WLrg" operation="_NtoQ8EXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSgEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSgUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSgkXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSg0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoShEXWEee6P4AGk_WLrg" operation="_NtoRaUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoShUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoShkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSh0XWEee6P4AGk_WLrg" operation="_NtoRP0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSiEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSiUXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSikXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSi0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSjEXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSjUXWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_NtoSjkXWEee6P4AGk_WLrg" name=""/>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_NtoSj0XWEee6P4AGk_WLrg"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_NtoSkEXWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoSkUXWEee6P4AGk_WLrg" name="Component View" clientDependency="_NtoSkkXWEee6P4AGk_WLrg">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NtoSkkXWEee6P4AGk_WLrg" supplier="_NtoQt0XWEee6P4AGk_WLrg" client="_NtoSkUXWEee6P4AGk_WLrg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoSk0XWEee6P4AGk_WLrg" name="Deployment View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NtoSlEXWEee6P4AGk_WLrg" name="RoseUserDefinedTypes">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSlUXWEee6P4AGk_WLrg" name="char"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSlkXWEee6P4AGk_WLrg" name="objectStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSl0XWEee6P4AGk_WLrg" name="VMbyte"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSmEXWEee6P4AGk_WLrg" name="VMulong"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSmUXWEee6P4AGk_WLrg" name="VMushort"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSmkXWEee6P4AGk_WLrg" name="VMuint"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSm0XWEee6P4AGk_WLrg" name="VMint"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSnEXWEee6P4AGk_WLrg" name="TYPE"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSnUXWEee6P4AGk_WLrg" name="VMubyte"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSnkXWEee6P4AGk_WLrg" name="constantPoolStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSn0XWEee6P4AGk_WLrg" name="arrayStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSoEXWEee6P4AGk_WLrg" name="BMbyte"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSoUXWEee6P4AGk_WLrg" name="fieldStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSokXWEee6P4AGk_WLrg" name="execute_status_t"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSo0XWEee6P4AGk_WLrg" name="ThreadMap"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSpEXWEee6P4AGk_WLrg" name="constantPoolEntryStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSpUXWEee6P4AGk_WLrg" name="throwableInstanceStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSpkXWEee6P4AGk_WLrg" name="methodStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSp0XWEee6P4AGk_WLrg" name="VMbool"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSqEXWEee6P4AGk_WLrg" name="threadStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSqUXWEee6P4AGk_WLrg" name="vm_status_t"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSqkXWEee6P4AGk_WLrg" name="instanceClassStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSq0XWEee6P4AGk_WLrg" name="enum"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSrEXWEee6P4AGk_WLrg" name="classStruct"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NtoSrUXWEee6P4AGk_WLrg" name="int"/>
+  </packagedElement>
+  <profileApplication xmi:id="_NtoSrkXWEee6P4AGk_WLrg">
+    <eAnnotations xmi:id="_NtoSr0XWEee6P4AGk_WLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

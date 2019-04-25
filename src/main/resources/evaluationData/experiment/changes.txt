@@ -1,0 +1,5 @@
+user changes:
+transition rename stop to pause
+transition rename connect to start
+class display remove operation print
+class streamer rename operation stop to wait
